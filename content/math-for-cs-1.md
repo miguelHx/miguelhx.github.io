@@ -3,11 +3,6 @@ Date: 2025-12-07 22:03
 Category: Math for Computer Science
 Tags: ossu,computer-science,math,discrete-math,math-for-cs
 
-I'm doing sort of a brain dump of units as I learn them. I don't want these
-posts getting too long though. Just want to keep it simple. Starting with unit 1.4 because I haven't created the blog yet while going through previous lessons. I might go back and make posts about them.
-
-### Unit 1.4: Logic and Propositions
-
 A proposition is a statement that is True or False.
 
 A large fraction of all math statements are of the if-then form.

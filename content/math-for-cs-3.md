@@ -1,0 +1,10 @@
+Title: Math for CS: Problem Set 1 Reflection
+Date: 2025-12-14 17:42
+Category: Math for Computer Science
+Tags: ossu,computer-science,math,discrete-math,math-for-cs
+
+I didn’t find the first proofs to be easy.  It required creative mathematical thinking using algebraic rules, some of which I have forgotten.  To not waste too much time, I gave it an honest attempt for 16-32 min, then after I was surely stuck, I looked up the solution and built understanding.  The truth table problem was easy.  The next logic/proposition related problems require careful deciphering of what exactly is being asked.  Details matter, of course.  You have to think logically, and do a little mental gymnastics.  Writing stuff down helped.
+
+The next problem was all about adder circuits.  When you break it down, the core concept of an adder circuit is straightforward.  It’s just like doing binary addition by hand using carries.  But now, it’s generalized. I do admit it was a little confusing determining the differences between the different types of adder circuits and modules.  It turned out to be not so complicated.  I went through the questions and tried my best.  I didn’t get it 100% right, but I did enough to where when I read the solutions I was able to identify where I went wrong.  I made sure to try to accurately understand/follow the solutions, of course.
+
+I didn’t worry too much about not getting it all right the first time through.  I intend to use these problem sets as a way to practice active recalls in order to exercise my memory and understanding muscle.  Not aiming for perfection, just making sure that at the end it makes sense to me after attempts and looking at the solution.  So I try not to waste too much time here.  I sometimes think to myself do I really need to know this for a software engineering job?  Like when will I ever encounter design of adder circuits in the wild?  Maybe most of the problems won’t show up but my guess is that the exercise in logical and mathematical thinking can be useful because after all we do deal with propositions through code or instructions/requirements on the job.
