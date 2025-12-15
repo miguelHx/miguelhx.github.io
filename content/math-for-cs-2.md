@@ -3,7 +3,7 @@ Date: 2025-12-14 17:24
 Category: Math for Computer Science
 Tags: ossu,computer-science,math,discrete-math,math-for-cs
 
-We start off with quantifiers.  There are two of them.  “For all” and “there exists”, each with their own notation.  For all is an updside down A and there exists is a backwards E.
+We start off with quantifiers.  There are two of them.  “For all” and “there exists”, each with their own notation.  For all is an upside down A and there exists is a backwards E.
 
 We are also introduced to predicates.  a predicate is a statement that contains a variable and becomes a true or false proposition when a value is substituted for the variable.  For example P(x, y), where P is a proposition that takes in any x or y in a domain. In other words, a predicate is a proposition with variables.
 
