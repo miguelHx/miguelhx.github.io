@@ -1,7 +1,7 @@
 Title: Math for CS: Logic and Propositions
 Date: 2025-12-07 22:03
 Category: Math for Computer Science
-Tags: ossu,computer-science,math,discrete-math,math-for-cs
+Tags: computer-science,math,discrete-math
 
 A proposition is a statement that is True or False.
 

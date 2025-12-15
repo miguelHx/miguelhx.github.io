@@ -1,7 +1,7 @@
 Title: Math for CS: Problem Set 1 Reflection
 Date: 2025-12-14 17:42
 Category: Math for Computer Science
-Tags: ossu,computer-science,math,discrete-math,math-for-cs
+Tags: computer-science,math,discrete-math
 
 I didn’t find the first proofs to be easy.  It required creative mathematical thinking using algebraic rules, some of which I have forgotten.  To not waste too much time, I gave it an honest attempt for 16-32 min, then after I was surely stuck, I looked up the solution and built understanding.  The truth table problem was easy.  The next logic/proposition related problems require careful deciphering of what exactly is being asked.  Details matter, of course.  You have to think logically, and do a little mental gymnastics.  Writing stuff down helped.
 

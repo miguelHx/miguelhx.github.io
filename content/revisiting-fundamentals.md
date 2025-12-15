@@ -1,6 +1,6 @@
 Title: Why I'm revisiting software fundamentals and my learning plan
 Date: 2025-11-30 22:03
-Tags: ossu,computer-science
+Tags: computer-science
 Slug: revisiting-software-fundamentals
 Pin: true
 
@@ -56,7 +56,7 @@ If I was offered a job at a company that's a right mutual fit today though I mig
 
 I am doing interview prep along with going through the curriculum. This includes leetcode, system design, mock interviews, etc. This is so I'll be prepared towards the end of the curriculum when I'll be looking for a job anyway.
 
-Plus, the experience from on the job learning will be valuable, of course. I just don't think many companies will let you use company time to focus on fundamentals learning at a deep level. They want you to already have strong fundamentals. I think I'm good enough now though to adapt and perform well in many software engineer positions, but I'm taking a few steps back to try to get to a whole new level.
+Plus, the experience from on the job learning will be valuable, of course. I just don't think many companies will let you use company time to focus on fundamentals learning at a deep level. They want you to already have strong fundamentals, which is fair, of course. I believe I do have strong fundamentals already, and that I'm good enough now though to adapt and perform well in many software engineer positions.  But I'm taking a few steps back to try to get to a whole new level.
 
 ### The Bigger Picture
 

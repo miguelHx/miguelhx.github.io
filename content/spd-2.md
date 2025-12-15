@@ -1,7 +1,7 @@
 Title: Systematic Program Design: Week 6a learnings
 Date: 2025-12-14 17:32
 Category: Systematic Program Design
-Tags: ossu,computer-science,spd,racket
+Tags: computer-science,spd,racket
 
 Module overview/summary:
 
@@ -25,8 +25,8 @@ Learning Goals:
 List abbreviations
 
 How we create lists in racket:
-Before:  (cons “a” (cons “b” (cons “c” empty)))
-New list abbreviation:  (list “a” “b” “c”)
+Before:  `(cons “a” (cons “b” (cons “c” empty)))`
+New list abbreviation:  `(list “a” “b” “c”)`
 
 List is a primitive for constructing lists.
 
