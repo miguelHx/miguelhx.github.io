@@ -3,7 +3,7 @@ Date: 2025-12-15 16:20
 Category: Systematic Program Design
 Tags: computer-science,spd,racket
 
-Just completed the midterm project which was to implement Space Invaders game! They gave us a helpful starter file. I started by doing a domain analysis using pen and paper.  Then I added any code from the analysis to the project. I also wrote out all the scenarios, such as changing direction when an invader reaches edge of screen, missile to invader collision, tank switching directions, spawning invaders, and game over when invader reaches the bottom.  Wrote down which big bang functions I would be needing.  Then I got to work. There were many helper functions and overall it was fun to implement and get it working.
+Just completed the midterm project which was to implement Space Invaders game! It's pretty easy if you paid attention to all the lessons leading up to here. I started by doing a domain analysis using pen and paper.  Then I added any code from the analysis to the given starter file. I also wrote out all the scenarios, such as changing direction when an invader reaches edge of screen, missile to invader collision, tank switching directions, spawning invaders, and game over when invader reaches the bottom.  Wrote down which big bang functions I would be needing.  Then I got to work. There were many helper functions and overall it was fun to implement and get it working.
 
 Here is the full code.  If you are a student working on this project and haven't completed it yet, make sure to respect the honor code and give it an honest attempt first. Only when you are truly stuck then it is okay to look at code solution but make sure to learn and understand from it, not just blindly copy and paste.
 
