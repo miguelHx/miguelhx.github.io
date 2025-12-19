@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="/theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#333333">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#333333">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Microsoft EDGE -->
+  <meta name="msapplication-TileColor" content="#333333">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z648JEYS71');
+</script>
+
+
+
+
+
+
+ 
+
+<meta name="author" content="Miguel Hernandez" />
+<meta name="description" content="I was able to do part A and B in less than 1 hour. Part C, however, I will have to watch the related lectures because I need to know the bisection search algorithm, which I don’t know off the top of my head. Part A and B were …" />
+<meta name="keywords" content="computer-science, python">
+
+
+  <meta property="og:site_name" content="Miguel's Personal Website"/>
+  <meta property="og:title" content="Intro to CS: Problem Set 1"/>
+  <meta property="og:description" content="I was able to do part A and B in less than 1 hour. Part C, however, I will have to watch the related lectures because I need to know the bisection search algorithm, which I don’t know off the top of my head. Part A and B were …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/intro-to-cs-problem-set-1.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2025-12-19 13:47:00-08:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="/author/miguel-hernandez.html">
+  <meta property="article:section" content="Intro to CS using Python"/>
+  <meta property="article:tag" content="computer-science"/>
+  <meta property="article:tag" content="python"/>
+  <meta property="og:image" content="/images/yinyang.png">
+
+  <title>Miguel's Personal Website &ndash; Intro to CS: Problem Set 1</title>
+
+
+</head>
+<body >
+
+<aside>
+  <div>
+    <a href="/">
+      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
+    </a>
+
+    <h1>
+      <a href="/">Miguel Hernandez</a>
+    </h1>
+
+    <p>Welcome to my blog/website</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="/pages/about-me.html">
+                About me
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-github"
+           href="https://github.com/miguelhx"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="intro-to-cs-problem-set-1">Intro to CS: Problem Set 1</h1>
+    <p>
+      Posted on Fri 19 December 2025 in <a href="/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>I was able to do part A and B in less than 1 hour.  Part C, however, I will have to watch the related lectures because I need to know the bisection search algorithm, which I don’t know off the top of my head.  Part A and B were good exercises, dealing with compound interests and it was basically how many months to save up for a house down payment given certain inputs like yearly salary, savings rate, etc.</p>
+<p>Here is my solution for A and B:</p>
+<p>Part A:</p>
+<div class="highlight"><pre><span></span><code><span class="n">yearly_salary</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter yearly salary: &#39;</span><span class="p">))</span>
+<span class="n">portion_saved</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter </span><span class="si">% o</span><span class="s1">f salary to save, as a decimal: &#39;</span><span class="p">))</span>
+<span class="n">cost_of_dream_home</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter cost of dream home: &#39;</span><span class="p">))</span>
+
+<span class="n">portion_down_payment</span> <span class="o">=</span> <span class="mf">0.25</span>
+<span class="n">r</span> <span class="o">=</span> <span class="mf">0.05</span>
+<span class="n">down_payment_amount</span> <span class="o">=</span> <span class="n">cost_of_dream_home</span> <span class="o">*</span> <span class="n">portion_down_payment</span>
+
+<span class="n">first_month_saved</span> <span class="o">=</span> <span class="p">(</span><span class="n">yearly_salary</span> <span class="o">/</span> <span class="mf">12.0</span><span class="p">)</span> <span class="o">*</span> <span class="n">portion_saved</span>
+<span class="n">amt_saved</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">monthly_return</span> <span class="o">=</span> <span class="n">first_month_saved</span> <span class="o">*</span> <span class="p">(</span><span class="n">r</span> <span class="o">/</span> <span class="mi">12</span><span class="p">)</span>
+
+<span class="n">months</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">amt_saved</span> <span class="o">&lt;=</span> <span class="n">down_payment_amount</span><span class="p">:</span>
+    <span class="n">amt_saved</span> <span class="o">+=</span> <span class="n">first_month_saved</span> <span class="o">+</span> <span class="n">monthly_return</span>
+    <span class="n">monthly_return</span> <span class="o">=</span> <span class="n">amt_saved</span> <span class="o">*</span> <span class="p">(</span><span class="n">r</span> <span class="o">/</span> <span class="mi">12</span><span class="p">)</span>
+    <span class="n">months</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of months: &#39;</span><span class="p">,</span> <span class="n">months</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Part B:</p>
+<div class="highlight"><pre><span></span><code><span class="n">yearly_salary</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter yearly salary: &#39;</span><span class="p">))</span>
+<span class="n">portion_saved</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter </span><span class="si">% o</span><span class="s1">f salary to save, as a decimal: &#39;</span><span class="p">))</span>
+<span class="n">cost_of_dream_home</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter cost of dream home: &#39;</span><span class="p">))</span>
+<span class="n">semi_annual_raise</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter semi-annual raise, as a decimal: &#39;</span><span class="p">))</span>
+
+<span class="n">portion_down_payment</span> <span class="o">=</span> <span class="mf">0.25</span>
+<span class="n">r</span> <span class="o">=</span> <span class="mf">0.05</span>
+<span class="n">down_payment_amount</span> <span class="o">=</span> <span class="n">cost_of_dream_home</span> <span class="o">*</span> <span class="n">portion_down_payment</span>
+
+<span class="n">first_month_saved</span> <span class="o">=</span> <span class="p">(</span><span class="n">yearly_salary</span> <span class="o">/</span> <span class="mf">12.0</span><span class="p">)</span> <span class="o">*</span> <span class="n">portion_saved</span>
+<span class="n">amt_saved</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">monthly_return</span> <span class="o">=</span> <span class="n">first_month_saved</span> <span class="o">*</span> <span class="p">(</span><span class="n">r</span> <span class="o">/</span> <span class="mi">12</span><span class="p">)</span>
+
+<span class="n">months</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">amt_saved</span> <span class="o">&lt;=</span> <span class="n">down_payment_amount</span><span class="p">:</span>
+    <span class="n">amt_saved</span> <span class="o">+=</span> <span class="n">first_month_saved</span> <span class="o">+</span> <span class="n">monthly_return</span>
+    <span class="n">monthly_return</span> <span class="o">=</span> <span class="n">amt_saved</span> <span class="o">*</span> <span class="p">(</span><span class="n">r</span> <span class="o">/</span> <span class="mi">12</span><span class="p">)</span>
+    <span class="n">months</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">months</span> <span class="o">%</span> <span class="mi">6</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">yearly_salary</span> <span class="o">+=</span> <span class="n">yearly_salary</span> <span class="o">*</span> <span class="n">semi_annual_raise</span>
+        <span class="n">first_month_saved</span> <span class="o">=</span> <span class="p">(</span><span class="n">yearly_salary</span> <span class="o">/</span> <span class="mf">12.0</span><span class="p">)</span> <span class="o">*</span> <span class="n">portion_saved</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of months: &#39;</span><span class="p">,</span> <span class="n">months</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Part B was just an extension of part A.  It's pretty easy if you have strong programming and math fundamentals. I can see beginners potentially struggling with this though.</p>
+<p>Problem set 1 isn’t due until like after lecture 9, so I have plenty of time to complete it as I just finished lecture 2. Then I will update this post with my solution to part C.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/computer-science.html">computer-science</a>
+      <a href="/tag/python.html">python</a>
+    </p>
+  </div>
+
+
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'miguels-personal-website';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view comments.
+</noscript>
+<!-- End Disqus -->
+</article>
+
+<footer>
+<p>&copy; 2025 Miguel Hernandez</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Miguel's Personal Website ",
+  "url" : "",
+  "image": "/images/yinyang.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

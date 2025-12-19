@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="/theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#333333">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#333333">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Microsoft EDGE -->
+  <meta name="msapplication-TileColor" content="#333333">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z648JEYS71');
+</script>
+
+
+
+
+
+
+ 
+
+<meta name="author" content="Miguel Hernandez" />
+<meta name="description" content="For problem 1, I follow the description’s equivalence formula of set theory. But for part (a) when it asks to write a formula Members(p, a, b) of set theory that means p = {a, b} I am lost. This must be something from the text book that was not …" />
+<meta name="keywords" content="computer-science, math, discrete-math">
+
+
+  <meta property="og:site_name" content="Miguel's Personal Website"/>
+  <meta property="og:title" content="Math for CS: Problem Set 2 Thoughts"/>
+  <meta property="og:description" content="For problem 1, I follow the description’s equivalence formula of set theory. But for part (a) when it asks to write a formula Members(p, a, b) of set theory that means p = {a, b} I am lost. This must be something from the text book that was not …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/math-for-cs-problem-set-2-thoughts.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2025-12-19 13:58:00-08:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="/author/miguel-hernandez.html">
+  <meta property="article:section" content="Math for Computer Science"/>
+  <meta property="article:tag" content="computer-science"/>
+  <meta property="article:tag" content="math"/>
+  <meta property="article:tag" content="discrete-math"/>
+  <meta property="og:image" content="/images/yinyang.png">
+
+  <title>Miguel's Personal Website &ndash; Math for CS: Problem Set 2 Thoughts</title>
+
+
+</head>
+<body >
+
+<aside>
+  <div>
+    <a href="/">
+      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
+    </a>
+
+    <h1>
+      <a href="/">Miguel Hernandez</a>
+    </h1>
+
+    <p>Welcome to my blog/website</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="/pages/about-me.html">
+                About me
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-github"
+           href="https://github.com/miguelhx"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="math-for-cs-problem-set-2-thoughts">Math for CS: Problem Set 2 Thoughts</h1>
+    <p>
+      Posted on Fri 19 December 2025 in <a href="/category/math-for-computer-science.html">Math for Computer Science</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>For problem 1, I follow the description’s equivalence formula of set theory.  But for part (a) when it asks to write a formula Members(p, a, b) of set theory that means p = {a, b} I am lost.  This must be something from the text book that was not in this course’s readings.  Not sure.</p>
+<p>Part 1(a) says that we can represent (a, b) as pair(a, b) ::= {a, {a, b}}.  I don’t know why this is the case.  Going to ask chatgpt to explain this.  Chatgpt says we can make this representation because this set uniquely determines which element is first and which is second, allowing order to be encoded using only set membership.  That makes more sense.  And now that I remember, it looks like the problem we did this proof for in the in-class problems for this week.</p>
+<p>I don’t get how to approach parts (b) and (c) of question 1. So I will look at the solution for these later.</p>
+<p>Problem 2 is straightforward, it’s just using algebra and substitutions to get from LHS to RHS.</p>
+<p>Problem 3 I follow until we get to the definition of S*.  Based on its description, I just wonder if I’m picturing it correctly in my head.  I guess it makes sense thinking more about the examples now.  Yes, I understand now.</p>
+<p>Part 3(a) not sure how I would “show” this other than using the definition of concatenation-definable and some logic to show that the intersection of R and S is c-d because it’s finite because R and S each are finite.  But I just found out shortly after that the set B of all binary words is c-d, even though it’s an infinite set.</p>
+<p>Part 3(b) not sure right away how 0<em>B</em>1 is c-d.  But now that I think about it, we can apply a finite number of unions each B in order to get a variation of 0<em>B</em>1.  Not sure if that observation is enough to answer the question.</p>
+<p>Parts 3(c)/(d) I have some intuition as to why these may be the case, but not sure how I would “show”.</p>
+<p>3(e) {00}^* is not boring because the intersection of {00}^* and 0^* is not finite.  Idk what the complement of {00}^* looks like, maybe any word except even number of 0s.  You still have odd number of 0s in the set, going on to infinity, therefore the intersection of the complement of {00}^<em> and 0^</em> is still not finite.  Therefore {00}^* is not boring.</p>
+<p>Similar reasonings can be applied to the remaining problems.</p>
+<p>I spent 1 hr 30 min on this, the course states that these should take no more than 3 hours.  I think that’s a fair amount of time, spending more time thinking through might yield the remaining results, but I’m trying to balance time and efficiency here.  I gave each problem an honest attempt, even if that means not knowing how to proceed at all.  Okay, going to look up the solutions now!  I won’t be updating the above text, so if you want to see the solutions, they are linked <a href="https://github.com/spamegg1/Math-for-CS-solutions/blob/master/psets/MIT6_042JS15_ps2_solutions.pdf">here</a>.</p>
+<p>After reading the solutions I realized that my answers weren’t explicit enough for the proofs.  I need to actually show the finite steps of concatenation, union, or complement that lead to the desired result.  Writing proofs is not easy!  Neither is discrete math but I appreciate the course so far nonetheless.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/computer-science.html">computer-science</a>
+      <a href="/tag/math.html">math</a>
+      <a href="/tag/discrete-math.html">discrete-math</a>
+    </p>
+  </div>
+
+
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'miguels-personal-website';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view comments.
+</noscript>
+<!-- End Disqus -->
+</article>
+
+<footer>
+<p>&copy; 2025 Miguel Hernandez</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Miguel's Personal Website ",
+  "url" : "",
+  "image": "/images/yinyang.png",
+  "description": ""
+}
+</script>
+</body>
+</html>
