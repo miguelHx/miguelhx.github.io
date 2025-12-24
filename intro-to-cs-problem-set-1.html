@@ -204,6 +204,48 @@
 
 <p>Part B was just an extension of part A.  It's pretty easy if you have strong programming and math fundamentals. I can see beginners potentially struggling with this though.</p>
 <p>Problem set 1 isn’t due until like after lecture 9, so I have plenty of time to complete it as I just finished lecture 2. Then I will update this post with my solution to part C.</p>
+<p>Update: Finished part C. It wasn't too bad. I liked the exercise.  I didn't one-shot it due to small nuances like updating the high/low to r instead of guess and checking the absolute value of amount - guess within epsilon. Wrote print statements to debug then got the answer. Also had to run into infinite loop before fixing case where initial deposit is too small to reach desired amount in 36 months. Here is my solution:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">##############################################</span>
+<span class="c1">## Get user input for initial_deposit below ##</span>
+<span class="c1">##############################################</span>
+<span class="n">initial_deposit</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter the initial deposit: &#39;</span><span class="p">))</span>
+
+
+<span class="c1">#########################################################################</span>
+<span class="c1">## Initialize other variables you need (if any) for your program below ##</span>
+<span class="c1">#########################################################################</span>
+<span class="n">house_cost</span> <span class="o">=</span> <span class="mi">800000</span>
+<span class="n">down_payment_rate</span> <span class="o">=</span> <span class="mf">0.25</span>
+<span class="n">down_payment_amount</span> <span class="o">=</span> <span class="n">house_cost</span> <span class="o">*</span> <span class="n">down_payment_rate</span>
+<span class="n">months</span> <span class="o">=</span> <span class="mi">36</span>
+<span class="n">epsilon</span> <span class="o">=</span> <span class="mi">100</span>
+
+
+<span class="c1">##################################################################################################</span>
+<span class="c1">## Determine the lowest rate of return needed to get the down payment for your dream home below ##</span>
+<span class="c1">##################################################################################################</span>
+
+<span class="n">low</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">high</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">r</span> <span class="o">=</span> <span class="p">(</span><span class="n">high</span> <span class="o">+</span> <span class="n">low</span><span class="p">)</span> <span class="o">/</span> <span class="mf">2.0</span>
+<span class="n">guess</span> <span class="o">=</span> <span class="p">(</span><span class="n">initial_deposit</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="n">r</span> <span class="o">/</span> <span class="mf">12.0</span><span class="p">))</span> <span class="o">**</span> <span class="n">months</span><span class="p">)</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">down_payment_amount</span> <span class="o">-</span> <span class="n">guess</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">epsilon</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">guess</span> <span class="o">&gt;</span> <span class="n">down_payment_amount</span><span class="p">:</span>
+        <span class="n">high</span> <span class="o">=</span> <span class="n">r</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">low</span> <span class="o">=</span> <span class="n">r</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="p">(</span><span class="n">high</span> <span class="o">+</span> <span class="n">low</span><span class="p">)</span> <span class="o">/</span> <span class="mf">2.0</span>
+    <span class="k">if</span> <span class="n">r</span> <span class="o">==</span> <span class="mf">1.0</span><span class="p">:</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">steps</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">break</span>
+    <span class="n">guess</span> <span class="o">=</span> <span class="p">(</span><span class="n">initial_deposit</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="n">r</span> <span class="o">/</span> <span class="mf">12.0</span><span class="p">))</span> <span class="o">**</span> <span class="n">months</span><span class="p">)</span>
+    <span class="n">steps</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Best savings rate:&#39;</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="s1">&#39;[or very close to this number]&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Steps in bisection search:&#39;</span><span class="p">,</span> <span class="n">steps</span><span class="p">,</span> <span class="s1">&#39;[or very close to this number]&#39;</span><span class="p">)</span>
+</code></pre></div>
   </div>
   <div class="tag-cloud">
     <p>
