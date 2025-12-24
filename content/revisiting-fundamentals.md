@@ -32,7 +32,7 @@ I feel like I did a solid job at learning the fundamentals during my undergrad. 
 
 But as time has passed, I’ve realized there were areas I never got to touch (such as other programming languages, databases, compilers, cybersecurity, software architecture, etc). These are areas that I feel like if I learn them, I'll be a stronger engineer.
 
-I want to refine my understanding, close knowledge gaps, visit untouched areas, and revisit concepts with more maturity and context than I had back in school.
+I want to refine my understanding, close knowledge gaps, visit untouched areas, and revisit concepts with more maturity and context than I had back in school. I'm also rebuilding my career from the ground up and this is a way to get my bases covered.
 
 ### What about a Master's degree?
 
