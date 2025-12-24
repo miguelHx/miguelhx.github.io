@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="/theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#333333">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#333333">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Microsoft EDGE -->
+  <meta name="msapplication-TileColor" content="#333333">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z648JEYS71');
+</script>
+
+
+
+
+
+
+ 
+
+<meta name="author" content="Miguel Hernandez" />
+<meta name="description" content="We start by going over Functions. Its definition, what domains, codomains and images are, examples, and function composition. I was surprised to see some of the creative ways we can define a function. For example let f(y) be the length of a left to right search of the bits …" />
+<meta name="keywords" content="computer-science, math, discrete-math">
+
+
+  <meta property="og:site_name" content="Miguel's Personal Website"/>
+  <meta property="og:title" content="Math for CS: Binary Relations"/>
+  <meta property="og:description" content="We start by going over Functions. Its definition, what domains, codomains and images are, examples, and function composition. I was surprised to see some of the creative ways we can define a function. For example let f(y) be the length of a left to right search of the bits …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/math-for-cs-binary-relations.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2025-12-24 11:46:00-08:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="/author/miguel-hernandez.html">
+  <meta property="article:section" content="Math for Computer Science"/>
+  <meta property="article:tag" content="computer-science"/>
+  <meta property="article:tag" content="math"/>
+  <meta property="article:tag" content="discrete-math"/>
+  <meta property="og:image" content="/images/yinyang.png">
+
+  <title>Miguel's Personal Website &ndash; Math for CS: Binary Relations</title>
+
+
+</head>
+<body >
+
+<aside>
+  <div>
+    <a href="/">
+      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
+    </a>
+
+    <h1>
+      <a href="/">Miguel Hernandez</a>
+    </h1>
+
+    <p>Welcome to my blog/website</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="/pages/about-me.html">
+                About me
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-github"
+           href="https://github.com/miguelhx"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="math-for-cs-binary-relations">Math for CS: Binary Relations</h1>
+    <p>
+      Posted on Wed 24 December 2025 in <a href="/category/math-for-computer-science.html">Math for Computer Science</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>We start by going over Functions.  Its definition, what domains, codomains and images are, examples, and function composition.  I was surprised to see some of the creative ways we can define a function.  For example let f(y) be the length of a left to right search of the bits in the binary string y until a 1 appears, so f(0010) = 3, f(000) = undefined, f(100) = 1.</p>
+<p>One important fact about functions: they need not assign a value to every element in the domain.  </p>
+<p>Some authors refer to the codomain as the range of a function, but they shouldn’t.  The distinction between the range and codomain will be important later in Sections 4.5 when we relate sizes of sets to properties of functions between them.</p>
+<p>Then we go on to Binary Relations.  Turns out a function is a special type of binary relation.  All functions are binary relations but not all binary relations are functions.  Here is the definition of a binary relation:  A binary relation, R, consists of a set, A, called the domain of R, a set, B, called the codomain of R, and a subset of A x B called the graph of R.</p>
+<p>Examples are given.  Then we are given the different types of binary relations, including function, surjective, total, injective, bijective.  The idea of an image of a set under a function extends to binary relations.  We then talk about the inverse image and finite cardinality.</p>
+<p>My guess is that this topic is applicable in database systems, in particular when defining relationships between tables.  Can use this math terminology to classify the relations.</p>
+<p>Finite cardinality.  A finite set is one that has only a finite number of elements. This number of elements is the “size” or cardinality of the set.  We make some relations between the cardinality of relational sets and their properties, along with their proofs.</p>
+<p>In the lecture the instructor says you can use these concepts in databases.  You can express queries and assertions about the database using a combination of relational operators and set operators.</p>
+<p>It seems like a handful to remember all the properties and the implications of each property.  I usually just keep referring to the definition if I come across it.  Then I think about it, imagining the arrows and the inverse and what the inverse means, etc.  It may or may not stick, but at least I know in general where to look if I come across this topic in the future, for example when I come across databases.</p>
+<p>Over a little time, I came up with ways to easily memorize.  For example, I just remember that injective means arrows going in to the co-domain, and that it’s &lt;= 1 for each element.  I make a mental note that surjective is still arrows in but the opposite amount, so &gt;= 1 for each element in co-domain.</p>
+<p>The exercises were good.  On to 1.8, Induction.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/computer-science.html">computer-science</a>
+      <a href="/tag/math.html">math</a>
+      <a href="/tag/discrete-math.html">discrete-math</a>
+    </p>
+  </div>
+
+
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'miguels-personal-website';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view comments.
+</noscript>
+<!-- End Disqus -->
+</article>
+
+<footer>
+<p>&copy; 2025 Miguel Hernandez</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Miguel's Personal Website ",
+  "url" : "",
+  "image": "/images/yinyang.png",
+  "description": ""
+}
+</script>
+</body>
+</html>
