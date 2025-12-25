@@ -22,7 +22,7 @@ amt_saved = 0
 monthly_return = first_month_saved * (r / 12)
 
 months = 0
-while amt_saved <= down_payment_amount:
+while amt_saved < down_payment_amount:
     amt_saved += first_month_saved + monthly_return
     monthly_return = amt_saved * (r / 12)
     months += 1
@@ -45,7 +45,7 @@ amt_saved = 0
 monthly_return = first_month_saved * (r / 12)
 
 months = 0
-while amt_saved <= down_payment_amount:
+while amt_saved < down_payment_amount:
     amt_saved += first_month_saved + monthly_return
     monthly_return = amt_saved * (r / 12)
     months += 1
