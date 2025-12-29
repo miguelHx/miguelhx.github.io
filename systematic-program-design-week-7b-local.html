@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="/theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#333333">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#333333">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Microsoft EDGE -->
+  <meta name="msapplication-TileColor" content="#333333">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z648JEYS71');
+</script>
+
+
+
+
+
+
+ 
+
+<meta name="author" content="Miguel Hernandez" />
+<meta name="description" content="In this module we look at a new technique for improving the structure of code. Most of the problems in this module involve refactoring existing programs -- so there&#39;s relatively little new coding to do. But that doesn&#39;t mean you won&#39;t be designing programs! One of the things that separates good …" />
+<meta name="keywords" content="computer-science, spd, racket">
+
+
+  <meta property="og:site_name" content="Miguel's Personal Website"/>
+  <meta property="og:title" content="Systematic Program Design: Week 7b - Local"/>
+  <meta property="og:description" content="In this module we look at a new technique for improving the structure of code. Most of the problems in this module involve refactoring existing programs -- so there&#39;s relatively little new coding to do. But that doesn&#39;t mean you won&#39;t be designing programs! One of the things that separates good …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/systematic-program-design-week-7b-local.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2025-12-28 19:54:00-08:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="/author/miguel-hernandez.html">
+  <meta property="article:section" content="Systematic Program Design"/>
+  <meta property="article:tag" content="computer-science"/>
+  <meta property="article:tag" content="spd"/>
+  <meta property="article:tag" content="racket"/>
+  <meta property="og:image" content="/images/yinyang.png">
+
+  <title>Miguel's Personal Website &ndash; Systematic Program Design: Week 7b - Local</title>
+
+
+</head>
+<body >
+
+<aside>
+  <div>
+    <a href="/">
+      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
+    </a>
+
+    <h1>
+      <a href="/">Miguel Hernandez</a>
+    </h1>
+
+    <p>Welcome to my blog/website</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="/pages/about-me.html">
+                About me
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-github"
+           href="https://github.com/miguelhx"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="systematic-program-design-week-7b-local">Systematic Program Design: Week 7b - Local</h1>
+    <p>
+      Posted on Sun 28 December 2025 in <a href="/category/systematic-program-design.html">Systematic Program Design</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <blockquote>
+<p>In this module we look at a new technique for improving the structure of code. Most of the problems in this module involve refactoring existing programs -- so there's relatively little new coding to do. But that doesn't mean you won't be designing programs! One of the things that separates good programmers from the other kind is taking the time to improve the structure of their code once it is written. This material is super important, and... it is really important to practice doing it!</p>
+<p>We'll learn local expressions which are a new kind of expression in the Intermediate Student Language (ISL) that makes it possible to write definitions (constants, functions and structures) that are only visible within the local expression. We will see how to use local expressions to encapsulate "private" helper functions. We will also use local to avoid redundant computation.
+Working through the videos, practice materials and the design quiz for this module should take approximately 8-10 hours of dedicated time to complete.</p>
+<p>Learning Goals</p>
+<ul>
+<li>Be able to write well-formed local expressions.</li>
+<li>Be able to diagram lexical scoping on top of expressions using local.</li>
+<li>Be able to hand-evaluate local expressions.</li>
+<li>Be able to use local to encapsulate function definitions.</li>
+<li>Be able to use local to avoid redundant computation.</li>
+</ul>
+</blockquote>
+<h3>Intro</h3>
+<p>We're going to look at two important ways to use local.  One has to do with organizing programs that are large or written by more than one person. Another has to do with dealing with important performance problems that come up when we can't use local.</p>
+<p>I like that they’re going over Lexical Scope.  This concept definitely applies to all programming languages, and is one of the fundamentals.</p>
+<p>Also went over the local construct.  This allows for local variables inside a function in Racket.</p>
+<p>Next up is the concept of encapsulation, which the instructor states is one of the most fundamental concepts in software engineering.  It lets us take each part of our program and make it into a “capsule”, a little package that has a bunch of internal functions and constants and structures, and only a small number of external functions and constants and structures.</p>
+<p>We practice this concept by taking mutually referencing functions and putting them in a local under a unified function name.  This is basically a refactor.  The instructor gives us the definition of refactor:  changing a programs code/structure without changing the program’s behavior.  I’ve done this before in a professional setting so this isn’t new to me.</p>
+<p>I want to take all of these important concepts and list them when I write the review of this course.</p>
+<p>Idea:  take 2 or more functions, hide all the helpers inside a capsule, so that the rest of the world only sees the functions that are appropriate for them to call.</p>
+<p>Avoiding recomputation - so far in this course, we avoided talking about performance or program efficiency. This was on purpose because it’s easy for programmers to worry too much about efficiency, too soon, or reason incorrectly about it.</p>
+<p>As a general rule, it’s better to design a simple program that’s easy to understand/change, and then worry about the efficiency later, once the program is running.  You can run the program against a sample data set and measure the performance and see where the real performance problems are.</p>
+<p>You might be surprised.  Some things you think might be performance problems turn out to be handled by the programming language.  Other things you thought turn out not to be.  Then there’s things you didn’t think would be performance problems but turn out to be.</p>
+<p>That said, there’s one category of performance problems that you need to fix as part of the design.  That is, exponential growth.</p>
+<p>We are given the example of performing a find on a skinny tree that duplicates the procedure find element in its code and replace that duplication with computing once in a local and referencing that result instead.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/computer-science.html">computer-science</a>
+      <a href="/tag/spd.html">spd</a>
+      <a href="/tag/racket.html">racket</a>
+    </p>
+  </div>
+
+
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'miguels-personal-website';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view comments.
+</noscript>
+<!-- End Disqus -->
+</article>
+
+<footer>
+<p>&copy; 2025 Miguel Hernandez</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Miguel's Personal Website ",
+  "url" : "",
+  "image": "/images/yinyang.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

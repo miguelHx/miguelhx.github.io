@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="/theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#333333">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#333333">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Microsoft EDGE -->
+  <meta name="msapplication-TileColor" content="#333333">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z648JEYS71');
+</script>
+
+
+
+
+
+
+ 
+
+<meta name="author" content="Miguel Hernandez" />
+<meta name="description" content="Induction is a powerful method for showing a property is true for all non-negative integers. Induction plays a central role in discrete mathematics and computer science. In fact, its use is a defining characteristic of discrete—as opposed to continuous—mathematics. This chapter introduces two versions of induction, Ordinary and …" />
+<meta name="keywords" content="computer-science, math, discrete-math">
+
+
+  <meta property="og:site_name" content="Miguel's Personal Website"/>
+  <meta property="og:title" content="Math for CS: Induction"/>
+  <meta property="og:description" content="Induction is a powerful method for showing a property is true for all non-negative integers. Induction plays a central role in discrete mathematics and computer science. In fact, its use is a defining characteristic of discrete—as opposed to continuous—mathematics. This chapter introduces two versions of induction, Ordinary and …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/math-for-cs-induction.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2025-12-28 19:40:00-08:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="/author/miguel-hernandez.html">
+  <meta property="article:section" content="Math for Computer Science"/>
+  <meta property="article:tag" content="computer-science"/>
+  <meta property="article:tag" content="math"/>
+  <meta property="article:tag" content="discrete-math"/>
+  <meta property="og:image" content="/images/yinyang.png">
+
+  <title>Miguel's Personal Website &ndash; Math for CS: Induction</title>
+
+
+</head>
+<body >
+
+<aside>
+  <div>
+    <a href="/">
+      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
+    </a>
+
+    <h1>
+      <a href="/">Miguel Hernandez</a>
+    </h1>
+
+    <p>Welcome to my blog/website</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="/pages/about-me.html">
+                About me
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-github"
+           href="https://github.com/miguelhx"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="math-for-cs-induction">Math for CS: Induction</h1>
+    <p>
+      Posted on Sun 28 December 2025 in <a href="/category/math-for-computer-science.html">Math for Computer Science</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Induction is a powerful method for showing a property is true for all non-negative integers. Induction plays a central role in discrete mathematics and computer science. In fact, its use is a defining characteristic of discrete—as opposed to continuous—mathematics. This chapter introduces two versions of induction, Ordinary and Strong, and explains why they work and how to use them in proofs.</p>
+<p>We are given the induction principle, which states the following.  Let P be a predicate on non-negative integers.  If P(0) is true, and P(n) implies P(n+1) for all non-negative integers, n, then P(m) is true for all non-negative integers, m.</p>
+<h3>Induction Template</h3>
+<p>We are then given a familiar example along with a template for applying an induction proof.</p>
+<p>Five components of the template:</p>
+<ol>
+<li><strong>State that the proof uses induction</strong>.  This immediately conveys the overall structure of the proof, which helps your reader follow your argument.</li>
+<li><strong>Define an appropriate predicate P(n)</strong>.  The predicate P(n) is called the induction hypothesis. The eventual conclusion of the induction argument will be that P(n) is true for all nonnegative n. A clearly stated induction hypothesis is often the most important part of an induction proof, and its omission is the largest source of confused proofs by students. In the simplest cases, the induction hypothesis can be lifted straight from the proposition you are trying to prove, as we did with equation (5.1). Sometimes the induction hypothesis will involve several variables, in which case you should indicate which variable serves as n.</li>
+<li><strong>Prove that P(0) is true</strong>. This is usually easy, as in the example above. This part of the proof is called the base case or basis step.</li>
+<li><strong>Prove that P(n) implies P(n+1) for every nonnegative integer n</strong>. This is called the inductive step. The basic plan is always the same: assume that P(n) is true and then use this assumption to prove that P(n+1) is true. These two statements should be fairly similar, but bridging the gap may require some ingenuity. Whatever argument you give must be valid for every nonnegative integer n, since the goal is to prove that all the following implications are true:  P(0) implies P(1), P(1) implies P(2), P(2) implies P(3), …</li>
+<li><strong>Invoke induction</strong>. Given these facts, the induction principle allows you to conclude that P(n) is true for all nonnegative n. This is the logical capstone to the whole argument, but it is so standard that it’s usual not to mention it explicitly.</li>
+</ol>
+<p>Always be sure to explicitly label the base case and the inductive step. Doing
+so will make your proofs clearer and will decrease the chance that you forget a key
+step—like checking the base case.</p>
+<p>We are walked through an example where we need a stronger induction hypothesis in order to prove by induction.  The author notes that it is not always immediately obvious what a more clever induction hypothesis could be.  They mentioned that it took mathematicians over 20 years to prove something by induction.  It ended up taking a clever induction hypothesis.</p>
+<p>We are also walked through a bogus proof.</p>
+<h3>Strong induction.</h3>
+<p>A useful variant of induction is called strong induction. Strong induction and ordinary induction are used for exactly the same thing: proving that a predicate is true for all nonnegative integers. Strong induction is useful when a simple proof that the predicate holds for n + 1 does not follow just from the fact that it holds at n, but from the fact that it holds for other values &lt;= n.</p>
+<h3>Strong induction vs. induction vs. well-ordering</h3>
+<p>Strong induction looks genuinely “stronger” than ordinary induction —after all, you can assume a lot more when proving the induction step. Since ordinary induction is a special case of strong induction, you might wonder why anyone would bother with the ordinary induction. But strong induction really isn’t any stronger, because a simple text manipulation program can automatically reformat any proof using strong induction into a proof using ordinary induction—just by decorating the induction hypothesis with a universal quantifier in a standard way. Still, it’s worth distinguishing these two kinds of induction, since which you use will signal whether the inductive step for n + 1 follows directly from the case for n or requires cases smaller than n, and that is generally good for your reader to know. The template for the two kinds of induction rules looks nothing like the one for the Well Ordering Principle, but this chapter included a couple of examples where induction was used to prove something already proved using well ordering. In fact, this can always be done. As the examples may suggest, any well ordering proof can automatically be reformatted into an induction proof. </p>
+<p>So theoretically, no one need bother with the Well Ordering Principle either. But it’s equally easy to go the other way, and automatically reformat any strong induction proof into a Well Ordering proof. The three proof methods—well ordering, induction, and strong induction—are simply different formats for presenting the same mathematical reasoning! So why three methods? Well, sometimes induction proofs are clearer because they don’t require proof by contradiction. Also, induction proofs often provide recursive procedures that reduce large inputs to smaller ones. On the other hand, well ordering can come out slightly shorter and sometimes seem more natural and less worrisome to beginners. So which method should you use? There is no simple recipe. Sometimes the only way to decide is to write up a proof using more than one method and compare how they come out. But whichever method you choose, be sure to state the method up front to help a reader follow your proof.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/computer-science.html">computer-science</a>
+      <a href="/tag/math.html">math</a>
+      <a href="/tag/discrete-math.html">discrete-math</a>
+    </p>
+  </div>
+
+
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'miguels-personal-website';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view comments.
+</noscript>
+<!-- End Disqus -->
+</article>
+
+<footer>
+<p>&copy; 2025 Miguel Hernandez</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Miguel's Personal Website ",
+  "url" : "",
+  "image": "/images/yinyang.png",
+  "description": ""
+}
+</script>
+</body>
+</html>
