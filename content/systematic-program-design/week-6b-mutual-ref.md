@@ -1,4 +1,4 @@
-Title: Systematic Program Design: Week 6b learnings
+Title: Systematic Program Design: Week 6b - Mutual Reference
 Date: 2025-12-19 13:26
 Category: Systematic Program Design
 Tags: computer-science,spd,racket

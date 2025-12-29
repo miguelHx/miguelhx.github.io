@@ -1,4 +1,4 @@
-Title: Systematic Program Design: Week 6a learnings
+Title: Systematic Program Design: Week 6a - Binary Search Trees
 Date: 2025-12-14 17:32
 Category: Systematic Program Design
 Tags: computer-science,spd,racket

@@ -1,4 +1,4 @@
-Title: Systematic Program Design: Week 5 learnings
+Title: Systematic Program Design: Week 5 - Naturals and Helpers
 Date: 2025-12-07 23:03
 Category: Systematic Program Design
 Tags: computer-science,spd,racket
