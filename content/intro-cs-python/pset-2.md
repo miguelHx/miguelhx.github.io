@@ -3,7 +3,7 @@ Date: 2025-12-28 19:58
 Category: Intro to CS using Python
 Tags: computer-science,python
 
-I was able to complete this problem set in just under an hour. It was good practice. Will show code then result of unit tests. I really like how MIT structures the starter code. It's a great example of high quality code structure. Most of the helper functions were given, I only created two helpers.
+I was able to complete this problem set in just under an hour. It was good practice. Will show my code then the result of running the unit tests.
 
 ## My solution:
 
