@@ -8,6 +8,9 @@ I was able to complete this problem set in just under an hour. It was good pract
 ## My solution:
 
 ```python
+
+
+
 # Problem Set 2, hangman.py
 # Name:
 # Collaborators:
@@ -21,6 +24,7 @@ import string
 # -----------------------------------
 
 WORDLIST_FILENAME = "words.txt"
+VOWELS = 'aeiou'
 
 def load_words():
     """
@@ -183,17 +187,26 @@ def hangman(secret_word, with_help):
 
     Follows the other limitations detailed in the problem write-up.
     """
-    VOWELS = 'aeiou'
     print('Welcome to Hangman!')
     print('I am thinking of a word that is', len(secret_word), 'letters long.')
     guesses = 10
     letters_guessed = []
-    while guesses > 0 and not has_player_won(secret_word, letters_guessed):
+    while True:
         print('--------------')
+        if guesses <= 0:
+            print('Sorry, you ran out of guesses. The word was', secret_word + '.')
+            return
+        if has_player_won(secret_word, letters_guessed):
+            print('Congratulations, you won!')
+            total_score = guesses + (4 * get_unique_letters_count(secret_word)) + (3 * len(secret_word))
+            print('Your total score for this game is:', total_score)
+            return
+
         print('You have', guesses, 'guesses left.')
         print('Available letters:', get_available_letters(letters_guessed))
         guess = input('Please guess a letter: ')
         word_progress = get_word_progress(secret_word, letters_guessed)
+        
         if with_help and guess == '!':
             if guesses >= 3:
                 revealed_letter = get_new_revealed_letter(secret_word, letters_guessed)
@@ -205,14 +218,18 @@ def hangman(secret_word, with_help):
             else:
                 print('Oops! Not enough guesses left:', word_progress)
                 continue
+
         if not guess.isalpha() or len(guess) > 1:
             print('Oops! That is not a valid letter. Please input a letter from the alphabet:', word_progress)
             continue
+
         if guess in letters_guessed:
             print('Oops! You already guessed that letter:', word_progress)
             continue
+
         letters_guessed.append(guess.lower())
         new_word_progress = get_word_progress(secret_word, letters_guessed)
+
         if guess in secret_word:
             print('Good guess:', new_word_progress)
         else:
@@ -221,14 +238,7 @@ def hangman(secret_word, with_help):
                 guesses -= 2
             else:
                 guesses -= 1
-    print('--------------')
-    if has_player_won(secret_word, letters_guessed):
-        print('Congratulations, you won!')
-        total_score = guesses + (4 * get_unique_letters_count(secret_word)) + (3 * len(secret_word))
-        print('Your total score for this game is:', total_score)
-    elif guesses <= 0:
-        print('Sorry, you ran out of guesses. The word was', secret_word + '.')
-    
+
 
 
 # When you've completed your hangman function, scroll down to the bottom
@@ -236,7 +246,7 @@ def hangman(secret_word, with_help):
 
 if __name__ == "__main__":
     # To test your game, uncomment the following three lines.
-    secret_word = 'tact'
+    secret_word = 'abcdef'
     with_help = False
     hangman(secret_word, with_help)
 
