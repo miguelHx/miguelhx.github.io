@@ -8,19 +8,19 @@ I'm sure we all agree that mastering the fundamentals is important. This is true
 
 ### My Learning Roadmap
 
-The goal is to complete the necessary courses from Open Source Society University [Computer Science curriculum](https://github.com/ossu/computer-science). It has online courses from top universities such as Harvard, Princeton, MIT, Stanford, etc.
+The goal is to complete the necessary courses from Open Source Society University [Computer Science curriculum](https://github.com/ossu/computer-science). Just in case you're not familiar with OSSU, it's a list of online courses meant to mirror the curricululm of an actual Bachelor's degree in Computer Science.  It has online courses from top universities such as Harvard, Princeton, MIT, Stanford, etc. The courses are free or cheap.
 
 I started about a month ago, currently taking the courses [Systematic Program Design](https://github.com/ossu/computer-science/blob/master/coursepages/spd/README.md) and [Mathematics for Computer Science](https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/about).
 
-Systematic Program Design focuses on how to think systematically about programming.  The language used is Racket, which is a dialect of Lisp and descendant of Scheme. In this course, we learn the basics of Racket (data types, built-in functions, libraries, images, functions, etc). Then, we learn particular code structures/patterns to assist in building more complex programs. One of the final projects is to build the game Space Invaders, which should be fun. I'll probably write a blog post about it in the future. Racket is a good pedagogical language to learn core principles that can be applied to any programming language.
+Systematic Program Design focuses on how to think systematically about programming.  The language used is Racket, which is a dialect of Lisp and descendant of Scheme. In this course, we learn the basics of Racket (data types, built-in functions, libraries, images, functions, etc). Then, we learn particular code structures/patterns to assist in building more complex programs. One of the final projects is to build the game Space Invaders, which should be fun. The focus is not the language used but the core principles of program design, which can be applied to any programming language.
 
-Math for Computer Science is basically discrete math. The topics covered are proofs, structures, counting, and probability. I'm taking this to keep my brain sharp.  It's also a prerequisite to some of the more math-heavy algorithms courses in the curriculum. The instructor states that one of the most important skills we can have in life is being able to tell the difference between a logical argument that seems to be right, but is actually wrong, and a logical argument that is actually sound.
+Math for Computer Science is basically discrete math. The topics covered are proofs, structures, counting, and probability. I'm taking this to sharpen my brain. It's also a prerequisite to some of the more math-heavy algorithms courses in the curriculum.
 
-After SPD, I will probably take the next course in its section, which is Class-based Program Design. After Math for CS, I will probably take the course [Build a Modern Computer from First Principles: From Nand to Tetris](https://www.coursera.org/learn/build-a-computer), and continue in that section.
+After SPD, I will probably take the next course in its section, which is [Class-based Program Design](https://course.ccs.neu.edu/cs2510sp22/index.html). After Math for CS, I will probably take the course [Build a Modern Computer from First Principles: From Nand to Tetris](https://www.coursera.org/learn/build-a-computer), and continue in that section. But this is subject to change.
 
 I'll keep going down the list for Core Programming section, while concurrently going through another course from another section.  Doing just 2 courses concurrently for now but that may change.
 
-I don't plan on completing ALL of the courses.  I'm picking and choosing what I believe to be the most important or relevant, in an order that makes sense. Courses such as computer graphics, or machine learning, for example, I won't be taking because I'm not targeting that specific type of job.
+I don't plan on completing all of the courses.  I'm picking and choosing what I believe to be the most important or relevant, in an order that makes sense. Courses such as computer graphics, or machine learning, for example, I might not be taking because I'm not targeting that specific type of job. If I have some extra time, I might take them out of curiosity, but I need to be pragmatic.
 
 I won't be taking the calculus courses from the core math section since I already took them in college and feel like I could easily pick up necessary info if needed.
 
@@ -28,9 +28,9 @@ I won't be taking the calculus courses from the core math section since I alread
 
 First, a little background. I earned a Bachelor’s degree in Computer Science & Engineering back in 2019. It took me four years. Between 2019 until now, I got 3.5 years of professional software engineering experience. I also had some career gaps in between due to personal reasons.
 
-I feel like I did a solid job at learning the fundamentals during my undergrad. I was motivated, learned how to learn, practiced deep work, and I had good exposure to math, algorithms, data structures, basics of programming, computer organization/architecture, networks, OS, etc.  You can find my relevant course work on my [LinkedIn](https://www.linkedin.com/in/miguel-hernandez-535b05102/) profile under the Education section.
+I feel like I did a solid job at learning the fundamentals during my undergrad. I was motivated, learned how to learn, and practiced deep work principles. I had good exposure to math, algorithms, data structures, basics of programming, computer organization/architecture, networks, OS, etc.  You can find my relevant course work on my [LinkedIn](https://www.linkedin.com/in/miguel-hernandez-535b05102/) profile under the Education section.
 
-But as time has passed, I’ve realized there were areas I never got to touch (such as other programming languages, databases, compilers, cybersecurity, software architecture, etc). These are areas that I feel like if I learn them, I'll be a stronger engineer.
+But as time has passed, I’ve realized there were areas I never got to touch (such as other programming languages, databases, compilers, cybersecurity, software architecture, etc). These are areas that I feel like if I learn them, I would be a stronger engineer.
 
 I want to refine my understanding, close knowledge gaps, visit untouched areas, and revisit concepts with more maturity and context than I had back in school. I'm also rebuilding my career from the ground up and this is a way to get my bases covered.
 
@@ -50,19 +50,19 @@ I get the credential aspect of a master's. But at the end of the day it's just a
 
 ### What about a job?
 
-I'm currently unemployed. Yes, a job is definitely important.  After all, we study and learn in order to eventually become employed so that we can earn a living. I kinda don't want to start working yet though so that I can focus on this learning path instead.
+I'm currently unemployed. Yes, a job is important.  After all, we study and learn in order to eventually become employed so that we can earn a living. I kinda don't want to start working yet though so that I can focus on this learning path instead. I love having free time.
 
-Long term, I believe this will make me a better overall engineer for when I do land an offer later. With a stronger base of core, foundational knowledge, I believe I can reach a higher ceiling for my technical career, which may lead to more money and can make up what I lost from not working.
+Long term, I believe this will make me a better overall engineer for if/when I do land an offer later. With a stronger base of core, foundational knowledge, I believe I can reach a higher ceiling for my technical career, which may lead to more money and can make up what I lost from not working.
 
-However, it could be argued that getting a job ASAP instead and just learning on the job may be more valuable rather than revisiting the fundamentals full time. And that's valid. And there's the money aspect too.
+However, it could be argued that getting a job ASAP instead and just learning on the job may be more valuable rather than revisiting the fundamentals full time. And that's valid. There's the money aspect too, of course.
 
-The money is important, yes. But more important to me is becoming a highly skilled engineer, learning for the love of it and satisfying my curiosity. Being highly skilled is more likely to attract money.
+The money is important, yes. But more important to me is becoming really good at software engineering, learning for the love of it, and satisfying my curiosity.
 
 If I was offered a job at a company that's a right mutual fit today though I might just take it. Then, I'll learn these online courses on the side. This will stretch out my learning timeline, which I'm okay with. But it has to be the right opportunity. I'm also doing okay with enough resources to keep me afloat for a while without having to work.
 
 I am doing interview prep along with going through the curriculum. This includes leetcode, system design, mock interviews, etc. This is so I'll be prepared towards the end of the curriculum when I'll be looking for a job anyway.
 
-Plus, the experience from on the job learning will be valuable, of course. I just don't think many companies will let you use company time to focus on fundamentals learning at a deep level. They want you to already have strong fundamentals, which is fair, of course. I believe I do have strong fundamentals already, and that I'm good enough now though to adapt and perform well in many software engineer positions.  But I'm taking a few steps back to try to get to a whole new level.
+The experience from on the job learning will be valuable, of course. I just don't think many companies will let you use company time to focus on fundamentals learning at a deep level. They want you to already have strong fundamentals, which is fair, of course. I believe I do have strong fundamentals already, and that I'm good enough now to adapt and perform well in many software engineer positions.  But I'm taking a few steps back to try to get to a whole new level.
 
 ### The Bigger Picture
 
@@ -70,7 +70,7 @@ This isn’t just about landing a job or checking boxes on a résumé. I’m tak
 
 I don’t just want a job. I want a thriving career as a software engineer. That means investing in the skills that will still matter decades from now: fundamentals, reasoning, design, and adaptability.
 
-By revisiting the core ideas behind programming and computer science, I’m building a foundation that will support everything else I learn moving forward. Strong fundamentals make you adaptable. They allow you to see patterns others miss and approach problems from first principles.
+By revisiting the core ideas behind programming and computer science, I’m (re)building a foundation that will support everything else I learn moving forward.
 
 ### Looking Ahead
 
