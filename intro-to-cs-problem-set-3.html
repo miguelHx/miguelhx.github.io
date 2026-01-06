@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="https://miguelhx.github.io/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#333333">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#333333">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Microsoft EDGE -->
+  <meta name="msapplication-TileColor" content="#333333">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z648JEYS71');
+</script>
+
+
+
+
+
+
+ 
+
+<meta name="author" content="Miguel Hernandez" />
+<meta name="description" content="Finished the problem set in about an hour. It was a good exercise. Here is my solution along with test case results: My solution: # 6.100A Fall 2022 # Problem Set 3 # Written by: sylvant, muneezap, charz, anabell, nhung, wang19k, asinelni, shahul, jcsands # Problem Set 3 # Name: # Collaborators: # Purpose: Check for …" />
+<meta name="keywords" content="computer-science, python">
+
+
+  <meta property="og:site_name" content="Miguel's Personal Website"/>
+  <meta property="og:title" content="Intro to CS: Problem Set 3"/>
+  <meta property="og:description" content="Finished the problem set in about an hour. It was a good exercise. Here is my solution along with test case results: My solution: # 6.100A Fall 2022 # Problem Set 3 # Written by: sylvant, muneezap, charz, anabell, nhung, wang19k, asinelni, shahul, jcsands # Problem Set 3 # Name: # Collaborators: # Purpose: Check for …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://miguelhx.github.io/intro-to-cs-problem-set-3.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2026-01-06 11:15:00-08:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://miguelhx.github.io/author/miguel-hernandez.html">
+  <meta property="article:section" content="Intro to CS using Python"/>
+  <meta property="article:tag" content="computer-science"/>
+  <meta property="article:tag" content="python"/>
+  <meta property="og:image" content="/images/yinyang.png">
+
+  <title>Miguel's Personal Website &ndash; Intro to CS: Problem Set 3</title>
+
+
+</head>
+<body >
+
+<aside>
+  <div>
+    <a href="https://miguelhx.github.io/">
+      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
+    </a>
+
+    <h1>
+      <a href="https://miguelhx.github.io/">Miguel Hernandez</a>
+    </h1>
+
+    <p>Welcome to my blog/website</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://miguelhx.github.io/pages/about-me.html">
+                About me
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-github"
+           href="https://github.com/miguelhx"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://miguelhx.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="intro-to-cs-problem-set-3">Intro to CS: Problem Set 3</h1>
+    <p>
+      Posted on Tue 06 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Finished the problem set in about an hour.  It was a good exercise.  Here is my solution along with test case results:</p>
+<h2>My solution:</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># 6.100A Fall 2022</span>
+<span class="c1"># Problem Set 3</span>
+<span class="c1"># Written by: sylvant, muneezap, charz, anabell, nhung, wang19k, asinelni, shahul, jcsands</span>
+
+<span class="c1"># Problem Set 3</span>
+<span class="c1"># Name:</span>
+<span class="c1"># Collaborators:</span>
+
+<span class="c1"># Purpose: Check for similarity between two texts by comparing different kinds of word statistics.</span>
+
+<span class="kn">import</span> <span class="nn">string</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+
+<span class="c1">### DO NOT MODIFY THIS FUNCTION</span>
+<span class="k">def</span> <span class="nf">load_file</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Args:</span>
+<span class="sd">        filename: string, name of file to read</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        string, contains file contents</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># print(&quot;Loading file %s&quot; % filename)</span>
+    <span class="n">inFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">inFile</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">:</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">char</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">inFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">line</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+
+<span class="c1">### Problem 0: Prep Data ###</span>
+<span class="k">def</span> <span class="nf">text_to_list</span><span class="p">(</span><span class="n">input_text</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Args:</span>
+<span class="sd">        input_text: string representation of text from file.</span>
+<span class="sd">                    assume the string is made of lowercase characters</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        list representation of input_text, where each word is a different element in the list</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">input_text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+
+<span class="c1">### Problem 1: Get Frequency ###</span>
+<span class="k">def</span> <span class="nf">get_frequencies</span><span class="p">(</span><span class="n">input_iterable</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Args:</span>
+<span class="sd">        input_iterable: a string or a list of strings, all are made of lowercase characters</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        dictionary that maps string:int where each string</span>
+<span class="sd">        is a letter or word in input_iterable and the corresponding int</span>
+<span class="sd">        is the frequency of the letter or word in input_iterable</span>
+<span class="sd">    Note: </span>
+<span class="sd">        You can assume that the only kinds of white space in the text documents we provide will be new lines or space(s) between words (i.e. there are no tabs)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">input_iterable</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">output</span><span class="p">:</span>
+            <span class="n">output</span><span class="p">[</span><span class="n">s</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">output</span><span class="p">[</span><span class="n">s</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">output</span>
+
+
+<span class="c1">### Problem 2: Letter Frequencies ###</span>
+<span class="k">def</span> <span class="nf">get_letter_frequencies</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Args:</span>
+<span class="sd">        word: word as a string</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        dictionary that maps string:int where each string</span>
+<span class="sd">        is a letter in word and the corresponding int</span>
+<span class="sd">        is the frequency of the letter in word</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">get_frequencies</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+
+
+<span class="c1">### Problem 3: Similarity ###</span>
+<span class="k">def</span> <span class="nf">calculate_similarity_score</span><span class="p">(</span><span class="n">freq_dict1</span><span class="p">,</span> <span class="n">freq_dict2</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The keys of dict1 and dict2 are all lowercase,</span>
+<span class="sd">    you will NOT need to worry about case sensitivity.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        freq_dict1: frequency dictionary of letters of word1 or words of text1</span>
+<span class="sd">        freq_dict2: frequency dictionary of letters of word2 or words of text2</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        float, a number between 0 and 1, inclusive</span>
+<span class="sd">        representing how similar the words/texts are to each other</span>
+
+<span class="sd">        The difference in words/text frequencies = DIFF sums words</span>
+<span class="sd">        from these three scenarios:</span>
+<span class="sd">        * If an element occurs in dict1 and dict2 then</span>
+<span class="sd">          get the difference in frequencies</span>
+<span class="sd">        * If an element occurs only in dict1 then take the</span>
+<span class="sd">          frequency from dict1</span>
+<span class="sd">        * If an element occurs only in dict2 then take the</span>
+<span class="sd">          frequency from dict2</span>
+<span class="sd">         The total frequencies = ALL is calculated by summing</span>
+<span class="sd">         all frequencies in both dict1 and dict2.</span>
+<span class="sd">        Return 1-(DIFF/ALL) rounded to 2 decimal places</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">unique_words</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">freq_dict1</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">unique_words</span><span class="p">:</span>
+            <span class="n">unique_words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">freq_dict2</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">unique_words</span><span class="p">:</span>
+            <span class="n">unique_words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+
+    <span class="n">sum_freq_diffs</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">u</span> <span class="ow">in</span> <span class="n">unique_words</span><span class="p">:</span>
+        <span class="n">countL1</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">countL2</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="n">u</span> <span class="ow">in</span> <span class="n">freq_dict1</span><span class="p">:</span>
+            <span class="n">countL1</span> <span class="o">=</span> <span class="n">freq_dict1</span><span class="p">[</span><span class="n">u</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">u</span> <span class="ow">in</span> <span class="n">freq_dict2</span><span class="p">:</span>
+            <span class="n">countL2</span> <span class="o">=</span> <span class="n">freq_dict2</span><span class="p">[</span><span class="n">u</span><span class="p">]</span>
+        <span class="n">sum_freq_diffs</span> <span class="o">+=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">countL1</span> <span class="o">-</span> <span class="n">countL2</span><span class="p">)</span>
+
+    <span class="n">sum_freq_totals</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">freq_dict1</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="o">+</span> <span class="nb">sum</span><span class="p">(</span><span class="n">freq_dict2</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+    <span class="n">similarity</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="n">sum_freq_diffs</span> <span class="o">/</span> <span class="n">sum_freq_totals</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="nb">round</span><span class="p">(</span><span class="n">similarity</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+
+
+<span class="c1">### Problem 4: Most Frequent Word(s) ###</span>
+<span class="k">def</span> <span class="nf">get_most_frequent_words</span><span class="p">(</span><span class="n">freq_dict1</span><span class="p">,</span> <span class="n">freq_dict2</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The keys of dict1 and dict2 are all lowercase,</span>
+<span class="sd">    you will NOT need to worry about case sensitivity.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        freq_dict1: frequency dictionary for one text</span>
+<span class="sd">        freq_dict2: frequency dictionary for another text</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        list of the most frequent word(s) in the input dictionaries</span>
+
+<span class="sd">    The most frequent word:</span>
+<span class="sd">        * is based on the combined word frequencies across both dictionaries.</span>
+<span class="sd">          If a word occurs in both dictionaries, consider the sum the</span>
+<span class="sd">          freqencies as the combined word frequency.</span>
+<span class="sd">        * need not be in both dictionaries, i.e it can be exclusively in</span>
+<span class="sd">          dict1, dict2, or shared by dict1 and dict2.</span>
+<span class="sd">    If multiple words are tied (i.e. share the same highest frequency),</span>
+<span class="sd">    return an alphabetically ordered list of all these words.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">combined_freqs</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">freq</span> <span class="ow">in</span> <span class="n">freq_dict1</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">combined_freqs</span><span class="p">:</span>
+            <span class="n">combined_freqs</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="n">freq</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">combined_freqs</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">+=</span> <span class="n">freq</span>
+
+    <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">freq</span> <span class="ow">in</span> <span class="n">freq_dict2</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">combined_freqs</span><span class="p">:</span>
+            <span class="n">combined_freqs</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="n">freq</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">combined_freqs</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">+=</span> <span class="n">freq</span>
+
+    <span class="n">max_freq</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">combined_freqs</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+    <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">freq</span> <span class="ow">in</span> <span class="n">combined_freqs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">freq</span> <span class="o">==</span> <span class="n">max_freq</span><span class="p">:</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+
+    <span class="n">output</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">output</span>
+
+
+<span class="c1">### Problem 5: Finding TF-IDF ###</span>
+<span class="k">def</span> <span class="nf">get_tf</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Args:</span>
+<span class="sd">        file_path: name of file in the form of a string</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        a dictionary mapping each word to its TF</span>
+
+<span class="sd">    * TF is calculatd as TF(i) = (number times word *i* appears</span>
+<span class="sd">        in the document) / (total number of words in the document)</span>
+<span class="sd">    * Think about how we can use get_frequencies from earlier</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">file_text</span> <span class="o">=</span> <span class="n">load_file</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+    <span class="n">text_words</span> <span class="o">=</span> <span class="n">text_to_list</span><span class="p">(</span><span class="n">file_text</span><span class="p">)</span>
+    <span class="n">total_words</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">text_words</span><span class="p">)</span>
+
+    <span class="n">word_freqs</span> <span class="o">=</span> <span class="n">get_frequencies</span><span class="p">(</span><span class="n">text_words</span><span class="p">)</span>
+
+    <span class="n">tf</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">freq</span> <span class="ow">in</span> <span class="n">word_freqs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">tf</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="n">freq</span> <span class="o">/</span> <span class="n">total_words</span>
+
+    <span class="k">return</span> <span class="n">tf</span>
+
+
+<span class="k">def</span> <span class="nf">get_idf</span><span class="p">(</span><span class="n">file_paths</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Args:</span>
+<span class="sd">        file_paths: list of names of files, where each file name is a string</span>
+<span class="sd">    Returns:</span>
+<span class="sd">       a dictionary mapping each word to its IDF</span>
+
+<span class="sd">    * IDF is calculated as IDF(i) = log_10(total number of documents / number of</span>
+<span class="sd">    documents with word *i* in it), where log_10 is log base 10 and can be called</span>
+<span class="sd">    with math.log10()</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">total_num_docs</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">file_paths</span><span class="p">)</span>
+
+    <span class="n">word_doc_freqs</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">for</span> <span class="n">fp</span> <span class="ow">in</span> <span class="n">file_paths</span><span class="p">:</span>
+        <span class="n">file_word_freqs</span> <span class="o">=</span> <span class="n">get_frequencies</span><span class="p">(</span><span class="n">text_to_list</span><span class="p">(</span><span class="n">load_file</span><span class="p">(</span><span class="n">fp</span><span class="p">)))</span>
+        <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">file_word_freqs</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">word_doc_freqs</span><span class="p">:</span>
+                <span class="n">word_doc_freqs</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">word_doc_freqs</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="n">idf</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">doc_freq</span> <span class="ow">in</span> <span class="n">word_doc_freqs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">idf</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">total_num_docs</span> <span class="o">/</span> <span class="n">doc_freq</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">idf</span>
+
+<span class="k">def</span> <span class="nf">get_tfidf</span><span class="p">(</span><span class="n">tf_file_path</span><span class="p">,</span> <span class="n">idf_file_paths</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Args:</span>
+<span class="sd">        tf_file_path: name of file in the form of a string (used to calculate TF)</span>
+<span class="sd">        idf_file_paths: list of names of files, where each file name is a string</span>
+<span class="sd">        (used to calculate IDF)</span>
+<span class="sd">    Returns:</span>
+<span class="sd">       a sorted list of tuples (in increasing TF-IDF score), where each tuple is</span>
+<span class="sd">       of the form (word, TF-IDF). In case of words with the same TF-IDF, the</span>
+<span class="sd">       words should be sorted in increasing alphabetical order.</span>
+
+<span class="sd">    * TF-IDF(i) = TF(i) * IDF(i)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">tf</span> <span class="o">=</span> <span class="n">get_tf</span><span class="p">(</span><span class="n">tf_file_path</span><span class="p">)</span>
+    <span class="n">idf</span> <span class="o">=</span> <span class="n">get_idf</span><span class="p">(</span><span class="n">idf_file_paths</span><span class="p">)</span>
+
+    <span class="n">text_words</span> <span class="o">=</span> <span class="n">text_to_list</span><span class="p">(</span><span class="n">load_file</span><span class="p">(</span><span class="n">tf_file_path</span><span class="p">))</span>
+    <span class="n">unique_words</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">tw</span> <span class="ow">in</span> <span class="n">text_words</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">tw</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">unique_words</span><span class="p">:</span>
+            <span class="n">unique_words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tw</span><span class="p">)</span>
+
+    <span class="n">tfidf</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">unique_words</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">tfidf</span><span class="p">:</span>
+            <span class="n">tfidf</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">word</span><span class="p">,</span> <span class="n">tf</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">*</span> <span class="n">idf</span><span class="p">[</span><span class="n">word</span><span class="p">]))</span>
+
+    <span class="n">tfidf</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">tfidf</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="c1">###############################################################</span>
+    <span class="c1">## Uncomment the following lines to test your implementation ##</span>
+    <span class="c1">###############################################################</span>
+
+    <span class="c1"># Tests Problem 0: Prep Data</span>
+    <span class="n">test_directory</span> <span class="o">=</span> <span class="s2">&quot;tests/student_tests/&quot;</span>
+    <span class="n">hello_world</span><span class="p">,</span> <span class="n">hello_friend</span> <span class="o">=</span> <span class="n">load_file</span><span class="p">(</span><span class="n">test_directory</span> <span class="o">+</span> <span class="s1">&#39;hello_world.txt&#39;</span><span class="p">),</span> <span class="n">load_file</span><span class="p">(</span><span class="n">test_directory</span> <span class="o">+</span> <span class="s1">&#39;hello_friends.txt&#39;</span><span class="p">)</span>
+    <span class="n">world</span><span class="p">,</span> <span class="n">friend</span> <span class="o">=</span> <span class="n">text_to_list</span><span class="p">(</span><span class="n">hello_world</span><span class="p">),</span> <span class="n">text_to_list</span><span class="p">(</span><span class="n">hello_friend</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">world</span><span class="p">)</span>      <span class="c1"># should print [&#39;hello&#39;, &#39;world&#39;, &#39;hello&#39;]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">friend</span><span class="p">)</span>     <span class="c1"># should print [&#39;hello&#39;, &#39;friends&#39;]</span>
+
+    <span class="c1"># Tests Problem 1: Get Frequencies</span>
+    <span class="n">test_directory</span> <span class="o">=</span> <span class="s2">&quot;tests/student_tests/&quot;</span>
+    <span class="n">hello_world</span><span class="p">,</span> <span class="n">hello_friend</span> <span class="o">=</span> <span class="n">load_file</span><span class="p">(</span><span class="n">test_directory</span> <span class="o">+</span> <span class="s1">&#39;hello_world.txt&#39;</span><span class="p">),</span> <span class="n">load_file</span><span class="p">(</span><span class="n">test_directory</span> <span class="o">+</span> <span class="s1">&#39;hello_friends.txt&#39;</span><span class="p">)</span>
+    <span class="n">world</span><span class="p">,</span> <span class="n">friend</span> <span class="o">=</span> <span class="n">text_to_list</span><span class="p">(</span><span class="n">hello_world</span><span class="p">),</span> <span class="n">text_to_list</span><span class="p">(</span><span class="n">hello_friend</span><span class="p">)</span>
+    <span class="n">world_word_freq</span> <span class="o">=</span> <span class="n">get_frequencies</span><span class="p">(</span><span class="n">world</span><span class="p">)</span>
+    <span class="n">friend_word_freq</span> <span class="o">=</span> <span class="n">get_frequencies</span><span class="p">(</span><span class="n">friend</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">world_word_freq</span><span class="p">)</span>    <span class="c1"># should print {&#39;hello&#39;: 2, &#39;world&#39;: 1}</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">friend_word_freq</span><span class="p">)</span>   <span class="c1"># should print {&#39;hello&#39;: 1, &#39;friends&#39;: 1}</span>
+
+    <span class="c1"># Tests Problem 2: Get Letter Frequencies</span>
+    <span class="n">freq1</span> <span class="o">=</span> <span class="n">get_letter_frequencies</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+    <span class="n">freq2</span> <span class="o">=</span> <span class="n">get_letter_frequencies</span><span class="p">(</span><span class="s1">&#39;that&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">freq1</span><span class="p">)</span>      <span class="c1">#  should print {&#39;h&#39;: 1, &#39;e&#39;: 1, &#39;l&#39;: 2, &#39;o&#39;: 1}</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">freq2</span><span class="p">)</span>      <span class="c1">#  should print {&#39;t&#39;: 2, &#39;h&#39;: 1, &#39;a&#39;: 1}</span>
+
+    <span class="c1"># Tests Problem 3: Similarity</span>
+    <span class="n">test_directory</span> <span class="o">=</span> <span class="s2">&quot;tests/student_tests/&quot;</span>
+    <span class="n">hello_world</span><span class="p">,</span> <span class="n">hello_friend</span> <span class="o">=</span> <span class="n">load_file</span><span class="p">(</span><span class="n">test_directory</span> <span class="o">+</span> <span class="s1">&#39;hello_world.txt&#39;</span><span class="p">),</span> <span class="n">load_file</span><span class="p">(</span><span class="n">test_directory</span> <span class="o">+</span> <span class="s1">&#39;hello_friends.txt&#39;</span><span class="p">)</span>
+    <span class="n">world</span><span class="p">,</span> <span class="n">friend</span> <span class="o">=</span> <span class="n">text_to_list</span><span class="p">(</span><span class="n">hello_world</span><span class="p">),</span> <span class="n">text_to_list</span><span class="p">(</span><span class="n">hello_friend</span><span class="p">)</span>
+    <span class="n">world_word_freq</span> <span class="o">=</span> <span class="n">get_frequencies</span><span class="p">(</span><span class="n">world</span><span class="p">)</span>
+    <span class="n">friend_word_freq</span> <span class="o">=</span> <span class="n">get_frequencies</span><span class="p">(</span><span class="n">friend</span><span class="p">)</span>
+    <span class="n">word1_freq</span> <span class="o">=</span> <span class="n">get_letter_frequencies</span><span class="p">(</span><span class="s1">&#39;toes&#39;</span><span class="p">)</span>
+    <span class="n">word2_freq</span> <span class="o">=</span> <span class="n">get_letter_frequencies</span><span class="p">(</span><span class="s1">&#39;that&#39;</span><span class="p">)</span>
+    <span class="n">word3_freq</span> <span class="o">=</span> <span class="n">get_frequencies</span><span class="p">(</span><span class="s1">&#39;nah&#39;</span><span class="p">)</span>
+    <span class="n">word_similarity1</span> <span class="o">=</span> <span class="n">calculate_similarity_score</span><span class="p">(</span><span class="n">word1_freq</span><span class="p">,</span> <span class="n">word1_freq</span><span class="p">)</span>
+    <span class="n">word_similarity2</span> <span class="o">=</span> <span class="n">calculate_similarity_score</span><span class="p">(</span><span class="n">word1_freq</span><span class="p">,</span> <span class="n">word2_freq</span><span class="p">)</span>
+    <span class="n">word_similarity3</span> <span class="o">=</span> <span class="n">calculate_similarity_score</span><span class="p">(</span><span class="n">word1_freq</span><span class="p">,</span> <span class="n">word3_freq</span><span class="p">)</span>
+    <span class="n">word_similarity4</span> <span class="o">=</span> <span class="n">calculate_similarity_score</span><span class="p">(</span><span class="n">world_word_freq</span><span class="p">,</span> <span class="n">friend_word_freq</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">word_similarity1</span><span class="p">)</span>       <span class="c1"># should print 1.0</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">word_similarity2</span><span class="p">)</span>       <span class="c1"># should print 0.25</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">word_similarity3</span><span class="p">)</span>       <span class="c1"># should print 0.0</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">word_similarity4</span><span class="p">)</span>       <span class="c1"># should print 0.4</span>
+
+    <span class="c1">## Tests Problem 4: Most Frequent Word(s)</span>
+    <span class="n">freq_dict1</span><span class="p">,</span> <span class="n">freq_dict2</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;hello&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;world&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="p">{</span><span class="s2">&quot;hello&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;world&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">}</span>
+    <span class="n">most_frequent</span> <span class="o">=</span> <span class="n">get_most_frequent_words</span><span class="p">(</span><span class="n">freq_dict1</span><span class="p">,</span> <span class="n">freq_dict2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">most_frequent</span><span class="p">)</span>      <span class="c1"># should print [&quot;hello&quot;, &quot;world&quot;]</span>
+
+    <span class="c1"># Tests Problem 5: Find TF-IDF</span>
+    <span class="n">tf_text_file</span> <span class="o">=</span> <span class="s1">&#39;tests/student_tests/hello_world.txt&#39;</span>
+    <span class="n">idf_text_files</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;tests/student_tests/hello_world.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;tests/student_tests/hello_friends.txt&#39;</span><span class="p">]</span>
+    <span class="n">tf</span> <span class="o">=</span> <span class="n">get_tf</span><span class="p">(</span><span class="n">tf_text_file</span><span class="p">)</span>
+    <span class="n">idf</span> <span class="o">=</span> <span class="n">get_idf</span><span class="p">(</span><span class="n">idf_text_files</span><span class="p">)</span>
+    <span class="n">tf_idf</span> <span class="o">=</span> <span class="n">get_tfidf</span><span class="p">(</span><span class="n">tf_text_file</span><span class="p">,</span> <span class="n">idf_text_files</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="p">)</span>     <span class="c1"># should print {&#39;hello&#39;: 0.6666666666666666, &#39;world&#39;: 0.3333333333333333}</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">idf</span><span class="p">)</span>    <span class="c1"># should print {&#39;hello&#39;: 0.0, &#39;world&#39;: 0.3010299956639812, &#39;friends&#39;: 0.3010299956639812}</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">)</span> <span class="c1"># should print [(&#39;hello&#39;, 0.0), (&#39;world&#39;, 0.10034333188799373)]</span>
+</code></pre></div>
+
+<h2>Test results:</h2>
+<div class="highlight"><pre><span></span><code>test_prep_1a (__main__.TestPrepData) ... ok
+test_prep_all_whitespace (__main__.TestPrepData) ... ok
+test_prep_hello_world (__main__.TestPrepData) ... ok
+test_frequency_1a (__main__.TestWordFrequency) ... ok
+test_frequency_1b (__main__.TestWordFrequency) ... ok
+test_frequency_hello_world (__main__.TestWordFrequency) ... ok
+test_frequency_word_hello (__main__.TestWordFrequency) ... ok
+test_letter_frequency_1 (__main__.TestLetterFrequency) ... ok
+test_letter_frequency_4 (__main__.TestLetterFrequency) ... ok
+test_words1 (__main__.TestGetFrequentWords) ... ok
+test_words2 (__main__.TestGetFrequentWords) ... ok
+test_similarity_letters_1 (__main__.TestSimilarity) ... ok
+test_similarity_letters_2 (__main__.TestSimilarity) ... ok
+test_similarity_words1 (__main__.TestSimilarity) ... ok
+test_similarity_words2 (__main__.TestSimilarity) ... ok
+test_similarity_words3 (__main__.TestSimilarity) ... ok
+test_similarity_words4 (__main__.TestSimilarity) ... ok
+test_idf1 (__main__.TestTFIDF) ... ok
+test_idf2 (__main__.TestTFIDF) ... ok
+test_tf1 (__main__.TestTFIDF) ... ok
+test_tf2 (__main__.TestTFIDF) ... ok
+test_tfidf_big (__main__.TestTFIDF) ... ok
+test_tfidf_small (__main__.TestTFIDF) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.003s
+
+OK
+
+
+Problem Set 3 Unit Test Results:
+All correct!
+Points: 5/5
+</code></pre></div>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>
+      <a href="https://miguelhx.github.io/tag/python.html">python</a>
+    </p>
+  </div>
+
+
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'miguels-personal-website';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view comments.
+</noscript>
+<!-- End Disqus -->
+</article>
+
+<footer>
+<p>&copy; 2026 Miguel Hernandez</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="https://miguelhx.github.io/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Miguel's Personal Website ",
+  "url" : "https://miguelhx.github.io",
+  "image": "/images/yinyang.png",
+  "description": ""
+}
+</script>
+</body>
+</html>
