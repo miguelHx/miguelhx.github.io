@@ -6,9 +6,11 @@ AUTHOR = 'Miguel Hernandez'
 SITENAME = "Miguel's Personal Website"
 SITETITLE = "Miguel Hernandez"
 SITESUBTITLE = "Welcome to my blog/website"
+SITEURL = "https://miguelhx.github.io"
 # SITEDESCRIPTION = "Miguel's personal website, where he blogs about tech."
 
 SITELOGO = '/images/yinyang.png'
+FAVICON = "/images/favicon.ico"
 
 PATH = "content"
 BROWSER_COLOR = "#333333"
