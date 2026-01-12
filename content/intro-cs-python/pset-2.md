@@ -8,14 +8,6 @@ I was able to complete this problem set in just under an hour. It was good pract
 ## My solution:
 
 ```python
-
-
-
-# Problem Set 2, hangman.py
-# Name:
-# Collaborators:
-# Time spent:
-
 import random
 import string
 

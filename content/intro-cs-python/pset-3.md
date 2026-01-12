@@ -8,16 +8,7 @@ Finished the problem set in about an hour.  It was a good exercise.  Here is my 
 ## My solution:
 
 ```python
-# 6.100A Fall 2022
-# Problem Set 3
-# Written by: sylvant, muneezap, charz, anabell, nhung, wang19k, asinelni, shahul, jcsands
-
-# Problem Set 3
-# Name:
-# Collaborators:
-
 # Purpose: Check for similarity between two texts by comparing different kinds of word statistics.
-
 import string
 import math
 
