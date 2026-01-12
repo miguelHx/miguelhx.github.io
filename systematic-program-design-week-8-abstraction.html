@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="https://miguelhx.github.io/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#333333">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#333333">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Microsoft EDGE -->
+  <meta name="msapplication-TileColor" content="#333333">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z648JEYS71');
+</script>
+
+
+
+
+
+
+ 
+
+<meta name="author" content="Miguel Hernandez" />
+<meta name="description" content="Abstraction Module In this module we look another techniques for improving the structure of code. Most of the problems in this module involve refactoring existing programs -- so there&#39;s relatively little new coding to do. But that doesn&#39;t mean you won&#39;t be designing programs! One of the things that separates good …" />
+<meta name="keywords" content="computer-science, spd, racket">
+
+
+  <meta property="og:site_name" content="Miguel's Personal Website"/>
+  <meta property="og:title" content="Systematic Program Design: Week 8 - Abstraction"/>
+  <meta property="og:description" content="Abstraction Module In this module we look another techniques for improving the structure of code. Most of the problems in this module involve refactoring existing programs -- so there&#39;s relatively little new coding to do. But that doesn&#39;t mean you won&#39;t be designing programs! One of the things that separates good …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://miguelhx.github.io/systematic-program-design-week-8-abstraction.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2025-12-31 12:00:00-08:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://miguelhx.github.io/author/miguel-hernandez.html">
+  <meta property="article:section" content="Systematic Program Design"/>
+  <meta property="article:tag" content="computer-science"/>
+  <meta property="article:tag" content="spd"/>
+  <meta property="article:tag" content="racket"/>
+  <meta property="og:image" content="/images/yinyang.png">
+
+  <title>Miguel's Personal Website &ndash; Systematic Program Design: Week 8 - Abstraction</title>
+
+
+</head>
+<body >
+
+<aside>
+  <div>
+    <a href="https://miguelhx.github.io/">
+      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
+    </a>
+
+    <h1>
+      <a href="https://miguelhx.github.io/">Miguel Hernandez</a>
+    </h1>
+
+    <p>Welcome to my blog/website</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://miguelhx.github.io/pages/about-me.html">
+                About me
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-github"
+           href="https://github.com/miguelhx"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://miguelhx.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="systematic-program-design-week-8-abstraction">Systematic Program Design: Week 8 - Abstraction</h1>
+    <p>
+      Posted on Wed 31 December 2025 in <a href="https://miguelhx.github.io/category/systematic-program-design.html">Systematic Program Design</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <blockquote>
+<h3>Abstraction Module</h3>
+<p>In this module we look another techniques for improving the structure of code. Most of the problems in this module involve refactoring existing programs -- so there's relatively little new coding to do. But that doesn't mean you won't be designing programs! One of the things that separates good programmers from the other kind is taking the time to improve the structure of their code once it is written. This material is super important, and... it is really important to practice doing it!</p>
+<p>This module covers abstraction which is a technique for taking highly repetitive code and refactoring out the identical parts to leave behind a shared helper and just the different parts of the original code. The shared helper is called an abstract function because it is more general, or less detailed, than the original code.</p>
+<p>Abstraction is a crucial technique for managing complexity in programs. One aspect of this is that it can make programs smaller if the abstract functions are used by many other functions in the system. Another aspect is that it helps separate knowledge domains more clearly in code. All the work you've done understanding templates is about to give you a nice surprise.
+Working through the videos and practice materials for this module will take approximately 7-12 hours of dedicated time to complete.</p>
+<h3>Learning Goals</h3>
+<ul>
+<li>Be able to identify 2 or more functions that are candidates for abstraction.</li>
+<li>Be able to design an abstract function starting with 2 or more highly repetitive functions (or expressions).</li>
+<li>Be able to design an abstract fold function from a template.</li>
+<li>Be able to write signatures for abstract functions.</li>
+<li>Be able to write signatures that use type parameters.</li>
+<li>Be able to identify a function which would benefit from using a built-in abstract function</li>
+<li>Be able to use built-in abstract functions</li>
+</ul>
+</blockquote>
+<p>A new technique for managing complexity is to reduce redundancy in programs using abstraction.</p>
+<p>A higher order function can
+* Consume one or more functions
+* Produce a function</p>
+<p>I’ve come across higher order functions before but don’t remember their exact definition so this is a good review.</p>
+<p>Next we learn how to abstract a function.  This is useful in the real world.
+How to abstract:
+Identify two highly repetitive expressions. Introduce a new function</p>
+<ul>
+<li>Around one copy of repetitive code</li>
+<li>With a more general name</li>
+<li>Add a parameter for varying position</li>
+</ul>
+<p>Replace specific expressions</p>
+<ul>
+<li>With calls to abstract function</li>
+<li>Pass varying value</li>
+</ul>
+<p>We are introduced to the idea that functions can consume other functions as arguments.  This is covered early on in the Intro to CS course from MIT.</p>
+<p>We go over some built-in abstract functions such as map and filter.  These are also used in languages such as python and javascript.  </p>
+<p>Next up (still in week 8) is closures, another important concept in programming.</p>
+<p>We are walked through the implementation of foldr abstract function to build understanding.</p>
+<p>We are introduced to using built-in abstract functions such as map and filter.</p>
+<p>The example with the element directory structure seems to be Racket specific, I don’t anticipate it being used outside of this course.
+But the concept of using built-ins and referencing their documentation will definitely apply outside of this course.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>
+      <a href="https://miguelhx.github.io/tag/spd.html">spd</a>
+      <a href="https://miguelhx.github.io/tag/racket.html">racket</a>
+    </p>
+  </div>
+
+
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'miguels-personal-website';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view comments.
+</noscript>
+<!-- End Disqus -->
+</article>
+
+<footer>
+<p>&copy; 2026 Miguel Hernandez</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="https://miguelhx.github.io/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Miguel's Personal Website ",
+  "url" : "https://miguelhx.github.io",
+  "image": "/images/yinyang.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

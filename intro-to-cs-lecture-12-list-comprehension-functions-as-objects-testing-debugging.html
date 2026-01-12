@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="https://miguelhx.github.io/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#333333">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#333333">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Microsoft EDGE -->
+  <meta name="msapplication-TileColor" content="#333333">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z648JEYS71');
+</script>
+
+
+
+
+
+
+ 
+
+<meta name="author" content="Miguel Hernandez" />
+<meta name="description" content="Topics: More Functions as Objects, Keyword Arguments, Default Arguments, Debugging: glass box/black box testing, examples List comprehensions are review for me. Default parameters are also review. Functions can return another function. Why bother returning functions? Code can be rewritten without returning function objects Good software design Embracing ideas of …" />
+<meta name="keywords" content="computer-science, python">
+
+
+  <meta property="og:site_name" content="Miguel's Personal Website"/>
+  <meta property="og:title" content="Intro to CS: Lecture 12 - List comprehension, functions as objects, testing, debugging"/>
+  <meta property="og:description" content="Topics: More Functions as Objects, Keyword Arguments, Default Arguments, Debugging: glass box/black box testing, examples List comprehensions are review for me. Default parameters are also review. Functions can return another function. Why bother returning functions? Code can be rewritten without returning function objects Good software design Embracing ideas of …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://miguelhx.github.io/intro-to-cs-lecture-12-list-comprehension-functions-as-objects-testing-debugging.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2026-01-01 10:00:00-08:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://miguelhx.github.io/author/miguel-hernandez.html">
+  <meta property="article:section" content="Intro to CS using Python"/>
+  <meta property="article:tag" content="computer-science"/>
+  <meta property="article:tag" content="python"/>
+  <meta property="og:image" content="/images/yinyang.png">
+
+  <title>Miguel's Personal Website &ndash; Intro to CS: Lecture 12 - List comprehension, functions as objects, testing, debugging</title>
+
+
+</head>
+<body >
+
+<aside>
+  <div>
+    <a href="https://miguelhx.github.io/">
+      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
+    </a>
+
+    <h1>
+      <a href="https://miguelhx.github.io/">Miguel Hernandez</a>
+    </h1>
+
+    <p>Welcome to my blog/website</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://miguelhx.github.io/pages/about-me.html">
+                About me
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-github"
+           href="https://github.com/miguelhx"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://miguelhx.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="intro-to-cs-lecture-12-list-comprehension-functions-as-objects-testing-debugging">Intro to CS: Lecture 12 - List comprehension, functions as objects, testing, debugging</h1>
+    <p>
+      Posted on Thu 01 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Topics: More Functions as Objects, Keyword Arguments, Default Arguments, Debugging: glass box/black box testing, examples</p>
+<p>List comprehensions are review for me.  Default parameters are also review.</p>
+<p>Functions can return another function.  Why bother returning functions?</p>
+<ul>
+<li>Code can be rewritten without returning function objects</li>
+<li>Good software design<ul>
+<li>Embracing ideas of decomposition, abstraction</li>
+<li>Another tool to structure code</li>
+</ul>
+</li>
+<li>Interrupting execution<ul>
+<li>Example of control flow</li>
+<li>A way to achieve partial execution and use result somewhere else before finishing the full evaluation</li>
+</ul>
+</li>
+</ul>
+<p>Going over testing and debugging.</p>
+<h3>Testing</h3>
+<p>Break up code into modules that can be tested and debugged individually. Document constraints on modules.  What do you expect input/output to be?
+Document assumptions behind code design.</p>
+<p>When are you ready to test?</p>
+<ul>
+<li>Ensure code runs<ul>
+<li>Remove syntax errors</li>
+<li>Remove static semantic errors</li>
+<li>Python interpreter can usually find these for you</li>
+</ul>
+</li>
+<li>Have a set of expected results<ul>
+<li>An input set</li>
+<li>For each input, the expected output</li>
+</ul>
+</li>
+</ul>
+<p>Classes of tests</p>
+<ul>
+<li>Unit testing<ul>
+<li>Validate each piece of program</li>
+<li>Testing each function separately</li>
+</ul>
+</li>
+<li>Regression testing<ul>
+<li>Add test for bugs as you find them</li>
+<li>Catch reintroduced errors that were previously fixed</li>
+</ul>
+</li>
+<li>Integration testing<ul>
+<li>Does overall program work?</li>
+<li>Tend to rush to do this</li>
+</ul>
+</li>
+</ul>
+<p>These testing concepts definitely come up in the real world on the job, so this is a good review for me.</p>
+<p>Testing approaches</p>
+<ul>
+<li>Intuition about natural boundaries to the problem<ul>
+<li>Mathematical functions usually make this easy</li>
+<li>Can you come up with some natural partitions?</li>
+</ul>
+</li>
+<li>If no natural partitions, might do random testing<ul>
+<li>Probability that code is correct increases with more tests</li>
+<li>Better options below</li>
+</ul>
+</li>
+<li>Black box testing<ul>
+<li>Explore paths through specification</li>
+<li>Designed <em>without looking</em> at the code</li>
+<li>Can be done by someone other than the implementer to avoid some implementer <em>biases</em></li>
+<li>Testing can be <strong>reused</strong> if implementation changes</li>
+<li><strong>Paths</strong> through specification<ul>
+<li>Build test cases in different natural space partitions</li>
+<li>Also consider boundary conditions (empty lists, singleton list, large numbers, small numbers)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Glass box testing<ul>
+<li>Explore paths through code</li>
+<li><strong>Use code</strong> directly to guide design of test cases</li>
+<li>Called <strong>path-complete</strong> if every potential path through code is tested at least once</li>
+<li>What are some <strong>drawbacks</strong> to this type of testing?<ul>
+<li>Can go through loops arbitrarily many times</li>
+<li>Missing paths</li>
+</ul>
+</li>
+<li>Guidelines<ul>
+<li>Branches<ul>
+<li>Exercise all parts of a conditional</li>
+</ul>
+</li>
+<li>For loops<ul>
+<li>Loop not entered</li>
+<li>Body of loop executed exactly once</li>
+<li>Body of loop executed more than once</li>
+</ul>
+</li>
+<li>While loops<ul>
+<li>Same as for loops, cases that catch all ways to exit loop</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Path complete test suite could still <strong>miss a bug</strong><ul>
+<li>Should still test boundary cases</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Debugging</h3>
+<ul>
+<li>Once you have discovered that your code does not run properly, you want to:<ul>
+<li>Isolate the bug(s)</li>
+<li>Eradicate the bug(s)</li>
+<li>Retest until code runs correctly for all cases</li>
+<li>Steep learning curve</li>
+</ul>
+</li>
+<li>Goal is to have a bug free program</li>
+<li>Tools<ul>
+<li><strong>Built in</strong> to IDLE and Anaconda</li>
+<li><strong>Python tutor</strong></li>
+<li><strong>Print</strong> statement </li>
+<li>Use your brain, be <strong>systematic</strong> in your hunt</li>
+</ul>
+</li>
+</ul>
+<p>Error messages - Easy</p>
+<p>Logic errors - hard</p>
+<ul>
+<li><strong>think</strong> before writing new code</li>
+<li><strong>draw</strong> picture, take a break</li>
+<li><strong>explain</strong> the code to <ul>
+<li>Someone else</li>
+<li>A rubber ducky</li>
+</ul>
+</li>
+</ul>
+<h3>Debugging steps</h3>
+<ul>
+<li><strong>Study</strong> program code<ul>
+<li>Don’t ask what is wrong</li>
+<li>Ask how did I get the unexpected result</li>
+<li>Is it part of a family</li>
+</ul>
+</li>
+<li><strong>Scientific Method</strong><ul>
+<li>Study available data</li>
+<li>Form hypothesis</li>
+<li>Repeatable experiments</li>
+<li>Pick simplest input to test with</li>
+</ul>
+</li>
+</ul>
+<p>Print statements are a good way to test hypothesis</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>
+      <a href="https://miguelhx.github.io/tag/python.html">python</a>
+    </p>
+  </div>
+
+
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'miguels-personal-website';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view comments.
+</noscript>
+<!-- End Disqus -->
+</article>
+
+<footer>
+<p>&copy; 2026 Miguel Hernandez</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="https://miguelhx.github.io/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Miguel's Personal Website ",
+  "url" : "https://miguelhx.github.io",
+  "image": "/images/yinyang.png",
+  "description": ""
+}
+</script>
+</body>
+</html>
