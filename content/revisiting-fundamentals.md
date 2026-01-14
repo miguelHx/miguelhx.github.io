@@ -12,15 +12,15 @@ The goal is to complete the necessary courses from Open Source Society Universit
 
 I started about a month ago, currently taking the courses [Systematic Program Design](https://github.com/ossu/computer-science/blob/master/coursepages/spd/README.md) and [Mathematics for Computer Science](https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/about).
 
-Systematic Program Design focuses on how to think systematically about programming.  The language used is Racket, which is a dialect of Lisp and descendant of Scheme. In this course, we learn the basics of Racket (data types, built-in functions, libraries, images, functions, etc). Then, we learn particular code structures/patterns to assist in building more complex programs. One of the final projects is to build the game Space Invaders, which should be fun. The focus is not the language used but the core principles of program design, which can be applied to any programming language.
+Systematic Program Design focuses on how to think systematically about programming. The focus is not the language used but the core principles of program design, which can be applied to any programming language.
 
-Math for Computer Science is basically discrete math. The topics covered are proofs, structures, counting, and probability. I'm taking this to sharpen my brain. It's also a prerequisite to some of the more math-heavy algorithms courses in the curriculum.
+Math for Computer Science is also known as discrete math. The topics covered are proofs, structures, counting, and probability. I'm taking this to sharpen my brain. It's also a prerequisite to some of the more math-heavy algorithms courses in the curriculum.
 
 After SPD, I will probably take the next course in its section, which is [Class-based Program Design](https://course.ccs.neu.edu/cs2510sp22/index.html). After Math for CS, I will probably take the course [Build a Modern Computer from First Principles: From Nand to Tetris](https://www.coursera.org/learn/build-a-computer), and continue in that section. But this is subject to change.
 
 I'll keep going down the list for Core Programming section, while concurrently going through another course from another section.  Doing just 2 courses concurrently for now but that may change.
 
-I don't plan on completing all of the courses.  I'm picking and choosing what I believe to be the most important or relevant, in an order that makes sense. Courses such as computer graphics, or machine learning, for example, I might not be taking because I'm not targeting that specific type of job. If I have some extra time, I might take them out of curiosity, but I need to be pragmatic.
+I don't plan on completing all of the courses.  I'm picking and choosing what I believe to be the most important or relevant, in an order that makes sense. Courses such as computer graphics, or machine learning, for example, I might not be taking because I'm not targeting that specific type of job. If I have some extra time, I might take them out of curiosity, but I need balance that with pragmatism.
 
 I won't be taking the calculus courses from the core math section since I already took them in college and feel like I could easily pick up necessary info if needed.
 
@@ -28,11 +28,16 @@ I won't be taking the calculus courses from the core math section since I alread
 
 First, a little background. I earned a Bachelor’s degree in Computer Science & Engineering back in 2019. It took me four years. Between 2019 until now, I got 3.5 years of professional software engineering experience. I also had some career gaps in between due to personal reasons.
 
-I feel like I did a solid job at learning the fundamentals during my undergrad. I was motivated, learned how to learn, and practiced deep work principles. I had good exposure to math, algorithms, data structures, basics of programming, computer organization/architecture, networks, OS, etc.  You can find my relevant course work on my [LinkedIn](https://www.linkedin.com/in/miguel-hernandez-535b05102/) profile under the Education section.
+I feel like I did a solid job at learning the fundamentals during my undergrad. I was motivated, curious, learned how to learn, and practiced deep work principles. I had good exposure to math, algorithms, data structures, basics of programming, computer organization/architecture, networks, OS, etc.  You can find my relevant course work on my [LinkedIn](https://www.linkedin.com/in/miguel-hernandez-535b05102/) profile under the Education section.
 
-But as time has passed, I’ve realized there were areas I never got to touch (such as other programming languages, databases, compilers, cybersecurity, software architecture, etc). These are areas that I feel like if I learn them, I would be a stronger engineer.
+But as time has passed, I’ve realized there were areas I never got to touch (such as other programming languages, databases, compilers, cybersecurity, software architecture, etc). These are areas that I feel like if I learn them, I would be a stronger engineer. I'm also curious about learning new areas.
 
-I want to refine my understanding, close knowledge gaps, visit untouched areas, and revisit concepts with more maturity and context than I had back in school. I'm also rebuilding my career from the ground up and this is a way to get my bases covered.
+Was my degree not enough?  I wouldn't say that.  My degree was useful in helping me lay down a proper foundation.  I am extremely grateful for the great professors that taught me during my undergrad. Shoutout to Kelvin Lwin, Daniel, Alberto Cerpa, Florin Rusu, and Angelo Kyrilov.  My apologies if I may have missed other great professors.  But a CS degree doesn't cover _everything_.  And that's okay.  That's what independent learning is for.
+
+If I really wanted to, I could go all in on interview prep and maybe land a job in the next 6-12 months.  But I'm not. I'm just taking a more hollistic, longer-term approach. I will still do interview prep though, as I will mention below in a later section.
+
+I'm revisiting the fundamentals because I want to refine my understanding, close knowledge gaps, visit untouched areas, and revisit concepts with more maturity and context than I had back in school. I'm also rebuilding my career from the ground up and this is a way to get my bases covered. I want to widen and deepen my base of knowledge. I also love learning !
+
 
 ### What about a Master's degree?
 
@@ -46,7 +51,7 @@ Sure, some master's programs teach the fundamentals as well, but from the curric
 
 I have respect for Computer Science research but it's just not a right fit for me and the type of jobs I will be looking for in the future. Also, not interested in staying in academia, with all due respect. I know not all master's degrees make you write a research thesis. The ones that just focus on courses I can replicate for free or a lot cheaper as mentioned above.
 
-I get the credential aspect of a master's. But at the end of the day it's just a piece of paper. Most important of course is the knowledge obtained from the degree. Although I won't be getting a credential for OSSU, the knowledge is important to me and I have this blog to showcase my learnings and reviews of each course I take.
+I understand the credential aspect of a master's. But at the end of the day it's just a piece of paper. Most important of course is the knowledge obtained from the degree. Although I won't be getting a credential for OSSU, the knowledge is important to me and I have this blog to showcase my learnings and reviews of each course I take.
 
 ### What about a job?
 
@@ -64,6 +69,8 @@ I am doing interview prep along with going through the curriculum. This includes
 
 The experience from on the job learning will be valuable, of course. I just don't think many companies will let you use company time to focus on fundamentals learning at a deep level. They want you to already have strong fundamentals, which is fair, of course. I believe I do have strong fundamentals already, and that I'm good enough now to adapt and perform well in many software engineer positions.  But I'm taking a few steps back to try to get to a whole new level.
 
+I might apply for Google Summer of Code though.
+
 ### The Bigger Picture
 
 This isn’t just about landing a job or checking boxes on a résumé. I’m taking a long-term view.
@@ -74,4 +81,4 @@ By revisiting the core ideas behind programming and computer science, I’m (re)
 
 ### Looking Ahead
 
-I'm genuinely excited to learn. I’ll be documenting this entire journey through blog posts, notes, and reflections. I want this blog to serve as both a record of my growth and a resource for others walking a similar path.
+I'm genuinely excited to learn! I’ll be documenting this entire journey through blog posts, notes, and reflections. I want this blog to serve as both a record of my growth and a resource for others walking a similar path.
