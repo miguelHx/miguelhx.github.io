@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="https://miguelhx.github.io/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#333333">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#333333">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Microsoft EDGE -->
+  <meta name="msapplication-TileColor" content="#333333">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z648JEYS71');
+</script>
+
+
+
+
+
+
+ 
+
+<meta name="author" content="Miguel Hernandez" />
+<meta name="description" content="A proposition is a statement that is either true or false. We are given some examples in plain English of what is a proposition and what isn’t. Then, we go on to mathematical examples, including Fermat’s last theorem and Goldbach’s conjecture. A predicate can be understood as …" />
+<meta name="keywords" content="computer-science, math, discrete-math">
+
+
+  <meta property="og:site_name" content="Miguel's Personal Website"/>
+  <meta property="og:title" content="Math for CS: Intro to Proofs"/>
+  <meta property="og:description" content="A proposition is a statement that is either true or false. We are given some examples in plain English of what is a proposition and what isn’t. Then, we go on to mathematical examples, including Fermat’s last theorem and Goldbach’s conjecture. A predicate can be understood as …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://miguelhx.github.io/math-for-cs-intro-to-proofs.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2025-12-01 22:03:00-08:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://miguelhx.github.io/author/miguel-hernandez.html">
+  <meta property="article:section" content="Math for Computer Science"/>
+  <meta property="article:tag" content="computer-science"/>
+  <meta property="article:tag" content="math"/>
+  <meta property="article:tag" content="discrete-math"/>
+  <meta property="og:image" content="/images/yinyang.png">
+
+  <title>Miguel's Personal Website &ndash; Math for CS: Intro to Proofs</title>
+
+
+</head>
+<body >
+
+<aside>
+  <div>
+    <a href="https://miguelhx.github.io/">
+      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
+    </a>
+
+    <h1>
+      <a href="https://miguelhx.github.io/">Miguel Hernandez</a>
+    </h1>
+
+    <p>Welcome to my blog/website</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://miguelhx.github.io/pages/about-me.html">
+                About me
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-github"
+           href="https://github.com/miguelhx"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://miguelhx.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="math-for-cs-intro-to-proofs">Math for CS: Intro to Proofs</h1>
+    <p>
+      Posted on Mon 01 December 2025 in <a href="https://miguelhx.github.io/category/math-for-computer-science.html">Math for Computer Science</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>A <strong>proposition</strong> is a statement that is either true or false.</p>
+<p>We are given some examples in plain English of what is a proposition and what isn’t.</p>
+<p>Then, we go on to mathematical examples, including Fermat’s last theorem and Goldbach’s conjecture.</p>
+<p>A <strong>predicate</strong> can be understood as a proposition whose truth depends on the value of one or more variables. So "n is a perfect square" describes a predicate, since you can’t say if it’s true or false until you know what the value of the variable n happens to be. Once you know, for example, that n equals 4, the predicate becomes the true proposition:  4 is a perfect square.</p>
+<p><strong>Axioms</strong> - propositions that are simply accepted as true.</p>
+<p>Starting from these axioms, Euclid established the truth of many additional propositions by providing "proofs."</p>
+<p>A <strong>proof</strong> is a sequence of logical deductions from axioms and previously proved statements that concludes with the proposition in question.</p>
+<p>There are several common terms for a proposition that has been proved. The different terms hint at the role of the proposition within a larger body of work.</p>
+<ul>
+<li>Important true propositions are called <strong>theorems</strong></li>
+<li>A <strong>lemma</strong> is a preliminary proposition useful for proving later propositions</li>
+<li>A <strong>corollary</strong> is a proposition that follows in just a few logical steps from a theorem</li>
+</ul>
+<p>These definitions are not precise. In fact, sometimes a good lemma turns out to be far more important than the theorem it was originally used to prove.</p>
+<p>Euclid’s axiom-and-proof approach, now called the <strong>axiomatic method</strong>, remains the foundation for mathematics today. In fact, just a handful of axioms, called the Zermelo-Fraenkel with Choice axioms (ZFC), together with a few logical deduction rules, appear to be sufficient to derive essentially all of mathematics. We’ll examinethese in Chapter 7.</p>
+<p>Some of these axioms are too primitive for proofs.  Instead of starting with such primitive axioms, we’re going to
+take a huge set of axioms as our foundation:  we’ll accept all familiar facts from high school math. This will give us a quick launch, but you may find this imprecise specification of the axioms troubling at times. For example, in the midst of a proof, you may start to wonder, "Must I prove this little fact or can I take it as an axiom?" There really is no absolute answer, since what’s reasonable to assume and what requires proof depends on the circumstances and the audience. A good general guideline is simply to be up front about what you’re assuming.</p>
+<p><strong>Logical deductions</strong> or inference rules, are used to prove new propositions using previously proved ones.</p>
+<h3>Patterns of Proof</h3>
+<p>In principle, a proof can be any sequence of logical deductions from axioms and previously proved statements that concludes with the proposition in question. This freedom in constructing a proof can seem overwhelming at first. How do you even start a proof? Here’s the good news: many proofs follow one of a handful of standard templates. Each proof has it own details, of course, but these templates at least provide you with an outline to fill in. We’ll go through several of these standard patterns, pointing out the basic idea and common pitfalls and giving some examples. Many of these templates fit together; one may give you a top-level outline while others help you at the next level of detail. And we’ll show you other, more sophisticated proof techniques later on. The recipes are very specific at times, telling you exactly which words to write down on your piece of paper. You’re certainly free to say things your own way instead; we’re just giving you something you could say so that you’re never at a complete loss.</p>
+<p>I won’t be writing the recipes here, they can be looked up in the course lesson.</p>
+<p><a href="https://openlearninglibrary.mit.edu/assets/courseware/v1/1055804c060a43405929088b4fbce214/asset-v1:OCW+6.042J+2T2019+type@asset+block/MIT6_042JS15_Session1.pdf">Here</a> is a link to the lesson, for reference.</p>
+<p>If that doesn’t work, go unit 1.1 through the course <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/courseware/144debec136a47d99038330db4dcdb04/320923e9f3ff4868923f2cc23d784d29/?activate_block_id=block-v1%3AOCW%2B6.042J%2B2T2019%2Btype%40sequential%2Bblock%40320923e9f3ff4868923f2cc23d784d29">here</a></p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>
+      <a href="https://miguelhx.github.io/tag/math.html">math</a>
+      <a href="https://miguelhx.github.io/tag/discrete-math.html">discrete-math</a>
+    </p>
+  </div>
+
+
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'miguels-personal-website';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view comments.
+</noscript>
+<!-- End Disqus -->
+</article>
+
+<footer>
+<p>&copy; 2026 Miguel Hernandez</p>
+<p>
+<!-- Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme -->
+  <!-- <span class="footer-separator">|</span> -->
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="https://miguelhx.github.io/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Miguel's Personal Website ",
+  "url" : "https://miguelhx.github.io",
+  "image": "/images/yinyang.png",
+  "description": ""
+}
+</script>
+</body>
+</html>
