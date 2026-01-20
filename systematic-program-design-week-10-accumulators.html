@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="https://miguelhx.github.io/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#333333">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#333333">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Microsoft EDGE -->
+  <meta name="msapplication-TileColor" content="#333333">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z648JEYS71');
+</script>
+
+
+
+
+
+
+ 
+
+<meta name="author" content="Miguel Hernandez" />
+<meta name="description" content="Accumulators Module The rules we have been using to generate structural recursion templates are very powerful. They make it very easy to write functions that traverse complex data collecting information at every place in that data. The power of these rules is highlighted by our ability to design abstract fold …" />
+<meta name="keywords" content="computer-science, spd, racket">
+
+
+  <meta property="og:site_name" content="Miguel's Personal Website"/>
+  <meta property="og:title" content="Systematic Program Design: Week 10 - Accumulators"/>
+  <meta property="og:description" content="Accumulators Module The rules we have been using to generate structural recursion templates are very powerful. They make it very easy to write functions that traverse complex data collecting information at every place in that data. The power of these rules is highlighted by our ability to design abstract fold …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://miguelhx.github.io/systematic-program-design-week-10-accumulators.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2026-01-12 13:00:00-08:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://miguelhx.github.io/author/miguel-hernandez.html">
+  <meta property="article:section" content="Systematic Program Design"/>
+  <meta property="article:tag" content="computer-science"/>
+  <meta property="article:tag" content="spd"/>
+  <meta property="article:tag" content="racket"/>
+  <meta property="og:image" content="/images/yinyang.png">
+
+  <title>Miguel's Personal Website &ndash; Systematic Program Design: Week 10 - Accumulators</title>
+
+
+</head>
+<body >
+
+<aside>
+  <div>
+    <a href="https://miguelhx.github.io/">
+      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
+    </a>
+
+    <h1>
+      <a href="https://miguelhx.github.io/">Miguel Hernandez</a>
+    </h1>
+
+    <p>Welcome to my blog/website</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://miguelhx.github.io/pages/about-me.html">
+                About me
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-github"
+           href="https://github.com/miguelhx"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://miguelhx.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="systematic-program-design-week-10-accumulators">Systematic Program Design: Week 10 - Accumulators</h1>
+    <p>
+      Posted on Mon 12 January 2026 in <a href="https://miguelhx.github.io/category/systematic-program-design.html">Systematic Program Design</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <blockquote>
+<h3>Accumulators Module</h3>
+<p>The rules we have been using to generate structural recursion templates are very powerful. They make it very easy to write functions that traverse complex data collecting information at every place in that data. The power of these rules is highlighted by our ability to design abstract fold functions for recursive and mutually recursive types.</p>
+<p>But the structural recursion templates have one problem, while they make it easy for our functions to see each "place" in the structure once we get to it, they do not allow us to see two kinds of important contextual information. One has to do with where our function has already been in the traversal, and the other has to do with work remaining to be done once each recursive call to our function produces its result. To paraphrase the song, "we know where we are, but we don't know where we've been or where we still need to go".</p>
+<p>Accumulators allow us to solve these problems. There are three types of accumulators: context preserving, result so far and worklist. The latter two are used in different ways to make functions tail-recursive, which is important when we design recursive functions that traverse very large data. All three kinds of accumulators are supported by a few small additions to the HtDF recipe.</p>
+<p>The material in this module includes a de-facto review of everything in the course so far. This review is part of the worklist accumulator videos. As a result, working through the videos and practice materials for this module will take approximately 9-10 hours of dedicated time to complete.</p>
+<h3>Learning Goals</h3>
+<ul>
+<li>Be able to identify when a function design requires the use of accumulator.</li>
+<li>Be able to work with the accumulator design recipe to design such functions.</li>
+<li>Understand and be able to explain the concepts of tail position, tail call and tail recursion.</li>
+</ul>
+</blockquote>
+<h3>Context preserving accumulator</h3>
+<p>Preserves context that otherwise gets lost in structural recursion.  Sometimes you realize up front that you need an accumulator.  Sometimes you realize partway through the process of designing a function.</p>
+<p>Context for how far we are is lost in a structural recursion template.</p>
+<p>We follow the design recipe for how to create an accumulator.  Here’s a template for one:</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">skip1</span><span class="w"> </span><span class="n">lox0</span><span class="p">)</span>
+<span class="w">  </span><span class="c1">;; acc:  Natural; 1-based position of (first lox) in lox0</span>
+<span class="w">  </span><span class="c1">;; (skip1 (list &quot;a&quot; &quot;b&quot; &quot;c&quot;) 1)</span>
+<span class="w">  </span><span class="c1">;; (skip1 (list     &quot;b&quot; &quot;c&quot;) 2)</span>
+<span class="w">  </span><span class="c1">;; (skip1 (list         &quot;c&quot;) 3)</span>
+<span class="w">  </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">skip1</span><span class="w"> </span><span class="n">lox</span><span class="w"> </span><span class="n">acc</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">lox</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="k">...</span><span class="w"> </span><span class="n">acc</span><span class="p">)]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="p">(</span><span class="k">...</span><span class="w"> </span><span class="n">acc</span>
+<span class="w">                        </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">lox</span><span class="p">)</span>
+<span class="w">                        </span><span class="p">(</span><span class="n">skip1</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">lox</span><span class="p">)</span>
+<span class="w">                               </span><span class="p">(</span><span class="k">...</span><span class="w"> </span><span class="n">acc</span><span class="p">)))]))]</span>
+<span class="w">    </span><span class="p">(</span><span class="n">skip1</span><span class="w"> </span><span class="n">lox0</span><span class="w"> </span><span class="k">...</span><span class="p">)))</span>
+</code></pre></div>
+
+<p>This turns into:</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">skip1</span><span class="w"> </span><span class="n">lox0</span><span class="p">)</span>
+<span class="w">  </span><span class="c1">;; acc: Natural; 1-based position of (first lox) in lox0</span>
+<span class="w">  </span><span class="c1">;; (skip1 (list &quot;a&quot; &quot;b&quot; &quot;c&quot;) 1)</span>
+<span class="w">  </span><span class="c1">;; (skip1 (list     &quot;b&quot; &quot;c&quot;) 2)</span>
+<span class="w">  </span><span class="c1">;; (skip1 (list         &quot;c&quot;) 3)</span>
+<span class="w">  </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">skip1</span><span class="w"> </span><span class="n">lox</span><span class="w"> </span><span class="n">acc</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">lox</span><span class="p">)</span><span class="w"> </span><span class="nb">empty</span><span class="p">]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">odd?</span><span class="w"> </span><span class="n">acc</span><span class="p">)</span>
+<span class="w">                       </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">lox</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">skip1</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">lox</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">add1</span><span class="w"> </span><span class="n">acc</span><span class="p">)))</span>
+<span class="w">                       </span><span class="p">(</span><span class="n">skip1</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">lox</span><span class="p">)</span>
+<span class="w">                              </span><span class="p">(</span><span class="nb">add1</span><span class="w"> </span><span class="n">acc</span><span class="p">)))]))]</span>
+<span class="w">    </span><span class="p">(</span><span class="n">skip1</span><span class="w"> </span><span class="n">lox0</span><span class="w"> </span><span class="mi">1</span><span class="p">)))</span>
+</code></pre></div>
+
+<p>As you can see, the accumulator preserves information by passing the position as an argument to subsequent calls, incrementing by 1 at each step.</p>
+<p>When filling out the details there’s always 3 things we need to do with the accumulator.</p>
+<ol>
+<li>Initialize it</li>
+<li>Use/exploit the accumulator</li>
+<li>Updating accumulator to preserve invariant</li>
+</ol>
+<p><strong>accumulator invariant</strong>: something that’s always true about the accumulator (even if the accumulator’s exact value varies)</p>
+<p>There’s 3 parts to note about the accumulator template from the video.</p>
+<ol>
+<li>Structural recursion template</li>
+<li>Wrapping function in outer function, local and trampoline</li>
+<li>Adding additional accumulator parameter</li>
+</ol>
+<p>The instructor wants us to learn how to see the code composed of those 3 distinct parts, as opposed to seeing them composed as a whole bunch of characters.</p>
+<p>He emphasizes that when you can see latent structure in code, it’s really going to help you be a designer and understand code that other people write.</p>
+<p>This ability to see structure is one of the things that separates people who are quite good at this from people who type and pray.</p>
+<p>Side note:  Sometimes, in a leetcode problem, you might need to pass the parent’s property/value to a child, and it’s usually done through the function argument.  I’ve learned now that the technical term for that technique is a context preserving accumulator.</p>
+<h3>Tail recursion</h3>
+<p>We are looking at an example of summing up a list of elements:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">;; (listof Number) -&gt; Number</span>
+<span class="c1">;; produce sum of all elements of lon</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">sum</span><span class="w"> </span><span class="nb">empty</span><span class="p">)</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">sum</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"> </span><span class="mi">11</span><span class="p">)</span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">sum</span><span class="w"> </span><span class="n">lon</span><span class="p">)</span>
+<span class="w">  </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">lon</span><span class="p">)</span><span class="w"> </span><span class="mi">0</span><span class="p">]</span>
+<span class="w">        </span><span class="p">[</span><span class="k">else</span>
+<span class="w">         </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">lon</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="n">sum</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">lon</span><span class="p">)))]))</span>
+</code></pre></div>
+
+<p>If we step through, we’ll get a list of pending operations like this:
+<code>(+ 2 (+ 4 (+ 5 0)))</code></p>
+<p>The motivation for this is to optimize a structurally recursive function that has many pending operations.  Instead of storing those operations on a stack, to be popped off when we reach the base case and backtrack, which can be expensive, what if we can find a way to add up long lists without using proportionally more stack?  That would be better.</p>
+<p>So why did the operations get built up?  The answer has to do with a few new concepts.  That is, tail position, a function call in tail position, and a recursive function call in tail position.</p>
+<p>Let’s look at the (+ (first Lon) …) operation.  It sits in tail position.  The result of this expression will be the result of the function.</p>
+<p>An expression in a position where its result is the result of the enclosing function is in <strong>tail position</strong>.</p>
+<p>The recursive call to sum is the cause of the buildup of the growing and growing context of pending operations.  Because it’s not in tail position, the + is waiting for it.
+In other words, the buildup is caused by recursive calls not in tail position.</p>
+<p>To avoid building up context of pending computation, we need to make a version of sum with the recursive call in tail position: a tail recursive version of sum.</p>
+<p>As data gets larger, the pending computations take up more and more of the stack:  this is a problem.</p>
+<p>It turns out we can fix this problem with an accumulator.</p>
+<p>Here is the solution:</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">sum</span><span class="w"> </span><span class="n">lon0</span><span class="p">)</span>
+<span class="w">  </span><span class="c1">;; acc: Number; the sum of the elements of lon0 seen so far</span>
+<span class="w">  </span><span class="c1">;; (sum (list 2 4 5))</span>
+<span class="w">  </span><span class="c1">;; (sum (list 2 4 5)  0)</span>
+<span class="w">  </span><span class="c1">;; (sum (list   4 5)  2)</span>
+<span class="w">  </span><span class="c1">;; (sum (list     5)  6)</span>
+<span class="w">  </span><span class="c1">;; (sum (list      ) 11)   </span>
+<span class="w">  </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">sum</span><span class="w"> </span><span class="n">lon</span><span class="w"> </span><span class="n">acc</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">lon</span><span class="p">)</span><span class="w"> </span><span class="n">acc</span><span class="p">]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="p">(</span><span class="n">sum</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">lon</span><span class="p">)</span>
+<span class="w">                        </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">acc</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">lon</span><span class="p">)))]))]</span>
+<span class="w">    </span><span class="p">(</span><span class="n">sum</span><span class="w"> </span><span class="n">lon0</span><span class="w"> </span><span class="mi">0</span><span class="p">)))</span><span class="w"> </span>
+</code></pre></div>
+
+<p>Both versions have the same details, but they’re in a different place.</p>
+<p>Making a function tail recursive using accumulator:</p>
+<ol>
+<li>Template according to accumulator recipe</li>
+<li>Delete part of template wrapping around recursive call</li>
+<li>Computation that would have been around recursive call moves to be in accumulator argument position</li>
+</ol>
+<h3>Worklist Accumulators</h3>
+<p>A number of videos to motivate and introduce worklist accumulators.</p>
+<p>We start by working through an example that uses a context preserving accumulator.</p>
+<p>We also do an example of tail recursion with mutually recursive functions, haven’t got to work list accumulators just yet.</p>
+<p>For tail recursion in mutually recursive function, each mutually recursive call must be in tail position.  Also, usually only ONE of the functions provides NEW values for each accumulator.</p>
+<p>We have a mutually recursive function that doesn’t produce the right output.  Now we are going to use a work list accumulator.</p>
+<p>The work list accumulator is a new accumulator that keeps track of the list of items that need to be processed. Because we’ve made this tail-recursive, it never produces a result until the end.  The tree traversal doesn’t go back up, instead it goes in sequence.  It’s like a depth-first search.  Changing the order of building the work list changes the traversal to a breadth-first search.  It’s still not backtracking though.</p>
+<p>Todo accumulator contains all the pending work, and that’s why it’s also called a work list accumulator.</p>
+<p>I’m surprised he didn’t go over the reason why the original function returned 30 instead of 11. Though I stepped through the function on my own and figured it out.</p>
+<p>Before:</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nb">count</span><span class="w"> </span><span class="n">w</span><span class="p">)</span><span class="w">     </span>
+<span class="w">  </span><span class="c1">;; rsf is Natural; the number of wizards seen so far</span>
+<span class="w">  </span><span class="c1">;; (count Wk)</span>
+<span class="w">  </span><span class="c1">;; (fn-for-wiz Wk 0)</span>
+<span class="w">  </span><span class="c1">;; (fn-for-wiz Wh 1)</span>
+<span class="w">  </span><span class="c1">;; (fn-for-wiz Wc 2)</span>
+<span class="w">  </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fn-for-wiz</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="n">rsf</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="n">fn-for-low</span><span class="w"> </span><span class="p">(</span><span class="n">wiz-kids</span><span class="w"> </span><span class="n">w</span><span class="p">)</span>
+<span class="w">                        </span><span class="p">(</span><span class="nb">add1</span><span class="w"> </span><span class="n">rsf</span><span class="p">)))</span><span class="w"> </span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fn-for-low</span><span class="w"> </span><span class="n">low</span><span class="w"> </span><span class="n">rsf</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">low</span><span class="p">)</span><span class="w"> </span><span class="n">rsf</span><span class="p">]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="p">(</span><span class="n">fn-for-wiz</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">low</span><span class="p">)</span><span class="w"> </span><span class="n">rsf</span><span class="p">)</span>
+<span class="w">                      </span><span class="p">(</span><span class="n">fn-for-low</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">low</span><span class="p">)</span><span class="w">  </span><span class="n">rsf</span><span class="p">))]))]</span>
+<span class="w">    </span><span class="p">(</span><span class="n">fn-for-wiz</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="mi">0</span><span class="p">)))</span>
+</code></pre></div>
+
+<p>After applying work list accumulator:</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nb">count</span><span class="w"> </span><span class="n">w</span><span class="p">)</span><span class="w">     </span>
+<span class="w">  </span><span class="c1">;; rsf is Natural; the number of wizards seen so far</span>
+<span class="w">  </span><span class="c1">;; todo is (listof Wizard) ; wizards we still need to visit with fn-for-wiz</span>
+<span class="w">  </span><span class="c1">;; (count Wk)</span>
+<span class="w">  </span><span class="c1">;; (fn-for-wiz Wk 0)</span>
+<span class="w">  </span><span class="c1">;; (fn-for-wiz Wh 1)</span>
+<span class="w">  </span><span class="c1">;; (fn-for-wiz Wc 2)</span>
+<span class="w">  </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fn-for-wiz</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="n">todo</span><span class="w"> </span><span class="n">rsf</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="n">fn-for-low</span><span class="w"> </span><span class="p">(</span><span class="nb">append</span><span class="w"> </span><span class="p">(</span><span class="n">wiz-kids</span><span class="w"> </span><span class="n">w</span><span class="p">)</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span><span class="w"> </span>
+<span class="w">                        </span><span class="p">(</span><span class="nb">add1</span><span class="w"> </span><span class="n">rsf</span><span class="p">)))</span><span class="w"> </span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fn-for-low</span><span class="w"> </span><span class="n">todo</span><span class="w"> </span><span class="n">rsf</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span><span class="w"> </span><span class="n">rsf</span><span class="p">]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                    </span><span class="p">(</span><span class="n">fn-for-wiz</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span><span class="w"> </span><span class="n">rsf</span><span class="p">)]))]</span>
+<span class="w">    </span><span class="p">(</span><span class="n">fn-for-wiz</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="nb">empty</span><span class="w"> </span><span class="mi">0</span><span class="p">)))</span>
+</code></pre></div>
+
+<p>It’s an interesting way to do it.  I don’t think I would have come up with this on my own, unless I was researching this as part of a master’s or phd program.</p>
+<p>Summary so far:
+3 kinds of accumulators:</p>
+<ol>
+<li>Context preserving accumulators (preserve context lost in natural recursion)</li>
+<li>Result-so-far accumulators (help achieve tail recursion by eliminating the need for pending operations)</li>
+<li>Work list accumulators (help achieve tail recursion by eliminating the need to retain future recursive calls in pending operations)</li>
+</ol>
+<p>We work through another example of converting same-house-as-parent into a tail recursive version with a work list accumulator.</p>
+<p>There’s a super important point here.  That is, code is more than just a bunch of characters.  Code has structure.  That’s a large part of what we learned so far in this course.
+We use the word template to talk about some of the elements of that structure.  It’s because the instructor was able to think in terms of that structure, that the function was easy to write.</p>
+<p>Because he said well the template, in other words some kind of structure, comes from wizard, an arbitrary-arity tree.  And he’ll wrap it in a local.  And he’ll add a work list accumulator.
+And he’ll add a result so far accumulator.  And he’ll add a compound data definition for work list entries.  And then he’ll fill in the exact details based on what this function has to do.</p>
+<p>The instructor states:  When I write this code and when I read this code, instead of seeing it as a whole bunch of characters, I see it in terms of these different kinds of structure.  And that makes it easier for me to understand and easier for me to write.</p>
+<p>Here is an image of a code example structured, with color coding:</p>
+<p><img alt="color coded image" src="images/code-structure-colors.png"> </p>
+<p>And that really is one of the big lessons in way that this course has been trying to get you to think about programming.  That’s how you want to think about it too.</p>
+<p>Because otherwise, this little function of less than 20 lines could be overwhelmingly complicated.</p>
+<p>The recipes, and in particular the idea that every function can be based on one or more templates plus details enables you to think about programs in terms of higher level structure or models.</p>
+<p>I have to say, I love it when the instructor states takeaways like this !  These feel like gold nuggets of knowledge about programming that change my way of thinking going forward.</p>
+<p>This lecture video is really the great review of the whole course so far.</p>
+<p>It all comes together towards the ending modules, we use everything we have learned so far and get some "aha!" moments.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>
+      <a href="https://miguelhx.github.io/tag/spd.html">spd</a>
+      <a href="https://miguelhx.github.io/tag/racket.html">racket</a>
+    </p>
+  </div>
+
+
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'miguels-personal-website';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view comments.
+</noscript>
+<!-- End Disqus -->
+</article>
+
+<footer>
+<p>&copy; 2026 Miguel Hernandez</p>
+<p>
+<!-- Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme -->
+  <!-- <span class="footer-separator">|</span> -->
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="https://miguelhx.github.io/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Miguel's Personal Website ",
+  "url" : "https://miguelhx.github.io",
+  "image": "/images/yinyang.png",
+  "description": ""
+}
+</script>
+</body>
+</html>
