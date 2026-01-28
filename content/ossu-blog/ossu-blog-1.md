@@ -82,6 +82,8 @@ __Video watch speed:__ Mostly at 1.25x speed.
 
 I only finished Unit 1 of the course !  There are 4 units total, of varying lengths. The problem sets were hard. I took my time reading the lessons and went down a few rabbit holes.
 
+BTW, I skipped the calculus courses from OSSU. I decided to skip calculus 1-3 because I took them in college and I feel like I could pick up any calculus concepts if they come up in Math for CS on an as-needed basis.  Not much calculus I've come across so far though.  But the intuition I built about functions, algebra, some trig, etc. during my calculus years turned out to be useful.
+
 I'd like to finish this course before I start on Core Theory. I have plenty of time before I get there, since I plan on finishing Core Programming before starting another section.
 
 I like math a lot, so I'm enjoying this course so far.
