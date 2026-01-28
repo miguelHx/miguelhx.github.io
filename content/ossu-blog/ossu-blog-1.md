@@ -1,4 +1,4 @@
-Title: OSSU Blog 1 - Progress Update from Oct. 2025 til now
+Title: OSSU Blog 1 - Progress Update from Oct. 18, 2025 until Jan. 24, 2026
 Date: 2026-01-27 10:00
 Category: OSSU Blog
 Tags: ossu
