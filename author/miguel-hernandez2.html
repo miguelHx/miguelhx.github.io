@@ -1,446 +1,406 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="" />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Articles by Miguel Hernandez &ndash; Miguel's Personal Website</title>
 
-    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/stylesheet/style.min.css">
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link id="dark-theme-style" rel="stylesheet" type="text/css"
-          media="(prefers-color-scheme: dark)"
-    href="https://miguelhx.github.io/theme/stylesheet/dark-theme.min.css">
+    <!-- Social -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Miguel's Personal Website"/>
+    <meta property="og:description" content="Welcome to my blog/website"/>
+    <meta property="og:site_name" content="Miguel's Personal Website" />
+    <meta property="og:url" content="https://miguelhx.github.io"/>
+    <meta property="og:image" content="https://miguelhx.github.io/images/favicon.ico"/>
 
-    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
-              media="(prefers-color-scheme: dark)"
-          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
-    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
-              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Miguel's Personal Website">
+    <meta name="twitter:description" content="Welcome to my blog/website">
+    <meta name="twitter:url" content="https://miguelhx.github.io">
+    <meta name="twitter:image" content="https://miguelhx.github.io/images/favicon.ico">
 
+    <!-- Feed -->
+    <link rel="alternate" type="application/rss+xml" href="https://miguels-personal-website.disqus.com/latest.rss" title="Miguel's Personal Website Comments RSS Feed">
 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/pygments-highlight-github.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/static/custom.css">
 
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/solid.css">
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://miguelhx.github.io/images/favicon.ico">
 
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://miguelhx.github.io/theme/js/jqcloud.min.js"></script>
+  </head>
 
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#333333">
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#333333">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- Microsoft EDGE -->
-  <meta name="msapplication-TileColor" content="#333333">
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z648JEYS71');
-</script>
-
-
-
-
-
-
- 
-
-    <meta name="author" content="Miguel Hernandez" />
-    <meta name="description" content="" />
-  <meta property="og:site_name" content="Miguel's Personal Website"/>
-  <meta property="og:type" content="blog"/>
-  <meta property="og:title" content="Miguel's Personal Website"/>
-  <meta property="og:description" content=""/>
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content="https://miguelhx.github.io"/>
-  <meta property="og:image" content="/images/yinyang.png">
-
-  <title>Miguel's Personal Website &ndash; Posts by Miguel Hernandez:</title>
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://miguelhx.github.io" id="header-logo" title="Home">MH</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/archives.html">Archives</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/tags.html">Tags</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
 
-</head>
-<body >
+    <br><br><br>
 
-<aside>
-  <div>
-    <a href="https://miguelhx.github.io/">
-      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
-    </a>
-
-    <h1>
-      <a href="https://miguelhx.github.io/">Miguel Hernandez</a>
-    </h1>
-
-    <p>Welcome to my blog/website</p>
-
-
-    <nav>
-      <ul class="list">
-
-
-            <li>
-              <a target="_self"
-                 href="https://miguelhx.github.io/pages/about-me.html">
-                About me
-              </a>
-            </li>
-            <li>
-              <a target="_self"
-                 href="https://miguelhx.github.io/pages/contact.html">
-                Contact
-              </a>
-            </li>
-
-      </ul>
-    </nav>
-
-    <ul class="social">
-      <li>
-        <a class="sc-github"
-           href="https://github.com/miguelhx"
-           target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </li>
-      <li>
-        <a class="sc-linkedin"
-           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
-           target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-</aside>
-  <main>
-
-<nav>
-  <a href="https://miguelhx.github.io/">Home</a>
-
-  <a href="/archives.html">Archives</a>
-  <a href="/categories.html">Categories</a>
-  <a href="/tags.html">Tags</a>
-
-
-</nav>
+    <div class="w3-container col-main w3-center">
+      <h2>Articles by Miguel Hernandez</h2>
+      <br>
+      <a href="https://miguelhx.github.io/author/miguel-hernandez.html" style="display: flex; align-items: center; justify-content: center;"><img style="width: 50px; height: 50px;" src="https://miguelhx.github.io/images/favicon.ico" onerror="this.src='../theme/images/avatar.png'"></img></a>
+    </div>
 
 
 
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/intro-to-cs-lecture-20-fitness-tracker-oop-example.html">Intro to CS: Lecture 20 - Fitness Tracker OOP Example</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Thu 15 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+    <br><br><br>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/python.html">python</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Topics:  Inheritance: more examples</p>
-<p>Reinforcing same concept as previous lectures but with a more involved example.
-I learned something new.  You can get the class state by doing something like this:  SimpleWorkout.__dict__.keys()
-You can do the same on an instance variable.</p>
-<p>Most of this was review for me …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/intro-to-cs-lecture-20-fitness-tracker-oop-example.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/intro-to-cs-lecture-19-inheritance.html">Intro to CS: Lecture 19 - Inheritance</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Wed 14 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+    <section id="listing">
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/intro-to-cs-lecture-20-fitness-tracker-oop-example.html">Intro to CS: Lecture 20 - Fitness Tracker OOP Example</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-15T10:00:00-08:00">Thu 15 January 2026</time> in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/python.html" title="All articles with Python tag">#python</a>
+              </span>
+            </div>
+          </div>
+        </header>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/python.html">python</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Topics:  Inheritance: hierarchies, subclasses, using inherited methods, examples</p>
-<p>We start with reviewing the basics of a class and objects.
-Getter and setter methods.
-Data attributes, code style, some examples.</p>
-<p>Going over hierarchies and implementing in code, which is just using sub-classes.
-Overriding parent methods.
-Class variables are shared between all …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/intro-to-cs-lecture-19-inheritance.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/systematic-program-design-week-10-accumulators.html">Systematic Program Design: Week 10 - Accumulators</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Mon 12 January 2026 in <a href="https://miguelhx.github.io/category/systematic-program-design.html">Systematic Program Design</a>
+        <div class="entry-content">
+          Topics: Inheritance: more examples Reinforcing same concept as previous lectures but with a more involved example. I learned something new. You can get the class state by doing something like this: SimpleWorkout.__dict__.keys() You can do the same on an instance variable. Most of this was review for me …
+        </div>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/spd.html">spd</a>,              <a href="https://miguelhx.github.io/tag/racket.html">racket</a>
-    </p>
-  </header>
-  <div>
-      <div><blockquote>
-<h3>Accumulators Module</h3>
-<p>The rules we have been using to generate structural recursion templates are very powerful. They make it very easy to write functions that traverse complex data collecting information at every place in that data. The power of these rules is highlighted by our ability to design abstract fold …</p></blockquote></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/systematic-program-design-week-10-accumulators.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/intro-to-cs-lecture-18-more-python-class-methods.html">Intro to CS: Lecture 18 - More Python Class Methods</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Mon 12 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/intro-to-cs-lecture-20-fitness-tracker-oop-example.html">Read &#10093;</a>
+        </footer>
+      </article>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/python.html">python</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Topics: Object Oriented Programming: dunder methods, examples</p>
-<p>We start with a review of classes and methods from last lecture.</p>
-<p>Class vs. instance of a class.</p>
-<p>All review for me, of course, but I like to observe how they teach it.  </p>
-<p>Dunder methods review.</p>
-<h3>Why OOP and bundling the data in …</h3></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/intro-to-cs-lecture-18-more-python-class-methods.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/intro-to-cs-lecture-17-python-classes.html">Intro to CS: Lecture 17 - Python Classes</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Sat 10 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+      <br><br><br>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/python.html">python</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Topics: Object Oriented Programming: data abstraction, class def, class instances, methods</p>
-<p>More review for me.  I don’t mind reviewing though.
-We start by defining an object, along with examples.</p>
-<h3>Advantages of OOP</h3>
-<ul>
-<li><strong>Bundle data into packages</strong> together with procedures that work on them through well-defined interfaces</li>
-<li><strong>Divide and conquer …</strong></li></ul></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/intro-to-cs-lecture-17-python-classes.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/intro-to-cs-lecture-16-recursion-on-non-numerics.html">Intro to CS: Lecture 16 - Recursion on Non-Numerics</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Fri 09 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/intro-to-cs-lecture-19-inheritance.html">Intro to CS: Lecture 19 - Inheritance</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-14T10:00:00-08:00">Wed 14 January 2026</time> in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/python.html" title="All articles with Python tag">#python</a>
+              </span>
+            </div>
+          </div>
+        </header>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/python.html">python</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Topics: Recursion: Fibonacci, Fibonacci with a dict, recursion on non-numerics, recursion on lists, Towers of Hanoi (extra)</p>
-<p>We start by reviewing fibonacci and tracing through the function call graph.  Recursion in general is review for me, I still think this lecture is good for me to digest.</p>
-<p>After doing another …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/intro-to-cs-lecture-16-recursion-on-non-numerics.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/systematic-program-design-week-9b-search.html">Systematic Program Design: Week 9b - Search</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Thu 08 January 2026 in <a href="https://miguelhx.github.io/category/systematic-program-design.html">Systematic Program Design</a>
+        <div class="entry-content">
+          Topics: Inheritance: hierarchies, subclasses, using inherited methods, examples We start with reviewing the basics of a class and objects. Getter and setter methods. Data attributes, code style, some examples. Going over hierarchies and implementing in code, which is just using sub-classes. Overriding parent methods. Class variables are shared between all …
+        </div>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/spd.html">spd</a>,              <a href="https://miguelhx.github.io/tag/racket.html">racket</a>
-    </p>
-  </header>
-  <div>
-      <div><blockquote>
-<h3>Search Module</h3>
-<p>In this module, we will expand on generative recursion and work on search problems, which are a category of problem solving that can be solved by generating the space of all possible paths from a given state and traversing that space until a solution is found. We will …</p></blockquote></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/systematic-program-design-week-9b-search.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/math-for-cs-infinite-sets.html">Math for CS: Infinite Sets</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Thu 08 January 2026 in <a href="https://miguelhx.github.io/category/math-for-computer-science.html">Math for Computer Science</a>
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/intro-to-cs-lecture-19-inheritance.html">Read &#10093;</a>
+        </footer>
+      </article>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/math.html">math</a>,              <a href="https://miguelhx.github.io/tag/discrete-math.html">discrete-math</a>
-    </p>
-  </header>
-  <div>
-      <div><p>This chapter is about infinite sets and some challenges in proving things about them.</p>
-<p>There has been a truly astonishing outcome of studying infinite sets. Their study led to the discovery of fundamental, logical limits on what computers can possibly do. For example, in a later section, they use reasoning …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/math-for-cs-infinite-sets.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/intro-to-cs-lecture-15-recursion.html">Intro to CS: Lecture 15 - Recursion</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Thu 08 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+      <br><br><br>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/python.html">python</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Topics: Recursion: iteration vs. recursion, inductive reasoning</p>
-<p>Recursion is review for me.  I like the example she gave with the student asking professor, TA, and LA to regrade.</p>
-<p>Big idea:  “Earlier” function calls are waiting on results before completing.
-Went over some more examples of recursion.</p>
-<p>When to use recursion …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/intro-to-cs-lecture-15-recursion.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/math-for-cs-recursive-definition.html">Math for CS: Recursive Definition</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Tue 06 January 2026 in <a href="https://miguelhx.github.io/category/math-for-computer-science.html">Math for Computer Science</a>
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/systematic-program-design-week-10-accumulators.html">Systematic Program Design: Week 10 - Accumulators</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-12T13:00:00-08:00">Mon 12 January 2026</time> in <a href="https://miguelhx.github.io/category/systematic-program-design.html" title="All articles in category Systematic Program Design">Systematic Program Design</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/spd.html" title="All articles with Spd tag">#spd</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/racket.html" title="All articles with Racket tag">#racket</a>
+              </span>
+            </div>
+          </div>
+        </header>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/math.html">math</a>,              <a href="https://miguelhx.github.io/tag/discrete-math.html">discrete-math</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Recursive data - define something in terms of simpler version of the same thing.</p>
-<p>Recursive data types play a central role in programming, and induction is really all
-about them.  Recursive data types are specified by recursive definitions, which say how to construct new data elements from previous ones. Along with …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/math-for-cs-recursive-definition.html">
-          Continue reading
-        </a>
-  </div>
-</article>
+        <div class="entry-content">
+          Accumulators Module The rules we have been using to generate structural recursion templates are very powerful. They make it very easy to write functions that traverse complex data collecting information at every place in that data. The power of these rules is highlighted by our ability to design abstract fold …
+        </div>
 
-  <div class="pagination">
-    <a class="btn float-left" href="https://miguelhx.github.io/author/miguel-hernandez3.html">
-      <i class="fa fa-angle-left"></i> Older Posts
-    </a>
-    <a class="btn float-right" href="https://miguelhx.github.io/author/miguel-hernandez.html">
-      Newer Posts <i class="fa fa-angle-right"></i>
-    </a>
-  </div>
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/systematic-program-design-week-10-accumulators.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/intro-to-cs-lecture-18-more-python-class-methods.html">Intro to CS: Lecture 18 - More Python Class Methods</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-12T10:00:00-08:00">Mon 12 January 2026</time> in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/python.html" title="All articles with Python tag">#python</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Topics: Object Oriented Programming: dunder methods, examples We start with a review of classes and methods from last lecture. Class vs. instance of a class. All review for me, of course, but I like to observe how they teach it. Dunder methods review. Why OOP and bundling the data in …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/intro-to-cs-lecture-18-more-python-class-methods.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/intro-to-cs-lecture-17-python-classes.html">Intro to CS: Lecture 17 - Python Classes</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-10T10:00:00-08:00">Sat 10 January 2026</time> in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/python.html" title="All articles with Python tag">#python</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Topics: Object Oriented Programming: data abstraction, class def, class instances, methods More review for me. I don’t mind reviewing though. We start by defining an object, along with examples. Advantages of OOP Bundle data into packages together with procedures that work on them through well-defined interfaces Divide and conquer …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/intro-to-cs-lecture-17-python-classes.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/intro-to-cs-lecture-16-recursion-on-non-numerics.html">Intro to CS: Lecture 16 - Recursion on Non-Numerics</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-09T10:00:00-08:00">Fri 09 January 2026</time> in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/python.html" title="All articles with Python tag">#python</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Topics: Recursion: Fibonacci, Fibonacci with a dict, recursion on non-numerics, recursion on lists, Towers of Hanoi (extra) We start by reviewing fibonacci and tracing through the function call graph. Recursion in general is review for me, I still think this lecture is good for me to digest. After doing another …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/intro-to-cs-lecture-16-recursion-on-non-numerics.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/systematic-program-design-week-9b-search.html">Systematic Program Design: Week 9b - Search</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-08T13:00:00-08:00">Thu 08 January 2026</time> in <a href="https://miguelhx.github.io/category/systematic-program-design.html" title="All articles in category Systematic Program Design">Systematic Program Design</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/spd.html" title="All articles with Spd tag">#spd</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/racket.html" title="All articles with Racket tag">#racket</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Search Module In this module, we will expand on generative recursion and work on search problems, which are a category of problem solving that can be solved by generating the space of all possible paths from a given state and traversing that space until a solution is found. We will …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/systematic-program-design-week-9b-search.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/math-for-cs-infinite-sets.html">Math for CS: Infinite Sets</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-08T12:00:00-08:00">Thu 08 January 2026</time> in <a href="https://miguelhx.github.io/category/math-for-computer-science.html" title="All articles in category Math for Computer Science">Math for Computer Science</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/math.html" title="All articles with Math tag">#math</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/discrete-math.html" title="All articles with Discrete-Math tag">#discrete-math</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          This chapter is about infinite sets and some challenges in proving things about them. There has been a truly astonishing outcome of studying infinite sets. Their study led to the discovery of fundamental, logical limits on what computers can possibly do. For example, in a later section, they use reasoning …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/math-for-cs-infinite-sets.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/intro-to-cs-lecture-15-recursion.html">Intro to CS: Lecture 15 - Recursion</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-08T10:00:00-08:00">Thu 08 January 2026</time> in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/python.html" title="All articles with Python tag">#python</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Topics: Recursion: iteration vs. recursion, inductive reasoning Recursion is review for me. I like the example she gave with the student asking professor, TA, and LA to regrade. Big idea: “Earlier” function calls are waiting on results before completing. Went over some more examples of recursion. When to use recursion …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/intro-to-cs-lecture-15-recursion.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/math-for-cs-recursive-definition.html">Math for CS: Recursive Definition</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-06T12:00:00-08:00">Tue 06 January 2026</time> in <a href="https://miguelhx.github.io/category/math-for-computer-science.html" title="All articles in category Math for Computer Science">Math for Computer Science</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/math.html" title="All articles with Math tag">#math</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/discrete-math.html" title="All articles with Discrete-Math tag">#discrete-math</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Recursive data - define something in terms of simpler version of the same thing. Recursive data types play a central role in programming, and induction is really all about them. Recursive data types are specified by recursive definitions, which say how to construct new data elements from previous ones. Along with …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/math-for-cs-recursive-definition.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+
+      <div class="w3-center">
+        <ul class="w3-pagination">
+          <li><a href="https://miguelhx.github.io/author/miguel-hernandez.html">&#10094;</a></li>
+          <li><a class="" href="https://miguelhx.github.io/author/miguel-hernandez.html">1</a></li>
+          <li><a class="w3-green" href="https://miguelhx.github.io/author/miguel-hernandez2.html">2</a></li>
+          <li><a class="" href="https://miguelhx.github.io/author/miguel-hernandez3.html">3</a></li>
+          <li><a class="" href="https://miguelhx.github.io/author/miguel-hernandez4.html">4</a></li>
+          <li><a class="" href="https://miguelhx.github.io/author/miguel-hernandez5.html">5</a></li>
+          <li><a class="" href="https://miguelhx.github.io/author/miguel-hernandez6.html">6</a></li>
+          <li><a href="https://miguelhx.github.io/author/miguel-hernandez3.html">&#10095;</a></li>
+        </ul>
+      </div>
+      <br><br><br>
+
+    </section>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          2025&dash;2026          Miguel Hernandez
+        </span>
+      </div>
+    </footer>
 
 
 
-<footer>
-<p>&copy; 2026 Miguel Hernandez</p>
-<p>
-<!-- Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme -->
-  <!-- <span class="footer-separator">|</span> -->
-  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
-  <script id="dark-theme-script"
-          src="https://miguelhx.github.io/theme/dark-theme/dark-theme.min.js"
-          data-enable-auto-detect-theme="True"
-          data-default-theme="light"
-          type="text/javascript">
-  </script>
-</p></footer>  </main>
-
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Blog",
-  "name": " Miguel's Personal Website ",
-  "url" : "https://miguelhx.github.io",
-  "image": "/images/yinyang.png",
-  "description": ""
-}
-</script>
-</body>
+  </body>
 </html>

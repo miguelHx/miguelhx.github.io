@@ -1,427 +1,393 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="" />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Articles by Miguel Hernandez &ndash; Miguel's Personal Website</title>
 
-    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/stylesheet/style.min.css">
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link id="dark-theme-style" rel="stylesheet" type="text/css"
-          media="(prefers-color-scheme: dark)"
-    href="https://miguelhx.github.io/theme/stylesheet/dark-theme.min.css">
+    <!-- Social -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Miguel's Personal Website"/>
+    <meta property="og:description" content="Welcome to my blog/website"/>
+    <meta property="og:site_name" content="Miguel's Personal Website" />
+    <meta property="og:url" content="https://miguelhx.github.io"/>
+    <meta property="og:image" content="https://miguelhx.github.io/images/favicon.ico"/>
 
-    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
-              media="(prefers-color-scheme: dark)"
-          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
-    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
-              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Miguel's Personal Website">
+    <meta name="twitter:description" content="Welcome to my blog/website">
+    <meta name="twitter:url" content="https://miguelhx.github.io">
+    <meta name="twitter:image" content="https://miguelhx.github.io/images/favicon.ico">
 
+    <!-- Feed -->
+    <link rel="alternate" type="application/rss+xml" href="https://miguels-personal-website.disqus.com/latest.rss" title="Miguel's Personal Website Comments RSS Feed">
 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/pygments-highlight-github.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/static/custom.css">
 
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/solid.css">
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://miguelhx.github.io/images/favicon.ico">
 
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://miguelhx.github.io/theme/js/jqcloud.min.js"></script>
+  </head>
 
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#333333">
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#333333">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- Microsoft EDGE -->
-  <meta name="msapplication-TileColor" content="#333333">
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z648JEYS71');
-</script>
-
-
-
-
-
-
- 
-
-    <meta name="author" content="Miguel Hernandez" />
-    <meta name="description" content="" />
-  <meta property="og:site_name" content="Miguel's Personal Website"/>
-  <meta property="og:type" content="blog"/>
-  <meta property="og:title" content="Miguel's Personal Website"/>
-  <meta property="og:description" content=""/>
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content="https://miguelhx.github.io"/>
-  <meta property="og:image" content="/images/yinyang.png">
-
-  <title>Miguel's Personal Website &ndash; Posts by Miguel Hernandez:</title>
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://miguelhx.github.io" id="header-logo" title="Home">MH</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/archives.html">Archives</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/tags.html">Tags</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
 
-</head>
-<body >
+    <br><br><br>
 
-<aside>
-  <div>
-    <a href="https://miguelhx.github.io/">
-      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
-    </a>
-
-    <h1>
-      <a href="https://miguelhx.github.io/">Miguel Hernandez</a>
-    </h1>
-
-    <p>Welcome to my blog/website</p>
-
-
-    <nav>
-      <ul class="list">
-
-
-            <li>
-              <a target="_self"
-                 href="https://miguelhx.github.io/pages/about-me.html">
-                About me
-              </a>
-            </li>
-            <li>
-              <a target="_self"
-                 href="https://miguelhx.github.io/pages/contact.html">
-                Contact
-              </a>
-            </li>
-
-      </ul>
-    </nav>
-
-    <ul class="social">
-      <li>
-        <a class="sc-github"
-           href="https://github.com/miguelhx"
-           target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </li>
-      <li>
-        <a class="sc-linkedin"
-           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
-           target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-</aside>
-  <main>
-
-<nav>
-  <a href="https://miguelhx.github.io/">Home</a>
-
-  <a href="/archives.html">Archives</a>
-  <a href="/categories.html">Categories</a>
-  <a href="/tags.html">Tags</a>
-
-
-</nav>
+    <div class="w3-container col-main w3-center">
+      <h2>Articles by Miguel Hernandez</h2>
+      <br>
+      <a href="https://miguelhx.github.io/author/miguel-hernandez.html" style="display: flex; align-items: center; justify-content: center;"><img style="width: 50px; height: 50px;" src="https://miguelhx.github.io/images/favicon.ico" onerror="this.src='../theme/images/avatar.png'"></img></a>
+    </div>
 
 
 
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/ossu-blog-1.html">OSSU Blog 1 - Progress Update from Oct. 18, 2025 until Jan. 24, 2026</a>
-      <span><i style="font-size: 16px;" class="fa-solid fa-thumbtack"></i></span>
-    </h2>
-    <p>
-      Posted on Tue 27 January 2026 in <a href="https://miguelhx.github.io/category/ossu-blog.html">OSSU Blog</a>
+    <br><br><br>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/ossu.html">ossu</a>
-    </p>
-  </header>
-  <div>
-      <div><p>I'm happy to share that I have made good progress on OSSU since I started back in Oct. 2025! In this blog post, I will be briefly discussing the courses I took so far, along with a break-down of the time I took to complete them. Then I will talk …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/ossu-blog-1.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html">Intro to CS: Lecture 26 (Final Lecture) - List Access, Hashing, Simulations, and Wrap-Up</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Sat 24 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+    <section id="listing">
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/ossu-blog-1.html">OSSU Blog 1 - Progress Update from Oct. 18, 2025 until Jan. 24, 2026</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-27T10:00:00-08:00">Tue 27 January 2026</time> in <a href="https://miguelhx.github.io/category/ossu-blog.html" title="All articles in category OSSU Blog">OSSU Blog</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/ossu.html" title="All articles with Ossu tag">#ossu</a>
+              </span>
+            </div>
+          </div>
+        </header>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/python.html">python</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Topics: Extras: lists in memory, hashing, simulations, wrap-up</p>
-<p>Looking at lists, and how they’re actually implemented in memory.  Looking at dictionaries, and how they are implemented in memory using hash tables.</p>
-<p>Going over simulations.</p>
-<h3>Simulations</h3>
-<p>Topic useful for many domains</p>
-<ul>
-<li><strong>Computationally</strong> describe the world using <strong>randomness</strong></li>
-<li>One very important …</li></ul></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/intro-to-cs-lecture-25-plotting.html">Intro to CS: Lecture 25 - Plotting</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Fri 23 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+        <div class="entry-content">
+          I'm happy to share that I have made good progress on OSSU since I started back in Oct. 2025! In this blog post, I will be briefly discussing the courses I took so far, along with a break-down of the time I took to complete them. Then I will talk …
+        </div>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/python.html">python</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Topics: Visualization Library</p>
-<p>Plots help us visualize data.  I sped through the video because it didn’t seem useful to me.  I don’t see myself using the plot library anytime soon.  And if I do, I’ll just read the documentation and examples on stack overflow or something to …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/intro-to-cs-lecture-25-plotting.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/intro-to-cs-problem-set-5.html">Intro to CS: Problem Set 5</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Thu 22 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/ossu-blog-1.html">Read &#10093;</a>
+        </footer>
+      </article>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/python.html">python</a>
-    </p>
-  </header>
-  <div>
-      <div><p>It was a little harder than expected. Took about 2.22 hours, got tripped up a bit on <code>extract_end_bits</code> and <code>reveal_image</code> scaling parts.  Here is my code:  <a href="https://github.com/miguelHx/intro-to-cs-mit-problem-sets/blob/main/1_ps5/ps5.py">https://github.com/miguelHx/intro-to-cs-mit-problem-sets/blob/main/1_ps5/ps5.py</a></p>
-<p>There was an easier way to do the extract end bits on google …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/intro-to-cs-problem-set-5.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/intro-to-cs-lecture-23-complexity-classes-examples.html">Intro to CS: Lecture 23 - Complexity Classes Examples</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Wed 21 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+      <br><br><br>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/python.html">python</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Topics: String and List Examples, Analyzing Complexity, Search: indirection, linear search, bisection search</p>
-<p>This lecture we are looking at more code and analyzing their complexities.
-Be careful what the inputs are and whether or not they contribute to the complexity.</p>
-<p>Went over a bunch of examples, it was a good …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/intro-to-cs-lecture-23-complexity-classes-examples.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/intro-to-cs-lecture-24-sorting-algorithms.html">Intro to CS: Lecture 24 - Sorting Algorithms</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Wed 21 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html">Intro to CS: Lecture 26 (Final Lecture) - List Access, Hashing, Simulations, and Wrap-Up</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-24T10:00:00-08:00">Sat 24 January 2026</time> in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/python.html" title="All articles with Python tag">#python</a>
+              </span>
+            </div>
+          </div>
+        </header>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/python.html">python</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Topics: Sort: bogo, bubble, selection, merge sort</p>
-<p>Linear search vs. Binary search on a sorted list.</p>
-<p>Going through examples.</p></div>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/systematic-program-design-week-11-final-week-graphs.html">Systematic Program Design: Week 11 (Final Week) - Graphs</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Tue 20 January 2026 in <a href="https://miguelhx.github.io/category/systematic-program-design.html">Systematic Program Design</a>
+        <div class="entry-content">
+          Topics: Extras: lists in memory, hashing, simulations, wrap-up Looking at lists, and how they’re actually implemented in memory. Looking at dictionaries, and how they are implemented in memory using hash tables. Going over simulations. Simulations Topic useful for many domains Computationally describe the world using randomness One very important …
+        </div>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/spd.html">spd</a>,              <a href="https://miguelhx.github.io/tag/racket.html">racket</a>
-    </p>
-  </header>
-  <div>
-      <div><blockquote>
-<h3>Graphs Module</h3>
-<p>Many forms of information naturally organize themselves into trees of various kinds. But what about transit maps, wiring diagrams, the world wide web or even secret underground passages. Most of these have one or two key properties that make them be graphs instead of trees.</p>
-<p>One property is …</p></blockquote></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/systematic-program-design-week-11-final-week-graphs.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/intro-to-cs-lecture-21-timing-programs-counting-operations.html">Intro to CS: Lecture 21 - Timing Programs, Counting Operations</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Mon 19 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html">Read &#10093;</a>
+        </footer>
+      </article>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/python.html">python</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Topics:  Complexity: measuring efficiency, timing programs, counting operations</p>
-<p>Efficiency is important.</p>
-<ul>
-<li>Separate time and space efficiency of a program</li>
-<li>Tradeoff between them:  can use a bit more memory to store values for quicker lookup later<ul>
-<li>Think fibonacci recursive vs. fibonacci with memoization</li>
-</ul>
-</li>
-<li>Challenges in understanding efficiency<ul>
-<li>A program can be …</li></ul></li></ul></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/intro-to-cs-lecture-21-timing-programs-counting-operations.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/intro-to-cs-lecture-22-big-oh-and-theta.html">Intro to CS: Lecture 22 - Big Oh and Theta</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Mon 19 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+      <br><br><br>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/python.html">python</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Topics: Complexity: Big-Oh notation, Big-Theta notation, complexity relations and classes, calc-complexity</p>
-<p>Getting introduced to the python time.perf_counter() function.  This is new to me.  I guess its a more accurate version of time.time().
-We compare the runtime of a few different functions.  The plots of input size vs. runtime …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/intro-to-cs-lecture-22-big-oh-and-theta.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/intro-to-cs-problem-set-4.html">Intro to CS: Problem Set 4</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Fri 16 January 2026 in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html">Intro to CS using Python</a>
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/intro-to-cs-lecture-25-plotting.html">Intro to CS: Lecture 25 - Plotting</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-23T10:00:00-08:00">Fri 23 January 2026</time> in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/python.html" title="All articles with Python tag">#python</a>
+              </span>
+            </div>
+          </div>
+        </header>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/python.html">python</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Finished the problem set in about 2.6 hours.  It was a good exercise.  Github link to my solution: <a href="https://github.com/miguelHx/intro-to-cs-mit-problem-sets/tree/main/1_ps4">https://github.com/miguelHx/intro-to-cs-mit-problem-sets/tree/main/1_ps4</a></p></div>
-  </div>
-</article>
+        <div class="entry-content">
+          Topics: Visualization Library Plots help us visualize data. I sped through the video because it didn’t seem useful to me. I don’t see myself using the plot library anytime soon. And if I do, I’ll just read the documentation and examples on stack overflow or something to …
+        </div>
 
-  <div class="pagination">
-    <a class="btn float-left" href="https://miguelhx.github.io/author/miguel-hernandez2.html">
-      <i class="fa fa-angle-left"></i> Older Posts
-    </a>
-  </div>
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/intro-to-cs-lecture-25-plotting.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/intro-to-cs-problem-set-5.html">Intro to CS: Problem Set 5</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-22T11:15:00-08:00">Thu 22 January 2026</time> in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/python.html" title="All articles with Python tag">#python</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          It was a little harder than expected. Took about 2.22 hours, got tripped up a bit on extract_end_bits and reveal_image scaling parts. Here is my code: https://github.com/miguelHx/intro-to-cs-mit-problem-sets/blob/main/1_ps5/ps5.py There was an easier way to do the extract end bits on google …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/intro-to-cs-problem-set-5.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/intro-to-cs-lecture-23-complexity-classes-examples.html">Intro to CS: Lecture 23 - Complexity Classes Examples</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-21T10:00:00-08:00">Wed 21 January 2026</time> in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/python.html" title="All articles with Python tag">#python</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Topics: String and List Examples, Analyzing Complexity, Search: indirection, linear search, bisection search This lecture we are looking at more code and analyzing their complexities. Be careful what the inputs are and whether or not they contribute to the complexity. Went over a bunch of examples, it was a good …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/intro-to-cs-lecture-23-complexity-classes-examples.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/intro-to-cs-lecture-24-sorting-algorithms.html">Intro to CS: Lecture 24 - Sorting Algorithms</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-21T10:00:00-08:00">Wed 21 January 2026</time> in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/python.html" title="All articles with Python tag">#python</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Topics: Sort: bogo, bubble, selection, merge sort Linear search vs. Binary search on a sorted list. Going through examples.
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/intro-to-cs-lecture-24-sorting-algorithms.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/systematic-program-design-week-11-final-week-graphs.html">Systematic Program Design: Week 11 (Final Week) - Graphs</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-20T09:00:00-08:00">Tue 20 January 2026</time> in <a href="https://miguelhx.github.io/category/systematic-program-design.html" title="All articles in category Systematic Program Design">Systematic Program Design</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/spd.html" title="All articles with Spd tag">#spd</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/racket.html" title="All articles with Racket tag">#racket</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Graphs Module Many forms of information naturally organize themselves into trees of various kinds. But what about transit maps, wiring diagrams, the world wide web or even secret underground passages. Most of these have one or two key properties that make them be graphs instead of trees. One property is …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/systematic-program-design-week-11-final-week-graphs.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/intro-to-cs-lecture-21-timing-programs-counting-operations.html">Intro to CS: Lecture 21 - Timing Programs, Counting Operations</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-19T10:00:00-08:00">Mon 19 January 2026</time> in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/python.html" title="All articles with Python tag">#python</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Topics: Complexity: measuring efficiency, timing programs, counting operations Efficiency is important. Separate time and space efficiency of a program Tradeoff between them: can use a bit more memory to store values for quicker lookup later Think fibonacci recursive vs. fibonacci with memoization Challenges in understanding efficiency A program can be …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/intro-to-cs-lecture-21-timing-programs-counting-operations.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/intro-to-cs-lecture-22-big-oh-and-theta.html">Intro to CS: Lecture 22 - Big Oh and Theta</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-19T10:00:00-08:00">Mon 19 January 2026</time> in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/python.html" title="All articles with Python tag">#python</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Topics: Complexity: Big-Oh notation, Big-Theta notation, complexity relations and classes, calc-complexity Getting introduced to the python time.perf_counter() function. This is new to me. I guess its a more accurate version of time.time(). We compare the runtime of a few different functions. The plots of input size vs. runtime …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/intro-to-cs-lecture-22-big-oh-and-theta.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/intro-to-cs-problem-set-4.html">Intro to CS: Problem Set 4</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-16T11:15:00-08:00">Fri 16 January 2026</time> in <a href="https://miguelhx.github.io/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/python.html" title="All articles with Python tag">#python</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Finished the problem set in about 2.6 hours. It was a good exercise. Github link to my solution: https://github.com/miguelHx/intro-to-cs-mit-problem-sets/tree/main/1_ps4
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/intro-to-cs-problem-set-4.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+
+      <div class="w3-center">
+        <ul class="w3-pagination">
+          <li><a class="w3-green" href="https://miguelhx.github.io/author/miguel-hernandez.html">1</a></li>
+          <li><a class="" href="https://miguelhx.github.io/author/miguel-hernandez2.html">2</a></li>
+          <li><a class="" href="https://miguelhx.github.io/author/miguel-hernandez3.html">3</a></li>
+          <li><a class="" href="https://miguelhx.github.io/author/miguel-hernandez4.html">4</a></li>
+          <li><a class="" href="https://miguelhx.github.io/author/miguel-hernandez5.html">5</a></li>
+          <li><a class="" href="https://miguelhx.github.io/author/miguel-hernandez6.html">6</a></li>
+          <li><a href="https://miguelhx.github.io/author/miguel-hernandez2.html">&#10095;</a></li>
+        </ul>
+      </div>
+      <br><br><br>
+
+    </section>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          2025&dash;2026          Miguel Hernandez
+        </span>
+      </div>
+    </footer>
 
 
 
-<footer>
-<p>&copy; 2026 Miguel Hernandez</p>
-<p>
-<!-- Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme -->
-  <!-- <span class="footer-separator">|</span> -->
-  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
-  <script id="dark-theme-script"
-          src="https://miguelhx.github.io/theme/dark-theme/dark-theme.min.js"
-          data-enable-auto-detect-theme="True"
-          data-default-theme="light"
-          type="text/javascript">
-  </script>
-</p></footer>  </main>
-
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Blog",
-  "name": " Miguel's Personal Website ",
-  "url" : "https://miguelhx.github.io",
-  "image": "/images/yinyang.png",
-  "description": ""
-}
-</script>
-</body>
+  </body>
 </html>

@@ -1,201 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="" />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>first-blog-post &ndash; Miguel's Personal Website</title>
 
-    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/stylesheet/style.min.css">
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link id="dark-theme-style" rel="stylesheet" type="text/css"
-          media="(prefers-color-scheme: dark)"
-    href="https://miguelhx.github.io/theme/stylesheet/dark-theme.min.css">
+    <!-- Social -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Miguel's Personal Website"/>
+    <meta property="og:description" content="Welcome to my blog/website"/>
+    <meta property="og:site_name" content="Miguel's Personal Website" />
+    <meta property="og:url" content="https://miguelhx.github.io"/>
+    <meta property="og:image" content="https://miguelhx.github.io/images/favicon.ico"/>
 
-    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
-              media="(prefers-color-scheme: dark)"
-          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
-    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
-              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Miguel's Personal Website">
+    <meta name="twitter:description" content="Welcome to my blog/website">
+    <meta name="twitter:url" content="https://miguelhx.github.io">
+    <meta name="twitter:image" content="https://miguelhx.github.io/images/favicon.ico">
 
+    <!-- Feed -->
+    <link rel="alternate" type="application/rss+xml" href="https://miguels-personal-website.disqus.com/latest.rss" title="Miguel's Personal Website Comments RSS Feed">
 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/pygments-highlight-github.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/static/custom.css">
 
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/solid.css">
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://miguelhx.github.io/images/favicon.ico">
 
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://miguelhx.github.io/theme/js/jqcloud.min.js"></script>
+  </head>
 
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#333333">
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#333333">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- Microsoft EDGE -->
-  <meta name="msapplication-TileColor" content="#333333">
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z648JEYS71');
-</script>
-
-
-
-
-
-
- 
-
-    <meta name="author" content="Miguel Hernandez" />
-    <meta name="description" content="" />
-  <meta property="og:site_name" content="Miguel's Personal Website"/>
-  <meta property="og:type" content="blog"/>
-  <meta property="og:title" content="Miguel's Personal Website"/>
-  <meta property="og:description" content=""/>
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content="https://miguelhx.github.io"/>
-  <meta property="og:image" content="/images/yinyang.png">
-
-  <title>Miguel's Personal Website &ndash; Tag first-blog-post</title>
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://miguelhx.github.io" id="header-logo" title="Home">MH</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/archives.html">Archives</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/tags.html">Tags</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
 
-</head>
-<body >
+    <br><br><br>
 
-<aside>
-  <div>
-    <a href="https://miguelhx.github.io/">
-      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
-    </a>
-
-    <h1>
-      <a href="https://miguelhx.github.io/">Miguel Hernandez</a>
-    </h1>
-
-    <p>Welcome to my blog/website</p>
-
-
-    <nav>
-      <ul class="list">
-
-
-            <li>
-              <a target="_self"
-                 href="https://miguelhx.github.io/pages/about-me.html">
-                About me
-              </a>
-            </li>
-            <li>
-              <a target="_self"
-                 href="https://miguelhx.github.io/pages/contact.html">
-                Contact
-              </a>
-            </li>
-
-      </ul>
-    </nav>
-
-    <ul class="social">
-      <li>
-        <a class="sc-github"
-           href="https://github.com/miguelhx"
-           target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </li>
-      <li>
-        <a class="sc-linkedin"
-           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
-           target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-</aside>
-  <main>
-
-<nav>
-  <a href="https://miguelhx.github.io/">Home</a>
-
-  <a href="/archives.html">Archives</a>
-  <a href="/categories.html">Categories</a>
-  <a href="/tags.html">Tags</a>
-
-
-</nav>
+    <div class="w3-container col-main w3-center">
+      <h2>Articles tagged with #first-blog-post</h2>
+    </div>
 
 
 
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/new-blog-my-thoughts.html">New blog - my thoughts</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Sun 30 November 2025 in <a href="https://miguelhx.github.io/category/misc.html">misc</a>
+    <br><br><br>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/first-blog-post.html">first-blog-post</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Why am I getting into blogging? Partly as a way to deepen my own learning, but also to build a stronger online technical presence.</p>
-<p>I built this website using Python and the static site generator called <a href="https://getpelican.com/">pelican</a>, with the <a href="https://github.com/alexandrevicenzi/Flex">Flex</a> theme.</p>
-<p>I chose pelican to build my website because I …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/new-blog-my-thoughts.html">
-          Continue reading
-        </a>
-  </div>
-</article>
+    <section id="listing">
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/new-blog-my-thoughts.html">New blog - my thoughts</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2025-11-30T20:03:00-08:00">Sun 30 November 2025</time> in <a href="https://miguelhx.github.io/category/misc.html" title="All articles in category misc">misc</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/first-blog-post.html" title="All articles with First-Blog-Post tag">#first-blog-post</a>
+              </span>
+            </div>
+          </div>
+        </header>
 
-  <div class="pagination">
-  </div>
+        <div class="entry-content">
+          Why am I getting into blogging? Partly as a way to deepen my own learning, but also to build a stronger online technical presence. I built this website using Python and the static site generator called pelican, with the Flex theme. I chose pelican to build my website because I …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/new-blog-my-thoughts.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
 
 
 
-<footer>
-<p>&copy; 2026 Miguel Hernandez</p>
-<p>
-<!-- Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme -->
-  <!-- <span class="footer-separator">|</span> -->
-  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
-  <script id="dark-theme-script"
-          src="https://miguelhx.github.io/theme/dark-theme/dark-theme.min.js"
-          data-enable-auto-detect-theme="True"
-          data-default-theme="light"
-          type="text/javascript">
-  </script>
-</p></footer>  </main>
+    </section>
 
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Blog",
-  "name": " Miguel's Personal Website ",
-  "url" : "https://miguelhx.github.io",
-  "image": "/images/yinyang.png",
-  "description": ""
-}
-</script>
-</body>
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          2025&dash;2026          Miguel Hernandez
+        </span>
+      </div>
+    </footer>
+
+
+
+  </body>
 </html>

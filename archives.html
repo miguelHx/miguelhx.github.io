@@ -1,391 +1,155 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="" />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Archive &ndash; Miguel's Personal Website</title>
 
-    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/stylesheet/style.min.css">
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link id="dark-theme-style" rel="stylesheet" type="text/css"
-          media="(prefers-color-scheme: dark)"
-    href="https://miguelhx.github.io/theme/stylesheet/dark-theme.min.css">
+    <!-- Social -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Miguel's Personal Website"/>
+    <meta property="og:description" content="Welcome to my blog/website"/>
+    <meta property="og:site_name" content="Miguel's Personal Website" />
+    <meta property="og:url" content="https://miguelhx.github.io"/>
+    <meta property="og:image" content="https://miguelhx.github.io/images/favicon.ico"/>
 
-    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
-              media="(prefers-color-scheme: dark)"
-          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
-    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
-              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Miguel's Personal Website">
+    <meta name="twitter:description" content="Welcome to my blog/website">
+    <meta name="twitter:url" content="https://miguelhx.github.io">
+    <meta name="twitter:image" content="https://miguelhx.github.io/images/favicon.ico">
 
+    <!-- Feed -->
+    <link rel="alternate" type="application/rss+xml" href="https://miguels-personal-website.disqus.com/latest.rss" title="Miguel's Personal Website Comments RSS Feed">
 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/pygments-highlight-github.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/static/custom.css">
 
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/solid.css">
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://miguelhx.github.io/images/favicon.ico">
 
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://miguelhx.github.io/theme/js/jqcloud.min.js"></script>
+  </head>
 
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#333333">
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#333333">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- Microsoft EDGE -->
-  <meta name="msapplication-TileColor" content="#333333">
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z648JEYS71');
-</script>
-
-
-
-
-
-
- 
-
-    <meta name="author" content="Miguel Hernandez" />
-    <meta name="description" content="" />
-  <meta property="og:site_name" content="Miguel's Personal Website"/>
-  <meta property="og:type" content="blog"/>
-  <meta property="og:title" content="Miguel's Personal Website"/>
-  <meta property="og:description" content=""/>
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content="https://miguelhx.github.io"/>
-  <meta property="og:image" content="/images/yinyang.png">
-
-  <title>Miguel's Personal Website &ndash; Archives</title>
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://miguelhx.github.io" id="header-logo" title="Home">MH</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/archives.html">Archives</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/tags.html">Tags</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
 
-</head>
-<body >
 
-<aside>
-  <div>
-    <a href="https://miguelhx.github.io/">
-      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
-    </a>
+    <br><br><br>
 
-    <h1>
-      <a href="https://miguelhx.github.io/">Miguel Hernandez</a>
-    </h1>
+    <article>
+      <header class="w3-container col-main">
+        <h1>Archive for Miguel's Personal Website</h1>
+      </header>
 
-    <p>Welcome to my blog/website</p>
+      <br>
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <ul>
+          	<li><time datetime="2026-01-27T10:00:00-08:00">Tue 27 January 2026</time> <a href="https://miguelhx.github.io/ossu-blog-1.html">OSSU Blog 1 - Progress Update from Oct. 18, 2025 until Jan. 24, 2026</a></li>
+          	<li><time datetime="2026-01-24T10:00:00-08:00">Sat 24 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html">Intro to CS: Lecture 26 (Final Lecture) - List Access, Hashing, Simulations, and Wrap-Up</a></li>
+          	<li><time datetime="2026-01-23T10:00:00-08:00">Fri 23 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-25-plotting.html">Intro to CS: Lecture 25 - Plotting</a></li>
+          	<li><time datetime="2026-01-22T11:15:00-08:00">Thu 22 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-problem-set-5.html">Intro to CS: Problem Set 5</a></li>
+          	<li><time datetime="2026-01-21T10:00:00-08:00">Wed 21 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-23-complexity-classes-examples.html">Intro to CS: Lecture 23 - Complexity Classes Examples</a></li>
+          	<li><time datetime="2026-01-21T10:00:00-08:00">Wed 21 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-24-sorting-algorithms.html">Intro to CS: Lecture 24 - Sorting Algorithms</a></li>
+          	<li><time datetime="2026-01-20T09:00:00-08:00">Tue 20 January 2026</time> <a href="https://miguelhx.github.io/systematic-program-design-week-11-final-week-graphs.html">Systematic Program Design: Week 11 (Final Week) - Graphs</a></li>
+          	<li><time datetime="2026-01-19T10:00:00-08:00">Mon 19 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-21-timing-programs-counting-operations.html">Intro to CS: Lecture 21 - Timing Programs, Counting Operations</a></li>
+          	<li><time datetime="2026-01-19T10:00:00-08:00">Mon 19 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-22-big-oh-and-theta.html">Intro to CS: Lecture 22 - Big Oh and Theta</a></li>
+          	<li><time datetime="2026-01-16T11:15:00-08:00">Fri 16 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-problem-set-4.html">Intro to CS: Problem Set 4</a></li>
+          	<li><time datetime="2026-01-15T10:00:00-08:00">Thu 15 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-20-fitness-tracker-oop-example.html">Intro to CS: Lecture 20 - Fitness Tracker OOP Example</a></li>
+          	<li><time datetime="2026-01-14T10:00:00-08:00">Wed 14 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-19-inheritance.html">Intro to CS: Lecture 19 - Inheritance</a></li>
+          	<li><time datetime="2026-01-12T13:00:00-08:00">Mon 12 January 2026</time> <a href="https://miguelhx.github.io/systematic-program-design-week-10-accumulators.html">Systematic Program Design: Week 10 - Accumulators</a></li>
+          	<li><time datetime="2026-01-12T10:00:00-08:00">Mon 12 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-18-more-python-class-methods.html">Intro to CS: Lecture 18 - More Python Class Methods</a></li>
+          	<li><time datetime="2026-01-10T10:00:00-08:00">Sat 10 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-17-python-classes.html">Intro to CS: Lecture 17 - Python Classes</a></li>
+          	<li><time datetime="2026-01-09T10:00:00-08:00">Fri 09 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-16-recursion-on-non-numerics.html">Intro to CS: Lecture 16 - Recursion on Non-Numerics</a></li>
+          	<li><time datetime="2026-01-08T13:00:00-08:00">Thu 08 January 2026</time> <a href="https://miguelhx.github.io/systematic-program-design-week-9b-search.html">Systematic Program Design: Week 9b - Search</a></li>
+          	<li><time datetime="2026-01-08T12:00:00-08:00">Thu 08 January 2026</time> <a href="https://miguelhx.github.io/math-for-cs-infinite-sets.html">Math for CS: Infinite Sets</a></li>
+          	<li><time datetime="2026-01-08T10:00:00-08:00">Thu 08 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-15-recursion.html">Intro to CS: Lecture 15 - Recursion</a></li>
+          	<li><time datetime="2026-01-06T12:00:00-08:00">Tue 06 January 2026</time> <a href="https://miguelhx.github.io/math-for-cs-recursive-definition.html">Math for CS: Recursive Definition</a></li>
+          	<li><time datetime="2026-01-06T11:15:00-08:00">Tue 06 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-problem-set-3.html">Intro to CS: Problem Set 3</a></li>
+          	<li><time datetime="2026-01-04T13:00:00-08:00">Sun 04 January 2026</time> <a href="https://miguelhx.github.io/systematic-program-design-week-9a-generative-recursion.html">Systematic Program Design: Week 9a - Generative Recursion</a></li>
+          	<li><time datetime="2026-01-03T10:00:00-08:00">Sat 03 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-14-dictionaries.html">Intro to CS: Lecture 14 - Dictionaries</a></li>
+          	<li><time datetime="2026-01-02T10:00:00-08:00">Fri 02 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-13-exceptions-assertions.html">Intro to CS: Lecture 13 - Exceptions, Assertions</a></li>
+          	<li><time datetime="2026-01-01T12:00:00-08:00">Thu 01 January 2026</time> <a href="https://miguelhx.github.io/math-for-cs-state-machines-invariants.html">Math for CS: State Machines -- Invariants</a></li>
+          	<li><time datetime="2026-01-01T10:00:00-08:00">Thu 01 January 2026</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-12-list-comprehension-functions-as-objects-testing-debugging.html">Intro to CS: Lecture 12 - List comprehension, functions as objects, testing, debugging</a></li>
+          	<li><time datetime="2025-12-31T19:37:00-08:00">Wed 31 December 2025</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-11-aliasing-cloning.html">Intro to CS: Lecture 11 - Aliasing, Cloning</a></li>
+          	<li><time datetime="2025-12-31T12:00:00-08:00">Wed 31 December 2025</time> <a href="https://miguelhx.github.io/systematic-program-design-week-8-abstraction.html">Systematic Program Design: Week 8 - Abstraction</a></li>
+          	<li><time datetime="2025-12-28T19:58:00-08:00">Sun 28 December 2025</time> <a href="https://miguelhx.github.io/intro-to-cs-problem-set-2.html">Intro to CS: Problem Set 2</a></li>
+          	<li><time datetime="2025-12-28T19:54:00-08:00">Sun 28 December 2025</time> <a href="https://miguelhx.github.io/systematic-program-design-week-7b-local.html">Systematic Program Design: Week 7b - Local</a></li>
+          	<li><time datetime="2025-12-28T19:50:00-08:00">Sun 28 December 2025</time> <a href="https://miguelhx.github.io/systematic-program-design-week-7a-two-one-of-types.html">Systematic Program Design: Week 7a - Two One-of Types</a></li>
+          	<li><time datetime="2025-12-28T19:40:00-08:00">Sun 28 December 2025</time> <a href="https://miguelhx.github.io/math-for-cs-induction.html">Math for CS: Induction</a></li>
+          	<li><time datetime="2025-12-28T19:37:00-08:00">Sun 28 December 2025</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-10-lists-mutability.html">Intro to CS: Lecture 10 - Lists, Mutability</a></li>
+          	<li><time datetime="2025-12-24T11:46:00-08:00">Wed 24 December 2025</time> <a href="https://miguelhx.github.io/math-for-cs-binary-relations.html">Math for CS: Binary Relations</a></li>
+          	<li><time datetime="2025-12-24T11:40:00-08:00">Wed 24 December 2025</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-9-lambda-functions-tuples-and-lists.html">Intro to CS: Lecture 9 - Lambda functions, Tuples, and Lists</a></li>
+          	<li><time datetime="2025-12-24T11:39:00-08:00">Wed 24 December 2025</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-8-functions-as-objects.html">Intro to CS: Lecture 8 - Functions as Objects</a></li>
+          	<li><time datetime="2025-12-24T11:38:00-08:00">Wed 24 December 2025</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-7-decomposition-abstraction-functions.html">Intro to CS: Lecture 7 - Decomposition, Abstraction, Functions</a></li>
+          	<li><time datetime="2025-12-24T11:36:00-08:00">Wed 24 December 2025</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-6-bisection-search.html">Intro to CS: Lecture 6 - Bisection search</a></li>
+          	<li><time datetime="2025-12-19T13:58:00-08:00">Fri 19 December 2025</time> <a href="https://miguelhx.github.io/math-for-cs-problem-set-2-thoughts.html">Math for CS: Problem Set 2 Thoughts</a></li>
+          	<li><time datetime="2025-12-19T13:56:00-08:00">Fri 19 December 2025</time> <a href="https://miguelhx.github.io/math-for-cs-sets.html">Math for CS: Sets</a></li>
+          	<li><time datetime="2025-12-19T13:51:00-08:00">Fri 19 December 2025</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-5-floats-and-approximation-methods.html">Intro to CS: Lecture 5 - Floats and Approximation Methods</a></li>
+          	<li><time datetime="2025-12-19T13:47:00-08:00">Fri 19 December 2025</time> <a href="https://miguelhx.github.io/intro-to-cs-problem-set-1.html">Intro to CS: Problem Set 1</a></li>
+          	<li><time datetime="2025-12-19T13:42:00-08:00">Fri 19 December 2025</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-4-loops-over-strings-guess-and-check-and-binary.html">Intro to CS: Lecture 4 - Loops over strings, guess-and-check, and binary</a></li>
+          	<li><time datetime="2025-12-19T13:40:00-08:00">Fri 19 December 2025</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-3-iteration.html">Intro to CS: Lecture 3 - Iteration</a></li>
+          	<li><time datetime="2025-12-19T13:38:00-08:00">Fri 19 December 2025</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-2-strings-inputoutput-branching.html">Intro to CS: Lecture 2 - Strings, Input/Output, Branching</a></li>
+          	<li><time datetime="2025-12-19T13:35:00-08:00">Fri 19 December 2025</time> <a href="https://miguelhx.github.io/intro-to-cs-lecture-1-introduction.html">Intro to CS: Lecture 1 - Introduction</a></li>
+          	<li><time datetime="2025-12-19T13:33:00-08:00">Fri 19 December 2025</time> <a href="https://miguelhx.github.io/taking-a-new-course-intro-to-cs-and-programming-using-python.html">Taking a new course - Intro to CS and Programming using Python</a></li>
+          	<li><time datetime="2025-12-19T13:26:00-08:00">Fri 19 December 2025</time> <a href="https://miguelhx.github.io/systematic-program-design-week-6b-mutual-reference.html">Systematic Program Design: Week 6b - Mutual Reference</a></li>
+          	<li><time datetime="2025-12-16T20:03:00-08:00">Tue 16 December 2025</time> <a href="https://miguelhx.github.io/new-blog-category-meta-learning.html">New blog category: Meta-learning</a></li>
+          	<li><time datetime="2025-12-15T16:20:00-08:00">Mon 15 December 2025</time> <a href="https://miguelhx.github.io/systematic-program-design-space-invaders-project.html">Systematic Program Design: Space Invaders Project</a></li>
+          	<li><time datetime="2025-12-14T17:42:00-08:00">Sun 14 December 2025</time> <a href="https://miguelhx.github.io/math-for-cs-problem-set-1-reflection.html">Math for CS: Problem Set 1 Reflection</a></li>
+          	<li><time datetime="2025-12-14T17:32:00-08:00">Sun 14 December 2025</time> <a href="https://miguelhx.github.io/systematic-program-design-week-6a-binary-search-trees.html">Systematic Program Design: Week 6a - Binary Search Trees</a></li>
+          	<li><time datetime="2025-12-14T17:24:00-08:00">Sun 14 December 2025</time> <a href="https://miguelhx.github.io/math-for-cs-quantifiers-and-predicate-logic.html">Math for CS: Quantifiers and Predicate Logic</a></li>
+          	<li><time datetime="2025-12-07T23:03:00-08:00">Sun 07 December 2025</time> <a href="https://miguelhx.github.io/systematic-program-design-week-5-naturals-and-helpers.html">Systematic Program Design: Week 5 - Naturals and Helpers</a></li>
+          	<li><time datetime="2025-12-07T22:03:00-08:00">Sun 07 December 2025</time> <a href="https://miguelhx.github.io/math-for-cs-logic-and-propositions.html">Math for CS: Logic and Propositions</a></li>
+          	<li><time datetime="2025-12-03T22:03:00-08:00">Wed 03 December 2025</time> <a href="https://miguelhx.github.io/math-for-cs-well-ordering-principle.html">Math for CS: Well Ordering Principle</a></li>
+          	<li><time datetime="2025-12-02T22:03:00-08:00">Tue 02 December 2025</time> <a href="https://miguelhx.github.io/math-for-cs-proof-methods.html">Math for CS: Proof Methods</a></li>
+          	<li><time datetime="2025-12-01T22:03:00-08:00">Mon 01 December 2025</time> <a href="https://miguelhx.github.io/math-for-cs-intro-to-proofs.html">Math for CS: Intro to Proofs</a></li>
+          	<li><time datetime="2025-11-30T22:03:00-08:00">Sun 30 November 2025</time> <a href="https://miguelhx.github.io/revisiting-software-fundamentals.html">Why I'm revisiting software fundamentals and my learning plan</a></li>
+          	<li><time datetime="2025-11-30T20:03:00-08:00">Sun 30 November 2025</time> <a href="https://miguelhx.github.io/new-blog-my-thoughts.html">New blog - my thoughts</a></li>
+          </ul>
+        </section>
+
+        <br><br><br>
+        
+      </div>
+    </article>
 
 
-    <nav>
-      <ul class="list">
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          2025&dash;2026          Miguel Hernandez
+        </span>
+      </div>
+    </footer>
 
 
-            <li>
-              <a target="_self"
-                 href="https://miguelhx.github.io/pages/about-me.html">
-                About me
-              </a>
-            </li>
-            <li>
-              <a target="_self"
-                 href="https://miguelhx.github.io/pages/contact.html">
-                Contact
-              </a>
-            </li>
 
-      </ul>
-    </nav>
-
-    <ul class="social">
-      <li>
-        <a class="sc-github"
-           href="https://github.com/miguelhx"
-           target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </li>
-      <li>
-        <a class="sc-linkedin"
-           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
-           target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-</aside>
-  <main>
-
-<nav>
-  <a href="https://miguelhx.github.io/">Home</a>
-
-  <a href="/archives.html">Archives</a>
-  <a href="/categories.html">Categories</a>
-  <a href="/tags.html">Tags</a>
-
-
-</nav>
-
-<article class="single">
-  <header>
-    <h1 id="archives">Archives</h1>
-  </header>
-  <div>
-    <dl>
- 
-          <dt>Tue 27 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/ossu-blog-1.html">OSSU Blog 1 - Progress Update from Oct. 18, 2025 until Jan. 24, 2026</a>
-        </dd>
-          <dt>Sat 24 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html">Intro to CS: Lecture 26 (Final Lecture) - List Access, Hashing, Simulations, and Wrap-Up</a>
-        </dd>
-          <dt>Fri 23 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-25-plotting.html">Intro to CS: Lecture 25 - Plotting</a>
-        </dd>
-          <dt>Thu 22 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-problem-set-5.html">Intro to CS: Problem Set 5</a>
-        </dd>
-          <dt>Wed 21 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-23-complexity-classes-examples.html">Intro to CS: Lecture 23 - Complexity Classes Examples</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-24-sorting-algorithms.html">Intro to CS: Lecture 24 - Sorting Algorithms</a>
-        </dd>
-          <dt>Tue 20 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/systematic-program-design-week-11-final-week-graphs.html">Systematic Program Design: Week 11 (Final Week) - Graphs</a>
-        </dd>
-          <dt>Mon 19 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-21-timing-programs-counting-operations.html">Intro to CS: Lecture 21 - Timing Programs, Counting Operations</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-22-big-oh-and-theta.html">Intro to CS: Lecture 22 - Big Oh and Theta</a>
-        </dd>
-          <dt>Fri 16 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-problem-set-4.html">Intro to CS: Problem Set 4</a>
-        </dd>
-          <dt>Thu 15 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-20-fitness-tracker-oop-example.html">Intro to CS: Lecture 20 - Fitness Tracker OOP Example</a>
-        </dd>
-          <dt>Wed 14 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-19-inheritance.html">Intro to CS: Lecture 19 - Inheritance</a>
-        </dd>
-          <dt>Mon 12 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/systematic-program-design-week-10-accumulators.html">Systematic Program Design: Week 10 - Accumulators</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-18-more-python-class-methods.html">Intro to CS: Lecture 18 - More Python Class Methods</a>
-        </dd>
-          <dt>Sat 10 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-17-python-classes.html">Intro to CS: Lecture 17 - Python Classes</a>
-        </dd>
-          <dt>Fri 09 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-16-recursion-on-non-numerics.html">Intro to CS: Lecture 16 - Recursion on Non-Numerics</a>
-        </dd>
-          <dt>Thu 08 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/systematic-program-design-week-9b-search.html">Systematic Program Design: Week 9b - Search</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/math-for-cs-infinite-sets.html">Math for CS: Infinite Sets</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-15-recursion.html">Intro to CS: Lecture 15 - Recursion</a>
-        </dd>
-          <dt>Tue 06 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/math-for-cs-recursive-definition.html">Math for CS: Recursive Definition</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-problem-set-3.html">Intro to CS: Problem Set 3</a>
-        </dd>
-          <dt>Sun 04 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/systematic-program-design-week-9a-generative-recursion.html">Systematic Program Design: Week 9a - Generative Recursion</a>
-        </dd>
-          <dt>Sat 03 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-14-dictionaries.html">Intro to CS: Lecture 14 - Dictionaries</a>
-        </dd>
-          <dt>Fri 02 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-13-exceptions-assertions.html">Intro to CS: Lecture 13 - Exceptions, Assertions</a>
-        </dd>
-          <dt>Thu 01 January 2026</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/math-for-cs-state-machines-invariants.html">Math for CS: State Machines -- Invariants</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-12-list-comprehension-functions-as-objects-testing-debugging.html">Intro to CS: Lecture 12 - List comprehension, functions as objects, testing, debugging</a>
-        </dd>
-          <dt>Wed 31 December 2025</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-11-aliasing-cloning.html">Intro to CS: Lecture 11 - Aliasing, Cloning</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/systematic-program-design-week-8-abstraction.html">Systematic Program Design: Week 8 - Abstraction</a>
-        </dd>
-          <dt>Sun 28 December 2025</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-problem-set-2.html">Intro to CS: Problem Set 2</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/systematic-program-design-week-7b-local.html">Systematic Program Design: Week 7b - Local</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/systematic-program-design-week-7a-two-one-of-types.html">Systematic Program Design: Week 7a - Two One-of Types</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/math-for-cs-induction.html">Math for CS: Induction</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-10-lists-mutability.html">Intro to CS: Lecture 10 - Lists, Mutability</a>
-        </dd>
-          <dt>Wed 24 December 2025</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/math-for-cs-binary-relations.html">Math for CS: Binary Relations</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-9-lambda-functions-tuples-and-lists.html">Intro to CS: Lecture 9 - Lambda functions, Tuples, and Lists</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-8-functions-as-objects.html">Intro to CS: Lecture 8 - Functions as Objects</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-7-decomposition-abstraction-functions.html">Intro to CS: Lecture 7 - Decomposition, Abstraction, Functions</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-6-bisection-search.html">Intro to CS: Lecture 6 - Bisection search</a>
-        </dd>
-          <dt>Fri 19 December 2025</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/math-for-cs-problem-set-2-thoughts.html">Math for CS: Problem Set 2 Thoughts</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/math-for-cs-sets.html">Math for CS: Sets</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-5-floats-and-approximation-methods.html">Intro to CS: Lecture 5 - Floats and Approximation Methods</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-problem-set-1.html">Intro to CS: Problem Set 1</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-4-loops-over-strings-guess-and-check-and-binary.html">Intro to CS: Lecture 4 - Loops over strings, guess-and-check, and binary</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-3-iteration.html">Intro to CS: Lecture 3 - Iteration</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-2-strings-inputoutput-branching.html">Intro to CS: Lecture 2 - Strings, Input/Output, Branching</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/intro-to-cs-lecture-1-introduction.html">Intro to CS: Lecture 1 - Introduction</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/taking-a-new-course-intro-to-cs-and-programming-using-python.html">Taking a new course - Intro to CS and Programming using Python</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/systematic-program-design-week-6b-mutual-reference.html">Systematic Program Design: Week 6b - Mutual Reference</a>
-        </dd>
-          <dt>Tue 16 December 2025</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/new-blog-category-meta-learning.html">New blog category: Meta-learning</a>
-        </dd>
-          <dt>Mon 15 December 2025</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/systematic-program-design-space-invaders-project.html">Systematic Program Design: Space Invaders Project</a>
-        </dd>
-          <dt>Sun 14 December 2025</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/math-for-cs-problem-set-1-reflection.html">Math for CS: Problem Set 1 Reflection</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/systematic-program-design-week-6a-binary-search-trees.html">Systematic Program Design: Week 6a - Binary Search Trees</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/math-for-cs-quantifiers-and-predicate-logic.html">Math for CS: Quantifiers and Predicate Logic</a>
-        </dd>
-          <dt>Sun 07 December 2025</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/systematic-program-design-week-5-naturals-and-helpers.html">Systematic Program Design: Week 5 - Naturals and Helpers</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/math-for-cs-logic-and-propositions.html">Math for CS: Logic and Propositions</a>
-        </dd>
-          <dt>Wed 03 December 2025</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/math-for-cs-well-ordering-principle.html">Math for CS: Well Ordering Principle</a>
-        </dd>
-          <dt>Tue 02 December 2025</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/math-for-cs-proof-methods.html">Math for CS: Proof Methods</a>
-        </dd>
-          <dt>Mon 01 December 2025</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/math-for-cs-intro-to-proofs.html">Math for CS: Intro to Proofs</a>
-        </dd>
-          <dt>Sun 30 November 2025</dt>
-        <dd>
-          <a href="https://miguelhx.github.io/revisiting-software-fundamentals.html">Why I'm revisiting software fundamentals and my learning plan</a>
-        </dd>
-        <dd>
-          <a href="https://miguelhx.github.io/new-blog-my-thoughts.html">New blog - my thoughts</a>
-        </dd>
-    </dl>
-  </div>
-</article>
-
-<footer>
-<p>&copy; 2026 Miguel Hernandez</p>
-<p>
-<!-- Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme -->
-  <!-- <span class="footer-separator">|</span> -->
-  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
-  <script id="dark-theme-script"
-          src="https://miguelhx.github.io/theme/dark-theme/dark-theme.min.js"
-          data-enable-auto-detect-theme="True"
-          data-default-theme="light"
-          type="text/javascript">
-  </script>
-</p></footer>  </main>
-
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Blog",
-  "name": " Miguel's Personal Website ",
-  "url" : "https://miguelhx.github.io",
-  "image": "/images/yinyang.png",
-  "description": ""
-}
-</script>
-</body>
+  </body>
 </html>

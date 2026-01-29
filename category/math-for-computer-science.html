@@ -1,419 +1,417 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="" />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Math for Computer Science &ndash; Miguel's Personal Website</title>
 
-    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/stylesheet/style.min.css">
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link id="dark-theme-style" rel="stylesheet" type="text/css"
-          media="(prefers-color-scheme: dark)"
-    href="https://miguelhx.github.io/theme/stylesheet/dark-theme.min.css">
+    <!-- Social -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Miguel's Personal Website"/>
+    <meta property="og:description" content="Welcome to my blog/website"/>
+    <meta property="og:site_name" content="Miguel's Personal Website" />
+    <meta property="og:url" content="https://miguelhx.github.io"/>
+    <meta property="og:image" content="https://miguelhx.github.io/images/favicon.ico"/>
 
-    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
-              media="(prefers-color-scheme: dark)"
-          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
-    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
-              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          href="https://miguelhx.github.io/theme/pygments/monokai.min.css">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Miguel's Personal Website">
+    <meta name="twitter:description" content="Welcome to my blog/website">
+    <meta name="twitter:url" content="https://miguelhx.github.io">
+    <meta name="twitter:image" content="https://miguelhx.github.io/images/favicon.ico">
 
+    <!-- Feed -->
+    <link rel="alternate" type="application/rss+xml" href="https://miguels-personal-website.disqus.com/latest.rss" title="Miguel's Personal Website Comments RSS Feed">
 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/css/pygments-highlight-github.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/static/custom.css">
 
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="https://miguelhx.github.io/theme/font-awesome/css/solid.css">
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://miguelhx.github.io/images/favicon.ico">
 
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://miguelhx.github.io/theme/js/jqcloud.min.js"></script>
+  </head>
 
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#333333">
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#333333">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- Microsoft EDGE -->
-  <meta name="msapplication-TileColor" content="#333333">
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z648JEYS71');
-</script>
-
-
-
-
-
-
- 
-
-    <meta name="author" content="Miguel Hernandez" />
-    <meta name="description" content="" />
-  <meta property="og:site_name" content="Miguel's Personal Website"/>
-  <meta property="og:type" content="blog"/>
-  <meta property="og:title" content="Miguel's Personal Website"/>
-  <meta property="og:description" content=""/>
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content="https://miguelhx.github.io"/>
-  <meta property="og:image" content="/images/yinyang.png">
-
-  <title>Miguel's Personal Website &ndash; Category Math for Computer Science</title>
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://miguelhx.github.io" id="header-logo" title="Home">MH</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/archives.html">Archives</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/tags.html">Tags</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
 
-</head>
-<body >
+    <br><br><br>
 
-<aside>
-  <div>
-    <a href="https://miguelhx.github.io/">
-      <img src="/images/yinyang.png" alt="Miguel Hernandez" title="Miguel Hernandez">
-    </a>
-
-    <h1>
-      <a href="https://miguelhx.github.io/">Miguel Hernandez</a>
-    </h1>
-
-    <p>Welcome to my blog/website</p>
-
-
-    <nav>
-      <ul class="list">
-
-
-            <li>
-              <a target="_self"
-                 href="https://miguelhx.github.io/pages/about-me.html">
-                About me
-              </a>
-            </li>
-            <li>
-              <a target="_self"
-                 href="https://miguelhx.github.io/pages/contact.html">
-                Contact
-              </a>
-            </li>
-
-      </ul>
-    </nav>
-
-    <ul class="social">
-      <li>
-        <a class="sc-github"
-           href="https://github.com/miguelhx"
-           target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </li>
-      <li>
-        <a class="sc-linkedin"
-           href="https://www.linkedin.com/in/miguel-hernandez-535b05102/"
-           target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-</aside>
-  <main>
-
-<nav>
-  <a href="https://miguelhx.github.io/">Home</a>
-
-  <a href="/archives.html">Archives</a>
-  <a href="/categories.html">Categories</a>
-  <a href="/tags.html">Tags</a>
-
-
-</nav>
+    <div class="w3-container col-main w3-center">
+      <h2>Math for Computer Science</h2>
+    </div>
 
 
 
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/math-for-cs-infinite-sets.html">Math for CS: Infinite Sets</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Thu 08 January 2026 in <a href="https://miguelhx.github.io/category/math-for-computer-science.html">Math for Computer Science</a>
+    <br><br><br>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/math.html">math</a>,              <a href="https://miguelhx.github.io/tag/discrete-math.html">discrete-math</a>
-    </p>
-  </header>
-  <div>
-      <div><p>This chapter is about infinite sets and some challenges in proving things about them.</p>
-<p>There has been a truly astonishing outcome of studying infinite sets. Their study led to the discovery of fundamental, logical limits on what computers can possibly do. For example, in a later section, they use reasoning …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/math-for-cs-infinite-sets.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/math-for-cs-recursive-definition.html">Math for CS: Recursive Definition</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Tue 06 January 2026 in <a href="https://miguelhx.github.io/category/math-for-computer-science.html">Math for Computer Science</a>
+    <section id="listing">
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/math-for-cs-infinite-sets.html">Math for CS: Infinite Sets</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-08T12:00:00-08:00">Thu 08 January 2026</time> in <a href="https://miguelhx.github.io/category/math-for-computer-science.html" title="All articles in category Math for Computer Science">Math for Computer Science</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/math.html" title="All articles with Math tag">#math</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/discrete-math.html" title="All articles with Discrete-Math tag">#discrete-math</a>
+              </span>
+            </div>
+          </div>
+        </header>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/math.html">math</a>,              <a href="https://miguelhx.github.io/tag/discrete-math.html">discrete-math</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Recursive data - define something in terms of simpler version of the same thing.</p>
-<p>Recursive data types play a central role in programming, and induction is really all
-about them.  Recursive data types are specified by recursive definitions, which say how to construct new data elements from previous ones. Along with …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/math-for-cs-recursive-definition.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/math-for-cs-state-machines-invariants.html">Math for CS: State Machines -- Invariants</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Thu 01 January 2026 in <a href="https://miguelhx.github.io/category/math-for-computer-science.html">Math for Computer Science</a>
+        <div class="entry-content">
+          This chapter is about infinite sets and some challenges in proving things about them. There has been a truly astonishing outcome of studying infinite sets. Their study led to the discovery of fundamental, logical limits on what computers can possibly do. For example, in a later section, they use reasoning …
+        </div>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/math.html">math</a>,              <a href="https://miguelhx.github.io/tag/discrete-math.html">discrete-math</a>
-    </p>
-  </header>
-  <div>
-      <div><p>State machines are a simple, abstract model of step-by-step processes.</p>
-<p>One of the most important uses of induction in computer science involves proving one or more desirable properties continues to hold at every step in a process. A property that is preserved through a series of operations or steps is …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/math-for-cs-state-machines-invariants.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/math-for-cs-induction.html">Math for CS: Induction</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Sun 28 December 2025 in <a href="https://miguelhx.github.io/category/math-for-computer-science.html">Math for Computer Science</a>
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/math-for-cs-infinite-sets.html">Read &#10093;</a>
+        </footer>
+      </article>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/math.html">math</a>,              <a href="https://miguelhx.github.io/tag/discrete-math.html">discrete-math</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Induction is a powerful method for showing a property is true for all non-negative integers. Induction plays a central role in discrete mathematics and computer science. In fact, its use is a defining characteristic of discrete—as opposed to continuous—mathematics. This chapter introduces two versions of induction, Ordinary and …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/math-for-cs-induction.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/math-for-cs-binary-relations.html">Math for CS: Binary Relations</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Wed 24 December 2025 in <a href="https://miguelhx.github.io/category/math-for-computer-science.html">Math for Computer Science</a>
+      <br><br><br>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/math.html">math</a>,              <a href="https://miguelhx.github.io/tag/discrete-math.html">discrete-math</a>
-    </p>
-  </header>
-  <div>
-      <div><p>We start by going over Functions.  Its definition, what domains, codomains and images are, examples, and function composition.  I was surprised to see some of the creative ways we can define a function.  For example let f(y) be the length of a left to right search of the bits …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/math-for-cs-binary-relations.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/math-for-cs-problem-set-2-thoughts.html">Math for CS: Problem Set 2 Thoughts</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Fri 19 December 2025 in <a href="https://miguelhx.github.io/category/math-for-computer-science.html">Math for Computer Science</a>
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/math-for-cs-recursive-definition.html">Math for CS: Recursive Definition</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-06T12:00:00-08:00">Tue 06 January 2026</time> in <a href="https://miguelhx.github.io/category/math-for-computer-science.html" title="All articles in category Math for Computer Science">Math for Computer Science</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/math.html" title="All articles with Math tag">#math</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/discrete-math.html" title="All articles with Discrete-Math tag">#discrete-math</a>
+              </span>
+            </div>
+          </div>
+        </header>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/math.html">math</a>,              <a href="https://miguelhx.github.io/tag/discrete-math.html">discrete-math</a>
-    </p>
-  </header>
-  <div>
-      <div><p>For problem 1, I follow the description’s equivalence formula of set theory.  But for part (a) when it asks to write a formula Members(p, a, b) of set theory that means p = {a, b} I am lost.  This must be something from the text book that was not …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/math-for-cs-problem-set-2-thoughts.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/math-for-cs-sets.html">Math for CS: Sets</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Fri 19 December 2025 in <a href="https://miguelhx.github.io/category/math-for-computer-science.html">Math for Computer Science</a>
+        <div class="entry-content">
+          Recursive data - define something in terms of simpler version of the same thing. Recursive data types play a central role in programming, and induction is really all about them. Recursive data types are specified by recursive definitions, which say how to construct new data elements from previous ones. Along with …
+        </div>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/math.html">math</a>,              <a href="https://miguelhx.github.io/tag/discrete-math.html">discrete-math</a>
-    </p>
-  </header>
-  <div>
-      <div><p>Informally, a set is a bunch of objects, which are called the elements of the set.  The elements of a set can be just about anything: numbers, points in space, or even other sets. The conventional way to write down a set is to list the elements inside curly-braces.</p>
-<p>This …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/math-for-cs-sets.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/math-for-cs-problem-set-1-reflection.html">Math for CS: Problem Set 1 Reflection</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Sun 14 December 2025 in <a href="https://miguelhx.github.io/category/math-for-computer-science.html">Math for Computer Science</a>
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/math-for-cs-recursive-definition.html">Read &#10093;</a>
+        </footer>
+      </article>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/math.html">math</a>,              <a href="https://miguelhx.github.io/tag/discrete-math.html">discrete-math</a>
-    </p>
-  </header>
-  <div>
-      <div><p>I didn’t find the first proofs to be easy.  It required creative mathematical thinking using algebraic rules, some of which I have forgotten.  To not waste too much time, I gave it an honest attempt for 16-32 min, then after I was surely stuck, I looked up the solution …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/math-for-cs-problem-set-1-reflection.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/math-for-cs-quantifiers-and-predicate-logic.html">Math for CS: Quantifiers and Predicate Logic</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Sun 14 December 2025 in <a href="https://miguelhx.github.io/category/math-for-computer-science.html">Math for Computer Science</a>
+      <br><br><br>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/math.html">math</a>,              <a href="https://miguelhx.github.io/tag/discrete-math.html">discrete-math</a>
-    </p>
-  </header>
-  <div>
-      <div><p>We start off with quantifiers.  There are two of them.  “For all” and “there exists”, each with their own notation.  For all is an upside down A and there exists is a backwards E.</p>
-<p>We are also introduced to predicates.  a predicate is a statement that contains a variable and …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/math-for-cs-quantifiers-and-predicate-logic.html">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2>
-      <a href="https://miguelhx.github.io/math-for-cs-logic-and-propositions.html">Math for CS: Logic and Propositions</a>
-      <span></span>
-    </h2>
-    <p>
-      Posted on Sun 07 December 2025 in <a href="https://miguelhx.github.io/category/math-for-computer-science.html">Math for Computer Science</a>
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/math-for-cs-state-machines-invariants.html">Math for CS: State Machines -- Invariants</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2026-01-01T12:00:00-08:00">Thu 01 January 2026</time> in <a href="https://miguelhx.github.io/category/math-for-computer-science.html" title="All articles in category Math for Computer Science">Math for Computer Science</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/math.html" title="All articles with Math tag">#math</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/discrete-math.html" title="All articles with Discrete-Math tag">#discrete-math</a>
+              </span>
+            </div>
+          </div>
+        </header>
 
-          &#8226; Tagged with
-              <a href="https://miguelhx.github.io/tag/computer-science.html">computer-science</a>,              <a href="https://miguelhx.github.io/tag/math.html">math</a>,              <a href="https://miguelhx.github.io/tag/discrete-math.html">discrete-math</a>
-    </p>
-  </header>
-  <div>
-      <div><p>A proposition is a statement that is True or False.</p>
-<p>A large fraction of all math statements are of the if-then form.</p>
-<p>Learning about propositions, and propositions from propositions.
-The propositions from propositions can be combinations, modifications, or relations.</p>
-<p>For example, and, or, not.  A implies B.  A if and …</p></div>
-        <br>
-        <a class="btn"
-           href="https://miguelhx.github.io/math-for-cs-logic-and-propositions.html">
-          Continue reading
-        </a>
-  </div>
-</article>
+        <div class="entry-content">
+          State machines are a simple, abstract model of step-by-step processes. One of the most important uses of induction in computer science involves proving one or more desirable properties continues to hold at every step in a process. A property that is preserved through a series of operations or steps is …
+        </div>
 
-  <div class="pagination">
-    <a class="btn float-left" href="https://miguelhx.github.io/category/math-for-computer-science2.html">
-      <i class="fa fa-angle-left"></i> Older Posts
-    </a>
-  </div>
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/math-for-cs-state-machines-invariants.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/math-for-cs-induction.html">Math for CS: Induction</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2025-12-28T19:40:00-08:00">Sun 28 December 2025</time> in <a href="https://miguelhx.github.io/category/math-for-computer-science.html" title="All articles in category Math for Computer Science">Math for Computer Science</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/math.html" title="All articles with Math tag">#math</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/discrete-math.html" title="All articles with Discrete-Math tag">#discrete-math</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Induction is a powerful method for showing a property is true for all non-negative integers. Induction plays a central role in discrete mathematics and computer science. In fact, its use is a defining characteristic of discrete—as opposed to continuous—mathematics. This chapter introduces two versions of induction, Ordinary and …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/math-for-cs-induction.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/math-for-cs-binary-relations.html">Math for CS: Binary Relations</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2025-12-24T11:46:00-08:00">Wed 24 December 2025</time> in <a href="https://miguelhx.github.io/category/math-for-computer-science.html" title="All articles in category Math for Computer Science">Math for Computer Science</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/math.html" title="All articles with Math tag">#math</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/discrete-math.html" title="All articles with Discrete-Math tag">#discrete-math</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          We start by going over Functions. Its definition, what domains, codomains and images are, examples, and function composition. I was surprised to see some of the creative ways we can define a function. For example let f(y) be the length of a left to right search of the bits …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/math-for-cs-binary-relations.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/math-for-cs-problem-set-2-thoughts.html">Math for CS: Problem Set 2 Thoughts</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2025-12-19T13:58:00-08:00">Fri 19 December 2025</time> in <a href="https://miguelhx.github.io/category/math-for-computer-science.html" title="All articles in category Math for Computer Science">Math for Computer Science</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/math.html" title="All articles with Math tag">#math</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/discrete-math.html" title="All articles with Discrete-Math tag">#discrete-math</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          For problem 1, I follow the description’s equivalence formula of set theory. But for part (a) when it asks to write a formula Members(p, a, b) of set theory that means p = {a, b} I am lost. This must be something from the text book that was not …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/math-for-cs-problem-set-2-thoughts.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/math-for-cs-sets.html">Math for CS: Sets</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2025-12-19T13:56:00-08:00">Fri 19 December 2025</time> in <a href="https://miguelhx.github.io/category/math-for-computer-science.html" title="All articles in category Math for Computer Science">Math for Computer Science</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/math.html" title="All articles with Math tag">#math</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/discrete-math.html" title="All articles with Discrete-Math tag">#discrete-math</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Informally, a set is a bunch of objects, which are called the elements of the set. The elements of a set can be just about anything: numbers, points in space, or even other sets. The conventional way to write down a set is to list the elements inside curly-braces. This …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/math-for-cs-sets.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/math-for-cs-problem-set-1-reflection.html">Math for CS: Problem Set 1 Reflection</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2025-12-14T17:42:00-08:00">Sun 14 December 2025</time> in <a href="https://miguelhx.github.io/category/math-for-computer-science.html" title="All articles in category Math for Computer Science">Math for Computer Science</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/math.html" title="All articles with Math tag">#math</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/discrete-math.html" title="All articles with Discrete-Math tag">#discrete-math</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          I didn’t find the first proofs to be easy. It required creative mathematical thinking using algebraic rules, some of which I have forgotten. To not waste too much time, I gave it an honest attempt for 16-32 min, then after I was surely stuck, I looked up the solution …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/math-for-cs-problem-set-1-reflection.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/math-for-cs-quantifiers-and-predicate-logic.html">Math for CS: Quantifiers and Predicate Logic</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2025-12-14T17:24:00-08:00">Sun 14 December 2025</time> in <a href="https://miguelhx.github.io/category/math-for-computer-science.html" title="All articles in category Math for Computer Science">Math for Computer Science</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/math.html" title="All articles with Math tag">#math</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/discrete-math.html" title="All articles with Discrete-Math tag">#discrete-math</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          We start off with quantifiers. There are two of them. “For all” and “there exists”, each with their own notation. For all is an upside down A and there exists is a backwards E. We are also introduced to predicates. a predicate is a statement that contains a variable and …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/math-for-cs-quantifiers-and-predicate-logic.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="https://miguelhx.github.io/math-for-cs-logic-and-propositions.html">Math for CS: Logic and Propositions</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2025-12-07T22:03:00-08:00">Sun 07 December 2025</time> in <a href="https://miguelhx.github.io/category/math-for-computer-science.html" title="All articles in category Math for Computer Science">Math for Computer Science</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/math.html" title="All articles with Math tag">#math</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="https://miguelhx.github.io/tag/discrete-math.html" title="All articles with Discrete-Math tag">#discrete-math</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          A proposition is a statement that is True or False. A large fraction of all math statements are of the if-then form. Learning about propositions, and propositions from propositions. The propositions from propositions can be combinations, modifications, or relations. For example, and, or, not. A implies B. A if and …
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://miguelhx.github.io/math-for-cs-logic-and-propositions.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+
+
+      <div class="w3-center">
+        <ul class="w3-pagination">
+          <li><a class="w3-green" href="https://miguelhx.github.io/category/math-for-computer-science.html">1</a></li>
+          <li><a class="" href="https://miguelhx.github.io/category/math-for-computer-science2.html">2</a></li>
+          <li><a href="https://miguelhx.github.io/category/math-for-computer-science2.html">&#10095;</a></li>
+        </ul>
+      </div>
+      <br><br><br>
+
+    </section>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          2025&dash;2026          Miguel Hernandez
+        </span>
+      </div>
+    </footer>
 
 
 
-<footer>
-<p>&copy; 2026 Miguel Hernandez</p>
-<p>
-<!-- Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme -->
-  <!-- <span class="footer-separator">|</span> -->
-  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
-  <script id="dark-theme-script"
-          src="https://miguelhx.github.io/theme/dark-theme/dark-theme.min.js"
-          data-enable-auto-detect-theme="True"
-          data-default-theme="light"
-          type="text/javascript">
-  </script>
-</p></footer>  </main>
-
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Blog",
-  "name": " Miguel's Personal Website ",
-  "url" : "https://miguelhx.github.io",
-  "image": "/images/yinyang.png",
-  "description": ""
-}
-</script>
-</body>
+  </body>
 </html>
