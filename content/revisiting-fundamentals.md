@@ -6,6 +6,22 @@ Pin: true
 
 I'm sure we all agree that mastering the fundamentals is important. This is true for any discipline. In this blog post, I will be sharing my learning roadmap/plan for revisiting the fundamentals of CS/Software and discuss why I'm doing this. I will also discuss with my thoughts about a master's, an actual software engineer job, and the bigger picture.
 
+### Why go back to the basics?
+
+First, a little background. I earned a Bachelor’s degree in Computer Science & Engineering back in 2019. It took me four years. Between 2019 until now, I got 3.5 years of professional software engineering experience. I also had some career gaps in between due to personal reasons.
+
+I started programming at the age of 16, during my junior year of high school. I am now 28, so that's over 10 years. Though I had a few years in between where I didn't code due to life circumstances.
+
+I feel like I did a solid job at learning the fundamentals during my undergrad. I was motivated, curious, learned how to learn, and practiced deep work principles. I had good exposure to math, algorithms, data structures, basics of programming, computer organization/architecture, networks, OS, etc.  You can find my relevant course work on my [LinkedIn](https://www.linkedin.com/in/miguel-hernandez-535b05102/) profile under the Education section.
+
+But as time has passed, I’ve realized there were areas I never got to touch (such as other programming languages theory, databases, compilers, cybersecurity, software architecture, etc). These are areas that I feel like if I learn them, I would be a stronger engineer. I'm also curious about learning new areas.
+
+Was my degree not enough?  I wouldn't say that.  My degree was useful in helping me lay down a proper foundation.  I am extremely grateful for the great professors that taught me during my undergrad. Shoutout to Kelvin Lwin, Daniel, Alberto Cerpa, Florin Rusu, and Angelo Kyrilov.  My apologies if I may have missed other great professors.  But a CS degree doesn't cover _everything_.  And that's okay.  That's what independent learning is for.
+
+If I really wanted to, I could go all in on interview prep and maybe land a job in the next 6-12 months.  But I'm not. I'm just taking a more hollistic, longer-term approach. I will still do interview prep though, as I will mention below in a later section.
+
+I'm revisiting the fundamentals because I want to refine my understanding, close knowledge gaps, visit untouched areas, and revisit concepts with more maturity and context than I had back in school. I'm also rebuilding my career from the ground up and this is a way to get my bases covered. I want to widen and deepen my base of knowledge. I also love learning !
+
 ### My Learning Roadmap
 
 The goal is to complete the necessary courses from Open Source Society University [Computer Science curriculum](https://github.com/ossu/computer-science). Just in case you're not familiar with OSSU, it's a list of online courses meant to mirror the curricululm of an actual Bachelor's degree in Computer Science.  It has online courses from top universities such as Harvard, Princeton, MIT, Stanford, etc. The courses are free or cheap.
@@ -23,21 +39,6 @@ I'll keep going down the list for Core Programming section, while concurrently g
 I don't plan on completing all of the courses.  I'm picking and choosing what I believe to be the most important or relevant, in an order that makes sense. Courses such as computer graphics, or machine learning, for example, I might not be taking because I'm not targeting that specific type of job. If I have some extra time, I might take them out of curiosity, but I need balance that with pragmatism.
 
 I won't be taking the calculus courses from the core math section since I already took them in college and feel like I could easily pick up necessary info if needed.
-
-### Why go back to the basics?
-
-First, a little background. I earned a Bachelor’s degree in Computer Science & Engineering back in 2019. It took me four years. Between 2019 until now, I got 3.5 years of professional software engineering experience. I also had some career gaps in between due to personal reasons.
-
-I feel like I did a solid job at learning the fundamentals during my undergrad. I was motivated, curious, learned how to learn, and practiced deep work principles. I had good exposure to math, algorithms, data structures, basics of programming, computer organization/architecture, networks, OS, etc.  You can find my relevant course work on my [LinkedIn](https://www.linkedin.com/in/miguel-hernandez-535b05102/) profile under the Education section.
-
-But as time has passed, I’ve realized there were areas I never got to touch (such as other programming languages, databases, compilers, cybersecurity, software architecture, etc). These are areas that I feel like if I learn them, I would be a stronger engineer. I'm also curious about learning new areas.
-
-Was my degree not enough?  I wouldn't say that.  My degree was useful in helping me lay down a proper foundation.  I am extremely grateful for the great professors that taught me during my undergrad. Shoutout to Kelvin Lwin, Daniel, Alberto Cerpa, Florin Rusu, and Angelo Kyrilov.  My apologies if I may have missed other great professors.  But a CS degree doesn't cover _everything_.  And that's okay.  That's what independent learning is for.
-
-If I really wanted to, I could go all in on interview prep and maybe land a job in the next 6-12 months.  But I'm not. I'm just taking a more hollistic, longer-term approach. I will still do interview prep though, as I will mention below in a later section.
-
-I'm revisiting the fundamentals because I want to refine my understanding, close knowledge gaps, visit untouched areas, and revisit concepts with more maturity and context than I had back in school. I'm also rebuilding my career from the ground up and this is a way to get my bases covered. I want to widen and deepen my base of knowledge. I also love learning !
-
 
 ### What about a Master's degree?
 
@@ -57,15 +58,15 @@ I understand the credential aspect of a master's. But at the end of the day it's
 
 I'm currently unemployed. Yes, a job is important.  After all, we study and learn in order to eventually become employed so that we can earn a living. I kinda don't want to start working yet though so that I can focus on this learning path instead. I love having free time.
 
-Long term, I believe this will make me a better overall engineer for if/when I do land an offer later. With a stronger base of core, foundational knowledge, I believe I can reach a higher ceiling for my technical career, which may lead to more money and can make up what I lost from not working.
+Long term, I believe this will make me a better overall engineer for if I do land an offer later. With a stronger base of core, foundational knowledge, I believe I can reach a higher ceiling for my technical career, which may lead to more money and can make up what I lost from not working.
 
 However, it could be argued that getting a job ASAP instead and just learning on the job may be more valuable rather than revisiting the fundamentals full time. And that's valid. There's the money aspect too, of course.
 
-The money is important, yes. But more important to me is becoming really good at software engineering, learning for the love of it, and satisfying my curiosity.
+The money is important, yes. But more important to me is becoming great at software engineering, learning for the love of it, and satisfying my curiosity.
 
-If I was offered a job at a company that's a right mutual fit today though I might just take it. Then, I'll learn these online courses on the side. This will stretch out my learning timeline, which I'm okay with. But it has to be the right opportunity. I'm also doing okay with enough resources to keep me afloat for a while without having to work.
+If I was offered a job at a company that's a right mutual fit today though I might just take it. Then, I'll learn these online courses on the side. This will stretch out my learning timeline, which I'm okay with. But it has to be the right opportunity. I'm doing okay with enough resources to keep me afloat for a while without having to work.
 
-I am doing interview prep along with going through the curriculum. This includes leetcode, system design, mock interviews, etc. This is so I'll be prepared towards the end of the curriculum when I'll be looking for a job anyway.
+I plan on doing interview prep along with going through the curriculum. This includes leetcode, system design, mock interviews, etc. This is so I'll be prepared towards the end of the curriculum when I'll be looking for a job anyway.
 
 The experience from on the job learning will be valuable, of course. I just don't think many companies will let you use company time to focus on fundamentals learning at a deep level. They want you to already have strong fundamentals, which is fair, of course. I believe I do have strong fundamentals already, and that I'm good enough now to adapt and perform well in many software engineer positions.  But I'm taking a few steps back to try to get to a whole new level.
 

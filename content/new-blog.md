@@ -6,7 +6,9 @@ Why am I getting into blogging? Partly as a way to deepen my own learning, but a
 
 I built this website using Python and the static site generator called [pelican](https://getpelican.com/), with the [Flex](https://github.com/alexandrevicenzi/Flex) theme.
 
-I chose pelican to build my website because I wanted to save time and focus on the writing aspect. This blog static site meets all my needs of what I was looking for in terms of functionality, so I thought "why reinvent the wheel?" Sometimes, it's OK to reinvent the wheel for learning purposes though. For now, going to stick with this built-in solution.
+I chose pelican to build my website because I wanted to save time and focus on the writing aspect. This blog static site meets all my needs of what I was looking for in terms of functionality, so I thought "why reinvent the wheel?"
+
+Sometimes, it's OK to reinvent the wheel for learning purposes though. For now, going to stick with this built-in solution, even though the design is not the best.
 
 Over the next couple of years, I want to work on re-building my Software Engineering career from the ground up. This includes re-visiting the fundamentals of Computer Science. I plan to share what I learn along the way. I’ll use this space to distill insights from books, courses, and hands-on projects. It will serve as proof of my learning journey.
 
