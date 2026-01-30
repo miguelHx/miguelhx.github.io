@@ -4,26 +4,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Math for CS: Proof Methods &ndash; Miguel's Personal Website</title>
+    <title>Systematic Program Design: TA Solver Project &ndash; Miguel's Personal Website</title>
 
     <!-- Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Social -->
     <meta property="article:author" content="Miguel Hernandez" />
-    <meta property="article:section" content="Math for Computer Science" />
-    <meta property="article:published_time" content="2025-12-02" />
+    <meta property="article:section" content="Systematic Program Design" />
+    <meta property="article:published_time" content="2026-01-26" />
 
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Math for CS: Proof Methods"/>
-    <meta property="og:description" content="In this unit, we go over some proof methods. Two main ones are covered, followed by some tips about good proofs. Proof by cases Proof by contradiction I’ll spare the details here, but you can find it on the course website if you want to know the specifics. Why …"/>
+    <meta property="og:title" content="Systematic Program Design: TA Solver Project"/>
+    <meta property="og:description" content="Problem 1 was straight-forward, since it&#39;s basically the same problem as max-exits-to from the problem bank that I already solved. Going through the 5 step recipe to try and solve Problem 2 of the ta-solver file. Signature, purpose and stub. Define examples, wrap each in check-expect. Template and inventory. Code …"/>
     <meta property="og:site_name" content="Miguel's Personal Website" />
-    <meta property="og:url" content="https://miguelhx.github.io/math-for-cs-proof-methods.html"/>
+    <meta property="og:url" content="https://miguelhx.github.io/systematic-program-design-ta-solver-project.html"/>
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Math for CS: Proof Methods">
-    <meta name="twitter:description" content="In this unit, we go over some proof methods. Two main ones are covered, followed by some tips about good proofs. Proof by cases Proof by contradiction I’ll spare the details here, but you can find it on the course website if you want to know the specifics. Why …">
-    <meta name="twitter:url" content="https://miguelhx.github.io/math-for-cs-proof-methods.html">
+    <meta name="twitter:title" content="Systematic Program Design: TA Solver Project">
+    <meta name="twitter:description" content="Problem 1 was straight-forward, since it&#39;s basically the same problem as max-exits-to from the problem bank that I already solved. Going through the 5 step recipe to try and solve Problem 2 of the ta-solver file. Signature, purpose and stub. Define examples, wrap each in check-expect. Template and inventory. Code …">
+    <meta name="twitter:url" content="https://miguelhx.github.io/systematic-program-design-ta-solver-project.html">
 
     <!-- Feed -->
     <link rel="alternate" type="application/rss+xml" href="https://miguels-personal-website.disqus.com/latest.rss" title="Miguel's Personal Website Comments RSS Feed">
@@ -67,20 +67,20 @@
 
     <article>
       <header class="w3-container col-main">
-        <h1>Math for CS: Proof Methods</h1>
+        <h1>Systematic Program Design: TA Solver Project</h1>
         <div class="post-info">
           <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
-            <span><time datetime="2025-12-02T22:03:00-08:00">Tue 02 December 2025</time> in <a class="w3-text-green" href="https://miguelhx.github.io/category/math-for-computer-science.html" title="All articles in category Math for Computer Science">Math for Computer Science</a></span>
+            <span><time datetime="2026-01-26T10:20:00-08:00">Mon 26 January 2026</time> in <a class="w3-text-green" href="https://miguelhx.github.io/category/systematic-program-design.html" title="All articles in category Systematic Program Design">Systematic Program Design</a></span>
           </div>
           <div>
             <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
               <a href="https://miguelhx.github.io/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
             </span>
             <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
-              <a href="https://miguelhx.github.io/tag/math.html" title="All articles with Math tag">#math</a>
+              <a href="https://miguelhx.github.io/tag/spd.html" title="All articles with Spd tag">#spd</a>
             </span>
             <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
-              <a href="https://miguelhx.github.io/tag/discrete-math.html" title="All articles with Discrete-Math tag">#discrete-math</a>
+              <a href="https://miguelhx.github.io/tag/racket.html" title="All articles with Racket tag">#racket</a>
             </span>
           </div>
         </div>
@@ -91,17 +91,31 @@
 
       <div class="col-main w3-container">
         <section id="content">
-          <p>In this unit, we go over some proof methods.</p>
-<p>Two main ones are covered, followed by some tips about good proofs.</p>
+          <p>Problem 1 was straight-forward, since it's basically the same problem as <code>max-exits-to</code> from the problem bank that I already solved.</p>
+<p>Going through the 5 step recipe to try and solve Problem 2 of the ta-solver file.</p>
 <ol>
-<li>Proof by cases</li>
-<li>Proof by contradiction</li>
+<li>Signature, purpose and stub.</li>
+<li>Define examples, wrap each in check-expect.</li>
+<li>Template and inventory.</li>
+<li>Code the function body.</li>
+<li>Test and debug until correct</li>
 </ol>
-<p>I’ll spare the details here, but you can find it on the course website if you want to know the specifics.</p>
-<p>Why proofs are important:  </p>
-<p>It is a certainty that we’ll all one day be at the mercy of critical computer systems designed by you and your classmates. So we really hope that you’ll develop the ability to formulate rock-solid logical arguments that a system actually does what you think it does!</p>
-<p>After reading all this about proofs so far, I realize that proofs are difficult.  It’s an art.  Like programming, it requires creative and rigorous thinking.  Writing a program is one thing, but proving that it does what you think it does is another.  But there are similarities between them.  Both are like writing an essay.</p>
-<p>Having the ability to prove your programs’ correctness can be useful in the real world.</p>
+<p>Steps 1-2 are done for us already, I am working to do steps 3-5.  I’m using the function parameters to help come up with a template.  For one, we will be using all selectors of the ta data structure.</p>
+<p>Naively, we can say that there is a structural recursion on one of the parameters because it’s a list.  But due to the actual steps taken to solve this, it might be a search problem on an arbitrary-arity tree.</p>
+<p>It might also be generative recursion, but I need to solve a few examples, examine the steps taken, then use that information to come up with the model-level template description before writing the actual template.</p>
+<p>Here is the model-level template description that I wrote:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">;; template: all selectors for ta, mutual recursion for arbitary-arity tree for multiple potential slots to take,</span>
+<span class="c1">;; backtracking search when potential slot doesn&#39;t work out, accumulator for solution so far,</span>
+<span class="c1">;; generative recursion - stop trivial case where slots is empty</span>
+</code></pre></div>
+
+<p>After writing a model-level template description, I took the template from sudoku solver because it closely resembles the structure we are looking for.  Now making tweaks to it.</p>
+<p>I got the structure in place, arbitrary-arity tree mixed with backtracking search mixed with generative recursion.  Coded up all of it except the (next-states s) part, which is the most complicated procedure.  I’m spending some time thinking about how it could be done.  I have some ideas, but not sure yet how to translate into code.  Need to look at the parameter data as well as the desired output and somehow put them together.</p>
+<p>Got it!  I built out the solution in iterations.  Helper functions came up, and I made them along with their signature and purposes.  I spend a lot of time up front thinking about the solution, how it would work, what the code would need to do, etc.</p>
+<p>Then I started coding.  The way it works is we first find the next open slots and build a list of these possible states, while updating the ta lists to reflect taking up a slot, and also updating the slots list to begin looking for the next slot when we look at the next states.</p>
+<p>Then, we keep trying to find next open slot, producing new states until we reach a solved state, which happens when the slots list is empty and so we return the result so far that we built up while making the new states.</p>
+<p>Going to create some more tests as a sanity check.  Then I’m done with this course !</p>
+<p>All done !</p>
         </section>
 
         <br><br><br>
@@ -123,10 +137,10 @@
 
           <p style="font-size:10pt; font-style: italic;">Did you like this article? Share it with your friends!</p>
           <div id="share" class="share">
-            <a href="https://www.facebook.com/sharer.php?u=https%3A//miguelhx.github.io/math-for-cs-proof-methods.html&amp;t=Miguel%27s%20Personal%20Website%3A%20Math%20for%20CS%3A%20Proof%20Methods" target="_blank" class="w3-btn w3-indigo">
+            <a href="https://www.facebook.com/sharer.php?u=https%3A//miguelhx.github.io/systematic-program-design-ta-solver-project.html&amp;t=Miguel%27s%20Personal%20Website%3A%20Systematic%20Program%20Design%3A%20TA%20Solver%20Project" target="_blank" class="w3-btn w3-indigo">
               <i class="fa fa-facebook"></i> <span>Facebook</span>
             </a>
-            <a href="https://twitter.com/share?url=https%3A//miguelhx.github.io/math-for-cs-proof-methods.html&amp;text=Miguel%27s%20Personal%20Website%3A%20Math%20for%20CS%3A%20Proof%20Methods" target="_blank" class="w3-btn w3-black">
+            <a href="https://twitter.com/share?url=https%3A//miguelhx.github.io/systematic-program-design-ta-solver-project.html&amp;text=Miguel%27s%20Personal%20Website%3A%20Systematic%20Program%20Design%3A%20TA%20Solver%20Project" target="_blank" class="w3-btn w3-black">
               <i class="fa fa-x-twitter">X</i> <span></span>
             </a>
           </div>
@@ -142,8 +156,8 @@
              */
             
             var disqus_config = function () {
-              this.page.url = 'https://miguelhx.github.io/math-for-cs-proof-methods.html';  // Replace PAGE_URL with your page's canonical URL variable
-              this.page.identifier = 'https://miguelhx.github.io/math-for-cs-proof-methods.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              this.page.url = 'https://miguelhx.github.io/systematic-program-design-ta-solver-project.html';  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = 'https://miguelhx.github.io/systematic-program-design-ta-solver-project.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
             
             (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
