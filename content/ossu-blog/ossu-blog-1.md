@@ -1,4 +1,4 @@
-Title: OSSU Blog 1 - Progress Update from Oct. 18, 2025 until Jan. 24, 2026
+Title: OSSU Blog 1 - Progress Update from October 18, 2025 until January 24, 2026
 Date: 2026-01-27 10:00
 Category: OSSU Blog
 Tags: ossu
@@ -6,6 +6,14 @@ Slug: ossu-blog-1
 Pin: true
 
 I'm happy to share that I have made good progress on OSSU since I started back in Oct. 2025! In this blog post, I will be briefly discussing the courses I took so far, along with a break-down of the time I took to complete them. Then I will talk about what's next.
+
+## What is OSSU?
+
+OSSU stands for [Open Source Society University](https://github.com/ossu/computer-science?tab=readme-ov-file). The OSSU curriculum is a complete education in computer science using online materials.
+
+It is designed according to the degree requirements of undergraduate computer science majors, minus general education (non-CS) requirements, as it is assumed most of the people following this curriculum are already educated outside the field of CS. The courses themselves are among the very best in the world, often coming from Harvard, Princeton, MIT, etc.
+
+If you want to know more about my background and why I'm doing this, check out my other blog post [here](revisiting-software-fundamentals.html).
 
 The three courses I worked on since Oct. 2025 are [Systematic Program Design](https://learning.edx.org/course/course-v1:UBCx+SPD1x+2T2015/home), [Math for Computer Science](https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/), and [Intro to CS and Programming using Python](https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/).
 
@@ -15,15 +23,18 @@ I started with Systematic Program Design on Oct. 18.  Then, about a month later,
 
 My schedule was to work on Intro to CS every day except Sundays for 1-2 hours each day, and on Mon/Wed/Fri work on SPD for 3-6 hours each day, and on Tue/Thu/Sat work on Math for CS for 3-6 hours each day.
 
-If you want to know more about my background and why I'm doing this, check out my other blog post [here](revisiting-software-fundamentals.html).
-
 In case you didn't read the above linked post, I should let you know about my background, so you can get some perspective about my progress while going through OSSU.
 
 I am an experienced software engineer with 3.5 years of professional experience and about 10 years of coding or learning about code/CS/software engineering/programming.
 
-My analysis or takeaways might be different due to my background. I'll try to put myself in the shoes of a beginner when discussing these courses, while also giving my thoughts/perspective as an experienced engineer.
+My analysis or takeaways might be different due to my background, compared to a beginner. I'll try to put myself in the shoes of a beginner when discussing these courses, while also giving my thoughts/perspective as an experienced engineer.
+
+> __"No man ever steps in the same river twice, for it's not the same river and he's not the same man"__
+> __\- Heraclitus__
 
 Now, let's do a time break-down followed by a brief overview of my thoughts of each course.
+
+_Note: My learning plan has slightly changed since I wrote that blog post. I track my time spent as a way to measure my productivity and keep myself on track based on the effort guidelines from the GitHub._
 
 ## Systematic Program Design
 
@@ -167,13 +178,13 @@ But be prepared to struggle. It is not easy. Also try not to overcomplicate thin
 
 If you haven't taken Calculus, trust the OSSU recommendations and take Calculus before this course or Epp's book.
 
-So far, I am satisfied 
+I am satisfied with the course so far.
 
 ## Intro to CS and Programming using Python
 
 __Total time taken: 32.33 hours__ from Dec. 16, 2025 until Jan 24, 2026, which is about 6 weeks.
 
-The expected duration is 14 weeks, with 6-10 hours/week of effort. I beat that duration by 8 weeks. Since I am well-versed in Python and took intro to CS course in college, I decided to watch the videos at 2x speed. Also, I didn't struggle much with the problem sets. They were somewhat challenging for an intro course, but nothing over my head.
+The expected duration is 14 weeks, with 6-10 hours/week of effort.
 
 Weekly breakdown:
 
@@ -241,13 +252,13 @@ If you're experienced, you can probably get away with skipping this course. Most
 
 Maybe see if you can do the problem sets to test your knowledge and only then watch the related lectures if you get stuck.  You can also look up the solution on my GitHub if you get truly stuck.
 
-Overall I am happy with what I've accomplished so far. I'm averaging about __18.57 hours__ each week of total effort on OSSU. For my next run, I'm aiming for around __20 hours__ each week. But maybe I'll take 2 courses instead of 3 concurrently, not sure yet.
+Overall I am happy with what I've accomplished so far. I'm averaging about __18.57 hours__ each week of total effort on OSSU. For my next run, I'm aiming for closer to __20 hours__ each week. But maybe I'll take 2 courses instead of 3 concurrently, not sure yet.
 
 ## What's Next
 
 Next up, I plan on taking [Class-based Program Design](https://course.ccs.neu.edu/cs2510sp22/index.html) concurrently with [Programming Languages parts A/B/C](https://www.coursera.org/learn/programming-languages). But before that, I want to take [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/). I'm also considering taking [Harvard's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/home).
 
-However, before continuing with the next courses in OSSU, I think I want to take a 1-3 month break from it. Not because I'm tired of it or anything like that; I'm actually eager to learn more !
+However, before continuing with the next courses in OSSU, I think I want to take a 1-3 month break from it. Not because I'm tired of it or anything like that; I really enjoy the learning process and I'm eager to learn more !
 
 But I have some other initiatives that I wanted to work on. One of them is creating a YouTube channel and making videos about programming and OSSU. I can start by creating some problem set walkthrough videos for the Intro to CS using Python course, since those don't exist anywhere.
 
@@ -259,6 +270,12 @@ There's also some other blog posts on my backlog that I want to create, which in
 
 I also want to work on adding features to one of my side projects, which is a [music website](https://github.com/miguelHx/Latino_Nostalgia) that I created.
 
-I think I can deliver all of this within 1-3 months. Then I'll be in a better position to continue the OSSU curriculum, especially since I'll be armed with the latest knowledge about learning.
+I think I can deliver all of this within 2-3 months. Then I'll be in a better position to continue the OSSU curriculum, especially since I'll be armed with the latest knowledge about learning.
 
-This plan is subject to change. It's possible that I decide last minute to not do one or more of what I planned above. I'm still weighing my options. Stay tuned until my next OSSU blog.
+This plan is subject to change. It's possible that I decide last minute to not do one or more of what I planned above. I'm still weighing my options. I need to invest time into thinking and planning more about all this.
+
+> "Give me six hours to chop down a tree and I will spend the first four sharpening the axe." – Abraham Lincoln
+
+Sharpening the axe here for me is thinking about and planning what to do next. Chopping the tree is actually carrying out the plan. The planning to execution ratio might not be exactly like from the quote, but the key idea here is to invest time in planning, so that's what I am going to do.
+
+Stay tuned until my next OSSU blog.

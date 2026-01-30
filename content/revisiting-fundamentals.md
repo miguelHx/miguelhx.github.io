@@ -48,11 +48,11 @@ Some might argue that you need strong foundations to complete one in the first p
 
 I think of getting a master's like adding branches to a tree of CS/Software knowledge. And I think of getting a bachelor's as strengthening the trunk of said tree. I already have a bachelor's, but going through another one will make my knowledge tree trunk even stronger, which is more important to me right now because I believe a stronger/bigger trunk may allow for a taller tree with more branches in the future.
 
-Sure, some master's programs teach the fundamentals as well, but from the curriculum's I've seen, grad level courses tend to be more advanced and therefore assume prerequisite knowledge. There's also the money aspect. I could find the same or similar grad course online for free and of high quality. If not, then I can find a high quality book on the topic. Money saved.
+Sure, some master's programs teach the fundamentals as well, such as knowledge-based Master's. But from the curriculum's I've seen, grad level courses tend to be more advanced and therefore assume prerequisite knowledge. There's also the money aspect. I could find the same or similar grad course topic online for free and of high quality. If not, then I can find a high quality book on the topic. Money saved.
 
-I have respect for Computer Science research but it's just not a right fit for me and the type of jobs I will be looking for in the future. Also, not interested in staying in academia, with all due respect. I know not all master's degrees make you write a research thesis. The ones that just focus on courses I can replicate for free or a lot cheaper as mentioned above.
+As for research-based Master's, I have respect for Computer Science research but it's just not a right fit for me and the type of jobs I will be looking for in the future. Also, not interested in staying in academia, with all due respect. I know not all master's degrees make you write a research thesis. The ones that just focus on courses I can replicate for free or a lot cheaper as mentioned above.
 
-I understand the credential aspect of a master's. But at the end of the day it's just a piece of paper. Most important of course is the knowledge obtained from the degree. Although I won't be getting a credential for OSSU, the knowledge is important to me and I have this blog to showcase my learnings and reviews of each course I take.
+I understand the credential aspect of a master's. But at the end of the day it's just a piece of paper. Most important of course is the knowledge obtained from the degree. Although I won't be getting a credential for OSSU, the knowledge is important to me and I have this blog to showcase my learnings and reviews of each course I take. Not to mention I will be putting OSSU on my LinkedIn.
 
 ### What about a job?
 
