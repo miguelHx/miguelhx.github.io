@@ -5,7 +5,7 @@ Tags: ossu
 Slug: ossu-blog-1
 Pin: true
 
-I'm happy to share that I have made good progress on OSSU since I started back in Oct. 2025! In this blog post, I will be briefly discussing the courses I took so far, along with a break-down of the time I took to complete them. Then I will talk about what's next.
+I'm happy to share that I have made good progress on [OSSU](https://github.com/ossu/computer-science?tab=readme-ov-file) since I started back in Oct. 2025! In this blog post, I will be briefly discussing the courses I took so far, along with a break-down of the time I took to complete them. Then I will talk about what's next.
 
 ## What is OSSU?
 
@@ -14,6 +14,8 @@ OSSU stands for [Open Source Society University](https://github.com/ossu/compute
 It is designed according to the degree requirements of undergraduate computer science majors, minus general education (non-CS) requirements, as it is assumed most of the people following this curriculum are already educated outside the field of CS. The courses themselves are among the very best in the world, often coming from Harvard, Princeton, MIT, etc.
 
 If you want to know more about my background and why I'm doing this, check out my other blog post [here](revisiting-software-fundamentals.html).
+
+My learning plan has changed since I wrote that blog post. I worked on three courses instead of the two listed.
 
 The three courses I worked on since Oct. 2025 are [Systematic Program Design](https://learning.edx.org/course/course-v1:UBCx+SPD1x+2T2015/home), [Math for Computer Science](https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/), and [Intro to CS and Programming using Python](https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/).
 
@@ -34,7 +36,7 @@ My analysis or takeaways might be different due to my background, compared to a 
 
 Now, let's do a time break-down followed by a brief overview of my thoughts of each course.
 
-_Note: My learning plan has slightly changed since I wrote that blog post. I track my time spent as a way to measure my productivity and keep myself on track based on the effort guidelines from the GitHub._
+_Note: I track my time spent as a way to measure my productivity and keep myself on track based on the effort guidelines from the GitHub._
 
 ## Systematic Program Design
 
