@@ -106,7 +106,7 @@
 <li>Test and debug until correct</li>
 </ol>
 <p>Steps 1-2 are done for us already, I am working to do steps 3-5.  I’m using the function parameters to help come up with a template.  For one, we will be using all selectors of the ta data structure.</p>
-<p>Naively, we can say that there is a structural recursion on one of the parameters because it’s a list.  But due to the actual steps taken to solve this, it might be a search problem on an arbitrary-arity tree.</p>
+<p>We can start out by saying there is a structural recursion on one of the parameters because it’s a list.  But due to the actual steps taken to solve this, it might be a search problem on an arbitrary-arity tree instead.</p>
 <p>It might also be generative recursion, but I need to solve a few examples, examine the steps taken, then use that information to come up with the model-level template description before writing the actual template.</p>
 <p>Here is the model-level template description that I wrote:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">;; template: all selectors for ta, mutual recursion for arbitary-arity tree for multiple potential slots to take,</span>
