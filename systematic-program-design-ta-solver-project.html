@@ -111,7 +111,13 @@
 <p>Here is the model-level template description that I wrote:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">;; template: all selectors for ta, mutual recursion for arbitary-arity tree for multiple potential slots to take,</span>
 <span class="c1">;; backtracking search when potential slot doesn&#39;t work out, accumulator for solution so far,</span>
-<span class="c1">;; generative recursion - stop trivial case where slots is empty</span>
+<span class="c1">;; generative recursion:</span>
+<span class="c1">;; termination argument:</span>
+<span class="c1">;; trivial case:  slots is empty</span>
+<span class="c1">;;     reduction step: remove slot from state when we find one in list of TAs</span>
+<span class="c1">;;     argument: the reduction step removes the slots by one, so</span>
+<span class="c1">;;           eventually the slots will be empty or false will be produced if no</span>
+<span class="c1">;;           corresponding slot is found</span>
 </code></pre></div>
 
 <p>After writing a model-level template description, I took the template from sudoku solver because it closely resembles the structure we are looking for.  Now making tweaks to it.</p>
