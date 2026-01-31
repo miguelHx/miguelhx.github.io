@@ -3,7 +3,7 @@ Date: 2026-01-26 10:20
 Category: Systematic Program Design
 Tags: computer-science,spd,racket
 
-Problem 1 was straight-forward, since it's basically the same problem as `max-exits-to` from the problem bank of this week that I had already solved. However, I adapted it to operate on ALL nodes of a network, that way we can take care of disconnected components in the network.
+Problem 1 was straight-forward, since it's basically the same problem as `max-exits-to` from the problem bank of this week that I had already solved. However, I adapted it to operate on ALL nodes of a network, that way we can take care of disconnected components.
 
 Going through the 5 step recipe to try and solve Problem 2 of the ta-solver file.
 
