@@ -1,7 +1,7 @@
 Title: Systematic Program Design: Space Invaders Project
 Date: 2025-12-15 16:20
 Category: Systematic Program Design
-Tags: computer-science,spd,racket
+Tags: computer-science,racket,projects
 
 Just completed the midterm project which was to implement Space Invaders game! It's pretty easy if you paid attention to all the lessons leading up to here. I started by doing a domain analysis using pen and paper. I also wrote out all the scenarios, such as changing direction when an invader reaches edge of screen, missile to invader collision, tank switching directions, spawning invaders, and game over when invader reaches the bottom.  Wrote down which big bang functions I would be needing.  Then I got to work. I borrowed some code that I previously implemented. Overall it was fun to implement.
 

@@ -1,7 +1,7 @@
 Title: Systematic Program Design: Week 5 - Naturals and Helpers
 Date: 2025-12-07 23:03
 Category: Systematic Program Design
-Tags: computer-science,spd,racket
+Tags: computer-science,racket
 
 This is my brain dump of week 5 of SPD. I might not go into too much detail and to understand some of it you might need to be familiar with the Racket language and have completed weeks 1-4. I haven't created blog posts about weeks 1-4 yet because I just spun up my blog at the beginning of week 5. I do plan on going back and creating blog posts for those weeks.
 

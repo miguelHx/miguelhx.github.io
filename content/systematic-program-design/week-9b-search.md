@@ -1,7 +1,7 @@
 Title: Systematic Program Design: Week 9b - Search
 Date: 2026-01-08 13:00
 Category: Systematic Program Design
-Tags: computer-science,spd,racket
+Tags: computer-science,racket
 
 > ### Search Module
 In this module, we will expand on generative recursion and work on search problems, which are a category of problem solving that can be solved by generating the space of all possible paths from a given state and traversing that space until a solution is found. We will see that it is quite easy to solve Sudoku puzzles this way.

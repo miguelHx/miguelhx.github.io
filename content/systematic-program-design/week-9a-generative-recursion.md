@@ -1,7 +1,7 @@
 Title: Systematic Program Design: Week 9a - Generative Recursion
 Date: 2026-01-04 13:00
 Category: Systematic Program Design
-Tags: computer-science,spd,racket
+Tags: computer-science,racket
 
 > ### Generative Recursion Module
 Generative recursion is in many ways similar to structural recursion: a function calls itself recursively (or several functions call themselves in mutual recursion). For the recursion to terminate, each recursive call must receive an argument that is in some way "closer to the base case". That is what guarantees the recursion will eventually terminate.

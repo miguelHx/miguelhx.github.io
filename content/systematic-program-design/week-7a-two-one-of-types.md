@@ -1,7 +1,7 @@
 Title: Systematic Program Design: Week 7a - Two One-of Types
 Date: 2025-12-28 19:50
 Category: Systematic Program Design
-Tags: computer-science,spd,racket
+Tags: computer-science,racket
 
 Module Overview
 

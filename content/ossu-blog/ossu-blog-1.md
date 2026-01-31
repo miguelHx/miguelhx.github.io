@@ -5,7 +5,7 @@ Tags: ossu
 Slug: ossu-blog-1
 Pin: true
 
-I'm happy to share that I have made good progress on [OSSU](https://github.com/ossu/computer-science?tab=readme-ov-file) since I started back in Oct. 2025! In this blog post, I will be briefly discussing the courses I took so far, along with a break-down of the time I took to complete them. Then I will talk about what's next.
+I'm happy to share that I have made good progress on [OSSU](https://github.com/ossu/computer-science?tab=readme-ov-file) since I started back in October 2025! In this blog post, I will be briefly discussing the courses I took so far, along with a break-down of the time I took to complete them. Then I will talk about what's next.
 
 ## What is OSSU?
 
@@ -17,6 +17,15 @@ If you want to know more about my background and why I'm doing this, check out m
 
 My learning plan has changed since I wrote that blog post. I worked on three courses instead of the two listed.
 
+Here's a little bit about my background, to give you some perspective of where I'm at while going through this curriculum.
+
+I am a software engineer with 3.5 years of professional experience and about 10 years of coding or learning about code/CS/software engineering/programming. I earned a 4-year bachelor's degree in Computer Science & Engineering back in 2019. Between my graduation and now, apart from my professional experience, I've had a few gap years of non-coding.
+
+Now, I'm re-building my career from the ground up, starting with OSSU courses. I'll try to discuss two perspectives. One trying to put myself in the shoes of a beginner, and the other as an experienced engineer.
+
+> __"No man ever steps in the same river twice, for it's not the same river and he's not the same man"__
+> __\- Heraclitus__
+
 The three courses I worked on since Oct. 2025 are [Systematic Program Design](https://learning.edx.org/course/course-v1:UBCx+SPD1x+2T2015/home), [Math for Computer Science](https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/), and [Intro to CS and Programming using Python](https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/).
 
 I completed Systematic Program Design and Intro to CS courses, but only about a quarter of Math for CS.  I was taking these courses concurrently, though I didn't start them at the same time.
@@ -24,15 +33,6 @@ I completed Systematic Program Design and Intro to CS courses, but only about a 
 I started with Systematic Program Design on Oct. 18.  Then, about a month later, I began Math for CS. Then about another month later, I began Intro to CS. So, between Dec. 16 and now, I was taking the three courses concurrently.
 
 My schedule was to work on Intro to CS every day except Sundays for 1-2 hours each day, and on Mon/Wed/Fri work on SPD for 3-6 hours each day, and on Tue/Thu/Sat work on Math for CS for 3-6 hours each day.
-
-In case you didn't read the above linked post, I should let you know about my background, so you can get some perspective about my progress while going through OSSU.
-
-I am an experienced software engineer with 3.5 years of professional experience and about 10 years of coding or learning about code/CS/software engineering/programming.
-
-My analysis or takeaways might be different due to my background, compared to a beginner. I'll try to put myself in the shoes of a beginner when discussing these courses, while also giving my thoughts/perspective as an experienced engineer.
-
-> __"No man ever steps in the same river twice, for it's not the same river and he's not the same man"__
-> __\- Heraclitus__
 
 Now, let's do a time break-down followed by a brief overview of my thoughts of each course.
 

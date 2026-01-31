@@ -1,9 +1,9 @@
 Title: Systematic Program Design: TA Solver Project
 Date: 2026-01-26 10:20
 Category: Systematic Program Design
-Tags: computer-science,spd,racket
+Tags: computer-science,racket,projects
 
-Problem 1 was straight-forward, since it's basically the same problem as `max-exits-to` from the problem bank of this week that I had already solved. However, I adapted it to operate on ALL nodes of a network, that way we can take care of disconnected components.
+Problem 1 was straight-forward, since it's basically the same problem as `max-exits-to` from the problem bank of this week that I had already solved. However, I adapted it to operate on all nodes of a network, that way we can take care of disconnected components.
 
 Going through the 5 step recipe to try and solve Problem 2 of the ta-solver file.
 
@@ -15,7 +15,7 @@ Going through the 5 step recipe to try and solve Problem 2 of the ta-solver file
 
 Steps 1-2 are done for us already, I am working to do steps 3-5.  I’m using the function parameters to help come up with a template.  For one, we will be using all selectors of the ta data structure.
 
-Naively, we can say that there is a structural recursion on one of the parameters because it’s a list.  But due to the actual steps taken to solve this, it might be a search problem on an arbitrary-arity tree.
+We can start out by saying there is a structural recursion on one of the parameters because it’s a list.  But due to the actual steps taken to solve this, it might be a search problem on an arbitrary-arity tree instead.
 
 It might also be generative recursion, but I need to solve a few examples, examine the steps taken, then use that information to come up with the model-level template description before writing the actual template.
 
@@ -23,7 +23,13 @@ Here is the model-level template description that I wrote:
 ```racket
 ;; template: all selectors for ta, mutual recursion for arbitary-arity tree for multiple potential slots to take,
 ;; backtracking search when potential slot doesn't work out, accumulator for solution so far,
-;; generative recursion - stop trivial case where slots is empty
+;; generative recursion:
+;; termination argument:
+;; trivial case:  slots is empty
+;;     reduction step: remove slot from state when we find one in list of TAs
+;;     argument: the reduction step removes the slots by one, so
+;;           eventually the slots will be empty or false will be produced if no
+;;           corresponding slot is found
 ```
 
 After writing a model-level template description, I took the template from sudoku solver because it closely resembles the structure we are looking for.  Now making tweaks to it.

@@ -1,7 +1,7 @@
 Title: Systematic Program Design: Week 10 - Accumulators
 Date: 2026-01-12 13:00
 Category: Systematic Program Design
-Tags: computer-science,spd,racket
+Tags: computer-science,racket
 
 > ### Accumulators Module
 > The rules we have been using to generate structural recursion templates are very powerful. They make it very easy to write functions that traverse complex data collecting information at every place in that data. The power of these rules is highlighted by our ability to design abstract fold functions for recursive and mutually recursive types.

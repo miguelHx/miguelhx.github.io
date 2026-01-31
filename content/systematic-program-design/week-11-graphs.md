@@ -1,7 +1,7 @@
 Title: Systematic Program Design: Week 11 (Final Week) - Graphs
 Date: 2026-01-20 09:00
 Category: Systematic Program Design
-Tags: computer-science,spd,racket
+Tags: computer-science,racket
 
 > ### Graphs Module
 > Many forms of information naturally organize themselves into trees of various kinds. But what about transit maps, wiring diagrams, the world wide web or even secret underground passages. Most of these have one or two key properties that make them be graphs instead of trees.

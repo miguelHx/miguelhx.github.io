@@ -1,7 +1,7 @@
 Title: Systematic Program Design: Week 8 - Abstraction
 Date: 2025-12-31 12:00
 Category: Systematic Program Design
-Tags: computer-science,spd,racket
+Tags: computer-science,racket
 
 > ### Abstraction Module
 In this module we look another techniques for improving the structure of code. Most of the problems in this module involve refactoring existing programs -- so there's relatively little new coding to do. But that doesn't mean you won't be designing programs! One of the things that separates good programmers from the other kind is taking the time to improve the structure of their code once it is written. This material is super important, and... it is really important to practice doing it!

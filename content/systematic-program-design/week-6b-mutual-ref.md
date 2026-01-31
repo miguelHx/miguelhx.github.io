@@ -1,7 +1,7 @@
 Title: Systematic Program Design: Week 6b - Mutual Reference
 Date: 2025-12-19 13:26
 Category: Systematic Program Design
-Tags: computer-science,spd,racket
+Tags: computer-science,racket
 
 We are presented with a new data structure for arbitrarily wide and arbitrarily deep tree structures.  The example given is a file system.  This structure reminds me of the Trie data structure implementation in Python, because of the list of nodes data referencing itself. In this course’s terms, it’s also a mutual reference since we consider ListOfNodes to be a different data structure, that mutually references back to Node.
 
