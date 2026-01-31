@@ -45,6 +45,11 @@ article {
   padding-top: 0;
 }
 
+.pinned-text {
+  font-weight: normal;
+  font-size: 20px;
+}
+
 abbr[title] {
   text-decoration: underline;
 }
