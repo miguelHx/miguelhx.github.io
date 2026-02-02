@@ -15,7 +15,7 @@ It is designed according to the degree requirements of undergraduate computer sc
 
 If you want to know more about my background and why I'm doing this, check out my other blog post [here](revisiting-software-fundamentals.html).
 
-My learning plan has changed since I wrote that blog post. I worked on three courses instead of the two listed.
+My learning plan has changed since I wrote that blog post. I worked on three courses instead of just the two listed.
 
 Here's a little bit about my background, to give you some perspective of where I'm at while going through this curriculum.
 
@@ -23,16 +23,20 @@ I am a software engineer with 3.5 years of professional experience and about 10 
 
 Now, I'm re-building my career from the ground up, starting with OSSU courses. I'll try to discuss two perspectives. One trying to put myself in the shoes of a beginner, and the other as an experienced engineer.
 
-> __"No man ever steps in the same river twice, for it's not the same river and he's not the same man"__
-> __\- Heraclitus__
+> "No man ever steps in the same river twice, for it's not the same river and he's not the same man"
+> \- Heraclitus
 
 The three courses I worked on since Oct. 2025 are [Systematic Program Design](https://learning.edx.org/course/course-v1:UBCx+SPD1x+2T2015/home), [Math for Computer Science](https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/), and [Intro to CS and Programming using Python](https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/).
 
 I completed Systematic Program Design and Intro to CS courses, but only about a quarter of Math for CS.  I was taking these courses concurrently, though I didn't start them at the same time.
 
-I started with Systematic Program Design on Oct. 18.  Then, about a month later, I began Math for CS. Then about another month later, I began Intro to CS. So, between Dec. 16 and now, I was taking the three courses concurrently.
+I started with Systematic Program Design on Oct. 18.  Then, about a month later, I began Math for CS. Then about another month later, I began Intro to CS.
+
+So, between Dec. 16 and now, I was taking the three courses concurrently.
 
 My schedule was to work on Intro to CS every day except Sundays for 1-2 hours each day, and on Mon/Wed/Fri work on SPD for 3-6 hours each day, and on Tue/Thu/Sat work on Math for CS for 3-6 hours each day.
+
+I was able to complete 2 out of the 3 courses. For Intro to CS, I only completed 1 unit out of 4.
 
 Now, let's do a time break-down followed by a brief overview of my thoughts of each course.
 
@@ -116,7 +120,11 @@ Here is a summary of the 5-step process for designing functions, to give you an 
 
 These processes can be applied to any programming language and can be considered "good habits", though you might need to adapt the steps a little because you might not have a documentation of proper templates in other languages, though you could make up your own or find examples.
 
-I feel like I can take these ideas beyond this course and am looking forward to applying them in the future.
+Another big idea learned was how to look at code. Rather than looking at it as characters on a screen, we are taught to look at code as having structure. Structure that is derived from templates. 
+
+This trained me to start looking at code differently and I can see how this idea can be useful for my career. For example, it can be used for coming up with leetcode solutions. 
+
+You identify the potential structure of the solution after putting some thought and identifying patterns. On the job, you might identify some code structure to apply to the problem you are trying to solve.
 
 Another important note is that the style of programming in this class is [__functional programming__](https://en.wikipedia.org/wiki/Functional_programming). This way of programming was new to me. I might have come across some of its ideas, but I can't explicitly remember instances.
 
@@ -160,7 +168,7 @@ I'd like to finish this course before I start on Core Theory. I have plenty of t
 
 I like math, so I'm enjoying this course so far.
 
-Writing proofs is hard though !  It's a skill set.  A skill set which can, of course, be improved with deliberate practice. Similar to programming and writing, it requires a blend of logic and creativity. Reading and understanding some of the proofs (though not all) is not easy either. I was able to grasp most of the proof methods, but actually implementing them was not always easy.
+Writing proofs is hard though. It's a skill set. A skill set which can, of course, be improved with deliberate practice. Similar to programming and writing, it requires a blend of logic and creativity. Reading and understanding some of the proofs (though not all) is not easy either. I was able to grasp most of the proof methods, but actually implementing them was not always easy.
 
 I often have writer's block when it comes to writing proofs, unless I follow some of the given templates. Even then, it's not always clear how to argue and reason why something is true.
 
@@ -174,13 +182,11 @@ The first half of unit 1 is mainly about proofs and various math notations they 
 
 Maybe I'll write a review about unit 1 so far in a separate post.
 
-So should you take this course?  I think Discrete Math is important, so I'd say yes. You'll need it as a pre-req to other courses. It's also a good exercise for your brain in logic. This will make you a better programmer, because you'll develop more insight about (complicated) boolean expressions, for example.
+So should you take this course?  I think Discrete Math is important, so I'd say yes. You'll need it as a pre-req to other courses. It's a good exercise for your brain in logic. This will make you a better programmer, because logic is used a lot in programming.
 
 But be prepared to struggle. It is not easy. Also try not to overcomplicate things. I would actually recommend reading Susanna Epp's book first, since I hear the author does a gentler approach and more hand-holding. I'm doing this course first, yes, but I'm not getting stuck for too long because I look up the solutions and if I don't fully understand a solution, I'll move on.
 
 If you haven't taken Calculus, trust the OSSU recommendations and take Calculus before this course or Epp's book.
-
-I am satisfied with the course so far.
 
 ## Intro to CS and Programming using Python
 
@@ -242,13 +248,13 @@ Another thing I noticed about this course is that a lot of math examples are use
 
 You'll come across a calculus example with a derivative during one of the lectures but don't worry if you haven't taken calculus yet. You don't need to know that specific topic to do well in the course, as it doesn't show up on problem sets.
 
-The problem sets were good practice for me. Each one took me between 1-3 hours. They were well-designed, utilizing knowledge from the lectures. With the exception of one part of the last problem set; I feel like it could have been better defined.
+The problem sets were good practice for me. Each one took me between 1-3 hours. They were well-designed, utilizing knowledge from the lectures. With the exception of one part of the last problem set, whichI feel like could have been better defined.
 
-Test files are included, so I was able to test my code. Though the test files works only for Python version 3.9 and below. I had to create a lower version Python environment to accomodate for this.
+Test files are included, so I was able to test my code. But the test files works only for Python version 3.9 and below. I had to create a lower version Python environment to accomodate for this.
 
-I don't regret taking this course. It helped me brush up on my fundamentals knowledge. Though I'd say like 80% of it was review.
+I don't regret taking this course. It helped me brush up on my fundamentals knowledge. Though I'd say like 80-90% of it was review.
 
-If you're a beginner, definitely take this course. If you find it too difficult, read the GitHub for easier alternatives, then maybe revisit this course.
+If you're a beginner, definitely take this course. If you find it too difficult, keep trying, ask for help in the Discord, or read the GitHub for easier alternatives, then maybe revisit this course.
 
 If you're experienced, you can probably get away with skipping this course. Most of it will probably be review if you've taken a proper introductory to CS/programming course and are a decent programmer.
 
@@ -260,7 +266,7 @@ Overall I am happy with what I've accomplished so far. I'm averaging about __18.
 
 Next up, I plan on taking [Class-based Program Design](https://course.ccs.neu.edu/cs2510sp22/index.html) concurrently with [Programming Languages parts A/B/C](https://www.coursera.org/learn/programming-languages). But before that, I want to take [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/). I'm also considering taking [Harvard's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/home).
 
-However, before continuing with the next courses in OSSU, I think I want to take a 1-3 month break from it. Not because I'm tired of it or anything like that; I really enjoy the learning process and I'm eager to learn more !
+However, before continuing with the next courses in OSSU, I think I want to take a 1-3 month break from it. Not because I'm tired of it or anything like that; I'm really enjoying the learning process and I'm actually eager to learn more !
 
 But I have some other initiatives that I wanted to work on. One of them is creating a YouTube channel and making videos about programming and OSSU. I can start by creating some problem set walkthrough videos for the Intro to CS using Python course, since those don't exist anywhere.
 
