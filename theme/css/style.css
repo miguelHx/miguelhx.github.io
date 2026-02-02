@@ -182,11 +182,21 @@ ul.social li a:hover {
 
 #intro {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   margin: 0 auto;
   max-width: 1000px;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+#intro h1 {
+  margin-bottom: 2rem;
+}
+
+#intro ul {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 0;
 }
 
 #intro-container {
@@ -195,8 +205,7 @@ ul.social li a:hover {
 
 #intro-description {
   font-family: 'Open Sans', sans-serif;
-  font-style: italic;
-  font-size: 11pt;
+  font-size: 12pt;
 }
 
 #intro img.avatar {
@@ -325,8 +334,8 @@ ul.social li a:hover {
 }
 
 #author-story {
-  font-size: 11pt;
-  font-style: italic;
+  font-size: 12pt;
+  /* font-style: italic; */
   line-height: 2;
 }
 
