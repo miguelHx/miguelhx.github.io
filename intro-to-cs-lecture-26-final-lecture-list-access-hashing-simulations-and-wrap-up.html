@@ -18,46 +18,46 @@
     <meta property="og:title" content="Intro to CS: Lecture 26 (Final Lecture) - List Access, Hashing, Simulations, and Wrap-Up"/>
     <meta property="og:description" content="Topics: Extras: lists in memory, hashing, simulations, wrap-up Looking at lists, and how they’re actually implemented in memory. Looking at dictionaries, and how they are implemented in memory using hash tables. Going over simulations. Simulations Topic useful for many domains Computationally describe the world using randomness One very important …"/>
     <meta property="og:site_name" content="Miguel's Personal Website" />
-    <meta property="og:url" content="https://www.miguelhx.com/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html"/>
+    <meta property="og:url" content="https://miguelhx.com/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html"/>
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Intro to CS: Lecture 26 (Final Lecture) - List Access, Hashing, Simulations, and Wrap-Up">
     <meta name="twitter:description" content="Topics: Extras: lists in memory, hashing, simulations, wrap-up Looking at lists, and how they’re actually implemented in memory. Looking at dictionaries, and how they are implemented in memory using hash tables. Going over simulations. Simulations Topic useful for many domains Computationally describe the world using randomness One very important …">
-    <meta name="twitter:url" content="https://www.miguelhx.com/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html">
+    <meta name="twitter:url" content="https://miguelhx.com/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html">
 
     <!-- Feed -->
     <link rel="alternate" type="application/rss+xml" href="https://miguels-personal-website.disqus.com/latest.rss" title="Miguel's Personal Website Comments RSS Feed">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
-    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/css/w3.css">
-    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/css/jqcloud.css">
-    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/css/pygments-highlight-github.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.com/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.com/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.com/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.com/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.com/theme/css/pygments-highlight-github.css">
 
-    <!-- <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/font-awesome/css/fontawesome.css">
-    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/font-awesome/css/brands.css">
-    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/font-awesome/css/solid.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://miguelhx.com/theme/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.com/theme/font-awesome/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.com/theme/font-awesome/css/solid.css"> -->
 
-    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/static/custom.css">
+    <link rel="stylesheet" type="text/css" href="https://miguelhx.com/static/custom.css">
 
     <!-- Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="https://www.miguelhx.com/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://miguelhx.com/images/favicon.ico">
 
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://www.miguelhx.com/theme/js/jqcloud.min.js"></script>
+    <script src="https://miguelhx.com/theme/js/jqcloud.min.js"></script>
   </head>
 
   <body>
     <div class="w3-row w3-card w3-white">
       <header id="header">
-        <a href="https://www.miguelhx.com" id="header-logo" title="Home">MH</a>
+        <a href="https://miguelhx.com" id="header-logo" title="Home">MH</a>
         <nav id="header-menu">
           <ul>
-            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="https://www.miguelhx.com/pages/about-me.html">About me</a></li>
-            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="https://www.miguelhx.com/pages/contact.html">Contact</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="https://miguelhx.com/pages/about-me.html">About me</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="https://miguelhx.com/pages/contact.html">Contact</a></li>
             <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/archives.html">Archives</a></li>
             <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/categories.html">Categories</a></li>
             <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/tags.html">Tags</a></li>
@@ -75,14 +75,14 @@
         <h1>Intro to CS: Lecture 26 (Final Lecture) - List Access, Hashing, Simulations, and Wrap-Up</h1>
         <div class="post-info">
           <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
-            <span><time datetime="2026-01-24T10:00:00-08:00">Sat 24 January 2026</time> in <a class="w3-text-green" href="https://www.miguelhx.com/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
+            <span><time datetime="2026-01-24T10:00:00-08:00">Sat 24 January 2026</time> in <a class="w3-text-green" href="https://miguelhx.com/category/intro-to-cs-using-python.html" title="All articles in category Intro to CS using Python">Intro to CS using Python</a></span>
           </div>
           <div>
             <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
-              <a href="https://www.miguelhx.com/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+              <a href="https://miguelhx.com/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
             </span>
             <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
-              <a href="https://www.miguelhx.com/tag/python.html" title="All articles with Python tag">#python</a>
+              <a href="https://miguelhx.com/tag/python.html" title="All articles with Python tag">#python</a>
             </span>
           </div>
         </div>
@@ -176,9 +176,9 @@ It's fine. I'm following the curriculum for OSSU so I have a next course to take
           <div class="adjust-width">
             <div id="author-block" class="w3-light-grey w3-border">
               <div id="author-info">
-                <a href="https://www.miguelhx.com/pages/about-me.html"><img class="avatar" src="https://www.miguelhx.com/images/favicon.ico" onerror="this.src='theme/images/avatar.png'" alt="Avatar"></a>
+                <a href="https://miguelhx.com/pages/about-me.html"><img class="avatar" src="https://miguelhx.com/images/favicon.ico" onerror="this.src='theme/images/avatar.png'" alt="Avatar"></a>
                 <div style="margin-left: 20px;">
-                  <a href="https://www.miguelhx.com/pages/about-me.html"><span id="author-name" class="w3-hover-text-dark-grey">Miguel Hernandez</span></a>
+                  <a href="https://miguelhx.com/pages/about-me.html"><span id="author-name" class="w3-hover-text-dark-grey">Miguel Hernandez</span></a>
                   <p id="author-story">Hello world! I'm Miguel Hernandez. I am a software engineer with a Bachelor's degree in Computer Science & Engineering and 3.5 years of professional experience. I am currently re-building my career from the ground up, starting with online courses from Open Source Society University curriculum. I'm using this space to distill insights from books, courses, and hands-on projects. Feel free to follow my journey. </p>
                 </div>
               </div>
@@ -189,10 +189,10 @@ It's fine. I'm following the curriculum for OSSU so I have a next course to take
 
           <p style="font-size:10pt; font-style: italic;">Did you like this article? Share it with your friends!</p>
           <div id="share" class="share">
-            <a href="https://www.facebook.com/sharer.php?u=https%3A//www.miguelhx.com/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html&amp;t=Miguel%27s%20Personal%20Website%3A%20Intro%20to%20CS%3A%20Lecture%2026%20%28Final%20Lecture%29%20-%20List%20Access%2C%20Hashing%2C%20Simulations%2C%20and%20Wrap-Up" target="_blank" class="w3-btn w3-indigo">
+            <a href="https://www.facebook.com/sharer.php?u=https%3A//miguelhx.com/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html&amp;t=Miguel%27s%20Personal%20Website%3A%20Intro%20to%20CS%3A%20Lecture%2026%20%28Final%20Lecture%29%20-%20List%20Access%2C%20Hashing%2C%20Simulations%2C%20and%20Wrap-Up" target="_blank" class="w3-btn w3-indigo">
               <i class="fa fa-facebook"></i> <span>Facebook</span>
             </a>
-            <a href="https://twitter.com/share?url=https%3A//www.miguelhx.com/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html&amp;text=Miguel%27s%20Personal%20Website%3A%20Intro%20to%20CS%3A%20Lecture%2026%20%28Final%20Lecture%29%20-%20List%20Access%2C%20Hashing%2C%20Simulations%2C%20and%20Wrap-Up" target="_blank" class="w3-btn w3-black">
+            <a href="https://twitter.com/share?url=https%3A//miguelhx.com/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html&amp;text=Miguel%27s%20Personal%20Website%3A%20Intro%20to%20CS%3A%20Lecture%2026%20%28Final%20Lecture%29%20-%20List%20Access%2C%20Hashing%2C%20Simulations%2C%20and%20Wrap-Up" target="_blank" class="w3-btn w3-black">
               <i class="fa fa-x-twitter">X</i> <span></span>
             </a>
           </div>
@@ -208,8 +208,8 @@ It's fine. I'm following the curriculum for OSSU so I have a next course to take
              */
             
             var disqus_config = function () {
-              this.page.url = 'https://www.miguelhx.com/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html';  // Replace PAGE_URL with your page's canonical URL variable
-              this.page.identifier = 'https://www.miguelhx.com/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              this.page.url = 'https://miguelhx.com/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html';  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = 'https://miguelhx.com/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
             
             (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
