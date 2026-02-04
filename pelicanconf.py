@@ -6,7 +6,7 @@ AUTHOR = 'Miguel Hernandez'
 SITENAME = "Miguel's Personal Website"
 SITETITLE = "Miguel Hernandez"
 SITESUBTITLE = "Welcome to my blog/website"
-SITEURL = "https://miguelhx.com"
+SITEURL = "https://blog.miguelhx.com"
 # SITEURL = "http://localhost:8000"
 # SITEDESCRIPTION = "Miguel's personal website, where he blogs about tech."
 
