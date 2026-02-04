@@ -6,7 +6,7 @@ AUTHOR = 'Miguel Hernandez'
 SITENAME = "Miguel's Personal Website"
 SITETITLE = "Miguel Hernandez"
 SITESUBTITLE = "Welcome to my blog/website"
-SITEURL = "https://miguelhx.github.io"
+SITEURL = "https://miguelhx.com"
 # SITEURL = "http://localhost:8000"
 # SITEDESCRIPTION = "Miguel's personal website, where he blogs about tech."
 
@@ -115,6 +115,5 @@ MAIN_MENU = True
 THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
 THEME_COLOR_ENABLE_USER_OVERRIDE = True
 
-STATIC_PATHS = ["images"]
-
-# GOOGLE_GLOBAL_SITE_TAG = "G-Z648JEYS71"
+STATIC_PATHS = ["images", 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
