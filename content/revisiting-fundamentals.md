@@ -82,9 +82,13 @@ A coding bootcamp is an intensive, short-term training program (typically 3–7 
 
 These are all practical and closer to what one would actually be doing on a web-based software engineering job. They seem to be close to what [fullstack open](https://fullstackopen.com/en/) is trying to achieve, but they seem to go more in-depth and have a longer time commitment. Fullstack open is under the Final Project section in the OSSU curriculum. So that means getting into practical skills-building is reserved for towards the end of the OSSU curriculum, which makes sense.
 
-I think I'll be fine with just fullstack open. When I get there, I'll look more into The Odin Project and Free Code Camp curriculums to see if there's anything important that I should cover. For now, choosing OSSU as my foundation, and then towards the end of it I'll start looking into more practical curriculums such as the ones mentioned above.
+I think I'll be fine with just fullstack open. When I get there, I'll look more into The Odin Project and Free Code Camp curriculums to see if there's anything important that I should cover. However, I'm reluctant to spend too much time on them because a better ROI would be doing interview prep towards the end of OSSU. Everything else can be learned on the job.
 
-However, I'm reluctant to spend too much time on them because a better ROI would be doing interview prep towards the end of OSSU. Everything else can be learned on the job.
+Not too sure about bootcamps. From what I heard, they tend to focus too much on the how and not the why. I'm all about the why, which is part of the reason why I'm doing the OSSU curriculum. 
+
+Coding bootcamps are often criticized for high costs ($5,000 - $20,000), low-quality training that favors speed over depth, and oversaturated job markets making placement difficult. Critics argue they often fail to teach essential fundamentals, leaving graduates with gaps in knowledge, intense debt, and limited job prospects.
+
+Coding bootcamps are a no for me due to price alone. I'm sticking with OSSU.
 
 ### The Bigger Picture
 
