@@ -36,7 +36,7 @@ So, between Dec. 16 and now, I was taking the three courses concurrently.
 
 My schedule was to work on Intro to CS every day except Sundays for 1-2 hours each day, and on Mon/Wed/Fri work on SPD for 3-6 hours each day, and on Tue/Thu/Sat work on Math for CS for 3-6 hours each day.
 
-I was able to complete 2 out of the 3 courses. For Intro to CS, I only completed 1 unit out of 4.
+I was able to complete 2 out of the 3 courses. For math for CS course, I only completed 1 unit out of 4.
 
 Now, let's do a time break-down followed by a brief overview of my thoughts of each course.
 
