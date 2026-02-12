@@ -71,8 +71,6 @@ Weekly breakdown:
 
 __Weekly Average: 6.56 hours__
 
-Next course, I aim to pick up the pace.  Meeting the recommended effort level ranges from the GitHub should be good enough for me.
-
 __Video watch speed:__  Most of the videos I watched at 1.25x speed. For some of the meatier or harder videos, I watched at 1x speed, which was about 10-15% of the videos, I think. I took notes on some of the things the instructor said, mainly the key takeaways, which I found to be valuable.
 
 I plan to write a full course review in a separate post. For this blog post I will briefly discuss my thoughts.
