@@ -22,9 +22,25 @@ TIMEZONE = 'America/Los_Angeles'
 DEFAULT_LANG = 'en'
 
 DISQUS_SITENAME = "miguels-personal-website"
-plugin_path = os.environ['PIN_PLUGIN_PATH']
-PLUGIN_PATHS = [plugin_path]
-PLUGINS = ['pin_to_top']
+pin_plugin_path = '/Users/miguelhernandez/programming/pelican-plugins/pin_to_top'
+sitemap_plugin_path = '/Users/miguelhernandez/programming/pelican-plugins/sitemap/pelican/plugins/sitemap'
+PLUGIN_PATHS = [pin_plugin_path, sitemap_plugin_path]
+PLUGINS = ['pin_to_top', 'sitemap']
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.6,
+        'indexes': 0.5,
+        'pages': 0.4
+    },
+    'changefreqs': {
+        'articles': 'weekly',
+        'indexes': 'weekly',
+        'pages': 'monthly'
+    }
+}
+
 
 DISABLE_URL_HASH = True
 
@@ -115,8 +131,11 @@ MAIN_MENU = True
 THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
 THEME_COLOR_ENABLE_USER_OVERRIDE = True
 
-STATIC_PATHS = ["images", 'extra/CNAME']
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+STATIC_PATHS = ["images", 'extra/CNAME', 'extra/robots.txt']
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'},
+    'extra/robots.txt': {'path': 'robots.txt'}
+}
 
 FEED_ALL_ATOM  = 'feed.xml'
 FEED_MAX_ITEMS = 100
