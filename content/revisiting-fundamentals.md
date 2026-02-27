@@ -4,7 +4,9 @@ Tags: computer-science
 Slug: revisiting-software-fundamentals
 Pin: true
 
-I'm sure we all agree that mastering the fundamentals is important. This is true for any discipline. In this blog post, I will be sharing my learning roadmap/plan for revisiting the fundamentals of CS/Software and discuss why I'm doing this. I will also discuss with my thoughts about a master's, an actual software engineer job, and the bigger picture.
+I'm sure we all agree that mastering the fundamentals is important. This is true for any discipline. In this blog post, I will be sharing my learning roadmap/plan for revisiting the fundamentals of CS/Software and discuss why I'm doing this. I will also discuss with my thoughts about a master's, an actual software engineer job, coding bootcamps, and the bigger picture.
+
+> Success is often found by practicing the fundamentals everyone knows they should be doing, but find too boring or basic to practice routinely.
 
 ### Why go back to the basics?
 
@@ -12,11 +14,11 @@ First, a little background. I earned a Bachelor’s degree in Computer Science &
 
 I started programming at the age of 16, during my junior year of high school. I am now 28, so that's over 10 years. Though I had a few years in between where I didn't code due to life circumstances.
 
-I feel like I did a solid job at learning the fundamentals during my undergrad. I was motivated, curious, learned how to learn, and practiced deep work principles. I had good exposure to math, algorithms, data structures, basics of programming, computer organization/architecture, networks, OS, etc.  You can find my relevant course work on my [LinkedIn](https://www.linkedin.com/in/miguel-hernandez-535b05102/) profile under the Education section.
+I feel like I did a decent job at learning the fundamentals during my undergrad. I was motivated, curious, knew how to learn, and practiced deep work principles. I had good exposure to math, algorithms, data structures, basics of programming, computer organization/architecture, networks, OS, etc.  You can find my relevant course work on my [LinkedIn](https://www.linkedin.com/in/miguel-hernandez-535b05102/) profile under the Education section.
 
-But as time has passed, I’ve realized there were areas I never got to touch (such as programming languages theory, databases, compilers, cybersecurity, software architecture, etc). These are areas that I feel like if I learn them, I would be a stronger engineer. I'm also curious about learning new areas.
+But as time has passed, I’ve realized there were areas I never got to touch (such as programming languages theory, databases, compilers, cybersecurity, software architecture, etc). These are areas that I feel like learning them would make me a stronger engineer. I'm also curious about learning new areas.
 
-Was my degree not enough?  I wouldn't say that.  My degree was useful in helping me lay down a proper foundation.  I am extremely grateful for the great professors that taught me during my undergrad. Shoutout to Kelvin Lwin, Daniel, Alberto Cerpa, Florin Rusu, and Angelo Kyrilov.  My apologies if I may have missed other great professors.  But a CS degree doesn't cover _everything_.  And that's okay.  That's what self learning is for.
+Was my degree not enough?  I wouldn't say that.  My degree was useful in helping me lay down a foundation.  I am extremely grateful for the great professors that taught me during my undergrad. Shoutout to Kelvin Lwin, Daniel, Alberto Cerpa, Florin Rusu, and Angelo Kyrilov.  My apologies if I may have missed other great professors.  But a CS degree doesn't cover _everything_.  And that's okay.  That's what self learning is for.
 
 If I really wanted to, I could go all in on interview prep and maybe land a job in the next 6-12 months.  But I'm not. I'm taking a more hollistic, longer-term approach. I will still do interview prep though, as I will mention below in a later section.
 
@@ -24,7 +26,7 @@ I'm revisiting the fundamentals because I want to refine my understanding, close
 
 ### My Learning Roadmap
 
-The goal is to complete the necessary courses from Open Source Society University [Computer Science curriculum](https://github.com/ossu/computer-science). Just in case you're not familiar with OSSU, it's a list of online courses meant to mirror the curricululm of an actual Bachelor's degree in Computer Science.  It has online courses from top universities such as Harvard, Princeton, MIT, Stanford, etc. The courses are free or cheap.
+The goal is to complete the necessary courses from Open Source Society University [Computer Science curriculum](https://github.com/ossu/computer-science). Just in case you're not familiar with OSSU, it's a list of online courses meant to mirror the curriculum of an actual Bachelor's degree in Computer Science.  It has online courses from top universities such as Harvard, Princeton, MIT, Stanford, etc. The courses are free or cheap.
 
 I started about a month ago, currently taking the courses [Systematic Program Design](https://github.com/ossu/computer-science/blob/master/coursepages/spd/README.md) and [Mathematics for Computer Science](https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/about).
 
@@ -36,7 +38,7 @@ After SPD, I will probably take the next course in its section, which is [Class-
 
 I'll keep going down the list for Core Programming section, while concurrently going through another course from another section.  Doing just 2 courses concurrently for now but that may change.
 
-I don't plan on completing all of the courses.  I'm picking and choosing what I believe to be the most important or relevant, in an order that makes sense. Courses such as computer graphics, or machine learning, for example, I might not be taking because I'm not targeting that specific type of job. If I have some extra time, I might take them out of curiosity, but I need balance that with pragmatism.
+I don't plan on completing all of the courses.  I'm picking and choosing what I believe to be the most important or relevant, in an order that makes sense. Courses such as computer graphics or machine learning, for example, I might not be taking because I'm not targeting that specific type of job. But if I have some extra time, I might take them out of curiosity.
 
 I won't be taking the calculus courses from the core math section since I already took them in college and feel like I could easily pick up necessary info if needed.
 
@@ -48,9 +50,9 @@ Many might argue that you need strong foundations to complete a master's, and th
 
 I think of getting a master's like adding branches to a tree of CS/Software knowledge. And I think of getting a bachelor's as strengthening the trunk of said tree. I already have a bachelor's, but going through another one will make my knowledge tree trunk even stronger, which is more important to me right now because I believe a stronger/bigger trunk may allow for a taller tree with more branches in the future.
 
-Sure, some master's programs teach the fundamentals as well, such as knowledge-based Master's. For example, [Georgia Tech's Online Master's in Computer Science](https://omscs.gatech.edu/). But from the curriculum's I've seen, grad level courses tend to be more advanced and therefore assume prerequisite knowledge. There's also the money aspect. I could find the same or similar grad course topic online for free and of high quality. If not, then I can find a high quality book on the topic. Money saved.
+Sure, some master's programs teach the fundamentals as well. These are known as knowledge-based Master's programs. For example, [Georgia Tech's Online Master's in Computer Science](https://omscs.gatech.edu/). It's a fine curriculum. But there's a heavy price tag. I could find the same or similar grad course topic online for free and of high quality. If not, then I can find a high quality book on the topic. Money saved.
 
-As for research-based Master's, I have respect for Computer Science research but it's just not a right fit for me and the type of jobs I will be looking for in the future. Also, not interested in staying in academia, with all due respect. I know not all master's degrees make you write a research thesis. The ones that just focus on courses I can replicate for free or a lot cheaper as mentioned above.
+As for research-based Master's, I have respect for Computer Science research but it's just not a right fit for me and the type of jobs I will be looking for in the future. I'm not interested in academia, with all due respect. I know not all master's degrees make you write a research thesis. The ones that just focus on courses I can replicate for free or a lot cheaper as mentioned above.
 
 I understand the credential aspect of a master's. But at the end of the day it's just a piece of paper. Most important of course is the knowledge obtained from the degree. Although I won't be getting a credential for OSSU, the knowledge is important to me and I have this blog to showcase my learnings and reviews of each course I take. Not to mention I will be putting OSSU on my LinkedIn. I also have the opportunity to earn verified certificates on [coursera](coursera.org) and [edX](edx.org).
 
@@ -62,7 +64,7 @@ Long term, I believe this will make me a better overall engineer if I do land an
 
 The money is important, yes. But more important to me is becoming great at software engineering, learning for the love of it, and satisfying my curiosity.
 
-If I was offered a job at a company that's a right mutual fit today though I might just take it. Then, I'll learn these online courses on the side. This will stretch out my learning timeline, which I'm okay with. But it has to be the right opportunity. I'm doing okay with enough resources to keep me afloat for a while without having to work. This is a priviledged position to be in, so I'm grateful.
+If I was offered a job at a company that's a right mutual fit today though I might just take it. Then, I'll learn these online courses on the side. This will stretch out my learning timeline, which I'm okay with. But it has to be the right opportunity. I'm doing okay with enough resources to keep me afloat for a while without having to work. This is a priviledged position to be in, and I'm grateful.
 
 I plan on doing interview prep along with going through the curriculum. This includes leetcode, system design, mock interviews, etc. This is so I'll be prepared towards the end of the curriculum when I'll be looking for a job anyway.
 
@@ -76,17 +78,17 @@ I might apply for [Google Summer of Code](https://summerofcode.withgoogle.com/) 
 
 Those are solid curriculums too. The Odin Project is a free, open-source, and project-based online bootcamp for learning full-stack web development. It provides a comprehensive, self-paced curriculum, guiding users from absolute beginner to building, deploying, and creating a portfolio with real-world technologies like HTML, CSS, JavaScript, React, and Node.js.
 
-Free Code Camp is a donor-supported, 501(c)(3) non-profit organization that offers a free, interactive, and comprehensive online platform for learning web development and computer programming. It features a project-based curriculum, certifications, a massive YouTube channel, and a community forum to help users secure jobs as software engineer.
+Free Code Camp is a non-profit organization that offers a free, interactive, and comprehensive online platform for learning web development and computer programming. It features a project-based curriculum, certifications, a massive YouTube channel, and a community forum to help users secure jobs as software engineer.
 
 A coding bootcamp is an intensive, short-term training program (typically 3–7 months) designed to teach practical, job-ready skills in software development, data science, cybersecurity, or UX/UI design. They focus on rapid skill acquisition, allowing beginners or professionals looking to pivot careers to enter the tech industry without a traditional 4-year degree.
 
 These are all practical and closer to what one would actually be doing on a web-based software engineering job. They seem to be close to what [fullstack open](https://fullstackopen.com/en/) is trying to achieve, but they seem to go more in-depth and have a longer time commitment. Fullstack open is under the Final Project section in the OSSU curriculum. So that means getting into practical skills-building is reserved for towards the end of the OSSU curriculum, which makes sense.
 
-I think I'll be fine with just fullstack open. When I get there, I'll look more into The Odin Project and Free Code Camp curriculums to see if there's anything important that I should cover. However, I'm reluctant to spend too much time on them because a better ROI would be doing interview prep towards the end of OSSU. Everything else can be learned on the job.
+I think I'll be fine with just fullstack open. When I get there, I'll look more into The Odin Project and Free Code Camp curriculums to see if there's anything important that I should cover that fullstack leaves out.
 
 Not too sure about bootcamps. From what I heard, they tend to focus too much on the how and not the why. I'm all about the why, which is part of the reason why I'm doing the OSSU curriculum. 
 
-Coding bootcamps are often criticized for high costs ($5,000 - $20,000), low-quality training that favors speed over depth, and oversaturated job markets making placement difficult. Critics argue they often fail to teach essential fundamentals, leaving graduates with gaps in knowledge, intense debt, and limited job prospects.
+Coding bootcamps are often criticized for high costs ($5,000 - $20,000), low-quality training that favors speed over depth, and oversaturated job markets make placement difficult. Critics argue they often fail to teach essential fundamentals, leaving graduates with gaps in knowledge, intense debt, and limited job prospects.
 
 Coding bootcamps are a no for me due to price alone. I'm sticking with OSSU.
 

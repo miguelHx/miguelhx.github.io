@@ -40,7 +40,7 @@ I was able to complete 2 out of the 3 courses. For math for CS course, I only co
 
 Now, let's do a time break-down followed by a brief overview of my thoughts of each course.
 
-_Note: I track my time spent as a way to measure my productivity and keep myself on track based on the effort guidelines from the GitHub._
+Note: I track my time spent as a way to measure my productivity and keep myself on track based on the effort guidelines from the GitHub.
 
 ## Systematic Program Design
 
@@ -79,21 +79,25 @@ Overall it was a great course ! It gave me a different perspective about problem
 
 Some of the general principles, ideas and recipes such as how to design data, designing data before designing functions, how to design functions, using pen and paper to write down constant behavior, changing behavior and to keep track of TODOs (also track TODOs using comments in the actual program), the rules for creating helper functions, function composition, and seeing code as structure rather than just characters on a screen are applicable to any programming language.
 
+However, it seems to align more with functional programming, because we mainly use functions when applying the recipes.  But non-functional programming languages usually have function support, so it can still apply there.
+
 The idea of breaking down complex problems into simpler problems that we know how to solve is also useful, and we practice this in the course.  The idea of test-driven development is also practiced.
 
 They also discuss recursion and that can be useful for certain algorithms and you never know you might run into recursion on the job.  Recursion is a big topic in this course. I'd say it probably accounts for over 50% of the class!
 
-Though I wish he would have gone into more detail about recursion and how the call stack works, but instead he says to "trust the recursion", which is valid, because there is always some faith involved when writing recursive programs. As someone who is already comfortable with recursion, I had no problem though, as I properly visualized the steps in my head.
+Recursion often comes up in foundational computer science courses, but not much on the job. So it might feel like a waste to spend so much time on recursion, only to rarely come across it on the job. Luck is a big factor here whether you come across it or not on the job. I guess it's OK to have an understanding of recursion "just in case".
+
+Though I wish the instructor would have gone into more detail about recursion and how the call stack works, but instead he says to "trust the recursion".  That's fine, because if you trust that the recursive procedure is doing what it's supposed to, having that faith is enough, compared to understanding exactly the call stack the recursion will go through. As someone who is already comfortable with recursion; I had no problem. I was able to properly visualize the steps in my head.
 
 Also, Dr. Racket has the stepper feature which can help in stepping through the recursive process to understand its flow.
 
-If you have experience programming already, I would still take it because the language Racket is used in the [Programming Languages course(s)](https://www.coursera.org/learn/programming-languages), and future courses such as [Class-based Program Design](https://course.ccs.neu.edu/cs2510sp22/index.html) will probably use this course's principles and/or assume you already know them.
+If you have experience programming already, I would still take it because the language Racket is used in the [Programming Languages course(s)](https://www.coursera.org/learn/programming-languages), and future courses such as [Class-based Program Design](https://course.ccs.neu.edu/cs2510sp22/index.html) (though they use Java) will probably use this course's principles and/or assume you already know them. Plus, if you plan on reading the book Structure and Interpretation of Computer Programs (SICP), then you'll be able to pick up the language used there more easily.
 
-Even if you already knew most of the principles, it doesn't hurt to refine them, see them from a different perspective, or close any gaps that may have existed or you may have potentially missed.
+Even if you already knew most of the principles, it doesn't hurt to refine them, see them from a different perspective, or close any gaps that may have existed or you may have potentially missed. I feel like this course improved my recursion skills too.
 
 I like the habits that it's promoting, such as the steps taken when defining a data definition, or when designing a function.  For data definition, we put in a comment its data type, and a short description of how to interpret it, followed by some examples, and a template for how to use it in a function.
 
-Here is the recipe for designing data:
+<!-- Here is the recipe for designing data:
 
 The first step of the recipe is to identify the inherent structure of the information.
 
@@ -113,24 +117,28 @@ Here is a summary of the 5-step process for designing functions, to give you an 
 1. Signature, purpose and stub.
 2. Define examples, wrap each in check-expect.
 3. Template and inventory.
-4. Code the function body.
-5. Test and debug until correct
+4. Code the function body. 
+5. Test and debug until correct -->
 
 These processes can be applied to any programming language and can be considered "good habits", though you might need to adapt the steps a little because you might not have a documentation of proper templates in other languages, though you could make up your own or find examples.
 
-Another big idea learned was how to look at code. Rather than looking at it as characters on a screen, we are taught to look at code as having structure. Structure that is derived from templates. 
+There is also a gap with one of the steps, which I will get more into when I write the course review.
 
-This trained me to start looking at code differently and I can see how this idea can be useful for my career. For example, it can be used for coming up with leetcode solutions. 
+Another big idea learned was one way on how to think about code. Rather than looking at code as characters on a screen, we are taught to look at code as having structure. Structure that is derived from templates.
 
-You identify the potential structure of the solution after putting some thought and identifying patterns. On the job, you might identify some code structure to apply to the problem you are trying to solve.
+This trained me to start looking at code differently and I can see how this idea can be useful for my career. For example, when coming up with solutions, you can break things down in terms of code structure. To illustrate:
 
-Another important note is that the style of programming in this class is [__functional programming__](https://en.wikipedia.org/wiki/Functional_programming). This way of programming was new to me. I might have come across some of its ideas, but I can't explicitly remember instances.
+![color coded image](images/code-structure-colors.png) 
+
+You can identify the potential structure of the solution after putting some thought and identifying patterns, based on the information given. On the job, you might identify some code structure to apply to the problem you are trying to solve.
+
+Another important note is that the style of programming in this class is [functional programming](https://en.wikipedia.org/wiki/Functional_programming). This way of programming was new to me. I might have come across some of its ideas, but I can't explicitly remember instances. All I know is that I used functions extensively throughout my programming career.
 
 Functional programming is a declarative paradigm that builds software by composing pure, deterministic functions, emphasizing immutability and avoiding shared state or side effects. It treats functions as first-class entities, allowing them to be passed as arguments or returned. Key techniques include immutable data, higher-order functions, and recursion.
 
-I've known about functional programming for the longest time, I just never got around to formally learning it. Until now. I think that the [Programming Languages](https://www.coursera.org/learn/programming-languages) course series will go deeper into this concept. For now, we utilize this way of programming without necessarily defining it until the end of the course.
+I've known about functional programming for the longest time. I just never got around to formally learning about it, until now. I think that the [Programming Languages](https://www.coursera.org/learn/programming-languages) course series will go deeper into this concept. For now, we utilize this way of programming without necessarily defining it until the end of the course.
 
-So yes, definitely take this course if you want strong fundamentals and want to round out your general programming knowledge.
+So yes, I recommend taking this course if you want stronger fundamentals and want to round out your general programming knowledge.
 
 I plan to go a little more into detail about this course in a separate blog post, which I will link [here]() when it's done. Same for the rest of the courses below.
 
@@ -168,11 +176,11 @@ I like math, so I'm enjoying this course so far.
 
 Writing proofs is hard though. It's a skill set. A skill set which can, of course, be improved with deliberate practice. Similar to programming and writing, it requires a blend of logic and creativity. Reading and understanding some of the proofs (though not all) is not easy either. I was able to grasp most of the proof methods, but actually implementing them was not always easy.
 
-I often have writer's block when it comes to writing proofs, unless I follow some of the given templates. Even then, it's not always clear how to argue and reason why something is true.
+I often have writer's block when it comes to writing proofs, unless I follow some of the given templates, or adapt from a similar example. Even then, it's not always clear how to argue and reason why something is true.
 
 In the Discord, some say that this course is too difficult and doesn't teach very well. I think it's OK. I will continue with this course because I am able to understand the topics for the most part. Susanna Epp's Discrete Math book is recommended as an alternative. I plan to complete this course first, then I want to go through Epp's book.
 
-I agree that many of the problems to solve are difficult.  I find myself eventually looking up the solutions.  I'm okay with doing this; I don't think it takes away too much from my learning as long as I give the problems an honest attempt first.
+I agree that many of the problems are difficult to solve.  I find myself eventually looking up the solutions for most.  I'm okay with doing this. I don't think it takes away too much from my learning as long as I give the problems an honest attempt first, and understand the solutions.
 
 If you take this course and find yourself constantly looking up the solutions, don't feel bad.
 
@@ -182,7 +190,7 @@ Maybe I'll write a review about unit 1 so far in a separate post.
 
 So should you take this course?  I think Discrete Math is important, so I'd say yes. You'll need it as a pre-req to other courses. It's a good exercise for your brain in logic. This will make you a better programmer, because logic is used a lot in programming.
 
-But be prepared to struggle. It is not easy. Also try not to overcomplicate things. I would actually recommend reading Susanna Epp's book first, since I hear the author does a gentler approach and more hand-holding. I'm doing this course first, yes, but I'm not getting stuck for too long because I look up the solutions and if I don't fully understand a solution, I'll move on.
+But be prepared to struggle. It is not easy. Also try not to overcomplicate things. I would actually recommend reading Susanna Epp's book first, since I hear the author does a gentler approach and more hand-holding. I'm doing this course first, yes, but I'm not getting stuck for too long because I look up the solutions after struggling for some time. If I don't fully understand a solution, then I'll move on.
 
 If you haven't taken Calculus, trust the OSSU recommendations and take Calculus before this course or Epp's book.
 
@@ -215,48 +223,31 @@ I'm satisfied with the course material. I did skip some sections that I felt wer
 
 Is it the best course for a beginner? Haven't tried all intro to CS courses, so I can't tell. I'm also not a beginner.  I can try putting myself in the shoes of a beginner though. I think they might struggle with the problem sets, which is normal.
 
-I think it's still a good course for a beginner to take because it covers the following concepts:
+I think it's still a good course for a beginner to take. However, in the early problem sets, you are not taught explicitly how to solve these problems. It is assumed that you have a problem solving approach already, which may leave beginners struggling to come up with solutions on their own.
 
-* Python syntax
-* Flow of control
-    * Loops, branching, exceptions
-* Data structures
-    * Tuples, lists, dictionaries
-* Organization, decomposition, abstraction
-    * Functions
-    * Classes
-* Algorithms
-    * Binary/bisection
-    * Recursion
-* Computational complexity
-    * Big theta notation
-    * Searching and sorting
-
-Most of which you'll use often throughout your career.
-
-It's a good breadth of CS and programming topics. I used most of these concepts often on the job. The algorithms and computational complexity are good for technical interviews.
-
-I came into this course with problem solving tools in my mental toolkit, learned from other courses. In one of the lectures, the instructor gives some tips about how to problem solve.
-
-I used my own experience/knowledge to solve the problem sets.
+Later, around lecture 12, the instructor does introduce some problem solving/debugging methods, which should be helpful. Personally, I relied on my own problem solving method learned from another course.
 
 But I remember struggling with writer's block when I started my coding journey many years ago.
 
-Another thing I noticed about this course is that a lot of math examples are used. I am not surprised.  Math and CS/Programming go hand in hand. Some say that theoretical computer science could be considered a branch of mathematics.  They are closely intertwined. 
+Another thing I noticed about this course is that a lot of math examples are used. I am not surprised.  Math and CS/Programming go hand in hand. Some say that theoretical computer science could be considered a branch of mathematics.  They are closely intertwined.
 
 You'll come across a calculus example with a derivative during one of the lectures but don't worry if you haven't taken calculus yet. You don't need to know that specific topic to do well in the course, as it doesn't show up on problem sets.
 
-The problem sets were good practice for me. Each one took me between 1-3 hours. They were well-designed, utilizing knowledge from the lectures. With the exception of one part of the last problem set, whichI feel like could have been better defined.
+The problem sets were good practice for me. Each one took me between 1-3 hours. They were well-designed, utilizing knowledge from the lectures. With the exception of one part of the last problem set, which I feel like could have been better defined.
 
-Test files are included, so I was able to test my code. But the test files works only for Python version 3.9 and below. I had to create a lower version Python environment to accomodate for this.
+Test files are included, so I was able to test my code. But the test files work only for Python version 3.9 and below. I had to create a lower version Python environment to accomodate for this.
 
-I don't regret taking this course. It helped me brush up on my fundamentals knowledge. Though I'd say like 80-90% of it was review.
+I don't regret taking this course. It helped me brush up on my fundamentals knowledge. Though I'd say like 80-90% of it was review for me.
 
-If you're a beginner, definitely take this course. If you find it too difficult, keep trying, ask for help in the Discord, or read the GitHub for easier alternatives, then maybe revisit this course.
+If you're a beginner, definitely take this course. The knowledge is fundamental. If you find it too difficult, try asking for help in the Discord, or read the GitHub for easier alternatives, then maybe revisit this course.
 
-If you're experienced, you can probably get away with skipping this course. Most of it will probably be review if you've taken a proper introductory to CS/programming course and are a decent programmer.
+I do plan on making some walkthrough videos for the problem sets. This will hopefully help beginners have some training wheels for how to approach and solve these problem sets and beyond.
 
-Maybe see if you can do the problem sets to test your knowledge and only then watch the related lectures if you get stuck.  You can also look up the solution on my GitHub if you get truly stuck.
+If you're experienced, especially with Python, you can probably get away with skipping this course. Most of it will probably be review if you've taken a proper introductory to CS/programming course and are a decent programmer.
+
+But if you want to be thorough, then go ahead and go through the whole course. Maybe watch at 2x speed, slowing down to 1x for some parts that you feel like you should slow down for.
+
+Maybe see if you can do the problem sets to test your knowledge and only then watch the related lectures if you get stuck.  You can also look up the solution on my GitHub if you truly get stuck.
 
 Overall I am happy with what I've accomplished so far. I'm averaging about __18.57 hours__ each week of total effort on OSSU. For my next run, I'm aiming for closer to __20 hours__ each week. But maybe I'll take 2 courses instead of 3 concurrently, not sure yet.
 
@@ -282,6 +273,6 @@ This plan is subject to change. It's possible that I decide last minute to not d
 
 > "Give me six hours to chop down a tree and I will spend the first four sharpening the axe." – Abraham Lincoln
 
-Sharpening the axe here for me is thinking about and planning what to do next. Chopping the tree is actually carrying out the plan. The planning to execution ratio might not be exactly like from the quote, but the key idea here is to invest time in planning, so that's what I am going to do.
+Sharpening the axe here for me is thinking about and planning what to do next. Chopping the tree is actually carrying out the plan. The planning to execution ratio might not be exactly like from the quote, but the key idea here is to invest time in thinking and planning, so that's what I am going to do.
 
 Stay tuned until my next OSSU blog.
