@@ -77,17 +77,15 @@ I plan to write a full course review in a separate post. For this blog post I wi
 
 Overall it was a great course ! It gave me a different perspective about problem-solving in code and how to think about code in general.
 
-Some of the general principles, ideas and recipes such as how to design data, designing data before designing functions, how to design functions, using pen and paper to write down constant behavior, changing behavior and to keep track of TODOs (also track TODOs using comments in the actual program), the rules for creating helper functions, function composition, and seeing code as structure rather than just characters on a screen are applicable to any programming language.
-
-However, it seems to align more with functional programming, because we mainly use functions when applying the recipes.  But non-functional programming languages usually have function support, so it can still apply there.
+Some of the general principles, ideas and recipes such as how to design data, designing data before designing functions, how to design functions, using pen and paper to perform a domain analysis and to keep track of TODOs (also track TODOs using comments in the actual program), the rules for creating helper functions, function composition, and seeing code as structure rather than just characters on a screen seem to be useful.
 
 The idea of breaking down complex problems into simpler problems that we know how to solve is also useful, and we practice this in the course.  The idea of test-driven development is also practiced.
 
-They also discuss recursion and that can be useful for certain algorithms and you never know you might run into recursion on the job.  Recursion is a big topic in this course. I'd say it probably accounts for over 50% of the class!
+They also discuss recursion and that can be useful for certain algorithms and you never know you might run into recursion on the job. Recursion is a big topic in this course. I'd say it probably accounts for over 30% of the class!
 
-Recursion comes up in foundational computer science courses, but not much on the job. So it might feel like a waste to spend so much time on recursion, only to rarely come across it on the job. Luck is a big factor here whether you come across it or not on the job. I guess it's OK to have an understanding of recursion "just in case", advantageous even. You never know, it might come up as an interview question as well.
+Recursion comes up in foundational computer science courses, but not much on the job. So it might feel like a waste to spend so much time on recursion, only to rarely come across it on the job. Luck is a big factor here whether you come across it or not in the industry. I guess it's OK to have an understanding of recursion "just in case", advantageous even. You never know, the concept might come up as an interview question as well.
 
-Though I wish the instructor would have gone into more detail about recursion and how the call stack works, but instead he says to "trust the recursion".  That's fine, because if you trust that the recursive procedure is doing what it's supposed to, having that faith is enough, compared to understanding exactly the call stack the recursion will go through. As someone who is already comfortable with recursion; I had no problem. I was able to properly visualize the steps in my head.
+Though I wish the instructor would have gone into more detail about recursion and how the call stack works, but instead he says to "trust the recursion".  That's fine, because if you trust that the recursive procedure is doing what it's supposed to, then having that faith is enough, compared to understanding exactly the call stack the recursion will go through. As someone who is already comfortable with recursion; I had no problem. I was able to visualize the steps in my head.
 
 Also, Dr. Racket has the stepper feature which can help in stepping through the recursive process to understand its flow.
 
@@ -95,9 +93,9 @@ If you have experience programming already, I would still take it because the la
 
 Even if you already knew most of the principles, it doesn't hurt to refine them, see them from a different perspective, or close any gaps that may have existed or you may have potentially missed. I feel like this course improved my recursion skills too.
 
-I like the habits that it's promoting, such as the steps taken when defining a data definition, or when designing a function.  For data definition, we put in a comment its data type, and a short description of how to interpret it, followed by some examples, and a template for how to use it in a function.
+I like the habits that it's promoting, such as the steps taken when designing a data definition or function.  For designing a data definition, we put in a comment its data type, and a short description of how to interpret it, followed by some examples, and a template for how to use it in a function. For designing a function, we start by writing a signature, purpose, and stub. Then, we define examples and write them in test cases. Next, we identify the right template to use, followed by coding the function body and testing/debugging until correct.
 
-I am an experienced software engineer so it was a walk in the park for me. I might ruffle some feathers here, but this might not be the best course for beginner programmers. 
+I am an experienced software engineer so it was a walk in the park for me.
 
 <!-- Here is the recipe for designing data:
 
@@ -136,17 +134,17 @@ You can identify the potential structure of the solution after putting some thou
 
 Another important note is that the style of programming in this class is [functional programming](https://en.wikipedia.org/wiki/Functional_programming). This way of programming was new to me. Though I have come across some of its ideas such as map, filter, and lambda functions. And of course, I used functions themselves extensively throughout my career.
 
-Functional programming is a declarative paradigm that builds software by composing pure, deterministic functions, emphasizing immutability and avoiding shared state or side effects. It treats functions as first-class entities, allowing them to be passed as arguments or returned. Key techniques include immutable data, higher-order functions, and recursion.
+> Functional programming is a declarative paradigm that builds software by composing pure, deterministic functions, emphasizing immutability and avoiding shared state or side effects. It treats functions as first-class entities, allowing them to be passed as arguments or returned. Key techniques include immutable data, higher-order functions, and recursion.
 
-I've known about functional programming for the longest time. I just never got around to formally learning about it. Until now. Or maybe I have and just didn't think about it much. I think that the [Programming Languages](https://www.coursera.org/learn/programming-languages) course series will go deeper into this concept. For now, we utilize this way of programming without necessarily defining it until the end of the course.
+I've known about functional programming for the awhile. I just never got around to formally learning about it. Until now. Or maybe I have and just didn't think about it much. I think that the [Programming Languages](https://www.coursera.org/learn/programming-languages) course series will go deeper into this concept. For now, we utilize this way of programming without necessarily defining it until the end of the course.
 
-Take this course if you're a completionist and if you want stronger fundamentals and want to round out your general programming knowledge.
+If you're experienced with programming already like I was, and are trying to be pragmatic, you might be wondering if you can get away with skipping this course.  It's hard to tell. I can come up with theories as to why it is useful, as I did above, but won't truly know until more time passes by and I go through more programming experiences. I'll probably update this blog post if anything comes to mind in the future.
 
-Otherwise, if you're experienced with programming already like I was, and are trying to be pragmatic, you can probably get away with skipping this course.  I'm going to continue and take the next courses in the series and see in hindsight whether it was worth it taking this course.
+But if you do decide to skip this course, you would be missing out on a good, structured way of approaching problem-solving in code, if you don't have such a process already learned from another source. That, along with missing other important ideas, mentioned above.
 
-If you're a beginner and struggle badly with this course, I can understand why. Recursion can be hard to wrap your head around for some parts. If you find yourself looking at the solutions often, don't feel bad. I recommend trying to step through a smaller example to understand how it works step by step. Maybe even draw out some iterations using pen/pencial and paper.
+If you're a beginner and struggle with this course, it's OK and normal. Recursion can be hard to wrap your head around. If you find yourself looking at the solutions often, don't feel bad. I recommend using the DrRacket stepper feature to step through a smaller example to understand how it works step by step. Maybe even draw out some iterations using pen/pencil and paper.
 
-Just tough it out and go through the course. Ask for help in the discord. Try not to waste too much time being stuck.
+Just go through the course. Ask for help in the discord. Try not to waste too much time being stuck.  But also don't jump to the solution right away without putting much thought into it. Learn to enjoy the process.
 
 I plan to go a little more into detail about this course in a separate blog post, which I will link [here]() when it's done. Same for the rest of the courses below.
 
