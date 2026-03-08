@@ -11,9 +11,7 @@ I earned a bachelor's degree in Computer Science & Engineering from [University 
 
 I love learning about programming, software engineering, and computer science.  I want to learn as much as I can about these topics.
 
-I am a Christian and a big fan/follower of [Medical Medium](https://www.medicalmedium.com/).
-
-You can ask me about online courses, CS education, math, code, interview prep, the job hunt, and medical medium.
+You can ask me about online courses, CS education, math, code, interview prep, the job hunt.
 
 How to reach me:
 
