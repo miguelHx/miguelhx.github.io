@@ -52,7 +52,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # MinimalXY Theme
-THEME = "/Users/miguelhernandez/pelican-themes/minimal-xy"
+THEME = "/Users/miguelhernandez/pelican-themes/minimal-xy-my-copy"
 
 # Theme customizations
 MINIMALXY_CUSTOM_CSS = 'static/custom.css'
