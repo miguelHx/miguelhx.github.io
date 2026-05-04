@@ -70,6 +70,8 @@ Recursion.  There’s lots of it in this course.  Instead of using for loops to 
 
 In general though, I haven’t come across recursion much in the web engineering space.  But it’s better to know it and not need it than to need it and not know it.  Either way, you’ll need it for the OSSU curriculum.  So, if you plan on completing the curriculum, you’ll need to get comfortable with recursion.
 
+The first half of the course was not too difficult.  The second half was a lot harder and the learning curve was steeper.
+
 The course had two main projects.  The first one at the half-way mark was to implement a simple Space Invaders game.  The second one was at the end of the course which was to implement a course scheduling algorithm.
 
 For space invaders, they gave us a helpful starter file. I started by doing a domain analysis using pen and paper.  I wrote out all the scenarios, such as changing direction when an invader reaches edge of screen, missile to invader collision, tank switching directions, spawning invaders, and game over when invader reaches the bottom.  I wrote down which big bang functions I would be needing.  Then I got to work. There were many helper functions and overall it was fun to implement.  The concept of function composition was used here too.  The project was a great way to exercise the learnings from the course so far.
