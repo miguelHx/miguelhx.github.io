@@ -5,840 +5,840 @@ xmlns:xhtml="http://www.w3.org/1999/xhtml"
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>http://localhost:8000/</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/archives.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/archives.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/author/miguel-hernandez.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/author/miguel-hernandez.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/author/miguel-hernandez2.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/author/miguel-hernandez2.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/author/miguel-hernandez3.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/author/miguel-hernandez3.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/author/miguel-hernandez4.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/author/miguel-hernandez4.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/author/miguel-hernandez5.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/author/miguel-hernandez5.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/author/miguel-hernandez6.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/author/miguel-hernandez6.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/author/miguel-hernandez7.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/author/miguel-hernandez7.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/authors.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/authors.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/categories.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/categories.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/intro-to-cs-using-python.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/category/intro-to-cs-using-python.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/intro-to-cs-using-python2.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/category/intro-to-cs-using-python2.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/intro-to-cs-using-python3.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/category/intro-to-cs-using-python3.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/intro-to-cs-using-python4.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/category/intro-to-cs-using-python4.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/math-for-computer-science.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/category/math-for-computer-science.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/math-for-computer-science2.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/category/math-for-computer-science2.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/meta-learning.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/category/meta-learning.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/misc.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/category/misc.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/ossu-blog.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/category/ossu-blog.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/systematic-program-design.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/category/systematic-program-design.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/systematic-program-design2.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/category/systematic-program-design2.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/index2.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/index2.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/index3.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/index3.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/index4.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/index4.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/index5.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/index5.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/index6.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/index6.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/index7.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/index7.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-1-introduction.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-1-introduction.html</loc>
 <lastmod>2025-12-19T13:35:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-10-lists-mutability.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-10-lists-mutability.html</loc>
 <lastmod>2025-12-28T19:37:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-11-aliasing-cloning.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-11-aliasing-cloning.html</loc>
 <lastmod>2025-12-31T19:37:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-12-list-comprehension-functions-as-objects-testing-debugging.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-12-list-comprehension-functions-as-objects-testing-debugging.html</loc>
 <lastmod>2026-01-01T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-13-exceptions-assertions.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-13-exceptions-assertions.html</loc>
 <lastmod>2026-01-02T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-14-dictionaries.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-14-dictionaries.html</loc>
 <lastmod>2026-01-03T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-15-recursion.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-15-recursion.html</loc>
 <lastmod>2026-01-08T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-16-recursion-on-non-numerics.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-16-recursion-on-non-numerics.html</loc>
 <lastmod>2026-01-09T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-17-python-classes.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-17-python-classes.html</loc>
 <lastmod>2026-01-10T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-18-more-python-class-methods.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-18-more-python-class-methods.html</loc>
 <lastmod>2026-01-12T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-19-inheritance.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-19-inheritance.html</loc>
 <lastmod>2026-01-14T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-2-strings-inputoutput-branching.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-2-strings-inputoutput-branching.html</loc>
 <lastmod>2025-12-19T13:38:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-20-fitness-tracker-oop-example.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-20-fitness-tracker-oop-example.html</loc>
 <lastmod>2026-01-15T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-21-timing-programs-counting-operations.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-21-timing-programs-counting-operations.html</loc>
 <lastmod>2026-01-19T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-22-big-oh-and-theta.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-22-big-oh-and-theta.html</loc>
 <lastmod>2026-01-19T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-23-complexity-classes-examples.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-23-complexity-classes-examples.html</loc>
 <lastmod>2026-01-21T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-24-sorting-algorithms.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-24-sorting-algorithms.html</loc>
 <lastmod>2026-01-21T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-25-plotting.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-25-plotting.html</loc>
 <lastmod>2026-01-23T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-26-final-lecture-list-access-hashing-simulations-and-wrap-up.html</loc>
 <lastmod>2026-01-24T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-3-iteration.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-3-iteration.html</loc>
 <lastmod>2025-12-19T13:40:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-4-loops-over-strings-guess-and-check-and-binary.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-4-loops-over-strings-guess-and-check-and-binary.html</loc>
 <lastmod>2025-12-19T13:42:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-5-floats-and-approximation-methods.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-5-floats-and-approximation-methods.html</loc>
 <lastmod>2025-12-19T13:51:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-6-bisection-search.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-6-bisection-search.html</loc>
 <lastmod>2025-12-24T11:36:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-7-decomposition-abstraction-functions.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-7-decomposition-abstraction-functions.html</loc>
 <lastmod>2025-12-24T11:38:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-8-functions-as-objects.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-8-functions-as-objects.html</loc>
 <lastmod>2025-12-24T11:39:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-lecture-9-lambda-functions-tuples-and-lists.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-lecture-9-lambda-functions-tuples-and-lists.html</loc>
 <lastmod>2025-12-24T11:40:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-problem-set-1.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-problem-set-1.html</loc>
 <lastmod>2025-12-19T13:47:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-problem-set-2.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-problem-set-2.html</loc>
 <lastmod>2025-12-28T19:58:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-problem-set-3.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-problem-set-3.html</loc>
 <lastmod>2026-01-06T11:15:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-problem-set-4.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-problem-set-4.html</loc>
 <lastmod>2026-01-16T11:15:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/intro-to-cs-problem-set-5.html</loc>
+<loc>https://blog.miguelhx.com/intro-to-cs-problem-set-5.html</loc>
 <lastmod>2026-01-22T11:15:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-binary-relations.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-binary-relations.html</loc>
 <lastmod>2025-12-24T11:46:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-induction.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-induction.html</loc>
 <lastmod>2025-12-28T19:40:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-infinite-sets.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-infinite-sets.html</loc>
 <lastmod>2026-01-08T12:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-intro-to-proofs.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-intro-to-proofs.html</loc>
 <lastmod>2025-12-01T22:03:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-logic-and-propositions.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-logic-and-propositions.html</loc>
 <lastmod>2025-12-07T22:03:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-problem-set-1-reflection.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-problem-set-1-reflection.html</loc>
 <lastmod>2025-12-14T17:42:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-problem-set-2-thoughts.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-problem-set-2-thoughts.html</loc>
 <lastmod>2025-12-19T13:58:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-problem-set-3-thoughts.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-problem-set-3-thoughts.html</loc>
 <lastmod>2025-12-30T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-problem-set-4-thoughts.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-problem-set-4-thoughts.html</loc>
 <lastmod>2026-01-15T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-proof-methods.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-proof-methods.html</loc>
 <lastmod>2025-12-02T22:03:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-quantifiers-and-predicate-logic.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-quantifiers-and-predicate-logic.html</loc>
 <lastmod>2025-12-14T17:24:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-recursive-definition.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-recursive-definition.html</loc>
 <lastmod>2026-01-06T12:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-sets.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-sets.html</loc>
 <lastmod>2025-12-19T13:56:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-state-machines-invariants.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-state-machines-invariants.html</loc>
 <lastmod>2026-01-01T12:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/math-for-cs-well-ordering-principle.html</loc>
+<loc>https://blog.miguelhx.com/math-for-cs-well-ordering-principle.html</loc>
 <lastmod>2025-12-03T22:03:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/new-blog-category-meta-learning.html</loc>
+<loc>https://blog.miguelhx.com/new-blog-category-meta-learning.html</loc>
 <lastmod>2025-12-16T20:03:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/new-blog-my-thoughts.html</loc>
+<loc>https://blog.miguelhx.com/new-blog-my-thoughts.html</loc>
 <lastmod>2025-11-30T20:03:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/ossu-blog-1.html</loc>
+<loc>https://blog.miguelhx.com/ossu-blog-1.html</loc>
 <lastmod>2026-01-27T10:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/pages/about-me.html</loc>
+<loc>https://blog.miguelhx.com/pages/about-me.html</loc>
 <lastmod>2025-11-23T20:15:00-08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.4</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/pages/contact.html</loc>
+<loc>https://blog.miguelhx.com/pages/contact.html</loc>
 <lastmod>2026-01-28T20:15:00-08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.4</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/revisiting-software-fundamentals.html</loc>
+<loc>https://blog.miguelhx.com/revisiting-software-fundamentals.html</loc>
 <lastmod>2025-11-30T22:03:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/spd-course-review.html</loc>
+<loc>https://blog.miguelhx.com/spd-course-review.html</loc>
 <lastmod>2026-05-03T11:00:00-07:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/spd-first-half-modules.html</loc>
+<loc>https://blog.miguelhx.com/spd-first-half-modules.html</loc>
 <lastmod>2026-05-03T08:20:00-07:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/systematic-program-design-space-invaders-project.html</loc>
+<loc>https://blog.miguelhx.com/systematic-program-design-space-invaders-project.html</loc>
 <lastmod>2025-12-15T16:20:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/systematic-program-design-ta-solver-project.html</loc>
+<loc>https://blog.miguelhx.com/systematic-program-design-ta-solver-project.html</loc>
 <lastmod>2026-01-26T10:20:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/systematic-program-design-week-10-accumulators.html</loc>
+<loc>https://blog.miguelhx.com/systematic-program-design-week-10-accumulators.html</loc>
 <lastmod>2026-01-12T13:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/systematic-program-design-week-11-final-week-graphs.html</loc>
+<loc>https://blog.miguelhx.com/systematic-program-design-week-11-final-week-graphs.html</loc>
 <lastmod>2026-01-20T09:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/systematic-program-design-week-5-naturals-and-helpers.html</loc>
+<loc>https://blog.miguelhx.com/systematic-program-design-week-5-naturals-and-helpers.html</loc>
 <lastmod>2025-12-07T23:03:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/systematic-program-design-week-6a-binary-search-trees.html</loc>
+<loc>https://blog.miguelhx.com/systematic-program-design-week-6a-binary-search-trees.html</loc>
 <lastmod>2025-12-14T17:32:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/systematic-program-design-week-6b-mutual-reference.html</loc>
+<loc>https://blog.miguelhx.com/systematic-program-design-week-6b-mutual-reference.html</loc>
 <lastmod>2025-12-19T13:26:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/systematic-program-design-week-7a-two-one-of-types.html</loc>
+<loc>https://blog.miguelhx.com/systematic-program-design-week-7a-two-one-of-types.html</loc>
 <lastmod>2025-12-28T19:50:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/systematic-program-design-week-7b-local.html</loc>
+<loc>https://blog.miguelhx.com/systematic-program-design-week-7b-local.html</loc>
 <lastmod>2025-12-28T19:54:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/systematic-program-design-week-8-abstraction.html</loc>
+<loc>https://blog.miguelhx.com/systematic-program-design-week-8-abstraction.html</loc>
 <lastmod>2025-12-31T12:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/systematic-program-design-week-9a-generative-recursion.html</loc>
+<loc>https://blog.miguelhx.com/systematic-program-design-week-9a-generative-recursion.html</loc>
 <lastmod>2026-01-04T13:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/systematic-program-design-week-9b-search.html</loc>
+<loc>https://blog.miguelhx.com/systematic-program-design-week-9b-search.html</loc>
 <lastmod>2026-01-08T13:00:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/computer-science.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/computer-science.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/computer-science2.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/computer-science2.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/computer-science3.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/computer-science3.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/computer-science4.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/computer-science4.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/computer-science5.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/computer-science5.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/computer-science6.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/computer-science6.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/computer-science7.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/computer-science7.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/course-reviews.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/course-reviews.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/discrete-math.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/discrete-math.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/discrete-math2.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/discrete-math2.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/first-blog-post.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/first-blog-post.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/how-to-learn.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/how-to-learn.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/learning.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/learning.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/math.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/math.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/math2.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/math2.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/ossu.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/ossu.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/projects.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/projects.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/python.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/python.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/python2.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/python2.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/python3.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/python3.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/python4.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/python4.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/racket.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/racket.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/racket2.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/racket2.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/ultralearning.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tag/ultralearning.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tags.html</loc>
-<lastmod>2026-05-03T22:16:40-00:00</lastmod>
+<loc>https://blog.miguelhx.com/tags.html</loc>
+<lastmod>2026-05-03T22:17:41-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/taking-a-new-course-intro-to-cs-and-programming-using-python.html</loc>
+<loc>https://blog.miguelhx.com/taking-a-new-course-intro-to-cs-and-programming-using-python.html</loc>
 <lastmod>2025-12-19T13:33:00-08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
