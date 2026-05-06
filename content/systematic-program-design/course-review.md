@@ -94,7 +94,7 @@ So yes, I do recommend this course for beginners and experienced folks. If you'r
 Summary of key points for each module:
 
 * [1st half](spd-first-half-modules.html)
-* [2nd half - they are separate articles from the SPD category filter](category/systematic-program-design.html)
+* [2nd half - separate articles in category filter- week 6b to 11](category/systematic-program-design.html)
 
  I wrote the key points of each module, along with my thoughts/analysis about them.  It can serve as a succinct summary of the course’s main ideas.  It might be useful to some people and I think it might be useful for myself to look back at.  I mostly have it as a journal for my learning experiences.
 
