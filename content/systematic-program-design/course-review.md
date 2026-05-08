@@ -39,7 +39,7 @@ I think that’s fair, and I’m eager to see how I can apply this information b
 
 To many, it might seem like learning BSL is a waste of time.  But remember, it’s not the programming language that’s the focus here.  It’s the systematic program design method that’s most important.
 
-Interesting thing though is that recently this course offered at the actual university is now [using Pyret](https://www.khoury.northeastern.edu/current-undergraduate-students/introductory-computing-courses-at-khoury-colleges) as their main language to teach systematic program design instead of BSL:
+Interesting thing though is that recently this course offered at the actual university is now [using Pyret](https://www.khoury.northeastern.edu/current-undergraduate-students/introductory-computing-courses-at-khoury-college) as their main language to teach systematic program design instead of BSL:
 
 > For the first 8–9 weeks, CS 2000 will be taught in Pyret, a teaching language built by CS educators who understand the successes and limitations of Racket teaching languages. In addition to first-class support for tables and data science, better support for testing, and a more modern environment with better errors, Pyret facilitates a smooth transition to Python for the last 4–5 weeks, once students have learned foundational computer and data science concepts.
 
@@ -98,7 +98,7 @@ Summary of key points for each module:
 
  I wrote the key points of each module, along with my thoughts/analysis about them.  It can serve as a succinct summary of the course’s main ideas.  It might be useful to some people and I think it might be useful for myself to look back at.  I mostly have it as a journal for my learning experiences.
 
-Whether you are a beginner or an experienced programmer, you can learn new things from this course.  It’s definitely a significant time investment, but I believe in the long run it’s worth it.  I hope this review gave you some useful insights and I wish you the best on your learning journey.
+Whether you are a beginner or an experienced programmer, you can learn new things from this course.  It’s definitely a significant time investment, but I believe in the long run it will be worth it.  I hope this review gave you some useful insights and I wish you the best on your learning journey.
 
 Additional readings:  Here are some articles written by one of the authors of this course and the book How to Design Programs that I think you might find interesting:
 
