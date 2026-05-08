@@ -26,7 +26,7 @@ It’s been about 3 months since my last blog update.  I will share what I’ve 
 * Small updates to this website and my [latinxnostalgia](https://latinxnostalgia.com/) music website
 * Transcribed ~1,600 videos from a video archive that I have containing medical information using OpenAI’s [whisper](https://github.com/openai/whisper)
 
-So that’s what I did the past few months.  I think it was productive.  This doesn’t include other things like attend family gatherings, taking my grandma to the store when she needed to go, going on bike rides, etc.
+So that’s what I did the past few months.  I think it was productive.  But it's probably nothing compared to some ultralearners.  I'm looking to push the limits my next time around.
 
 Now, this is not really OSSU progress, but I decided to put it under OSSU category on my blog because for what’s next I do plan on continuing OSSU.
 
