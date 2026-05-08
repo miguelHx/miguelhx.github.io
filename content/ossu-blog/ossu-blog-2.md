@@ -1,4 +1,4 @@
-Title: OSSU Blog 2 - Update from Feb 1, 2025 until May 1, 2026
+Title: OSSU Blog 2 - Update from Feb 1, 2026 until May 1, 2026
 Date: 2026-05-07 10:00
 Category: OSSU Blog
 Tags: ossu
