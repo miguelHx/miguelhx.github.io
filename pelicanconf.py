@@ -63,7 +63,7 @@ MINIMALXY_CURRENT_YEAR = date.today().year
 # Author
 AUTHOR_INTRO = "Hello world! I'm Miguel Hernandez, a software engineer based in California. " \
 "Welcome to my blog, where I write about Computer Science, Programming, Learning, and Software Engineering."
-AUTHOR_DESCRIPTION = "Hello world! I'm Miguel Hernandez. I am a software engineer with a Bachelor's degree in Computer Science & Engineering and 3.5 years of professional experience. " \
+AUTHOR_DESCRIPTION = "Hello world! I'm Miguel Hernandez. I am a software engineer with a Bachelor's degree in Computer Science & Engineering, and 3.5 years of professional experience. " \
 "I am currently re-building my career from the ground up, starting with online courses from Open Source Society University curriculum. " \
 "I'm using this space to distill insights from books, courses, and hands-on projects. " \
 "Feel free to follow my journey. "
