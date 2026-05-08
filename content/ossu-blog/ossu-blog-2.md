@@ -38,6 +38,8 @@ But before I do the projects, I want to take [MIT’s Missing Semester](https://
 
 I want to take full stack open because I’ll likely be using React.js for the UI on the projects and business idea.  The open source project ideas will be desktop apps built with [electron](https://www.electronjs.org/), which supports react.  The business idea will be a website.
 
+I do have working knowledge of web development already, but I want to re-fresh my knowledge. I can learn as I build, yes, but I want to see what happens if I go through a full stack course and then start building my projects.
+
 There’s quite a bit of work to be done before I get to full stack open, if I follow the ordering of OSSU.  I might take it sooner, but I haven’t decided when yet.  This is a long term, 3-5 year process for me, so I’m not pressed for time.  But I still want to be efficient and practical.
 
 Apart from the ideas, next up is to continue OSSU.  The next round of courses I plan on taking are [CS50x](https://cs50.harvard.edu/x/), [Class-based Program Design](https://github.com/ossu/computer-science/blob/master/coursepages/class-based/README.md), and [Math for CS](https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/about) (I only completed unit 1 last time I worked on OSSU).
