@@ -18,15 +18,17 @@ I feel like I did a decent job at learning the fundamentals during my undergrad.
 
 But as time has passed, I’ve realized that there were areas I never got to touch (such as programming languages theory, databases, compilers, cybersecurity, software architecture, etc). These are areas that I feel like learning them would make me a stronger engineer. I'm also curious about learning these different areas.
 
-Was my degree not enough?  I wouldn't say that.  My degree was useful in helping me lay down a foundation.  I am extremely grateful for the great professors that taught me during my undergrad. Shoutout to Kelvin Lwin, Daniel, Alberto Cerpa, Florin Rusu, and Angelo Kyrilov.  My apologies if I may have missed other great professors. A CS degree doesn't cover _everything_.  But that's okay.  That's what customized self learning is for.
+Was my degree not enough?  I wouldn't say that.  My degree was useful in helping me lay down a foundation.  I am extremely grateful for the great professors that taught me during my undergrad. Shoutout to Kelvin Lwin, Daniel, Alberto Cerpa, Florin Rusu, and Angelo Kyrilov.  My apologies if I may have missed other great professors. A CS degree doesn't cover _everything_.  But that's okay.  We don't need to cover everything.  Just the most important things. Sometimes your degree program might not cover a certain topic, or you want to have a diverse education from different sources.  That's what customized self learning is for.
 
-If I really wanted to, I could go all in on interview prep and maybe land a job in the next 6-12 months.  But I'm not, because I'm taking a more hollistic, longer-term approach. I will still do interview prep though, as I will mention below in a later section.
+If I really wanted to, I could go all in on interview prep and maybe, if I'm lucky enough, land a job in the next 6-12 months (or in this job market, probably longer).  But I'm not, because I'm taking a more hollistic, longer-term approach. I will still do interview prep though, as I will mention below in a later section.
 
-I'm revisiting the fundamentals because I want to refine my understanding, close knowledge gaps, visit untouched areas, and revisit concepts with more maturity and context than I had back in school. I'm also rebuilding my career from the ground up, and this is a way to get my bases covered. I want to widen and deepen my base of knowledge. I also love learning !
+I'm revisiting the fundamentals because I want to refine my understanding, close knowledge gaps, visit untouched areas, and revisit concepts with more maturity and context than I had back in school. I'm also rebuilding my career from the ground up, and this is a way to get my bases covered. I want to widen and deepen my base of knowledge. I also love learning and computer science and software engineering and programming !
 
 ### My Learning Roadmap
 
 The goal is to complete the necessary courses from Open Source Society University's [Computer Science curriculum](https://github.com/ossu/computer-science). Just in case you're not familiar with OSSU, it's a list of online courses hand-picked to mirror the curriculum of an actual Bachelor's degree in Computer Science.  It has online courses from top universities such as Harvard, Princeton, MIT, Stanford, etc. The courses are free or cheap.
+
+I also plan on reading some resources from [teachyourselfcs](https://teachyourselfcs.com/), which is a self-taught guide to a computer science degree program, consisting mainly of books.
 
 I started about a month ago; currently taking the courses [Systematic Program Design](https://github.com/ossu/computer-science/blob/master/coursepages/spd/README.md) and [Mathematics for Computer Science](https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/about).
 
@@ -38,7 +40,9 @@ After SPD, I will probably take the next course in its section, which is [Class-
 
 I'll keep going down the list for Core Programming section, while concurrently going through another course from another section.  Doing just 2 courses concurrently for now but that may change.
 
-I don't plan on completing all of the courses.  I'm picking and choosing what I believe to be the most important or relevant, in an order that makes sense. Courses such as computer graphics or machine learning, for example, I might not be taking because I'm not targeting that specific type of job. But if I have some extra time, I might take them out of curiosity.
+Edit: Decided to go with 3 courses at a time.  Also, planning to do projects to directly apply knowledge. I've recently started reading the book Ultralearning, which discusses planning out an ultralearning project. For more about the specifics about my Computer Science/Programming/Software Engineering learning plan and journey, check out my blog post about Meta Learning [here](https://blog.miguelhx.com/ultralearning-ch-4.html).
+
+I don't plan on completing all of the courses in the curriculum.  I'm picking and choosing what I believe to be the most important or relevant, in an order that makes sense. Courses such as computer graphics or machine learning, for example, I might not be taking because I'm not targeting that specific type of job. But if I have some extra time, I might take them out of curiosity.
 
 I won't be taking the calculus courses from the core math section since I already took them in college and feel like I could easily pick up necessary info if needed.
 
@@ -50,11 +54,11 @@ Many might argue that you need strong foundations to complete a master's, and th
 
 I think of getting a master's like adding branches to a tree of CS/Software knowledge. And I think of getting a bachelor's as strengthening the trunk of said tree. I already have a bachelor's, but going through another one will make my knowledge tree trunk even stronger, which is more important to me right now because I believe a stronger/bigger trunk may allow for a taller tree with more branches in the future.
 
-Sure, some master's programs teach the fundamentals as well. These are known as knowledge-based Master's programs. For example, [Georgia Tech's Online Master's in Computer Science](https://omscs.gatech.edu/). It's a fine curriculum. But there's a heavy price tag. I could find the same or similar grad course topic online for free and of high quality. If not, then I can find a high quality book on the topic. Money saved.
+Sure, some master's programs teach the fundamentals as well. These are known as knowledge-based Master's programs. For example, [Georgia Tech's Online Master's in Computer Science](https://omscs.gatech.edu/). It's a fine curriculum. But there's a heavy price tag. I could find the same or similar grad course topic online for free or cheaper and of high quality. If not, then I can find a high quality book on the topic. Money saved.
 
 As for research-based Master's, I have respect for Computer Science research, but it's just not a right fit for me and the type of jobs I will be looking for in the future. I'm not interested in academia, with all due respect. I know not all master's degrees make you write a research thesis. The ones that just focus on courses I can replicate for free or a lot cheaper as mentioned above.
 
-I understand the credential aspect of a master's. But at the end of the day it's just a piece of paper. Most important of course is the knowledge obtained from the degree. Although I won't be getting a credential for OSSU, the knowledge is important to me and I have this blog to showcase my learnings and reviews of each course I take. Not to mention I will be putting OSSU on my LinkedIn. I also have the opportunity to earn verified certificates on [coursera](coursera.org) and [edX](edx.org).
+I understand the credential aspect of a master's. But at the end of the day it's just a piece of paper. Most important of course is the knowledge obtained from the degree, and the transferrability of the skills learned to the industry.  Although I won't be getting a credential for OSSU, the knowledge is important to me and I have this blog to showcase my learnings and reviews of each course I take. Not to mention I will be putting OSSU on my LinkedIn. I also have the opportunity to earn verified certificates on [coursera](coursera.org) and [edX](edx.org).
 
 ### What about a job?
 
@@ -66,7 +70,7 @@ The money is important, yes. But more important to me is becoming great at softw
 
 If I was offered a job at a company that's a right mutual fit today though I might just take it. Then, I'll learn these online courses on the side. This will stretch out my learning timeline, which I'm okay with. But it has to be the right opportunity. I'm doing okay with enough resources to keep me afloat for a while without having to work. This is a priviledged position to be in, and I'm grateful.
 
-I plan on doing interview prep along with going through the curriculum. This includes leetcode, system design, mock interviews, etc. This is so I'll be prepared towards the end of the curriculum when I'll be looking for a job anyway.
+I plan on doing interview prep along with going through the curriculum. This includes leetcode, system design, mock interviews, etc. This is so I'll be prepared towards the end of the curriculum when I'll be looking for a job anyway. But I'll probably focus more on this towards the end of my OSSU learning journey.
 
 What about on the job learning? The experience from on the job learning will be valuable, of course. I just don't think many companies will let you use company time to focus on fundamentals learning at a deep level.
 
