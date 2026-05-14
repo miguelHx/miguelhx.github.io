@@ -81,21 +81,21 @@ Some of the general principles, ideas and recipes such as how to design data, de
 
 The idea of breaking down complex problems into simpler problems that we know how to solve is also useful, and we practice this in the course.  The idea of test-driven development is also practiced.
 
-They also discuss recursion and that can be useful for certain algorithms and you never know you might run into recursion on the job. Recursion is a big topic in this course. I'd say it probably accounts for over 30% of the class!
+They also discuss recursion and that can be useful for certain algorithms and you never know you might run into recursion on the job. Recursion is a big topic in this course.
 
 Recursion comes up in foundational computer science courses, but not much on the job. So it might feel like a waste to spend so much time on recursion, only to rarely come across it on the job. Luck is a big factor here whether you come across it or not in the industry. I guess it's OK to have an understanding of recursion "just in case", advantageous even. You never know, the concept might come up as an interview question as well.
 
 Though I wish the instructor would have gone into more detail about recursion and how the call stack works, but instead he says to "trust the recursion".  That's fine, because if you trust that the recursive procedure is doing what it's supposed to, then having that faith is enough, compared to understanding exactly the call stack the recursion will go through. As someone who is already comfortable with recursion; I had no problem. I was able to visualize the steps in my head.
 
-Also, Dr. Racket has the stepper feature which can help in stepping through the recursive process to understand its flow.
+However, for beginner programmers, I anticipate they might struggle a bit.
 
-If you have experience programming already, I would still take it because the language Racket is used in the [Programming Languages course(s)](https://www.coursera.org/learn/programming-languages), and future courses such as [Class-based Program Design](https://course.ccs.neu.edu/cs2510sp22/index.html) (though they use Java) will probably use this course's principles and/or assume you already know them. Plus, if you plan on reading the book Structure and Interpretation of Computer Programs (SICP), then you'll be able to pick up the language used there more easily.
+Fortunately, Dr. Racket has the stepper feature which can help in stepping through the recursive process to understand its flow.
+
+If you have experience programming already, I would still take it because future courses such as [Class-based Program Design](https://course.ccs.neu.edu/cs2510sp22/index.html) (though they use Java) will probably use this course's principles and/or assume you already know them. [Programming Languages course(s)](https://www.coursera.org/learn/programming-languages) will use some of the topics such as mutual recursion.
 
 Even if you already knew most of the principles, it doesn't hurt to refine them, see them from a different perspective, or close any gaps that may have existed or you may have potentially missed. I feel like this course improved my recursion skills too.
 
 I like the habits that it's promoting, such as the steps taken when designing a data definition or function.  For designing a data definition, we put in a comment its data type, and a short description of how to interpret it, followed by some examples, and a template for how to use it in a function. For designing a function, we start by writing a signature, purpose, and stub. Then, we define examples and write them in test cases. Next, we identify the right template to use, followed by coding the function body and testing/debugging until correct.
-
-I am an experienced software engineer so it was a walk in the park for me.
 
 <!-- Here is the recipe for designing data:
 
@@ -122,7 +122,7 @@ Here is a summary of the 5-step process for designing functions, to give you an 
 
 These processes can be applied to any programming language and can be considered "good habits", though you might need to adapt the steps a little because you might not have a documentation of proper templates in other languages, though you could make up your own or find examples.
 
-There is also a gap with one of the steps, which is one of the cons of this course. I will get more into this gap when I write the course review.
+There is also a gap with one of the steps, which is one of the cons of this course. I will get more into this gap when I write the [course review](https://blog.miguelhx.com/spd-course-review.html).
 
 Another big idea learned was one way on how to think about code. Rather than looking at code as characters on a screen, we are taught to look at code as having structure. Structure that is derived from templates.
 
@@ -132,21 +132,17 @@ This trained me to start looking at code differently and I can see how this idea
 
 You can identify the potential structure of the solution after putting some thought and identifying patterns, based on the information given. On the job, you might identify some code structure to apply to the problem you are trying to solve.
 
-Another important note is that the style of programming in this class is [functional programming](https://en.wikipedia.org/wiki/Functional_programming). This way of programming was new to me. Though I have come across some of its ideas such as map, filter, and lambda functions. And of course, I used functions themselves extensively throughout my career.
+Another note is that the style of programming in this class is [functional programming](https://en.wikipedia.org/wiki/Functional_programming). This way of programming was new to me. Though I have come across some of its ideas such as map, filter, and lambda functions. And of course, I used functions themselves extensively throughout my career.
 
 > Functional programming is a declarative paradigm that builds software by composing pure, deterministic functions, emphasizing immutability and avoiding shared state or side effects. It treats functions as first-class entities, allowing them to be passed as arguments or returned. Key techniques include immutable data, higher-order functions, and recursion.
 
-I've known about functional programming for the awhile. I just never got around to formally learning about it. Until now. Or maybe I have and just didn't think about it much. I think that the [Programming Languages](https://www.coursera.org/learn/programming-languages) course series will go deeper into this concept. For now, we utilize this way of programming without necessarily defining it until the end of the course.
+I've known about functional programming for the awhile. I just never got around to formally learning about it. Until now. Or maybe I have and just didn't think about it much. I think that the [Programming Languages](https://www.coursera.org/learn/programming-languages) course series will go deeper into this concept. For now, we utilize this way of programming without directly defining it until the end of the course.
 
 If you're experienced with programming already like I was, and are trying to be pragmatic, you might be wondering if you can get away with skipping this course.  It's hard to tell. I can come up with theories as to why it is useful, as I did above, but won't truly know until more time passes by and I go through more programming experiences. I'll probably update this blog post if anything comes to mind in the future.
 
 But if you do decide to skip this course, you would be missing out on a good, structured way of approaching problem-solving in code, if you don't have such a process already learned from another source. That, along with missing other important ideas, mentioned above.
 
-If you're a beginner and struggle with this course, it's OK and normal. Recursion can be hard to wrap your head around. If you find yourself looking at the solutions often, don't feel bad. I recommend using the DrRacket stepper feature to step through a smaller example to understand how it works step by step. Maybe even draw out some iterations using pen/pencil and paper.
-
-Just go through the course. Ask for help in the discord. Try not to waste too much time being stuck.  But also don't jump to the solution right away without putting much thought into it. Learn to enjoy the process.
-
-I plan to go a little more into detail about this course in a separate blog post, which I will link [here]() when it's done. Same for the rest of the courses below.
+I plan to go a little more into detail about this course in a separate blog post, which I will link [here](https://blog.miguelhx.com/spd-course-review.html) when it's done (it's done now, feel free to check it out).
 
 ## Math for Computer Science
 

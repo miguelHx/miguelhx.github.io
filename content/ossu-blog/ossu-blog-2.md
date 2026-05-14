@@ -5,7 +5,7 @@ Tags: ossu
 Slug: ossu-blog-2
 Pin: true
 
-It’s been about 3 months since my last blog update. Did many things that I won't discuss all of here.  Some programming related but no OSSU/CS.  I did take [writing](https://www.coursera.org/specializations/good-with-words) and [speaking](https://www.coursera.org/specializations/good-with-words-speaking-and-presenting) courses from coursera though.  Also, recently wrote a review of [SPD](https://blog.miguelhx.com/spd-course-review.html).
+It’s been about 3 months since my [last blog update](https://blog.miguelhx.com/ossu-blog-1.html). Did many things that I won't discuss all of here.  Some programming related but no OSSU/CS.  I did take [writing](https://www.coursera.org/specializations/good-with-words) and [speaking](https://www.coursera.org/specializations/good-with-words-speaking-and-presenting) courses from coursera though.  Also, recently wrote a review of [SPD](https://blog.miguelhx.com/spd-course-review.html).
 
 ## What’s Next
 
