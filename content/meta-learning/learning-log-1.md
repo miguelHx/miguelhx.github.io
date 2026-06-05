@@ -56,11 +56,17 @@ There are many other learning methods/techniques, such as mind mapping, pre-lear
 This is how I plan my learning schedule to look like:
 
 Monday:  CS50x for first session, then class based program design for rest of the day.
+
 Tuesday:  CS50x for first session, then math for CS for the rest of the day.
+
 Wednesday:  CS50x for first session, then software construction for the rest of the day.
+
 Thursday:  CS50x for first session, then math for CS rest of day.
+
 Friday:  CS50x for first session, then class based program design for rest of day.
+
 Saturday:  Practice free recall and review what I learned throughout the week.  Go on walks to process thoughts.  Maybe write summaries of what I’ve learned using free recall and reviewing if needed.
+
 Sunday:  Rest day, study the Bible, do low intensity tasks.
 
 So for that first week, I’ll be doing class based program design twice per week while software construction is once.  The following week it will be once and the software construction will be twice.  Then, it will keep alternating like this.
