@@ -47,6 +47,10 @@ I will do the homework, problem set exercises, and projects.  I will give them a
 
 The Feynman technique.  I will teach what I am learning to a wall or to myself in simple terms.  When I do the review and free recall on Saturday’s, I will make sure to put some time in to teaching the concepts that I am learning.  I’ll try to do this everyday though as I come across the concepts.
 
+### Actively carving out time and space to do deep thinking
+
+Often we are not bottlenecked by execution but by clear thinking.  It’s not a good idea to cram your deep thinking.  A practical technique would be to dedicate at least 30 minutes in the evening to thinking, either on a walk or in a quiet spot with pen and paper.  Organic free/deep thinking.
+
 ### Other learning methods
 
 There are many other learning methods/techniques, such as mind mapping, pre-learning, etc.  I will be applying pre-learning by skimming over all the lectures and topics of a course before I begin to get a big picture view of the content before going sequentially lecture by lecture.  This will help prime the brain for learning and make it easier to fit the details into the bigger picture.  Mind maps I don’t think I’ll be using those very much.  I’ll experiment with it a bit and see how it goes.  I won’t be using Anki flash cards as I feel like the effort it takes to do this is not worth it compared to the other methods above because the above should produce enough learning value.  Cued recall is less effective than free recall and Anki cards are better suited for other scenarios such as learning vocabulary in a language or remembering key terms in a medical class, not really important for building programming or computer science intuition and understanding.
@@ -65,7 +69,7 @@ Thursday:  CS50x for first session, then math for CS rest of day.
 
 Friday:  CS50x for first session, then class based program design for rest of day.
 
-Saturday:  Practice free recall and review what I learned throughout the week.  Go on walks to process thoughts.  Maybe write summaries of what I’ve learned using free recall and reviewing if needed.
+Saturday:  Practice free recall and review what I learned throughout the week.  Go on walks to process thoughts.  Maybe write summaries of what I’ve learned using free recall and reviewing if needed. Summaries with analysis.
 
 Sunday:  Rest day, study the Bible, do low intensity tasks.
 
@@ -73,3 +77,5 @@ So for that first week, I’ll be doing class based program design twice per wee
 As before, I will log my time spent on each course.  I’m logging my time as a way for me to gauge my level of effort each week and compare with my benchmark of at least 20 hours per week.  It’ll allow me to see what I’m spending time on and keep myself accountable.  The hours spent are not the best indicator of learning, because you can spend many hours passively learning, which is not very effective.  What’s important of course is what’s actually done in those hours, including deeply processing information or deliberately practicing.
 
 Let’s see how this goes.  Will post an update sometime during the next few months or at the end of this OSSU session.  I have enough knowledge to move forward now.  Will probably start sometime in June.
+
+List of videos I’ve watched as a YouTube playlist:  [https://www.youtube.com/playlist?list=PLE1sf5Cn7AXrYvVls2X2fGfVP1Ednxckc](https://www.youtube.com/playlist?list=PLE1sf5Cn7AXrYvVls2X2fGfVP1Ednxckc)
