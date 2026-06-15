@@ -60,7 +60,7 @@ And I am taking Software Construction because it uses TypeScript, which is what 
 
 I believe the algorithms course series will help me implement the desktop app, because there's a good chance I'll be implementing some sort of search algorithm(s).
 
-After taking these courses, I will then focus fully on the desktop app, learning whatever comes up then on an as-needed basis. If I come across a concept that I am not familiar with, I will go into a rabbit hole to build this knowledge then circle back and use it.
+After taking these courses, I will then focus fully on the desktop app, learning whatever comes up then on an as-needed basis. If I come across a concept that I am not familiar with, I will go into a rabbit hole to build this knowledge then circle back and use it. This could happen in the algorithms courses. Maybe there's some discrete math concept I come across that I am not familiar with. So then, I'll drill in on that, build the missing knowledge, then come back.
 
 I am also working on learning other things, like social media, business, marketing, fitness, etc. so what I plan to do is spend maybe like 2/3 of the day on OSSU, then in the evening learn that other stuff.
 
