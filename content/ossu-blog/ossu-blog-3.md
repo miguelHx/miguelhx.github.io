@@ -9,13 +9,13 @@ In my last [blog post](https://blog.miguelhx.com/ossu-blog-2.html), I discussed 
 
 After much thinking, I decided to not follow this plan anymore. I came up with a new plan, one that aligns better with my goals. Although going sequentially will make my knowledge base stronger, being more direct and strategic with which courses I take can save me some time and help me get to where I want to go more efficiently.
 
-Going to skim the topics of the previous courses though, just to get a basic idea of what concepts are covered, and to get sort of a landscape view. Maybe I'll remember some of them and can revisit if I need the concept later if my brain thinks it's important.
+I'm still going to skim the topics of the previous courses though, just to get a basic idea of what concepts are covered, and to get sort of a landscape or big picture view. Maybe I'll remember some of them and can revisit if I need the concept later if my brain thinks it's important.
 
 IMPORTANT NOTE FOR OSSU LEARNERS:  I don't recommend doing what I did if OSSU is your first Computer Science curriculum. Skipping ahead like I am can lead to struggle later due to potentially weaker foundational pre-requisite knowledge structures.
 
-Choosing a course from outside the curriculum can be okay and beneficial. It depends what course it is and the quality of it. With enough research, one can get an informed opinion to decide what's best for them to take, whether it's sticking with OSSU or a different curriculum or mixing.
+However, choosing a course from outside the curriculum can be okay and beneficial. It depends what course it is and the quality of it. With enough research, one can get an informed opinion to decide what's best for them to take, whether it's sticking with OSSU or a different curriculum or mixing.
 
-The reason why I believe I can do this is because I already went through a Computer Science degree at a university and have a few years of professional experience, so I have strong foundational knowledge structures/networks that allow me to pick things up easier and skip courses that are similar to what I've learned before.
+The reason why I believe I can do this is because I already went through a Computer Science degree at a university and have a few years of professional experience, so I have somewhat solid base of foundational knowledge structures/networks that allow me to pick things up easier and skip courses that are similar to what I've learned before.
 
 Still, I have to be humble and careful. I am not perfect or claiming to know it all. There's always room for improvement, and I can definitely benefit from taking all the courses still.
 
@@ -29,18 +29,32 @@ OSSU is designed to go wide (foundational courses) then direct (fullstackopen, e
 
 Eventually, I do want to revisit the original ordering, especially because I really want to take Programming Languages part A/B/C courses. But that will have to wait.
 
-There's also the thought that I can get somewhat diminishing returns from going through a CS degree again. There's a lot of value in still going through a CS degree of course, because of star courses like Programming Langauges parts A/B/C, and just the fact that I would be getting different perspectives from high quality courses, thereby strengthening my knowledge structures.  But it's a huge time investment.
+There's also the thought that I can get somewhat diminishing returns from going through a CS degree again. There's still a lot of value in going through a CS degree of course, because of star courses like Programming Langauges parts A/B/C, and just the fact that I would be getting different perspectives from high quality courses, thereby strengthening my knowledge structures.  But it's a huge time investment.
 
 Every individual is different, with different knowledge structures, goals, time frames, etc. I am choosing to tailor the courses I take based on my particular background and goals.
 
 I am also considering a hybrid approach of doing both more direct learning along with foundational sequential learning. For now, more direct.
 
-Stick with the recommended OSSU ordering unless you have a specific reason to modify it. But at the same time, be open to seeking alternative courses, or mixing things together. DYOR and ask experienced folks in the discord or elsewhere.
+Stick with the recommended OSSU ordering unless you have a specific reason to modify it. But at the same time, be open to seeking alternative courses, or mixing things together. DYOR and ask experienced folks in the discord or elsewhere to help you make an informed decision.
 
 End OSSU learners note.
 
 
-One my next goals is to write a desktop app.  I chose Electron as the technology, which uses JavaScript/TypeScript. Before I create this app, I want to build any related foundational knowledge.  So I decided to instead take MIT Missing Semester course, Software Construction from MIT/CMU (TypeScript version), and Algorithms.
+One my next goals is to write a desktop app.  I chose Electron as the technology, which uses JavaScript/TypeScript. Before I create this app, I want to build any related foundational knowledge.  So I decided to instead take the following courses:
+
+* [MIT Missing Semester](https://missing.csail.mit.edu/) course
+* Software Construction, [MIT version, SP2026](https://web.mit.edu/6.102/www/sp26/), [CMU version, SP2024](https://github.com/CMU-17-214/s2024)
+* [Stanford Algorithms Specialization](https://www.coursera.org/specializations/algorithms) from Coursera
+
+For MIT Missing Semester, I plan to go through all the previous versions in order, which are 2019, 2020, then finally 2026. There's a good chance the knowledge learned from here can be applicable to the process of writing my desktop app.
+
+For Software Construction, will be taking the MIT one first, then CMU.  There is some overlap with Class-Based Program Design and maybe some of Object Oriented Design from what I can tell.
+
+I think OSSU used Software Construction in one of its iterations years ago, before the NEU courses.  It seems like Software Construction could fit in around Class-Based Design, so I'm not jumping too much ahead in ordering with this course.
+
+And I am taking Software Construction because it uses TypeScript, which is what I'll be using for the desktop app idea.
+
+I believe the algorithms course series will help me implement the desktop app, because there's a good chance I'll be implementing some sort of search algorithm(s).
 
 After taking these courses, I will then focus fully on the desktop app, learning whatever comes up then on an as-needed basis. If I come across a concept that I am not familiar with, I will go into a rabbit hole to build this knowledge then circle back and use it.
 
