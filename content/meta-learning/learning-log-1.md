@@ -77,6 +77,8 @@ There are many other learning methods/techniques, such as mind mapping, pre-lear
 
 ### Schedule
 
+EDIT: I have changed plans, and decided on different courses to take. See [OSSU blog 3](https://blog.miguelhx.com/ossu-blog-3.html) for the updated plan and schedule. Leaving the following outdated plan for historical purposes.
+
 This is how I plan my learning schedule to look like:
 
 Monday:  CS50x for first session, then class based program design for rest of the day.
