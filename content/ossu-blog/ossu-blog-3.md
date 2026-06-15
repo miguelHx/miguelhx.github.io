@@ -11,23 +11,33 @@ After much thinking, I decided to not follow this plan anymore. I came up with a
 
 Going to skim the topics of the previous courses though, just to get a basic idea of what concepts are covered, and to get sort of a landscape view. Maybe I'll remember some of them and can revisit if I need the concept later if my brain thinks it's important.
 
-IMPORTANT NOTE FOR OSSU LEARNERS:  I don't recommend doing what I did if OSSU is your first Computer Science curriculum. Skipping ahead like I am, and choosing a course from outside the curriculum can lead to struggle later due to potentially weaker foundational pre-requisite knowledge structures.
+IMPORTANT NOTE FOR OSSU LEARNERS:  I don't recommend doing what I did if OSSU is your first Computer Science curriculum. Skipping ahead like I am can lead to struggle later due to potentially weaker foundational pre-requisite knowledge structures.
 
-The reason why I believe I can do this is because I already went through a Computer Science degree at a university and have a few years of professional experience, so I have stronger foundational knowledge structures/networks that allow me to pick things up easier and skip courses that are similar to what I've learned before.
+Choosing a course from outside the curriculum can be okay and beneficial. It depends what course it is and the quality of it. With enough research, one can get an informed opinion to decide what's best for them to take, whether it's sticking with OSSU or a different curriculum or mixing.
 
-I am using discernment based on my experience, and have different goals that I want to accomplish. If I had all the time in the world, I would go sequentially in the original ordering. But I am trying to be more strategic based on my specific goals and time frame.
+The reason why I believe I can do this is because I already went through a Computer Science degree at a university and have a few years of professional experience, so I have strong foundational knowledge structures/networks that allow me to pick things up easier and skip courses that are similar to what I've learned before.
+
+Still, I have to be humble and careful. I am not perfect or claiming to know it all. There's always room for improvement, and I can definitely benefit from taking all the courses still.
+
+I am using discernment based on my experience, and I have different goals that I want to accomplish. If I had all the time in the world, I would go sequentially in the original ordering. But I am trying to be more strategic based on my specific goals and time frame.
 
 Of course, I would be better off long term if I took the recommended courses in sequence. But there's a tradeoff here. I am sacrificing wider, stronger, foundational knowledge structures for more direct knowledge structures that are closer to my specific goals. There's also the time tradeoff. By going more direct, I am saving time.
 
 By directness, I mean knowledge/skills closer to what you would be doing for the software engineer job or for your specific goals.
 
-OSSU is designed to go wide then direct, with some directness along the way (MIT Missing Semester). I think I have enough wideness to be able to go more direct sooner.
+OSSU is designed to go wide (foundational courses) then direct (fullstackopen, etc.), with some directness along the way (MIT Missing Semester). I think I have enough wideness to be able to go more direct sooner.
 
 Eventually, I do want to revisit the original ordering, especially because I really want to take Programming Languages part A/B/C courses. But that will have to wait.
 
+There's also the thought that I can get somewhat diminishing returns from going through a CS degree again. There's a lot of value in still going through a CS degree of course, because of star courses like Programming Langauges parts A/B/C, and just the fact that I would be getting different perspectives from high quality courses, thereby strengthening my knowledge structures.  But it's a huge time investment.
+
 Every individual is different, with different knowledge structures, goals, time frames, etc. I am choosing to tailor the courses I take based on my particular background and goals.
 
-Stick with the recommended OSSU ordering unless you have a specific reason to modify it.
+I am also considering a hybrid approach of doing both more direct learning along with foundational sequential learning. For now, more direct.
+
+Stick with the recommended OSSU ordering unless you have a specific reason to modify it. But at the same time, be open to seeking alternative courses, or mixing things together. DYOR and ask experienced folks in the discord or elsewhere.
+
+End OSSU learners note.
 
 
 One my next goals is to write a desktop app.  I chose Electron as the technology, which uses JavaScript/TypeScript. Before I create this app, I want to build any related foundational knowledge.  So I decided to instead take MIT Missing Semester course, Software Construction from MIT/CMU (TypeScript version), and Algorithms.
