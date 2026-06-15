@@ -20,7 +20,7 @@
 &lt;p&gt;One my next goals is to write a desktop app.  I chose Electron as the technology, which uses JavaScript/TypeScript. Before I create this app, I want to build any related foundational knowledge.  So I decided to instead take the following courses:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://missing.csail.mit.edu/"&gt;MIT Missing Semester&lt;/a&gt; course&lt;/li&gt;
-&lt;li&gt;Software Construction, &lt;a href="https://web.mit.edu/6.102/www/sp26/"&gt;MIT version, SP2026&lt;/a&gt;, &lt;a href="https://github.com/CMU-17-214/s2024"&gt;CMU version, SP2024&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Software Construction - &lt;a href="https://web.mit.edu/6.102/www/sp26/"&gt;MIT version, SP2026&lt;/a&gt;; &lt;a href="https://github.com/CMU-17-214/s2024"&gt;CMU version, SP2024&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.coursera.org/specializations/algorithms"&gt;Stanford Algorithms Specialization&lt;/a&gt; from Coursera&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For MIT Missing Semester, I plan to go through all the previous versions in order, which are 2019, 2020, then finally 2026. There's a good chance the knowledge learned from here can be applicable to the process of writing my desktop app.&lt;/p&gt;
