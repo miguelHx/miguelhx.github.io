@@ -52,6 +52,10 @@ For Software Construction, will be taking the MIT one first, then CMU.  There is
 
 I think OSSU used Software Construction in one of its iterations years ago, before the NEU courses.  It seems like Software Construction could fit in around Class-Based Design, so I'm not jumping too much ahead in ordering with this course.
 
+If you want to strengthen fundamentals even more, maybe some extra credit would be to do Software Construction course right after CBD. The 2015 MIT version on OCW is in Java, and has homework assignments.
+
+Unfortunately, there is no access to the homework starter files in the more recent MIT Software Construction courses.  For the CMU version, the labs are open, but not the homeworks. That's a drawback, but I still think I can extract enough learning value.
+
 And I am taking Software Construction because it uses TypeScript, which is what I'll be using for the desktop app idea.
 
 I believe the algorithms course series will help me implement the desktop app, because there's a good chance I'll be implementing some sort of search algorithm(s).
