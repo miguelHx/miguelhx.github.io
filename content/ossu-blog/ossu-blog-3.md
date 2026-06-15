@@ -43,7 +43,7 @@ End OSSU learners note.
 One my next goals is to write a desktop app.  I chose Electron as the technology, which uses JavaScript/TypeScript. Before I create this app, I want to build any related foundational knowledge.  So I decided to instead take the following courses:
 
 * [MIT Missing Semester](https://missing.csail.mit.edu/) course
-* Software Construction, [MIT version, SP2026](https://web.mit.edu/6.102/www/sp26/), [CMU version, SP2024](https://github.com/CMU-17-214/s2024)
+* Software Construction - [MIT version, SP2026](https://web.mit.edu/6.102/www/sp26/); [CMU version, SP2024](https://github.com/CMU-17-214/s2024)
 * [Stanford Algorithms Specialization](https://www.coursera.org/specializations/algorithms) from Coursera
 
 For MIT Missing Semester, I plan to go through all the previous versions in order, which are 2019, 2020, then finally 2026. There's a good chance the knowledge learned from here can be applicable to the process of writing my desktop app.
