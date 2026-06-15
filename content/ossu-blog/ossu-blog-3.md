@@ -9,6 +9,8 @@ In my last [blog post](https://blog.miguelhx.com/ossu-blog-2.html), I discussed 
 
 After much thinking, I decided to not follow this plan anymore. I came up with a new plan, one that aligns better with my goals. Although going sequentially will make my knowledge base stronger, being more direct and strategic with which courses I take can save me some time and help me get to where I want to go more efficiently.
 
+Going to skim the topics of the previous courses though, just to get a basic idea of what concepts are covered, and to get sort of a landscape view. Maybe I'll remember some of them and can revisit if I need the concept later if my brain thinks it's important.
+
 One my next goals is to write a desktop app.  I chose Electron as the technology, which uses JavaScript/TypeScript. Before I create this app, I want to build any related foundational knowledge.  So I decided to instead take MIT Missing Semester course, Software Construction from MIT/CMU (TypeScript version), and Algorithms.
 
 After taking these courses, I will then focus fully on the desktop app, learning whatever comes up then on an as-needed basis. If I come across a concept that I am not familiar with, I will go into a rabbit hole to build this knowledge then circle back and use it.
