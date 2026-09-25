@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Systematic Program Design: Week 11 (Final Week) - Graphs &ndash; Miguel's Personal Website</title>
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social -->
+    <meta property="article:author" content="Miguel" />
+    <meta property="article:section" content="Systematic Program Design" />
+    <meta property="article:published_time" content="2026-01-20" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Systematic Program Design: Week 11 (Final Week) - Graphs"/>
+    <meta property="og:description" content="Graphs Module Many forms of information naturally organize themselves into trees of various kinds. But what about transit maps, wiring diagrams, the world wide web or even secret underground passages. Most of these have one or two key properties that make them be graphs instead of trees. One property is …"/>
+    <meta property="og:site_name" content="Miguel's Personal Website" />
+    <meta property="og:url" content="https://blog.miguelhx.com/systematic-program-design-week-11-final-week-graphs.html"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Systematic Program Design: Week 11 (Final Week) - Graphs">
+    <meta name="twitter:description" content="Graphs Module Many forms of information naturally organize themselves into trees of various kinds. But what about transit maps, wiring diagrams, the world wide web or even secret underground passages. Most of these have one or two key properties that make them be graphs instead of trees. One property is …">
+    <meta name="twitter:url" content="https://blog.miguelhx.com/systematic-program-design-week-11-final-week-graphs.html">
+
+    <!-- Feed -->
+    <link rel="alternate" type="application/atom+xml" href="https://blog.miguelhx.com/feed.xml" title="Miguel's Personal Website Atom Feed" />
+    <link rel="alternate" type="application/rss+xml" href="https://miguels-personal-website.disqus.com/latest.rss" title="Miguel's Personal Website Comments RSS Feed">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/pygments-highlight-github.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/font-awesome/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/font-awesome/css/solid.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/static/custom.css">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://blog.miguelhx.com/images/favicon.ico">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://blog.miguelhx.com/theme/js/jqcloud.min.js"></script>
+  </head>
+
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://blog.miguelhx.com" id="header-logo" title="Home">M</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="https://blog.miguelhx.com/pages/about-me.html">About me</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="https://blog.miguelhx.com/pages/contact.html">Contact</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/archives.html">Archives</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/tags.html">Tags</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-container col-main">
+        <h1>Systematic Program Design: Week 11 (Final Week) - Graphs</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2026-01-20T09:00:00-08:00">Tue 20 January 2026</time> in <a class="w3-text-green" href="https://blog.miguelhx.com/category/systematic-program-design.html" title="All articles in category Systematic Program Design">Systematic Program Design</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://blog.miguelhx.com/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://blog.miguelhx.com/tag/racket.html" title="All articles with Racket tag">#racket</a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <br>
+
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <blockquote>
+<h3>Graphs Module</h3>
+<p>Many forms of information naturally organize themselves into trees of various kinds. But what about transit maps, wiring diagrams, the world wide web or even secret underground passages. Most of these have one or two key properties that make them be graphs instead of trees.</p>
+<p>One property is that there are more than one arrows that lead into some node, the other is that the arrows can form cycles.</p>
+<p>Once again, this module is in many ways an exercise in what you have already learned. We will start with this new form of information, then use HtDD and HtDF to quickly design powerful functions that operate on graphs.</p>
+<p>Working through the videos and practice materials for this module will take approximately 7-8 hours of dedicated time to complete.</p>
+<h3>Learning Goals</h3>
+<ul>
+<li>Be able to identify when domain information naturally forms a graph.</li>
+<li>Be able to write data definitions for graphs.</li>
+<li>Be able to construct cyclic data.</li>
+<li>Be able to design templates that operate on graphs, using accumulators to prevent chasing infinite cycles in the graph.</li>
+<li>Be able to design functions that operate on graphs.</li>
+</ul>
+</blockquote>
+<h3>Graphs</h3>
+<p>This complicated data structure will be easier to work with thanks to our high-level non-code models.</p>
+<p>There’s two ways in which a graph can differ from an arbitrary-arity tree.</p>
+<ol>
+<li>It can have cycles</li>
+<li>Can have multiple arrows going to a single node</li>
+</ol>
+<p>Going over examples of graphs in code.  We are introduced to a new construct called shared, which allows us create cyclic data.</p>
+<p>Example of cyclic data structure pointing A to B and B to A:</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">H2</span><span class="w"> </span>
+<span class="w">  </span><span class="p">(</span><span class="k">shared</span><span class="w"> </span><span class="p">((</span><span class="n">-0-</span><span class="w"> </span><span class="p">(</span><span class="n">make-room</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="p">(</span><span class="n">make-room</span><span class="w"> </span><span class="s2">&quot;B&quot;</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-0-</span><span class="p">))))))</span>
+<span class="w">    </span><span class="n">-0-</span><span class="p">))</span>
+</code></pre></div>
+
+<p>Next, we’re trying to come up with a template for this graph data structure.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">;; template: structural recursion, encapsulate w/ local, tail-recursive w/ worklist,</span>
+<span class="c1">;;           context-preserving accumulator what rooms have we already visited</span>
+</code></pre></div>
+
+<p>The instructor states:  notice what I’m doing here.  <em>Because I have these clear notion of different contributions to the template, I’m kinda designing up the template structure I want at this high level, at this model-like level.  I’m saying I want all of these things before writing a single open parenthesis.</em></p>
+<p>We’re designing the template at a model level, rather than thinking about individual characters of program text.</p>
+<p>Any function operating on a house graph will require all these elements in its template.</p>
+<p>Instructor says:  Notice how at this point of the course, our ability to understand that templates come from multiple sources and that we can blend them together, and that we can do that kind of design up at the design level, we can write a note that says the template is structural recursion, encapsulated with local, tail recursive with a work list, and a context preserving accumulator with the rooms we already visited.</p>
+<p>We can sort of have that design thought, systematically turn it into code, and now we got this very useful template.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">;; template: structural recursion, encapsulate w/ local, tail-recursive w/ worklist,</span>
+<span class="c1">;;           context-preserving accumulator what rooms have we already visited</span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fn-for-house</span><span class="w"> </span><span class="n">r0</span><span class="p">)</span>
+<span class="w">  </span><span class="c1">;; todo is (listof Room); a worklist accumulator</span>
+<span class="w">  </span><span class="c1">;; visited is (listof String); context preserving accumulator, names of rooms already visited</span>
+<span class="w">  </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fn-for-room</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="n">todo</span><span class="w"> </span><span class="n">visited</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">member</span><span class="w"> </span><span class="p">(</span><span class="n">room-name</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="n">visited</span><span class="p">)</span>
+<span class="w">                </span><span class="p">(</span><span class="n">fn-for-lor</span><span class="w"> </span><span class="n">todo</span><span class="w"> </span><span class="n">visited</span><span class="p">)</span>
+<span class="w">                </span><span class="p">(</span><span class="n">fn-for-lor</span><span class="w"> </span><span class="p">(</span><span class="nb">append</span><span class="w"> </span><span class="p">(</span><span class="n">room-exits</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span>
+<span class="w">                            </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="n">room-name</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="n">visited</span><span class="p">))))</span><span class="w"> </span><span class="c1">; (... (room-name r))</span>
+
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fn-for-lor</span><span class="w"> </span><span class="n">todo</span><span class="w"> </span><span class="n">visited</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="k">...</span><span class="p">)]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="p">(</span><span class="n">fn-for-room</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span>
+<span class="w">                                </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span>
+<span class="w">                                </span><span class="n">visited</span><span class="p">)]))]</span>
+<span class="w">    </span><span class="p">(</span><span class="n">fn-for-room</span><span class="w"> </span><span class="n">r0</span><span class="w"> </span><span class="nb">empty</span><span class="w"> </span><span class="nb">empty</span><span class="p">)))</span>
+</code></pre></div>
+
+<p>In the next video we do a practical example using the template.</p>
+<p><em>Using higher-level design concepts breaks down complicated problems to a point where we can solve them systematically and simply</em></p>
+<p>Here is a photo highlighting the relationship between high-level model thinking via template description and the code structure:</p>
+<p><img alt="color coded image" src="images/graph-template.png"></p>
+<p>I can see how I can use this concept for leetcode problems. The general advice is to learn and understand patterns of implementation. A new way for me to look at it now is to learn and understand the templates or code structure.</p>
+<p>And of course, besides leetcode, in the real world. Excited to take this new way of thinking beyond this course!</p>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <a href="https://blog.miguelhx.com/pages/about-me.html"><img class="avatar" src="https://blog.miguelhx.com/images/favicon.ico" onerror="this.src='theme/images/avatar.png'" alt="Avatar"></a>
+                <div style="margin-left: 20px;">
+                  <a href="https://blog.miguelhx.com/pages/about-me.html"><span id="author-name" class="w3-hover-text-dark-grey">Miguel</span></a>
+                  <p id="author-story">Miguel is a computer programmer who has other identities that he hasn't fully adopted yet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+          <p style="font-size:10pt; font-style: italic;">Did you like this article? Share it with your friends!</p>
+          <div id="share" class="share">
+            <a href="https://www.facebook.com/sharer.php?u=https%3A//blog.miguelhx.com/systematic-program-design-week-11-final-week-graphs.html&amp;t=Miguel%27s%20Personal%20Website%3A%20Systematic%20Program%20Design%3A%20Week%2011%20%28Final%20Week%29%20-%20Graphs" target="_blank" class="w3-btn w3-indigo">
+              <i class="fa fa-facebook"></i> <span>Facebook</span>
+            </a>
+            <a href="https://twitter.com/share?url=https%3A//blog.miguelhx.com/systematic-program-design-week-11-final-week-graphs.html&amp;text=Miguel%27s%20Personal%20Website%3A%20Systematic%20Program%20Design%3A%20Week%2011%20%28Final%20Week%29%20-%20Graphs" target="_blank" class="w3-btn w3-black">
+              <i class="fa fa-x-twitter">X</i> <span></span>
+            </a>
+          </div>
+
+          <br><br><br>
+
+
+          <div id="disqus_thread"></div>
+          <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            
+            var disqus_config = function () {
+              this.page.url = 'https://blog.miguelhx.com/systematic-program-design-week-11-final-week-graphs.html';  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = 'https://blog.miguelhx.com/systematic-program-design-week-11-final-week-graphs.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            
+            (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+              var d = document, s = d.createElement('script');
+              
+              s.src = 'https://miguels-personal-website.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+              
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          <br><br><br>
+
+        </footer>
+      </div>
+    </article>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          2025&dash;2026          Miguel
+ | <a href="https://blog.miguelhx.com/feed.xml">Atom feed <i class="fa fa-rss" aria-hidden="true"></i></a>        </span>
+      </div>
+    </footer>
+
+    <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z648JEYS71');
+</script>
+
+
+  </body>
+</html>

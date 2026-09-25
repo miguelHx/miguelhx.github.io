@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Systematic Program Design: TA Solver Project &ndash; Miguel's Personal Website</title>
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social -->
+    <meta property="article:author" content="Miguel" />
+    <meta property="article:section" content="Systematic Program Design" />
+    <meta property="article:published_time" content="2026-01-26" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Systematic Program Design: TA Solver Project"/>
+    <meta property="og:description" content="Problem 1 was straight-forward, since it&#39;s basically the same problem as max-exits-to from the problem bank of this week that I had already solved. However, I adapted it to operate on all nodes of a network, that way we can take care of disconnected components. Going through the 5 step …"/>
+    <meta property="og:site_name" content="Miguel's Personal Website" />
+    <meta property="og:url" content="https://blog.miguelhx.com/systematic-program-design-ta-solver-project.html"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Systematic Program Design: TA Solver Project">
+    <meta name="twitter:description" content="Problem 1 was straight-forward, since it&#39;s basically the same problem as max-exits-to from the problem bank of this week that I had already solved. However, I adapted it to operate on all nodes of a network, that way we can take care of disconnected components. Going through the 5 step …">
+    <meta name="twitter:url" content="https://blog.miguelhx.com/systematic-program-design-ta-solver-project.html">
+
+    <!-- Feed -->
+    <link rel="alternate" type="application/atom+xml" href="https://blog.miguelhx.com/feed.xml" title="Miguel's Personal Website Atom Feed" />
+    <link rel="alternate" type="application/rss+xml" href="https://miguels-personal-website.disqus.com/latest.rss" title="Miguel's Personal Website Comments RSS Feed">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/pygments-highlight-github.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/font-awesome/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/font-awesome/css/solid.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/static/custom.css">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://blog.miguelhx.com/images/favicon.ico">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://blog.miguelhx.com/theme/js/jqcloud.min.js"></script>
+  </head>
+
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://blog.miguelhx.com" id="header-logo" title="Home">M</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="https://blog.miguelhx.com/pages/about-me.html">About me</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="https://blog.miguelhx.com/pages/contact.html">Contact</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/archives.html">Archives</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/tags.html">Tags</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-container col-main">
+        <h1>Systematic Program Design: TA Solver Project</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2026-01-26T10:20:00-08:00">Mon 26 January 2026</time> in <a class="w3-text-green" href="https://blog.miguelhx.com/category/systematic-program-design.html" title="All articles in category Systematic Program Design">Systematic Program Design</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://blog.miguelhx.com/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://blog.miguelhx.com/tag/racket.html" title="All articles with Racket tag">#racket</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://blog.miguelhx.com/tag/projects.html" title="All articles with Projects tag">#projects</a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <br>
+
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <p>Problem 1 was straight-forward, since it's basically the same problem as <code>max-exits-to</code> from the problem bank of this week that I had already solved. However, I adapted it to operate on all nodes of a network, that way we can take care of disconnected components.</p>
+<p>Going through the 5 step recipe to try and solve Problem 2 of the ta-solver file.</p>
+<ol>
+<li>Signature, purpose and stub.</li>
+<li>Define examples, wrap each in check-expect.</li>
+<li>Template and inventory.</li>
+<li>Code the function body.</li>
+<li>Test and debug until correct</li>
+</ol>
+<p>Steps 1-2 are done for us already, I am working to do steps 3-5.  I’m using the function parameters to help come up with a template.  For one, we will be using all selectors of the ta data structure.</p>
+<p>We can start out by saying there is a structural recursion on one of the parameters because it’s a list.  But due to the actual steps taken to solve this, it might be a search problem on an arbitrary-arity tree instead.</p>
+<p>It might also be generative recursion, but I need to solve a few examples, examine the steps taken, then use that information to come up with the model-level template description before writing the actual template.</p>
+<p>Here is the model-level template description that I wrote:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">;; template: all selectors for ta, mutual recursion for arbitary-arity tree for multiple potential slots to take,</span>
+<span class="c1">;; backtracking search when potential slot doesn&#39;t work out, accumulator for solution so far,</span>
+<span class="c1">;; generative recursion:</span>
+<span class="c1">;; termination argument:</span>
+<span class="c1">;; trivial case:  slots is empty</span>
+<span class="c1">;;     reduction step: remove slot from state when we find one in list of TAs</span>
+<span class="c1">;;     argument: the reduction step removes the slots by one, so</span>
+<span class="c1">;;           eventually the slots will be empty or false will be produced if no</span>
+<span class="c1">;;           corresponding slot is found</span>
+</code></pre></div>
+
+<p>After writing a model-level template description, I took the template from sudoku solver because it closely resembles the structure we are looking for.  Now making tweaks to it.</p>
+<p>I got the structure in place, arbitrary-arity tree mixed with backtracking search mixed with generative recursion.  Coded up all of it except the (next-states s) part, which is the most complicated procedure.  I’m spending some time thinking about how it could be done.  I have some ideas, but not sure yet how to translate into code.  Need to look at the parameter data as well as the desired output and somehow put them together.</p>
+<p>Got it!  I built out the solution in iterations.  Helper functions came up, and I made them along with their signature and purposes.  I spend a lot of time up front thinking about the solution, how it would work, what the code would need to do, etc.</p>
+<p>Then I started coding.  The way it works is we first find the next open slots and build a list of these possible states, while updating the ta lists to reflect taking up a slot, and also updating the slots list to begin looking for the next slot when we look at the next states.</p>
+<p>Then, we keep trying to find next open slot, producing new states until we reach a solved state, which happens when the slots list is empty and so we return the result so far that we built up while making the new states.</p>
+<p>Going to create some more tests as a sanity check.  Then I’m done with this course !</p>
+<p>All done !  My solution code is on <a href="">GitHub</a> or here below:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">;  PROBLEM 1:</span>
+<span class="c1">;</span>
+<span class="c1">;  Consider a social network similar to Twitter called Chirper. Each user has a name, a note about</span>
+<span class="c1">;  whether or not they are a verified user, and follows some number of people.</span>
+<span class="c1">;</span>
+<span class="c1">;  Design a data definition for Chirper, including a template that is tail recursive and avoids</span>
+<span class="c1">;  cycles.</span>
+<span class="c1">;</span>
+<span class="c1">;  Then design a function called most-followers which determines which user in a Chirper Network is</span>
+<span class="c1">;  followed by the most people.</span>
+<span class="c1">;</span>
+
+<span class="p">(</span><span class="k">define-struct</span><span class="w"> </span><span class="n">chirper-user</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="n">verified?</span><span class="w"> </span><span class="n">following</span><span class="p">))</span>
+<span class="c1">;; ChirperUser is (make-chirper-user String Boolean (listof ChirperUser))</span>
+<span class="c1">;; interp. the user&#39;s name, whether or not they are verified, and a list of users they are following</span>
+
+<span class="c1">;; template: structural recursion (arbitrary-arity tree), encapsulate w/ local, tail-recursive w/ worklist,</span>
+<span class="c1">;;           context-preserving accumulator - what users we have visited so far</span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fn-for-chirper</span><span class="w"> </span><span class="n">c0</span><span class="p">)</span>
+<span class="w">  </span><span class="c1">;; todo is (listof ChirperUser); a worklist accumulator</span>
+<span class="w">  </span><span class="c1">;; visited is (listof String); context preserving accumulator, names of users already visited</span>
+<span class="w">  </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fn-for-chirper-user</span><span class="w"> </span><span class="n">cu</span><span class="w"> </span><span class="n">todo</span><span class="w"> </span><span class="n">visited</span><span class="p">)</span><span class="w"> </span>
+<span class="w">            </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">member</span><span class="w"> </span><span class="p">(</span><span class="n">chirper-user-name</span><span class="w"> </span><span class="n">cu</span><span class="p">)</span><span class="w"> </span><span class="n">visited</span><span class="p">)</span>
+<span class="w">                </span><span class="p">(</span><span class="n">fn-for-lof</span><span class="w"> </span><span class="n">todo</span><span class="w"> </span><span class="n">visited</span><span class="p">)</span>
+<span class="w">                </span><span class="p">(</span><span class="n">fn-for-lof</span><span class="w"> </span><span class="p">(</span><span class="nb">append</span><span class="w"> </span><span class="p">(</span><span class="n">chirper-user-following</span><span class="w"> </span><span class="n">cu</span><span class="p">)</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span>
+<span class="w">                            </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="n">chirper-user-name</span><span class="w"> </span><span class="n">cu</span><span class="p">)</span><span class="w"> </span><span class="n">visited</span><span class="p">))))</span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fn-for-lof</span><span class="w"> </span><span class="n">todo</span><span class="w"> </span><span class="n">visited</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="k">...</span><span class="p">)]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="p">(</span><span class="n">fn-for-chirper-user</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span>
+<span class="w">                                        </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span>
+<span class="w">                                        </span><span class="n">visited</span><span class="p">)]))]</span>
+<span class="w">    </span><span class="p">(</span><span class="n">fn-for-chirper-user</span><span class="w"> </span><span class="n">c0</span><span class="w"> </span><span class="nb">empty</span><span class="w"> </span><span class="nb">empty</span><span class="p">)))</span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-network-1-A</span>
+<span class="w">  </span><span class="p">(</span><span class="k">shared</span><span class="w"> </span><span class="p">((</span><span class="n">-A-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-B-</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-B-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;B&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-C-</span><span class="w"> </span><span class="n">-E-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-C-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="w"> </span><span class="k">false</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-B-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-D-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;D&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-E-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-E-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;E&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-F-</span><span class="w"> </span><span class="n">-A-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-F-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;F&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-E-</span><span class="p">))))</span>
+<span class="w">    </span><span class="n">-A-</span><span class="p">))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-network-1-B</span>
+<span class="w">  </span><span class="p">(</span><span class="k">shared</span><span class="w"> </span><span class="p">((</span><span class="n">-A-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-B-</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-B-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;B&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-C-</span><span class="w"> </span><span class="n">-E-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-C-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="w"> </span><span class="k">false</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-B-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-D-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;D&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-E-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-E-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;E&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-F-</span><span class="w"> </span><span class="n">-A-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-F-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;F&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-E-</span><span class="p">))))</span>
+<span class="w">    </span><span class="n">-B-</span><span class="p">))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-network-1-C</span>
+<span class="w">  </span><span class="p">(</span><span class="k">shared</span><span class="w"> </span><span class="p">((</span><span class="n">-A-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-B-</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-B-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;B&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-C-</span><span class="w"> </span><span class="n">-E-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-C-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="w"> </span><span class="k">false</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-B-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-D-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;D&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-E-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-E-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;E&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-F-</span><span class="w"> </span><span class="n">-A-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-F-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;F&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-E-</span><span class="p">))))</span>
+<span class="w">    </span><span class="n">-C-</span><span class="p">))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-network-1-D</span>
+<span class="w">  </span><span class="p">(</span><span class="k">shared</span><span class="w"> </span><span class="p">((</span><span class="n">-A-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-B-</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-B-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;B&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-C-</span><span class="w"> </span><span class="n">-E-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-C-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="w"> </span><span class="k">false</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-B-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-D-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;D&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-E-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-E-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;E&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-F-</span><span class="w"> </span><span class="n">-A-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-F-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;F&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-E-</span><span class="p">))))</span>
+<span class="w">    </span><span class="n">-D-</span><span class="p">))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-network-1-E</span>
+<span class="w">  </span><span class="p">(</span><span class="k">shared</span><span class="w"> </span><span class="p">((</span><span class="n">-A-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-B-</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-B-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;B&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-C-</span><span class="w"> </span><span class="n">-E-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-C-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="w"> </span><span class="k">false</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-B-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-D-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;D&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-E-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-E-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;E&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-F-</span><span class="w"> </span><span class="n">-A-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-F-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;F&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-E-</span><span class="p">))))</span>
+<span class="w">    </span><span class="n">-E-</span><span class="p">))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-network-1-F</span>
+<span class="w">  </span><span class="p">(</span><span class="k">shared</span><span class="w"> </span><span class="p">((</span><span class="n">-A-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-B-</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-B-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;B&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-C-</span><span class="w"> </span><span class="n">-E-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-C-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="w"> </span><span class="k">false</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-B-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-D-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;D&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-E-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-E-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;E&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-F-</span><span class="w"> </span><span class="n">-A-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-F-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;F&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-E-</span><span class="p">))))</span>
+<span class="w">    </span><span class="n">-F-</span><span class="p">))</span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-network-2-A</span>
+<span class="w">  </span><span class="p">(</span><span class="k">shared</span><span class="w"> </span><span class="p">((</span><span class="n">-A-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-B-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;B&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-C-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="w"> </span><span class="k">false</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="w"> </span><span class="n">-A-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-D-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;D&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-E-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;E&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-F-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;F&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">))))</span>
+<span class="w">    </span><span class="n">-A-</span><span class="p">))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-network-2-B</span>
+<span class="w">  </span><span class="p">(</span><span class="k">shared</span><span class="w"> </span><span class="p">((</span><span class="n">-A-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-B-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;B&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-C-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="w"> </span><span class="k">false</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="w"> </span><span class="n">-A-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-D-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;D&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-E-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;E&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-F-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;F&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">))))</span>
+<span class="w">    </span><span class="n">-B-</span><span class="p">))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-network-2-C</span>
+<span class="w">  </span><span class="p">(</span><span class="k">shared</span><span class="w"> </span><span class="p">((</span><span class="n">-A-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-B-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;B&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-C-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="w"> </span><span class="k">false</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="w"> </span><span class="n">-A-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-D-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;D&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-E-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;E&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-F-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;F&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">))))</span>
+<span class="w">    </span><span class="n">-C-</span><span class="p">))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-network-2-D</span>
+<span class="w">  </span><span class="p">(</span><span class="k">shared</span><span class="w"> </span><span class="p">((</span><span class="n">-A-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-B-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;B&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-C-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="w"> </span><span class="k">false</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="w"> </span><span class="n">-A-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-D-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;D&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-E-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;E&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-F-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;F&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">))))</span>
+<span class="w">    </span><span class="n">-D-</span><span class="p">))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-network-2-E</span>
+<span class="w">  </span><span class="p">(</span><span class="k">shared</span><span class="w"> </span><span class="p">((</span><span class="n">-A-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-B-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;B&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-C-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="w"> </span><span class="k">false</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="w"> </span><span class="n">-A-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-D-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;D&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-E-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;E&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-F-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;F&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">))))</span>
+<span class="w">    </span><span class="n">-E-</span><span class="p">))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-network-2-F</span>
+<span class="w">  </span><span class="p">(</span><span class="k">shared</span><span class="w"> </span><span class="p">((</span><span class="n">-A-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-B-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;B&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-C-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="w"> </span><span class="k">false</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="w"> </span><span class="n">-A-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-D-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;D&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-E-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;E&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">)))</span>
+<span class="w">           </span><span class="p">(</span><span class="n">-F-</span><span class="w"> </span><span class="p">(</span><span class="n">make-chirper-user</span><span class="w"> </span><span class="s2">&quot;F&quot;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">-D-</span><span class="p">))))</span>
+<span class="w">    </span><span class="n">-F-</span><span class="p">))</span>
+
+
+<span class="c1">;; (listof ChirperUser) -&gt; String</span>
+<span class="c1">;; given a chirper network, determine which user has the most followers.</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">most-followers</span><span class="w"> </span><span class="nb">empty</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">most-followers</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">ch-network-1-A</span><span class="w"> </span><span class="n">ch-network-1-B</span><span class="w"> </span><span class="n">ch-network-1-C</span>
+<span class="w">                                    </span><span class="n">ch-network-1-D</span><span class="w"> </span><span class="n">ch-network-1-E</span><span class="w"> </span><span class="n">ch-network-1-F</span><span class="p">))</span>
+<span class="w">              </span><span class="s2">&quot;E&quot;</span><span class="p">)</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">most-followers</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">ch-network-2-A</span><span class="w"> </span><span class="n">ch-network-2-B</span><span class="w"> </span><span class="n">ch-network-2-C</span>
+<span class="w">                                    </span><span class="n">ch-network-2-D</span><span class="w"> </span><span class="n">ch-network-2-E</span><span class="w"> </span><span class="n">ch-network-2-F</span><span class="p">))</span>
+<span class="w">              </span><span class="s2">&quot;D&quot;</span><span class="p">)</span>
+
+<span class="c1">;(define (most-followers locu) &quot;A&quot;) ;stub</span>
+
+<span class="c1">;; template: structural recursion, encapsulated w/ local, accumulator for result</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">most-followers</span><span class="w"> </span><span class="n">locu0</span><span class="p">)</span>
+<span class="w">  </span><span class="c1">;; visited-so-far is (listof String); users we have visited so far globally</span>
+<span class="w">  </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">get-global-user-with-followers-list</span><span class="w"> </span><span class="n">locu</span><span class="w"> </span><span class="n">visited-so-far</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">locu</span><span class="p">)</span><span class="w"> </span><span class="nb">empty</span><span class="p">]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="c1">; locuwfc - list of chirper user with followers count</span>
+<span class="w">                   </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="n">locuwfc-and-visited</span><span class="w"> </span><span class="p">(</span><span class="n">fn-for-chirper-user</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">locu</span><span class="p">)</span><span class="w"> </span><span class="nb">empty</span><span class="w"> </span><span class="n">visited-so-far</span><span class="w"> </span><span class="nb">empty</span><span class="p">))</span>
+<span class="w">                           </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">locuwfc</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">locuwfc-and-visited</span><span class="p">))</span>
+<span class="w">                           </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">visited</span><span class="w"> </span><span class="p">(</span><span class="nb">second</span><span class="w"> </span><span class="n">locuwfc-and-visited</span><span class="p">))]</span>
+<span class="w">                     </span><span class="p">(</span><span class="n">merge-locuwfc</span><span class="w"> </span><span class="n">locuwfc</span>
+<span class="w">                                    </span><span class="p">(</span><span class="n">get-global-user-with-followers-list</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">locu</span><span class="p">)</span><span class="w"> </span><span class="n">visited</span><span class="p">)))]))</span>
+
+<span class="w">          </span><span class="c1">;; (listof (pair ChirperUser Number)) (listof (pair ChirperUser Number)) -&gt; (listof (pair ChirperUser Number))</span>
+<span class="w">          </span><span class="c1">;; merges two lists of pairs together, combining follower counts and/or appending new pairs</span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">merge-locuwfc</span><span class="w"> </span><span class="n">locuwfc1</span><span class="w"> </span><span class="n">locuwfc2</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">locuwfc1</span><span class="p">)</span><span class="w"> </span><span class="n">locuwfc2</span><span class="p">]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-user-1</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">locuwfc1</span><span class="p">)))</span>
+<span class="w">                           </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">follower-count-1</span><span class="w"> </span><span class="p">(</span><span class="nb">second</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">locuwfc1</span><span class="p">)))</span>
+<span class="w">                           </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">find-result</span><span class="w"> </span><span class="p">(</span><span class="nb">assoc</span><span class="w"> </span><span class="n">ch-user-1</span><span class="w"> </span><span class="n">locuwfc2</span><span class="p">))]</span>
+<span class="w">                     </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">not</span><span class="w"> </span><span class="p">(</span><span class="nb">false?</span><span class="w"> </span><span class="n">find-result</span><span class="p">))</span>
+<span class="w">                         </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">ch-user-1</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">follower-count-1</span><span class="w"> </span><span class="p">(</span><span class="nb">second</span><span class="w"> </span><span class="n">find-result</span><span class="p">)))</span>
+<span class="w">                               </span><span class="p">(</span><span class="n">merge-locuwfc</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">locuwfc1</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">remove</span><span class="w"> </span><span class="n">find-result</span><span class="w"> </span><span class="n">locuwfc2</span><span class="p">)))</span>
+<span class="w">                         </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">locuwfc1</span><span class="p">)</span>
+<span class="w">                               </span><span class="p">(</span><span class="n">merge-locuwfc</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">locuwfc1</span><span class="p">)</span><span class="w"> </span><span class="n">locuwfc2</span><span class="p">))))]))</span>
+
+<span class="w">          </span><span class="c1">;; todo is (listof ChirperUser); a worklist accumulator</span>
+<span class="w">          </span><span class="c1">;; visited is (listof String); context preserving accumulator, names of users already visited</span>
+<span class="w">          </span><span class="c1">;; rsf is (listof (pair ChirperUser Number)); a context preserving accumulator, a list of</span>
+<span class="w">          </span><span class="c1">;;                                            users with their follower counts</span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fn-for-chirper-user</span><span class="w"> </span><span class="n">cu</span><span class="w"> </span><span class="n">todo</span><span class="w"> </span><span class="n">visited</span><span class="w"> </span><span class="n">rsf</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">member</span><span class="w"> </span><span class="p">(</span><span class="n">chirper-user-name</span><span class="w"> </span><span class="n">cu</span><span class="p">)</span><span class="w"> </span><span class="n">visited</span><span class="p">)</span>
+<span class="w">                </span><span class="p">(</span><span class="n">fn-for-lof</span><span class="w"> </span><span class="n">todo</span><span class="w"> </span><span class="n">visited</span><span class="w"> </span><span class="n">rsf</span><span class="p">)</span>
+<span class="w">                </span><span class="p">(</span><span class="n">fn-for-lof</span><span class="w"> </span><span class="p">(</span><span class="nb">append</span><span class="w"> </span><span class="p">(</span><span class="n">chirper-user-following</span><span class="w"> </span><span class="n">cu</span><span class="p">)</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span>
+<span class="w">                            </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="n">chirper-user-name</span><span class="w"> </span><span class="n">cu</span><span class="p">)</span><span class="w"> </span><span class="n">visited</span><span class="p">)</span>
+<span class="w">                            </span><span class="p">(</span><span class="n">next-rsf</span><span class="w"> </span><span class="n">rsf</span><span class="w"> </span><span class="p">(</span><span class="n">chirper-user-following</span><span class="w"> </span><span class="n">cu</span><span class="p">)))))</span>
+
+<span class="w">          </span><span class="c1">;; (listof (pair ChirperUser Number)) (listof ChirperUser) -&gt; (listof (pair ChirperUser Number))</span>
+<span class="w">          </span><span class="c1">;; given a list of users with follower counts, and a list of users, increment follower count of</span>
+<span class="w">          </span><span class="c1">;; users with counts if a user appears in following.</span>
+<span class="w">          </span><span class="c1">;; if a user does not appear in users with followers, add new entry to users with followers</span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">next-rsf</span><span class="w"> </span><span class="n">locuwfc</span><span class="w"> </span><span class="n">following-list</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">locuwfc</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">map</span><span class="w"> </span><span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="p">(</span><span class="n">following</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">following</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span><span class="w"> </span><span class="n">following-list</span><span class="p">)]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-user</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">locuwfc</span><span class="p">)))</span>
+<span class="w">                           </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">follower-count</span><span class="w"> </span><span class="p">(</span><span class="nb">second</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">locuwfc</span><span class="p">)))]</span>
+<span class="w">                     </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">member?</span><span class="w"> </span><span class="n">ch-user</span><span class="w"> </span><span class="n">following-list</span><span class="p">)</span>
+<span class="w">                         </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">ch-user</span><span class="w"> </span><span class="p">(</span><span class="nb">add1</span><span class="w"> </span><span class="n">follower-count</span><span class="p">))</span>
+<span class="w">                               </span><span class="p">(</span><span class="n">next-rsf</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">locuwfc</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">remove</span><span class="w"> </span><span class="n">ch-user</span><span class="w"> </span><span class="n">following-list</span><span class="p">)))</span>
+<span class="w">                         </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">locuwfc</span><span class="p">)</span>
+<span class="w">                               </span><span class="p">(</span><span class="n">next-rsf</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">locuwfc</span><span class="p">)</span><span class="w"> </span><span class="n">following-list</span><span class="p">))))]))</span>
+
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fn-for-lof</span><span class="w"> </span><span class="n">todo</span><span class="w"> </span><span class="n">visited</span><span class="w"> </span><span class="n">rsf</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">rsf</span><span class="w"> </span><span class="n">visited</span><span class="p">)]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="p">(</span><span class="n">fn-for-chirper-user</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span>
+<span class="w">                                        </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">todo</span><span class="p">)</span>
+<span class="w">                                        </span><span class="n">visited</span>
+<span class="w">                                        </span><span class="n">rsf</span><span class="p">)]))</span>
+
+<span class="w">          </span><span class="c1">;; (listof (pair ChirperUser Number)) -&gt; ChirperUser</span>
+<span class="w">          </span><span class="c1">;; given a list of chirper users with follower counts, extract the user with the maximum count.</span>
+<span class="w">          </span><span class="c1">;; ASSUME: input list will never be empty</span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">extract-max-follower-user</span><span class="w"> </span><span class="n">locuwfc0</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="n">first-user</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">locuwfc0</span><span class="p">)))</span>
+<span class="w">                    </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">first-follower-count</span><span class="w"> </span><span class="p">(</span><span class="nb">second</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">locuwfc0</span><span class="p">)))</span>
+<span class="w">                    </span><span class="c1">;; msf is Number; max followers so far</span>
+<span class="w">                    </span><span class="c1">;; mcusf is ChirperUser; max user so far</span>
+<span class="w">                    </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">find-max-user</span><span class="w"> </span><span class="n">locuwfc</span><span class="w"> </span><span class="n">msf</span><span class="w"> </span><span class="n">mcusf</span><span class="p">)</span>
+<span class="w">                      </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">locuwfc</span><span class="p">)</span><span class="w"> </span><span class="n">mcusf</span><span class="p">]</span>
+<span class="w">                            </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                             </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="n">ch-user</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">locuwfc</span><span class="p">)))</span>
+<span class="w">                                     </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">follower-cnt</span><span class="w"> </span><span class="p">(</span><span class="nb">second</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">locuwfc</span><span class="p">)))]</span>
+<span class="w">                               </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">&gt;</span><span class="w"> </span><span class="n">follower-cnt</span><span class="w"> </span><span class="n">msf</span><span class="p">)</span>
+<span class="w">                                   </span><span class="p">(</span><span class="n">find-max-user</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">locuwfc</span><span class="p">)</span><span class="w"> </span><span class="n">follower-cnt</span><span class="w"> </span><span class="n">ch-user</span><span class="p">)</span>
+<span class="w">                                   </span><span class="p">(</span><span class="n">find-max-user</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">locuwfc</span><span class="p">)</span><span class="w"> </span><span class="n">msf</span><span class="w"> </span><span class="n">mcusf</span><span class="p">)))]))]</span>
+<span class="w">              </span><span class="p">(</span><span class="n">find-max-user</span><span class="w"> </span><span class="n">locuwfc0</span><span class="w"> </span><span class="n">first-follower-count</span><span class="w"> </span><span class="n">first-user</span><span class="p">)))</span>
+
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">global-user-with-followers-list</span><span class="w"> </span><span class="p">(</span><span class="n">get-global-user-with-followers-list</span><span class="w"> </span><span class="n">locu0</span><span class="w"> </span><span class="nb">empty</span><span class="p">))]</span>
+<span class="w">    </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">global-user-with-followers-list</span><span class="p">)</span>
+<span class="w">        </span><span class="s2">&quot;&quot;</span>
+<span class="w">        </span><span class="p">(</span><span class="n">chirper-user-name</span><span class="w"> </span><span class="p">(</span><span class="n">extract-max-follower-user</span><span class="w"> </span><span class="n">global-user-with-followers-list</span><span class="p">)))))</span>
+
+<span class="c1">;  PROBLEM 2:</span>
+<span class="c1">;</span>
+<span class="c1">;  In UBC&#39;s version of How to Code, there are often more than 800 students taking</span>
+<span class="c1">;  the course in any given semester, meaning there are often over 40 Teaching Assistants.</span>
+<span class="c1">;</span>
+<span class="c1">;  Designing a schedule for them by hand is hard work - luckily we&#39;ve learned enough now to write</span>
+<span class="c1">;  a program to do it for us!</span>
+<span class="c1">;</span>
+<span class="c1">;  Below are some data definitions for a simplified version of a TA schedule. There are some</span>
+<span class="c1">;  number of slots that must be filled, each represented by a natural number. Each TA is</span>
+<span class="c1">;  available for some of these slots, and has a maximum number of shifts they can work.</span>
+<span class="c1">;</span>
+<span class="c1">;  Design a search program that consumes a list of TAs and a list of Slots, and produces one</span>
+<span class="c1">;  valid schedule where each Slot is assigned to a TA, and no TA is working more than their</span>
+<span class="c1">;  maximum shifts. If no such schedules exist, produce false.</span>
+<span class="c1">;</span>
+<span class="c1">;  You should supplement the given check-expects and remember to follow the recipe!</span>
+
+
+
+<span class="c1">;; Slot is Natural</span>
+<span class="c1">;; interp. each TA slot has a number, is the same length, and none overlap</span>
+
+<span class="p">(</span><span class="k">define-struct</span><span class="w"> </span><span class="n">ta</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="nb">max</span><span class="w"> </span><span class="n">avail</span><span class="p">))</span>
+<span class="c1">;; TA is (make-ta String Natural (listof Slot))</span>
+<span class="c1">;; interp. the TA&#39;s name, number of slots they can work, and slots they&#39;re available for</span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">SOBA</span><span class="w"> </span><span class="p">(</span><span class="n">make-ta</span><span class="w"> </span><span class="s2">&quot;Soba&quot;</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">3</span><span class="p">)))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">UDON</span><span class="w"> </span><span class="p">(</span><span class="n">make-ta</span><span class="w"> </span><span class="s2">&quot;Udon&quot;</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">)))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">RAMEN</span><span class="w"> </span><span class="p">(</span><span class="n">make-ta</span><span class="w"> </span><span class="s2">&quot;Ramen&quot;</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">2</span><span class="p">)))</span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">NOODLE-TAs</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">SOBA</span><span class="w"> </span><span class="n">UDON</span><span class="w"> </span><span class="n">RAMEN</span><span class="p">))</span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">MIGUEL</span><span class="w"> </span><span class="p">(</span><span class="n">make-ta</span><span class="w"> </span><span class="s2">&quot;Miguel&quot;</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">)))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">ALICE</span><span class="w"> </span><span class="p">(</span><span class="n">make-ta</span><span class="w"> </span><span class="s2">&quot;Alice&quot;</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="p">)))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">BOB</span><span class="w"> </span><span class="p">(</span><span class="n">make-ta</span><span class="w"> </span><span class="s2">&quot;Bob&quot;</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="mi">8</span><span class="p">)))</span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">TAS-1</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">MIGUEL</span><span class="w"> </span><span class="n">ALICE</span><span class="w"> </span><span class="n">BOB</span><span class="p">))</span>
+
+<span class="p">(</span><span class="k">define-struct</span><span class="w"> </span><span class="n">assignment</span><span class="w"> </span><span class="p">(</span><span class="n">ta</span><span class="w"> </span><span class="n">slot</span><span class="p">))</span>
+<span class="c1">;; Assignment is (make-assignment TA Slot)</span>
+<span class="c1">;; interp. the TA is assigned to work the slot</span>
+
+<span class="c1">;; Schedule is (listof Assignment)</span>
+
+
+<span class="c1">;; ============================= FUNCTIONS</span>
+
+
+<span class="c1">;; (listof TA) (listof Slot) -&gt; Schedule or false</span>
+<span class="c1">;; produce valid schedule given TAs and Slots; false if impossible</span>
+
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="nb">empty</span><span class="w"> </span><span class="nb">empty</span><span class="p">)</span><span class="w"> </span><span class="nb">empty</span><span class="p">)</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="nb">empty</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="p">))</span><span class="w"> </span><span class="k">false</span><span class="p">)</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">SOBA</span><span class="p">)</span><span class="w"> </span><span class="nb">empty</span><span class="p">)</span><span class="w"> </span><span class="nb">empty</span><span class="p">)</span>
+
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">SOBA</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">SOBA</span><span class="w"> </span><span class="mi">1</span><span class="p">)))</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">SOBA</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">2</span><span class="p">))</span><span class="w"> </span><span class="k">false</span><span class="p">)</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">SOBA</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">SOBA</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+<span class="w">                                                          </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">SOBA</span><span class="w"> </span><span class="mi">1</span><span class="p">)))</span>
+
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="n">NOODLE-TAs</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">))</span>
+<span class="w">              </span><span class="p">(</span><span class="nb">list</span>
+<span class="w">               </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">UDON</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span>
+<span class="w">               </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">SOBA</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+<span class="w">               </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">RAMEN</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span>
+<span class="w">               </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">SOBA</span><span class="w"> </span><span class="mi">1</span><span class="p">)))</span>
+
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="n">NOODLE-TAs</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"> </span><span class="k">false</span><span class="p">)</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="n">NOODLE-TAs</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">7</span><span class="p">))</span><span class="w"> </span><span class="k">false</span><span class="p">)</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="n">NOODLE-TAs</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">))</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">UDON</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span>
+<span class="w">                                                         </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">SOBA</span><span class="w"> </span><span class="mi">3</span><span class="p">)))</span>
+
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="n">TAS-1</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="p">))</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">ALICE</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span>
+<span class="w">                                                    </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">MIGUEL</span><span class="w"> </span><span class="mi">1</span><span class="p">)))</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="n">TAS-1</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">8</span><span class="p">))</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">BOB</span><span class="w"> </span><span class="mi">8</span><span class="p">)</span>
+<span class="w">                                                      </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">ALICE</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span>
+<span class="w">                                                      </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">MIGUEL</span><span class="w"> </span><span class="mi">1</span><span class="p">)))</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="n">TAS-1</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">8</span><span class="p">))</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">BOB</span><span class="w"> </span><span class="mi">8</span><span class="p">)</span>
+<span class="w">                                                      </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">ALICE</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span>
+<span class="w">                                                      </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">MIGUEL</span><span class="w"> </span><span class="mi">1</span><span class="p">)))</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="n">TAS-1</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="mi">9</span><span class="p">))</span><span class="w"> </span><span class="k">false</span><span class="p">)</span>
+<span class="p">(</span><span class="n">check-expect</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="n">TAS-1</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">BOB</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+<span class="w">                                                      </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">ALICE</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span>
+<span class="w">                                                      </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="n">MIGUEL</span><span class="w"> </span><span class="mi">1</span><span class="p">)))</span>
+
+
+<span class="c1">;(define (schedule-tas tas slots) empty) ;stub</span>
+
+
+<span class="c1">;; template: all selectors for ta, mutual recursion for arbitary-arity tree for multiple potential slots to take,</span>
+<span class="c1">;; backtracking search when potential slot doesn&#39;t work out, accumulator for solution so far,</span>
+<span class="c1">;; generative recursion - stop trivial case where slots is empty</span>
+
+<span class="c1">;; (listof TA) (listof Slot) -&gt; Schedule</span>
+<span class="c1">;; a list of TAs and a list of Slots, and produces one</span>
+<span class="c1">;; valid schedule where each Slot is assigned to a TA, and no TA is working more than their</span>
+<span class="c1">;; maximum shifts. If no such schedules exist, produce false.</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">schedule-tas</span><span class="w"> </span><span class="n">tas</span><span class="w"> </span><span class="n">slots</span><span class="p">)</span>
+<span class="w">  </span><span class="c1">;;Termination argument:</span>
+<span class="w">  </span><span class="c1">;; trivial case:  slots is empty</span>
+<span class="w">  </span><span class="c1">;; reduction step: remove slot from state when we find one in list of TAs</span>
+<span class="w">  </span><span class="c1">;; argument: the reduction step removes the slots by one, so</span>
+<span class="w">  </span><span class="c1">;;           eventually the slots will be empty or false will be produced if no</span>
+<span class="w">  </span><span class="c1">;;           corresponding slot is found</span>
+<span class="w">  </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define-struct</span><span class="w"> </span><span class="n">state</span><span class="w"> </span><span class="p">(</span><span class="n">lota</span><span class="w"> </span><span class="n">slots</span><span class="w"> </span><span class="n">rsf</span><span class="p">))</span>
+<span class="w">          </span><span class="c1">;; State is (make-state (listof TA) (listof Slot) (listof Assignment))</span>
+<span class="w">          </span><span class="c1">;; interp. the current possible search state and result so far</span>
+
+<span class="w">          </span><span class="c1">;; (state-rsf s) is (listof Assignment); a context-preserving accumulator tracking the solution assignments so far</span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">solve--state</span><span class="w"> </span><span class="n">s</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">solved?</span><span class="w"> </span><span class="n">s</span><span class="p">)</span>
+<span class="w">                </span><span class="p">(</span><span class="n">state-rsf</span><span class="w"> </span><span class="n">s</span><span class="p">)</span>
+<span class="w">                </span><span class="p">(</span><span class="n">solve--los</span><span class="w"> </span><span class="p">(</span><span class="n">next-states</span><span class="w"> </span><span class="n">s</span><span class="p">))))</span>
+
+<span class="w">          </span><span class="c1">;; State -&gt; Boolean</span>
+<span class="w">          </span><span class="c1">;; produces true if a state is solved, otherwise false.</span>
+<span class="w">          </span><span class="c1">;; a state is solved when (state-slots s) is empty</span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">solved?</span><span class="w"> </span><span class="n">s</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="nb">empty?</span><span class="w"> </span><span class="p">(</span><span class="n">state-slots</span><span class="w"> </span><span class="n">s</span><span class="p">)))</span>
+
+<span class="w">          </span><span class="c1">;; State -&gt; (listof State)</span>
+<span class="w">          </span><span class="c1">;; given the current state, produce a list of new states.</span>
+<span class="w">          </span><span class="c1">;; Using the first slot from slots, find all possible open slots from tas.</span>
+<span class="w">          </span><span class="c1">;; Remove ta avail slot and decrement max, remove first element of slots,</span>
+<span class="w">          </span><span class="c1">;; and update rsf for each next state</span>
+<span class="w">          </span><span class="c1">;; ASSUME: states will never be empty when this is called</span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">next-states</span><span class="w"> </span><span class="n">s</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="n">found-ta-slot</span><span class="w"> </span><span class="p">(</span><span class="n">find-next-open-ta-slot</span><span class="w"> </span><span class="p">(</span><span class="n">state-lota</span><span class="w"> </span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="p">(</span><span class="n">state-slots</span><span class="w"> </span><span class="n">s</span><span class="p">))))]</span>
+<span class="w">              </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">false?</span><span class="w"> </span><span class="n">found-ta-slot</span><span class="p">)</span>
+<span class="w">                  </span><span class="nb">empty</span>
+<span class="w">                  </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="n">make-state</span><span class="w"> </span><span class="p">(</span><span class="n">remove-ta-slot</span><span class="w"> </span><span class="p">(</span><span class="n">state-lota</span><span class="w"> </span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="n">found-ta-slot</span><span class="p">)</span>
+<span class="w">                                    </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="p">(</span><span class="n">state-slots</span><span class="w"> </span><span class="n">s</span><span class="p">))</span>
+<span class="w">                                    </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="n">found-ta-slot</span><span class="w"> </span><span class="p">(</span><span class="n">state-rsf</span><span class="w"> </span><span class="n">s</span><span class="p">)))</span>
+<span class="w">                        </span><span class="p">(</span><span class="n">next-states</span><span class="w"> </span><span class="p">(</span><span class="n">make-state</span><span class="w"> </span><span class="p">(</span><span class="n">remove-ta-slot</span><span class="w"> </span><span class="p">(</span><span class="n">state-lota</span><span class="w"> </span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="n">found-ta-slot</span><span class="p">)</span>
+<span class="w">                                                 </span><span class="p">(</span><span class="n">state-slots</span><span class="w"> </span><span class="n">s</span><span class="p">)</span>
+<span class="w">                                                 </span><span class="p">(</span><span class="n">state-rsf</span><span class="w"> </span><span class="n">s</span><span class="p">)))))))</span>
+
+<span class="w">          </span><span class="c1">;; (listof TA) Slot -&gt; Assignment or false</span>
+<span class="w">          </span><span class="c1">;; given a list of TAs and a slot, find the first open slot</span>
+<span class="w">          </span><span class="c1">;; and return an assignment, otherwise return false</span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">find-next-open-ta-slot</span><span class="w"> </span><span class="n">lota</span><span class="w"> </span><span class="n">slot</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">lota</span><span class="p">)</span><span class="w"> </span><span class="k">false</span><span class="p">]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">and</span><span class="w"> </span><span class="p">(</span><span class="n">member?</span><span class="w"> </span><span class="n">slot</span><span class="w"> </span><span class="p">(</span><span class="n">ta-avail</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">lota</span><span class="p">)))</span>
+<span class="w">                            </span><span class="p">(</span><span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">ta-max</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">lota</span><span class="p">))</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span>
+<span class="w">                       </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">lota</span><span class="p">)</span><span class="w"> </span><span class="n">slot</span><span class="p">)</span>
+<span class="w">                       </span><span class="p">(</span><span class="n">find-next-open-ta-slot</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">lota</span><span class="p">)</span><span class="w"> </span><span class="n">slot</span><span class="p">))]))</span>
+
+<span class="w">          </span><span class="c1">;; (listof TA) Assignment -&gt; (listof TA)</span>
+<span class="w">          </span><span class="c1">;; produces list of TA but without assignment TA and slot,</span>
+<span class="w">          </span><span class="c1">;; with the max value reduced by 1</span>
+<span class="w">          </span><span class="c1">;; ASSUME: found TA will always have max &gt;= 1</span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">remove-ta-slot</span><span class="w"> </span><span class="n">lota</span><span class="w"> </span><span class="n">a</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">lota</span><span class="p">)</span><span class="w"> </span><span class="nb">empty</span><span class="p">]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">and</span><span class="w"> </span><span class="p">(</span><span class="nb">string=?</span><span class="w"> </span><span class="p">(</span><span class="n">ta-name</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">lota</span><span class="p">))</span><span class="w"> </span><span class="p">(</span><span class="n">ta-name</span><span class="w"> </span><span class="p">(</span><span class="n">assignment-ta</span><span class="w"> </span><span class="n">a</span><span class="p">)))</span>
+<span class="w">                            </span><span class="p">(</span><span class="n">member?</span><span class="w"> </span><span class="p">(</span><span class="n">assignment-slot</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">ta-avail</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">lota</span><span class="p">))))</span>
+<span class="w">                       </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="n">make-ta</span><span class="w"> </span><span class="p">(</span><span class="n">ta-name</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">lota</span><span class="p">))</span>
+<span class="w">                                      </span><span class="p">(</span><span class="nb">sub1</span><span class="w"> </span><span class="p">(</span><span class="n">ta-max</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">lota</span><span class="p">)))</span>
+<span class="w">                                      </span><span class="p">(</span><span class="nb">remove</span><span class="w"> </span><span class="p">(</span><span class="n">assignment-slot</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">ta-avail</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">lota</span><span class="p">))))</span>
+<span class="w">                             </span><span class="p">(</span><span class="n">remove-ta-slot</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">lota</span><span class="p">)</span><span class="w"> </span><span class="n">a</span><span class="p">))</span>
+<span class="w">                       </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">lota</span><span class="p">)</span>
+<span class="w">                             </span><span class="p">(</span><span class="n">remove-ta-slot</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">lota</span><span class="p">)</span><span class="w"> </span><span class="n">a</span><span class="p">)))]))</span>
+
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">solve--los</span><span class="w"> </span><span class="n">los</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">los</span><span class="p">)</span><span class="w"> </span><span class="k">false</span><span class="p">]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="p">(</span><span class="k">local</span><span class="w"> </span><span class="p">[(</span><span class="k">define</span><span class="w"> </span><span class="n">try</span><span class="w"> </span><span class="p">(</span><span class="n">solve--state</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">los</span><span class="p">)))]</span>
+<span class="w">                     </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">not</span><span class="w"> </span><span class="p">(</span><span class="nb">false?</span><span class="w"> </span><span class="n">try</span><span class="p">))</span>
+<span class="w">                         </span><span class="n">try</span>
+<span class="w">                         </span><span class="p">(</span><span class="n">solve--los</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">los</span><span class="p">))))]))</span>
+
+<span class="w">          </span><span class="c1">;; Schedule -&gt; Schedule</span>
+<span class="w">          </span><span class="c1">;; given a schedule (listof Assignment), generate</span>
+<span class="w">          </span><span class="c1">;; the same schedule but with original TAs, since the given schedule is assumed to be modified in order</span>
+<span class="w">          </span><span class="c1">;; for the search to work originally. This is just plugging the holes.</span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">extract-original-tas</span><span class="w"> </span><span class="n">schedule</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">schedule</span><span class="p">)</span><span class="w"> </span><span class="nb">empty</span><span class="p">]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="n">make-assignment</span><span class="w"> </span><span class="p">(</span><span class="nb">list-ref</span><span class="w"> </span><span class="n">tas</span><span class="w"> </span><span class="p">(</span><span class="n">find-ta-index</span><span class="w"> </span><span class="p">(</span><span class="n">ta-name</span><span class="w"> </span><span class="p">(</span><span class="n">assignment-ta</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">schedule</span><span class="p">)))</span><span class="w"> </span><span class="n">tas</span><span class="p">))</span>
+<span class="w">                                          </span><span class="p">(</span><span class="n">assignment-slot</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">schedule</span><span class="p">)))</span>
+<span class="w">                         </span><span class="p">(</span><span class="n">extract-original-tas</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">schedule</span><span class="p">)))]))</span>
+
+<span class="w">          </span><span class="c1">;; String -&gt; Natural</span>
+<span class="w">          </span><span class="c1">;; given a ta name, find the corresponding index in the original list of tas.</span>
+<span class="w">          </span><span class="c1">;; ASSUME: name is guaranteed to be in listof TAs</span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">find-ta-index</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="n">lota</span><span class="p">)</span>
+<span class="w">            </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">lota</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">error</span><span class="w"> </span><span class="s2">&quot;TA name must exist in tas&quot;</span><span class="p">)]</span>
+<span class="w">                  </span><span class="p">[</span><span class="k">else</span>
+<span class="w">                   </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">string=?</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">(</span><span class="n">ta-name</span><span class="w"> </span><span class="p">(</span><span class="nb">first</span><span class="w"> </span><span class="n">lota</span><span class="p">)))</span>
+<span class="w">                       </span><span class="mi">0</span>
+<span class="w">                       </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="n">find-ta-index</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">(</span><span class="nb">rest</span><span class="w"> </span><span class="n">lota</span><span class="p">))))]))</span>
+
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">sched</span><span class="w"> </span><span class="p">(</span><span class="n">solve--state</span><span class="w"> </span><span class="p">(</span><span class="n">make-state</span><span class="w"> </span><span class="n">tas</span><span class="w"> </span><span class="n">slots</span><span class="w"> </span><span class="nb">empty</span><span class="p">)))]</span>
+<span class="w">    </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">not</span><span class="w"> </span><span class="p">(</span><span class="nb">false?</span><span class="w"> </span><span class="n">sched</span><span class="p">))</span>
+<span class="w">        </span><span class="p">(</span><span class="n">extract-original-tas</span><span class="w"> </span><span class="n">sched</span><span class="p">)</span>
+<span class="w">        </span><span class="k">false</span><span class="p">)))</span>
+</code></pre></div>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <a href="https://blog.miguelhx.com/pages/about-me.html"><img class="avatar" src="https://blog.miguelhx.com/images/favicon.ico" onerror="this.src='theme/images/avatar.png'" alt="Avatar"></a>
+                <div style="margin-left: 20px;">
+                  <a href="https://blog.miguelhx.com/pages/about-me.html"><span id="author-name" class="w3-hover-text-dark-grey">Miguel</span></a>
+                  <p id="author-story">Miguel is a computer programmer who has other identities that he hasn't fully adopted yet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+          <p style="font-size:10pt; font-style: italic;">Did you like this article? Share it with your friends!</p>
+          <div id="share" class="share">
+            <a href="https://www.facebook.com/sharer.php?u=https%3A//blog.miguelhx.com/systematic-program-design-ta-solver-project.html&amp;t=Miguel%27s%20Personal%20Website%3A%20Systematic%20Program%20Design%3A%20TA%20Solver%20Project" target="_blank" class="w3-btn w3-indigo">
+              <i class="fa fa-facebook"></i> <span>Facebook</span>
+            </a>
+            <a href="https://twitter.com/share?url=https%3A//blog.miguelhx.com/systematic-program-design-ta-solver-project.html&amp;text=Miguel%27s%20Personal%20Website%3A%20Systematic%20Program%20Design%3A%20TA%20Solver%20Project" target="_blank" class="w3-btn w3-black">
+              <i class="fa fa-x-twitter">X</i> <span></span>
+            </a>
+          </div>
+
+          <br><br><br>
+
+
+          <div id="disqus_thread"></div>
+          <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            
+            var disqus_config = function () {
+              this.page.url = 'https://blog.miguelhx.com/systematic-program-design-ta-solver-project.html';  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = 'https://blog.miguelhx.com/systematic-program-design-ta-solver-project.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            
+            (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+              var d = document, s = d.createElement('script');
+              
+              s.src = 'https://miguels-personal-website.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+              
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          <br><br><br>
+
+        </footer>
+      </div>
+    </article>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          2025&dash;2026          Miguel
+ | <a href="https://blog.miguelhx.com/feed.xml">Atom feed <i class="fa fa-rss" aria-hidden="true"></i></a>        </span>
+      </div>
+    </footer>
+
+    <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z648JEYS71');
+</script>
+
+
+  </body>
+</html>

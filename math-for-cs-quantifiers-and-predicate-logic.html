@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Math for CS: Quantifiers and Predicate Logic &ndash; Miguel's Personal Website</title>
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social -->
+    <meta property="article:author" content="Miguel" />
+    <meta property="article:section" content="Math for Computer Science" />
+    <meta property="article:published_time" content="2025-12-14" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Math for CS: Quantifiers and Predicate Logic"/>
+    <meta property="og:description" content="We start off with quantifiers. There are two of them. “For all” and “there exists”, each with their own notation. For all is an upside down A and there exists is a backwards E. We are also introduced to predicates. a predicate is a statement that contains a variable and …"/>
+    <meta property="og:site_name" content="Miguel's Personal Website" />
+    <meta property="og:url" content="https://blog.miguelhx.com/math-for-cs-quantifiers-and-predicate-logic.html"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Math for CS: Quantifiers and Predicate Logic">
+    <meta name="twitter:description" content="We start off with quantifiers. There are two of them. “For all” and “there exists”, each with their own notation. For all is an upside down A and there exists is a backwards E. We are also introduced to predicates. a predicate is a statement that contains a variable and …">
+    <meta name="twitter:url" content="https://blog.miguelhx.com/math-for-cs-quantifiers-and-predicate-logic.html">
+
+    <!-- Feed -->
+    <link rel="alternate" type="application/atom+xml" href="https://blog.miguelhx.com/feed.xml" title="Miguel's Personal Website Atom Feed" />
+    <link rel="alternate" type="application/rss+xml" href="https://miguels-personal-website.disqus.com/latest.rss" title="Miguel's Personal Website Comments RSS Feed">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/pygments-highlight-github.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/font-awesome/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/font-awesome/css/solid.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/static/custom.css">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://blog.miguelhx.com/images/favicon.ico">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://blog.miguelhx.com/theme/js/jqcloud.min.js"></script>
+  </head>
+
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://blog.miguelhx.com" id="header-logo" title="Home">M</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="https://blog.miguelhx.com/pages/about-me.html">About me</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="https://blog.miguelhx.com/pages/contact.html">Contact</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/archives.html">Archives</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/tags.html">Tags</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-container col-main">
+        <h1>Math for CS: Quantifiers and Predicate Logic</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2025-12-14T17:24:00-08:00">Sun 14 December 2025</time> in <a class="w3-text-green" href="https://blog.miguelhx.com/category/math-for-computer-science.html" title="All articles in category Math for Computer Science">Math for Computer Science</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://blog.miguelhx.com/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://blog.miguelhx.com/tag/math.html" title="All articles with Math tag">#math</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://blog.miguelhx.com/tag/discrete-math.html" title="All articles with Discrete-Math tag">#discrete-math</a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <br>
+
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <p>We start off with quantifiers.  There are two of them.  “For all” and “there exists”, each with their own notation.  For all is an upside down A and there exists is a backwards E.</p>
+<p>We are also introduced to predicates.  a predicate is a statement that contains a variable and becomes a true or false proposition when a value is substituted for the variable.  For example P(x, y), where P is a proposition that takes in any x or y in a domain. In other words, a predicate is a proposition with variables.</p>
+<p>There are several ways to express the notions of “always true” and “sometimes
+true” in English.</p>
+<p>They use keywords such as “all”, “every”, “some”, “at least one”, etc.</p>
+<p>All these sentences “quantify” how often the predicate is true. Specifically, an
+assertion that a predicate is always true is called a universal quantification, and an
+assertion that a predicate is sometimes true is an existential quantification. Sometimes the English sentences are unclear with respect to quantification.</p>
+<p>Ex:  If you can solve any problem we come up with, then you get an A for the course. </p>
+<p>This phrase can be reasonably interpreted as a universal or existential quantifier.</p>
+<p>you can solve every problem we come up with,</p>
+<p>or maybe
+you can solve at least one problem we come up with.</p>
+<h3>mixing quantifiers</h3>
+<p>You can also mix quantifiers. Many math statements involve several quantifiers.</p>
+<p>Ex:  For every even integer n greater than 2, there exist primes p and q such
+that n = p + q.</p>
+<h3>order of quantifiers</h3>
+<p>Swapping the order of different kinds of quantifiers (existential or universal) usually
+changes the meaning of a proposition.</p>
+<p>Ex:  “Every American has a dream”</p>
+<p>This could mean there is a single dream that every American shares OR it could mean that every American has a personal dream.</p>
+<h3>negating quantifiers</h3>
+<p>There are rules for negating quantifiers. The following two sentences mean the same thing:
+* Not everyone likes ice cream.
+* There is someone who does not like ice cream.</p>
+<p>The general principle is that moving a NOT across a quantifier changes the kind of quantifier.</p>
+<h3>validity for predicate formulas</h3>
+<p>The idea of validity extends to predicate formulas, but to be valid, a formula now
+must evaluate to true no matter what the domain of discourse may be, no matter
+what values its variables may take over the domain, and no matter what interpretations its predicate variables may be given.</p>
+<p>Give example in latex.</p>
+<p>Moving on to the lectures and more exercises in the form of online quizzes.</p>
+<p>The lecture videos go over predicate logic with quantifiers and some rules.</p>
+<p>Translation of English language into precise formal language can be ambiguous.  It makes me think of the potential problems with AI translating English into code or math, there’s a chance of producing unintended results, of course.</p>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <a href="https://blog.miguelhx.com/pages/about-me.html"><img class="avatar" src="https://blog.miguelhx.com/images/favicon.ico" onerror="this.src='theme/images/avatar.png'" alt="Avatar"></a>
+                <div style="margin-left: 20px;">
+                  <a href="https://blog.miguelhx.com/pages/about-me.html"><span id="author-name" class="w3-hover-text-dark-grey">Miguel</span></a>
+                  <p id="author-story">Miguel is a computer programmer who has other identities that he hasn't fully adopted yet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+          <p style="font-size:10pt; font-style: italic;">Did you like this article? Share it with your friends!</p>
+          <div id="share" class="share">
+            <a href="https://www.facebook.com/sharer.php?u=https%3A//blog.miguelhx.com/math-for-cs-quantifiers-and-predicate-logic.html&amp;t=Miguel%27s%20Personal%20Website%3A%20Math%20for%20CS%3A%20Quantifiers%20and%20Predicate%20Logic" target="_blank" class="w3-btn w3-indigo">
+              <i class="fa fa-facebook"></i> <span>Facebook</span>
+            </a>
+            <a href="https://twitter.com/share?url=https%3A//blog.miguelhx.com/math-for-cs-quantifiers-and-predicate-logic.html&amp;text=Miguel%27s%20Personal%20Website%3A%20Math%20for%20CS%3A%20Quantifiers%20and%20Predicate%20Logic" target="_blank" class="w3-btn w3-black">
+              <i class="fa fa-x-twitter">X</i> <span></span>
+            </a>
+          </div>
+
+          <br><br><br>
+
+
+          <div id="disqus_thread"></div>
+          <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            
+            var disqus_config = function () {
+              this.page.url = 'https://blog.miguelhx.com/math-for-cs-quantifiers-and-predicate-logic.html';  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = 'https://blog.miguelhx.com/math-for-cs-quantifiers-and-predicate-logic.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            
+            (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+              var d = document, s = d.createElement('script');
+              
+              s.src = 'https://miguels-personal-website.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+              
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          <br><br><br>
+
+        </footer>
+      </div>
+    </article>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          2025&dash;2026          Miguel
+ | <a href="https://blog.miguelhx.com/feed.xml">Atom feed <i class="fa fa-rss" aria-hidden="true"></i></a>        </span>
+      </div>
+    </footer>
+
+    <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z648JEYS71');
+</script>
+
+
+  </body>
+</html>
