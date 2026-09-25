@@ -117,13 +117,13 @@
 <li>hours of video/audio content: ~ 1322.9 hours</li>
 <li>total time taken to transcribe: ~ 32.51 hours</li>
 </ul>
-<p>I did not transcribe manually.  I wrote a small program to transcribe all the videos/audios using <a href="https://github.com/openai/whisper">OpenAI’s Whisper</a>.  I used the turbo model.</p>
+<p>I did not transcribe manually.  I wrote a small program to transcribe all the videos/audios using <a href="https://github.com/openai/whisper">OpenAI's Whisper</a>.  I used the turbo model.</p>
 <p>Here is a link to the Python script I wrote to transcribe all videos/audios from my archive:  <a href="https://gist.github.com/miguelHx/64a2ee8d1d9189e6d55e168633f706cd">https://gist.github.com/miguelHx/64a2ee8d1d9189e6d55e168633f706cd</a>.</p>
-<p>I know, using AI is not ideal compared to human transcription.  But I believe it’s a good enough approximation.  After some spot checking, it seems to be 85-95% accurate for most files, which is good enough for my purposes.  Some files had issues due to background noise or song intros.  Had to tweak the transcribe command a bit to drastically reduce hallucinations.</p>
+<p>I know, using AI is not ideal compared to human transcription.  But I believe it's a good enough approximation.  After some spot checking, it seems to be 85-95% accurate for most files, which is good enough for my purposes.  Some files had issues due to background noise or song intros.  Had to tweak the transcribe command a bit to drastically reduce hallucinations.</p>
 <p>If you spot any problems, please contact me through email (mh212@proton.me) and I will look into getting it fixed asap.</p>
 <p>I think a human transcription effort can be crowdsourced, but that will take a lot more effort to set up.  If there is a big demand for that, maybe I can work on setting that up.  But for now, using an AI transcription is a good-enough working solution.</p>
-<p>Note: There are a few typos, for example, the transcripts have "organite" instead of "orgonite", and "vimrigy" instead of "vimergy".  So, if you can’t find a specific term, try searching variations of it, or try to find unique words/phrases that might be near it.</p>
-<p>Depending on which file search tool you use, you can also try fuzzy search functionality.  I’ve been using this open source tool called <a href="https://docfetcher.sourceforge.io/">DocFetcher</a>.  I like it so far.  For DocFetcher, you can enter <code>orgonite~</code> or <code>vimergy~</code> into the search bar to activate fuzzy search, which will pick up typos. More info on search options below.</p>
+<p>Note: There are a few typos, for example, the transcripts have "organite" instead of "orgonite", and "vimrigy" instead of "vimergy".  So, if you can't find a specific term, try searching variations of it, or try to find unique words/phrases that might be near it.</p>
+<p>Depending on which file search tool you use, you can also try fuzzy search functionality.  I've been using this open source tool called <a href="https://docfetcher.sourceforge.io/">DocFetcher</a>.  I like it so far.  For DocFetcher, you can enter <code>orgonite~</code> or <code>vimergy~</code> into the search bar to activate fuzzy search, which will pick up typos. More info on search options below.</p>
 <p>Another potentially useful search option you can use is to pre-fix the search with <code>filename:</code>.  For example, <code>filename:&lt;file_name_to_search_for&gt;</code>.</p>
 <p><a href="https://filelocator.net/reviews/docfetcher/">Here</a> is a review article with more info on DocFetcher, including info about it's search query language.</p>
 <p>If you decide to use this tool, make sure to follow the instructions for creating an index to search on.  See instructions with screenshots below.  You can create multiple indexes.</p>
@@ -131,7 +131,7 @@
 <h1>Setup Instructions</h1>
 <ol>
 <li>Make sure to download the zip files. There is <strong>one</strong> download link, but once you unzip the file, there should only be <strong>two</strong> folders. <code>TranscriptsTxt</code>, and <code>TranscriptsSrt</code>. After unzipping, each file will have a sub-folder hierarchy with many transcript files.  Scroll down to <strong>Download Links</strong> section below to download the files.<ol>
-<li>Once downloaded, unzip/extract first. Most operating systems have built-in tools to do this usually by double clicking the .zip file or right clicking then selecting "unzip" or "extract all". If you run into issues using Windows built-in extraction tool, consider using a 3rd party open source tool instead.</li>
+<li>Once downloaded, unzip/extract first. Most operating systems have built-in tools to do this usually by double clicking the .zip file or right clicking then selecting "unzip" or "extract all". <em><strong>Note:  If you run into issues using Windows built-in extraction tool, like pad is too long error, consider using a 3rd party unzipping tool like <a href="https://7-zip.org/">7-zip</a> instead.</strong></em></li>
 <li>Then move to your documents folder or wherever you want to put them. I recommend putting them in <code>Documents</code> folder inside a newly created <code>MedicalMediumTranscripts</code> folder or related naming.</li>
 </ol>
 </li>
