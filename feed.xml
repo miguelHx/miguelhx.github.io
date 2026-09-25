@@ -57,7 +57,7 @@
 &lt;p&gt;When creating an index on SRT files, you'll need to add srt to the Plain Text field. See screenshot:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="srt step" src="images/srt-step.png"&gt;&lt;/p&gt;
 &lt;p&gt;Then click run, and you'll be able to run searches and have results with timestamps.&lt;/p&gt;
-&lt;p&gt;There are a few people who indexed on the parent folder &lt;code&gt;MMTranscripts&lt;/code&gt;, instead of creating separate indexes on &lt;code&gt;TranscriptsTxt&lt;/code&gt; and &lt;code&gt;TranscriptsSrt&lt;/code&gt;.  That's okay too.  If you do it this way, make sure to still add srt to Plain text field like the screenshot above when indexing.  Also make sure to have only one of the two &lt;code&gt;Transcripts&lt;/code&gt; folders checkboxed, like in this screenshot:&lt;/p&gt;
+&lt;p&gt;There are a few people who indexed on the parent folder &lt;code&gt;MMTranscripts&lt;/code&gt;, instead of creating separate indexes on &lt;code&gt;TranscriptsTxt&lt;/code&gt; and &lt;code&gt;TranscriptsSrt&lt;/code&gt;.  That's okay too.  If you do it this way, make sure to still add srt to Plain text field like the screenshot above when indexing.  Also make sure to have only &lt;strong&gt;one&lt;/strong&gt; of the two &lt;code&gt;Transcripts&lt;/code&gt; folders checkboxed, to avoid duplicate search results.  See screenshot:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="parent folder index" src="images/parent-folder-index.png"&gt;&lt;/p&gt;
 &lt;h1&gt;Download Link&lt;/h1&gt;
 &lt;h2&gt;Download Transcripts&lt;/h2&gt;
