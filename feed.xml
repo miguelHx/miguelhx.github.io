@@ -127,9 +127,11 @@
 &lt;p&gt;I am also considering a hybrid approach of doing both more direct learning along with foundational sequential learning. For now, more direct.&lt;/p&gt;
 &lt;p&gt;Stick with the recommended OSSU ordering unless you have a specific reason to modify it. But at the same time, be open to seeking alternative courses, or mixing things together. DYOR and ask experienced folks in the discord or elsewhere to help you make an informed decision.&lt;/p&gt;
 &lt;p&gt;End OSSU learners note.&lt;/p&gt;
-&lt;p&gt;Edit/Update as of 10/14/26:
-I decided to use Tauri instead of Electron.  Originally, I was going to build a much bigger application, but now decided to outsource much of the functionality to a different desktop app, and provide some automations through a lightweight app.&lt;/p&gt;
+&lt;p&gt;Edit/Update as of 10/14/26:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I decided to use Tauri instead of Electron.  Originally, I was going to build a much bigger application, but now decided to outsource much of the functionality to a different desktop app, and provide some automations through a lightweight app.&lt;/p&gt;
 &lt;p&gt;Also decided to start working on the app instead of taking all the courses first.  Will be alternating learning and building.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;One my next goals is to write a desktop app.  I chose Electron as the technology, which uses JavaScript/TypeScript. Before I create this app, I want to build any related foundational knowledge.  So I decided to instead take the following courses:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://missing.csail.mit.edu/"&gt;MIT Missing Semester&lt;/a&gt; course&lt;/li&gt;
