@@ -6,7 +6,7 @@
 &lt;h1&gt;Transcripts Update Instructions&lt;/h1&gt;
 &lt;p&gt;If you have previous transcripts version and would like to update it, you will need to update your index on DocFetcher.&lt;/p&gt;
 &lt;p&gt;There's a few ways to do it.  Can simply repeat the original setup steps but with the new folder(s).&lt;/p&gt;
-&lt;p&gt;Follow these steps to ensure correctness.&lt;/p&gt;
+&lt;p&gt;Can follow these steps to ensure correctness.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open DocFetcher and delete the &lt;code&gt;MMTranscripts&lt;/code&gt; index by right clicking on it and selecting &lt;code&gt;Remove Index&lt;/code&gt;.&lt;ol&gt;
 &lt;li&gt;Note: If you created two separate indexes on &lt;code&gt;TranscriptsTxt&lt;/code&gt; and &lt;code&gt;TranscriptsSrt&lt;/code&gt;, make sure to remove both of them.&lt;/li&gt;
