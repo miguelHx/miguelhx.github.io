@@ -13,7 +13,7 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;Close/quit DocFetcher and make sure it is not running.&lt;/li&gt;
-&lt;li&gt;Download and unzip the new MMTranscripts archive. (If you haven't already)&lt;/li&gt;
+&lt;li&gt;Download and unzip the new MMTranscripts archive here: &lt;a href="https://downloads.miguelhx.com/MMTranscripts.zip"&gt;https://downloads.miguelhx.com/MMTranscripts.zip&lt;/a&gt; (If you haven't already)&lt;/li&gt;
 &lt;li&gt;Replace the old MMTranscripts folder with the newly unzipped one.&lt;/li&gt;
 &lt;li&gt;Open up DocFetcher, and create a new index on folder, selecting the newly moved &lt;code&gt;MMTranscripts&lt;/code&gt; folder. Or select &lt;code&gt;TranscriptsTxt&lt;/code&gt; and &lt;code&gt;TranscriptsSrt&lt;/code&gt; separately.  Make sure to add &lt;code&gt;srt&lt;/code&gt; to the Plain text field under File extensions:&lt;/li&gt;
 &lt;/ol&gt;
