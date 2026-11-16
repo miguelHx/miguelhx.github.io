@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>6.102 - Software Construction - Halfway done, my thoughts and summaries &ndash; Miguel's Blog Website</title>
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social -->
+    <meta property="article:author" content="Miguel" />
+    <meta property="article:section" content="Software Construction MIT" />
+    <meta property="article:published_time" content="2026-11-16" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="6.102 - Software Construction - Halfway done, my thoughts and summaries"/>
+    <meta property="og:description" content="So far, I like this course. My pace has been pretty slow though. I went up to 09: Equality. 2nd half will be 10: Functional Programming and the rest. I reviewed some git version control and typescript basics. The typescript basics included mutating vs. reassigning, arrays/maps/sets, variable declarations …"/>
+    <meta property="og:site_name" content="Miguel's Blog Website" />
+    <meta property="og:url" content="https://blog.miguelhx.com/6102-software-construction-halfway-done-my-thoughts-and-summaries.html"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="6.102 - Software Construction - Halfway done, my thoughts and summaries">
+    <meta name="twitter:description" content="So far, I like this course. My pace has been pretty slow though. I went up to 09: Equality. 2nd half will be 10: Functional Programming and the rest. I reviewed some git version control and typescript basics. The typescript basics included mutating vs. reassigning, arrays/maps/sets, variable declarations …">
+    <meta name="twitter:url" content="https://blog.miguelhx.com/6102-software-construction-halfway-done-my-thoughts-and-summaries.html">
+
+    <!-- Feed -->
+    <link rel="alternate" type="application/atom+xml" href="https://blog.miguelhx.com/feed.xml" title="Miguel's Blog Website Atom Feed" />
+    <link rel="alternate" type="application/rss+xml" href="https://miguels-personal-website.disqus.com/latest.rss" title="Miguel's Blog Website Comments RSS Feed">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/css/pygments-highlight-github.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/font-awesome/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/theme/font-awesome/css/solid.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="https://blog.miguelhx.com/static/custom.css">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://blog.miguelhx.com/images/favicon.ico">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://blog.miguelhx.com/theme/js/jqcloud.min.js"></script>
+  </head>
+
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://blog.miguelhx.com" id="header-logo" title="Home">M</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="https://blog.miguelhx.com/pages/about-me.html">About me</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="https://blog.miguelhx.com/pages/contact.html">Contact</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/archives.html">Archives</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/tags.html">Tags</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-container col-main">
+        <h1>6.102 - Software Construction - Halfway done, my thoughts and summaries</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2026-11-16T01:50:00-08:00">Mon 16 November 2026</time> in <a class="w3-text-green" href="https://blog.miguelhx.com/category/software-construction-mit.html" title="All articles in category Software Construction MIT">Software Construction MIT</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://blog.miguelhx.com/tag/computer-science.html" title="All articles with Computer-Science tag">#computer-science</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://blog.miguelhx.com/tag/typescript.html" title="All articles with Typescript tag">#typescript</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://blog.miguelhx.com/tag/javascript.html" title="All articles with Javascript tag">#javascript</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://blog.miguelhx.com/tag/ossu.html" title="All articles with Ossu tag">#ossu</a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <br>
+
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <p>So far, I like this course.  My pace has been pretty slow though.  I went up to 09:  Equality.  2nd half will be 10:  Functional Programming and the rest.  I reviewed some git version control and typescript basics.  The typescript basics included mutating vs. reassigning, arrays/maps/sets, variable declarations, objects, enumerations, APIs, and programming toolbox.</p>
+<p>The readings were interesting.  The main themes were to make software safe from bugs, ready for change, and easy to understand.  Will be putting the objectives and summaries here, so that I can have it in one place if I decided to revisit/review.  Here are my thoughts on each reading:</p>
+<h1>Reading 1:  Static Checking</h1>
+<p>Two main topics in this reading.  Static typing and the big three properties of good software.  Went over some basics of types and static typing.  Static typing prevents a large class of bugs from infecting programs.  So, TypeScript is a statically typed language, which compiles into JavaScript, a dynamically typed language.</p>
+<p>Interesting design choice by JavaScript’s designers was to do no checking for many dynamic cases.  For example, when a string or array index is out of bounds, or a key is not found in a map, JavaScript returns the special value undefined, rather than throwing an error as Python would.  No checking makes bugs harder to find than they might otherwise be, because the special values can propagate through further computations until a failure finally occurs much farther away from the original mistake in the code.</p>
+<p>Another trap in typescript — which is shared by many other programming languages — is that its numeric type has corner cases that do not behave like the integers and real numbers we’re used to.  As a result, some errors that really should be dynamically checked are not checked at all.  The traps include limited precision for integers, special values, and overflow/underflow.</p>
+<p>Here we get introduced to mutability and reassignment.  The reading says that good programmers try to avoid things that change, because they may change unexpectedly.  Immutability is a major design principle in this course.</p>
+<p>I learned that TypeScript doesn’t have immutable tuples like Python does, but it does have ReadonlyArray, which is an array type that omits the mutator operations.</p>
+<p>Using const to prevent reassignment may be a good practice in TypeScript, it appears.</p>
+<p>I learned that it is a good idea to document assumptions.</p>
+<p>Hacking vs. engineering.  Hacking is often marked by unbridled optimism.  But software engineering is not hacking.  Engineers are pessimists.</p>
+<p>Bad:  writing lots of code before testing any of it; keeping all the details in your head, assuming you (and everyone using your code) will remember them forever, instead of writing them down in your code;  assuming that bugs will be nonexistent or else easy to find and fix.</p>
+<p>Good:  write a little bit at a time, testing as you go.  In a future reading, test-first programming is discussed; document the assumptions that your code depends on; defend your code against stupidity — especially your own !  Static checking helps with that.</p>
+<p>The Goals of 6.102:</p>
+<p>Our primary goal in this course is learning how to produce software that is:</p>
+<ul>
+<li>Safe from bugs. Correctness (correct behavior right now) and defensiveness (correct behavior in the future) are required in any software we build.</li>
+<li>Easy to understand. The code has to communicate to future programmers who need to understand it and make changes in it (fixing bugs or adding new features). That future programmer might be you, months or years from now. You’ll be surprised how much you forget if you don’t write it down, and how much it helps your own future self to have a good design.</li>
+<li>Ready for change. Software always changes. Some designs make it easy to make changes; others require throwing away and rewriting a lot of code.</li>
+</ul>
+<p>There are other important properties of software (like performance, usability, security), and they may trade off against these three. But these are the Big Three that we care about in 6.102, and that software developers generally put foremost in the practice of building software. It’s worth considering every language feature, every programming practice, every design pattern that we study in this course, and understanding how they relate to the Big Three.</p>
+<p>They give reasons for why we use TypeScript in this course.  Basically, it’s a reasonable choice of language right now to learn how to write code that it safe from bugs, easy to understand, and ready for change.</p>
+<p>The real skills gained from this course are not language-specific, but carry over to any language that you might program in.  The most important lessons from this course will survive language fads:  safety, clarity, abstraction, engineering instincts.</p>
+<p>Summary
+The main idea we introduced today is static checking. Here’s how this idea relates to the goals of the course:</p>
+<ul>
+<li>Safe from bugs. Static checking helps with safety by catching type errors and other bugs before runtime.</li>
+<li>Easy to understand. It helps with understanding, because types are explicitly stated in the code.</li>
+<li>Ready for change. Static checking makes it easier to change your code by identifying other places that need to change in tandem.</li>
+</ul>
+<h1>Reading 2:  Testing</h1>
+<p>Objectives
+After this reading, you should:</p>
+<ul>
+<li>understand the value of testing, and know the process of test-first programming;</li>
+<li>be able to judge a test suite for correctness, thoroughness, and size;</li>
+<li>be able to design a test suite for a function by partitioning its input space and choosing good test cases;</li>
+<li>be able to judge a test suite by measuring its code coverage; and</li>
+<li>understand and know when to use black box vs. glass box testing, unit tests vs. integration tests, and automated regression testing.</li>
+</ul>
+<p>Can’t say I remember all of this perfectly now that I’m reviewing.  I think I chunked some of the important concepts though.</p>
+<p>Software testing is hard.  There are quite a few reasons why which I won’t get into right now.  The reading taught me to choose test cases carefully and systematically.
+This reading goes over some techniques for systematic testing.</p>
+<p>Went over some terms such as module, specification, implementation, clients, test case, and test suite.</p>
+<p>And here we are introduced to our first programming recipe in this course !</p>
+<p>The development of a single function proceeds in this order:</p>
+<ol>
+<li>Spec:  write a specification for the function — describe the behavior, parameter types, constraints, etc.</li>
+<li>Test:  write tests that exercise the specification</li>
+<li>Implement:  Write the implementation</li>
+</ol>
+<p>Once your implementation passes the tests you wrote, you’re done.  Don’t leave testing until the end of development, when you have a bunch of unvalidated code.  I will now test my code as I develop it.</p>
+<p>The reading then taught me some testing techniques, including choosing test cases by partitioning, automated unit testing, documenting your testing strategy, black box and glass box testing, coverage, unit and integration testing, automated regression testing, iterative test-first programming, and randomized testing.</p>
+<p>There were quite a few useful nuggets of knowledge here.  Definitely changed the way I think about testing programs.  It can be quite involved and require a good amount of thought.  But can be simplified in some cases.</p>
+<p>Summary
+In this reading, we saw these ideas:</p>
+<ul>
+<li>Test-first programming. Write tests before you write code.</li>
+<li>Systematic testing with partitioning and boundary values, to design a test suite that is correct, thorough, and small.</li>
+<li>Glass box testing and statement coverage for filling out a test suite.</li>
+<li>Unit-testing each module, in isolation as much as possible.</li>
+<li>Automated regression testing to keep bugs from coming back.</li>
+<li>Iterative development. Plan to redo some work.</li>
+</ul>
+<p>The topics of today’s reading connect to our three key properties of good software as follows:</p>
+<ul>
+<li>Safe from bugs. Testing is about finding bugs in your code, and test-first programming is about finding them as early as possible, right after you introduce them.</li>
+<li>Easy to understand. Systematic testing with a documented testing strategy makes it easier to understand how test cases were chosen and how thorough a test suite is.</li>
+<li>Ready for change. Correct test suites only depend on behavior in the spec, which allows the implementation to change within the confines of the spec. We also talked about automated regression testing, which helps keep bugs from coming back when changes are made to code.</li>
+</ul>
+<h1>Reading 3:  Code Review</h1>
+<p>Here I learned some general tips for code review.  Here is a summary:</p>
+<p>Summary
+Code review is a widely-used technique for improving software quality by human inspection. Code review can detect many kinds of problems in code, but as a starter, this reading talked about these general practices for good code:</p>
+<ul>
+<li>Don’t Repeat Yourself (DRY)</li>
+<li>Comment where needed</li>
+<li>Fail fast</li>
+<li>Avoid magic numbers</li>
+<li>One purpose for each variable</li>
+<li>Use good names</li>
+<li>Use whitespace and punctuation to help the reader</li>
+<li>Don’t use global variables</li>
+<li>Functions should return results, not print them</li>
+<li>Avoid special-case code</li>
+<li>Code at the right length
+The topics of today’s reading connect to our three key properties of good software as follows:</li>
+<li>Safe from bugs. In general, code review uses human reviewers to find bugs. DRY code lets you fix a bug in only one place, without fear that it has propagated elsewhere. Documenting your assumptions with clear comments makes it less likely that another programmer will introduce a bug. The Fail Fast principle detects bugs as early as possible. Avoiding global variables makes it easier to localize bugs related to variable values, since non-global variables can be changed in only limited places in the code.</li>
+<li>Easy to understand. Code review is really the only way to find obscure or confusing code, because other people are reading it and trying to understand it. Using judicious comments, avoiding magic numbers, keeping one purpose for each variable, using good names, and using whitespace well can all improve the understandability of code.</li>
+<li>Ready for change. Code review helps here when it’s done by experienced software developers who can anticipate what might change and suggest ways to guard against it. DRY code is more ready for change, because a change only needs to be made in one place. Returning results instead of printing them makes it easier to adapt the code to a new purpose.</li>
+</ul>
+<p>Code review is not the only software development practice with strong supporting evidence. Another is: sleep.</p>
+<h1>Reading 4:  Specifications</h1>
+<p>Objectives
+* Understand preconditions and postconditions in function specifications, and be able to write correct specifications
+* Be able to write tests against a specification
+* Understand how to use exceptions</p>
+<p>It’s interesting how technical this course gets when it comes to writing specifications.  Specifications are the “linchpin of teamwork.”  The specification acts as a contract: the implementer is responsible for meeting the contract, and a client that uses the function can rely on the contract.</p>
+<p>Why specifications?  They can help make a program both ready for change and safe from bugs.  I like the way they broken down the structure of a specification.</p>
+<p>Summary</p>
+<p>A specification acts as a crucial firewall between the implementer of a module and its client. It makes separate development possible: the client is free to write code that uses the module without seeing its source code, and the implementer is free to write the code that implements the module without knowing how it will be used.
+Let’s review how specifications help with the main goals of this course:</p>
+<ul>
+<li>Safe from bugs. A good specification clearly documents the mutual assumptions that a client and implementer rely on. Bugs often come from disagreements at the interfaces, and the presence of a specification helps avoid those disagreements. Using machine-checked language features in your spec, like static typing and exceptions rather than just a human-readable comment, can reduce bugs still more.</li>
+<li>Easy to understand. A short, simple spec is easier to understand than the implementation itself, and saves other people from having to read the code.</li>
+<li>Ready for change. Specs establish contracts between different parts of your code, allowing those parts to change independently as long as they continue to satisfy the requirements of the contract.</li>
+</ul>
+<h1>Reading 5:  Designing Specifications</h1>
+<p>Objectives</p>
+<ul>
+<li>Understand underdetermined specs, and be able to identify and assess specs that are not deterministic</li>
+<li>Understand declarative vs. operational specs, and be able to write declarative specs</li>
+<li>Understand strength of preconditions, postconditions, and specs, and be able to compare spec strength</li>
+<li>Be able to write coherent, useful specifications of appropriate strength</li>
+</ul>
+<p>It was a lengthy reading.  I liked the section on mutability in particular, because it demonstrated some potential bugs and how to avoid them.  Favor immutability whenever possible.</p>
+<p>Summary
+A specification acts as a crucial firewall between implementor and client — both between people (or the same person at different times) and between code. As we saw last time, it makes separate development possible: the client is free to write code that uses a module without seeing its source code, and the implementor is free to write the implementation code without knowing how it will be used.
+Declarative specifications are the most useful in practice. Preconditions (which weaken the specification) make life harder for the client, but applied judiciously they are a vital tool in the software designer’s repertoire, allowing the implementor to make necessary assumptions.
+As always, our goal is to design specifications that make our software:</p>
+<ul>
+<li>Safe from bugs. Without specifications, even the tiniest change to any part of our program could be the tipped domino that knocks the whole thing over. Well-structured, coherent specifications minimize misunderstandings and maximize our ability to write correct code with the help of static checking, careful reasoning, testing, and code review.</li>
+<li>Easy to understand. A well-written declarative specification means the client doesn’t have to read or understand the code. You’ve probably never read the code for, say, Python dict.update, and doing so isn’t nearly as useful to the Python programmer as reading the declarative spec.</li>
+<li>Ready for change. An appropriately weak specification gives freedom to the implementor, and an appropriately strong specification gives freedom to the client. We can even change the specs themselves, without having to revisit every place they’re used, as long as we’re only strengthening them: weakening preconditions and strengthening postconditions.</li>
+</ul>
+<p>As I’m reviewing this, I realize that doing the assignments and projects in this course would help to ingrain these concepts.  Unfortunately, I don’t have access to these.  So, I suppose I’ll have to hope that I’m chunking the information as I’m reading and building understanding, so that if it is needed, I’ll at least know where to look, if not have an idea of how to apply the concept.</p>
+<h1>Reading 6:  Abstract Data Types</h1>
+<p>Objectives
+Today’s class introduces two ideas:</p>
+<ul>
+<li>Abstract data types</li>
+<li>Representation independence</li>
+</ul>
+<p>Lots of good stuff here with plenty of reading exercises.</p>
+<p>Summary</p>
+<ul>
+<li>Abstract data types are characterized by their operations.</li>
+<li>Operations can be classified into creators, producers, observers, and mutators.</li>
+<li>An ADT’s specification is its set of operations and their specs.</li>
+<li>A good ADT is simple, coherent, adequate, and representation independent.</li>
+<li>An ADT is tested by generating tests for each of its operations, but using the creators, producers, mutators, and observers together in the same tests.</li>
+</ul>
+<p>These ideas connect to our three key properties of good software as follows:</p>
+<ul>
+<li>Safe from bugs. A good ADT offers a well-defined contract for a data type, so that clients know what to expect from the data type, and implementers have well-defined freedom to vary.</li>
+<li>Easy to understand. A good ADT hides its implementation behind a set of simple operations, so that programmers using the ADT only need to understand the operations, not the details of the implementation.</li>
+<li>Ready for change. Representation independence allows the implementation of an abstract data type to change without requiring changes from its clients.</li>
+</ul>
+<h1>Reading 7:  Abstraction Functions and Rep Invariants</h1>
+<p>Objectives
+Today’s reading introduces several ideas:</p>
+<ul>
+<li>invariants</li>
+<li>representation exposure</li>
+<li>abstraction functions</li>
+<li>representation invariants</li>
+</ul>
+<p>In this reading, we study a more formal mathematical idea of what it means for a class to implement an ADT via the notions of abstraction functions and rep invariants. These mathematical notions are eminently practical in software design. The abstraction function gives us a way to cleanly define the equality operation on an abstract data type (which we’ll discuss in more depth in a future class). The rep invariant makes it easier to catch bugs caused by a corrupted data structure.</p>
+<p>It was a nice, technical reading.  I was happy to see that they included some Recipes for Programming !  Going to copy them here, for easy access:</p>
+<h2>Recipes for programming</h2>
+<p>Abstract data types are at the heart of software construction for correctness, clarity, and changeability.
+Recall the test-first programming approach for:
+Writing a method</p>
+<ol>
+<li>Spec. Write the spec, including the method signature (name, argument types, return types, exceptions), and the precondition and the postcondition as a documentation comment.</li>
+<li>Test. Create systematic test cases and put them in test file so you can run them automatically.<ol>
+<li>You may have to go back and change your spec when you start to write test cases. Just the process of writing test cases puts pressure on your spec, because you’re thinking about how a client would call the method. So steps 1 and 2 iterate until you’ve got a better spec and some good test cases.</li>
+<li>Make sure at least some of your tests are failing at first. A test suite that passes all tests even when you haven’t implemented the method is not a good test suite for finding bugs.</li>
+</ol>
+</li>
+<li>Implement. Write the body of the method. You’re done when the tests are all passing.<ol>
+<li>Implementing the method puts pressure on both the tests and the specs, and you may find bugs that you have to go back and fix. So finishing the method may require changing the implementation, the tests, and the specs, and bouncing back and forth among them.</li>
+</ol>
+</li>
+</ol>
+<p>Let’s broaden this to a recipe for:
+Writing an abstract data type</p>
+<ol>
+<li>Spec. Write specs for the operations of the data type, including method signatures, preconditions, and postconditions.<ol>
+<li>This includes defining the abstract value space, but not the abstraction function (since we don’t have a rep yet).</li>
+</ol>
+</li>
+<li>Test. Write test cases for the ADT’s operations.<ol>
+<li>Again, this puts pressure on the spec. You may discover that you need operations you hadn’t anticipated, so you’ll have to add them to the spec.</li>
+</ol>
+</li>
+<li>Implement. For an ADT, this part expands to:<ol>
+<li>Choose rep. Write down the private fields of a class (or, as we’ll see in future readings, choose and define a different kind of rep). Write down the rep invariant and abstraction function as a comment.</li>
+<li>Assert rep invariant. Implement a checkRep() method that enforces the rep invariant. This is critically important if the rep invariant is nontrivial, because it will catch bugs much earlier.</li>
+<li>Implement operations. Write the method bodies of the operations, making sure to call checkRep() in them. You’re done when the tests are all passing.</li>
+</ol>
+</li>
+</ol>
+<p>And let’s broaden it further to a recipe for:
+Writing a program
+(consisting of ADTs and functions)</p>
+<ol>
+<li>Choose data types. Decide which ones will be mutable and which immutable.</li>
+<li>Choose functions. Write your top-level main function and break it down into smaller steps.</li>
+<li>Spec. Spec out the ADTs and functions. Keep the ADT operations simple and few at first. Only add complex operations as you need them.</li>
+<li>Test. Write test cases for each unit (ADT or function).</li>
+<li>Implement simply first. Choose simple, brute-force representations. The point here is to put pressure on the specs and the tests, and try to pull your whole program together as soon as possible. Make the whole program work correctly first. Skip the advanced features for now. Skip performance optimization. Skip corner cases. Keep a to-do list of what you have to revisit.</li>
+<li>Iterate. Now that it’s all working, make it work better. Reimplement, optimize, redesign if necessary</li>
+</ol>
+<p>I might be coming back to these recipes to help write future programs.</p>
+<p>Summary</p>
+<ul>
+<li>An invariant is a property that is always true of an ADT object instance, for the lifetime of the object.</li>
+<li>A good ADT preserves its own invariants. Invariants must be established by creators and producers, and preserved by observers and mutators.</li>
+<li>The rep invariant specifies legal values of the representation, and should be checked at runtime with checkRep().</li>
+<li>The abstraction function maps a concrete representation to the abstract value it represents.</li>
+<li>The rep of an immutable ADT may change, as long as the abstract value it represents doesn’t change.</li>
+<li>Representation exposure threatens both representation independence and invariant preservation.</li>
+<li>An invariant should be documented, by comments or even better by assertions like checkRep(), otherwise the invariant is not safe from bugs.</li>
+</ul>
+<p>The topics of today’s reading connect to our three properties of good software as follows:</p>
+<ul>
+<li>Safe from bugs. A good ADT preserves its own invariants, so that those invariants are less vulnerable to bugs in the ADT’s clients, and violations of the invariants can be more easily isolated within the implementation of the ADT itself. Stating the rep invariant explicitly, and checking it at runtime with checkRep(), catches misunderstandings and bugs earlier, rather than continuing on with a corrupt data structure.</li>
+<li>Easy to understand. Rep invariants and abstraction functions explicate the meaning of a data type’s representation, and how it relates to its abstraction.</li>
+<li>Ready for change. Abstract data types separate the abstraction from the concrete representation, which makes it possible to change the representation without having to change client code.</li>
+</ul>
+<h1>Reading 8:  Defining ADTs with Interfaces, Generics, Enums, and Functions</h1>
+<p>Objectives
+Today’s class is about various ways to implement abstract data types, including:</p>
+<ul>
+<li>interfaces: separating the interface of an ADT from its implementation;</li>
+<li>generic types: defining a family of ADTs using generic type parameters;</li>
+<li>enumerations: defining an ADT with a small finite set of values;</li>
+<li>global functions operating on an opaque type: rare in TypeScript but common in non-object-oriented languages.</li>
+</ul>
+<p>We also discuss subtyping as a relationship between two types determined by their specs, and distinguish it from subclassing, which involves reps as well.
+After today’s class, you should be able to:</p>
+<ul>
+<li>define ADTs using classes, interfaces, generics, and enumerations</li>
+<li>determine whether one type is a subtype of another</li>
+</ul>
+<p>Lots of examples in this reading and rationale for why to use things.</p>
+<p>Summary
+TypeScript interfaces help us formalize the idea of an abstract data type as a set of operations that must be supported by a type.
+This helps make our code…</p>
+<ul>
+<li>Safe from bugs. An ADT is defined by its operations, and interfaces do just that. When clients use an interface type, static checking ensures that they only use methods defined by the interface. If the implementation class exposes other methods — or worse, has visible representation — the client can’t accidentally see or depend on them. When we have multiple implementations of a data type, interfaces provide static checking of the method signatures.</li>
+<li>Easy to understand. Clients and maintainers know exactly where to look for the specification of the ADT. Since the interface doesn’t contain fields or implementations of instance methods, it’s easier to keep details of the implementation out of the specifications.</li>
+<li>Ready for change. We can easily add new implementations of a type by adding classes that implement an interface. If we avoid constructors in favor of factory functions, clients will only see the interface. That means we can switch which implementation class clients are using without changing their code at all.</li>
+</ul>
+<p>TypeScript enumerations allow defining an ADT with a small finite set of immutable values. Compared to the old-fashioned alternatives of special integer values or special strings, enumerations help make our code:</p>
+<ul>
+<li>Safe from bugs. Static checking ensures that clients can’t use values outside the finite set, or confuse two different enumerated types.</li>
+<li>Easy to understand. Named constants are not as magical as integer literals, and named types explain themselves better than number or string.</li>
+<li>Ready for change. The code that uses a particular enumeration is easy to find by searching for the enumeration’s type name, so that it can be reviewed and changed when the enumeration changes. (IDE refactoring tools can even do some of these changes automatically.) Code that depends on a particular set of string or integer constants is much harder to distinguish from code that uses strings and integers for other purposes.</li>
+</ul>
+<h1>Reading 9: Equality</h1>
+<p>Objectives</p>
+<ul>
+<li>Understand the properties of an equivalence relation.</li>
+<li>Understand equality for immutable types defined in terms of the abstraction function and in terms of observation.</li>
+<li>Differentiate between reference equality and object equality.</li>
+<li>Differentiate between observational and behavioral equality for mutable types.</li>
+</ul>
+<p>All about equality.  Great reading.  Here’s the summary:</p>
+<p>Summary</p>
+<ul>
+<li>Equality should be an equivalence relation (reflexive, symmetric, transitive).</li>
+<li>The abstraction function is the basis for equality in immutable data types.</li>
+<li>Mutable data types have two useful notions of equality: behavioral equality (which provides consistent equality over time) and observational equality (which uses the abstraction function). For immutable types, observational and behavioral equality are identical.</li>
+</ul>
+<p>In TypeScript, for immutable built-in types (e.g. number, string, bigint):</p>
+<ul>
+<li>Use === for behavioral and observational equality, which are identical because there are no mutators.</li>
+<li>Avoid == because of its automatic conversions.</li>
+<li>Safe for use as Set elements and Map keys.</li>
+</ul>
+<p>For immutable object types (e.g. Duration):</p>
+<ul>
+<li>Use equalValue() for both behavioral and observational equality, which are identical because there are no mutators.</li>
+<li>Avoid === because it is too strong, and avoid == because of its automatic conversions.</li>
+<li>Not safe for use as Set elements or Map keys because those data structures compare objects using ===.</li>
+</ul>
+<p>For mutable object types:</p>
+<ul>
+<li>Use === for behavioral equality.</li>
+<li>Use equalValue() for observational equality.</li>
+<li>Avoid == because of its automatic conversions.</li>
+<li>Safe for use as Set elements and Map keys.</li>
+</ul>
+<p>Equality is one part of implementing an abstract data type, and we’ve already seen how important ADTs are to achieving our three primary objectives. Let’s look at equality in particular:</p>
+<ul>
+<li>Safe from bugs. Correct implementation of equality is essential for clients of a data type, and also highly desirable for writing tests.</li>
+<li>Easy to understand. Clients and other programmers who read our specs will expect our types to implement an appropriate equality operation, and will be surprised and confused if we do not.</li>
+<li>Ready for change. Correctly-implemented equality for immutable types separates equality of reference from equality of abstract value, hiding from clients our decisions about whether values are shared.</li>
+</ul>
+<p>Now I have to be thinking about equality when it comes to mutable and immutable types.  I can refer to this reading whenever I need guidance.</p>
+<p>That’s it for all the readings I’ve read so far !  This was a good review.  Next reading is Functional Programming.  When I complete the course, I write the 2nd half blog post.</p>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <a href="https://blog.miguelhx.com/pages/about-me.html"><img class="avatar" src="https://blog.miguelhx.com/images/favicon.ico" onerror="this.src='theme/images/avatar.png'" alt="Avatar"></a>
+                <div style="margin-left: 20px;">
+                  <a href="https://blog.miguelhx.com/pages/about-me.html"><span id="author-name" class="w3-hover-text-dark-grey">Miguel</span></a>
+                  <p id="author-story">Miguel is a computer programmer who has other identities too, but prefers to list only one for now.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+          <p style="font-size:10pt; font-style: italic;">Did you like this article? Share it with your friends!</p>
+          <div id="share" class="share">
+            <a href="https://www.facebook.com/sharer.php?u=https%3A//blog.miguelhx.com/6102-software-construction-halfway-done-my-thoughts-and-summaries.html&amp;t=Miguel%27s%20Blog%20Website%3A%206.102%20-%20Software%20Construction%20-%20Halfway%20done%2C%20my%20thoughts%20and%20summaries" target="_blank" class="w3-btn w3-indigo">
+              <i class="fa fa-facebook"></i> <span>Facebook</span>
+            </a>
+            <a href="https://twitter.com/share?url=https%3A//blog.miguelhx.com/6102-software-construction-halfway-done-my-thoughts-and-summaries.html&amp;text=Miguel%27s%20Blog%20Website%3A%206.102%20-%20Software%20Construction%20-%20Halfway%20done%2C%20my%20thoughts%20and%20summaries" target="_blank" class="w3-btn w3-black">
+              <i class="fa fa-x-twitter">X</i> <span></span>
+            </a>
+          </div>
+
+          <br><br><br>
+
+
+          <div id="disqus_thread"></div>
+          <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            
+            var disqus_config = function () {
+              this.page.url = 'https://blog.miguelhx.com/6102-software-construction-halfway-done-my-thoughts-and-summaries.html';  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = 'https://blog.miguelhx.com/6102-software-construction-halfway-done-my-thoughts-and-summaries.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            
+            (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+              var d = document, s = d.createElement('script');
+              
+              s.src = 'https://miguels-personal-website.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+              
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          <br><br><br>
+
+        </footer>
+      </div>
+    </article>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          2025&dash;2026          Miguel
+ | <a href="https://blog.miguelhx.com/feed.xml">Atom feed <i class="fa fa-rss" aria-hidden="true"></i></a>        </span>
+      </div>
+    </footer>
+
+    <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z648JEYS71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z648JEYS71');
+</script>
+
+
+  </body>
+</html>
